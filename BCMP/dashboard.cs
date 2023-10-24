@@ -168,7 +168,9 @@ namespace BCMP
 
         private void ptb_logo_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            if (currentChildForm != null) { 
+                currentChildForm.Close(); 
+            };
             Reset();
 
         }
