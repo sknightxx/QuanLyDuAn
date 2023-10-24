@@ -1,6 +1,6 @@
 ﻿namespace BCMP.Forms
 {
-    partial class FormSetting
+    partial class FormReport
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FormSetting
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormSetting";
-            this.Text = "FormSetting";
-            this.ResumeLayout(false);
-
+            this.Text = "FormReport";
         }
 
         #endregion

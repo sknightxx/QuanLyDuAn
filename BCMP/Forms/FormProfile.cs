@@ -27,18 +27,11 @@ namespace BCMP.Forms
    
         private void bt_addUser_Click(object sender, EventArgs e)
         {
-
-            Panel pn_container = this.Parent as Panel;
-            pn_container.Controls.Remove((Control)this);
-
             FormAddUser AddUserForm = new FormAddUser();
-            AddUserForm.TopLevel = false;
-            AddUserForm.FormBorderStyle = FormBorderStyle.None;
-            AddUserForm.Dock = DockStyle.Fill;
-            pn_container.Controls.Add(AddUserForm);
-            AddUserForm.BringToFront();
             AddUserForm.Show();
             
         }
+
+       
     }
 }

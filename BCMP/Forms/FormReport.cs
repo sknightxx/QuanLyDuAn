@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace BCMP.Forms
 {
-    public partial class FormProject : Form
+    public partial class FormReport : Form
     {
-        public FormProject()
+        public FormReport()
         {
             InitializeComponent();
-        }
-
-        private void bt_CreateProject_Click(object sender, EventArgs e)
-        {
-            
-
-            FormAddProject AddProjectForm = new FormAddProject();
-            AddProjectForm.Show();
         }
     }
 }

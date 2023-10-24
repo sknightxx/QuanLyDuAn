@@ -42,7 +42,7 @@ namespace BCMP
 
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color1 = Color.FromArgb(255, 140, 0);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 144);
             public static Color color4 = Color.FromArgb(95, 77, 221);
@@ -152,7 +152,7 @@ namespace BCMP
         private void bt_report_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            OpenChildForm(new FormProject());
+            OpenChildForm(new FormReport());
             lb_tittleChildform.Text = "Report";
 
         }

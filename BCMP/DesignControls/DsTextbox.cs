@@ -34,7 +34,7 @@ namespace BCMP.DesignControls
                 _TextChanged.Invoke(sender, e);
         }
 
-      
+
         public DsTextbox()
         {
             InitializeComponent();
@@ -181,8 +181,7 @@ namespace BCMP.DesignControls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-            if (this.DesignMode)
-                UpdateControlHeight();
+            UpdateControlHeight();
         }
         protected override void OnLoad(EventArgs e)
         {
@@ -321,7 +320,7 @@ namespace BCMP.DesignControls
             SetPlaceholder();
         }
     }
-    
+
 
 
 }

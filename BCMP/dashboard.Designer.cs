@@ -46,8 +46,9 @@
             this.bt_minimize = new FontAwesome.Sharp.IconButton();
             this.bt_maximize = new FontAwesome.Sharp.IconButton();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
-            this.pn_shawdow = new System.Windows.Forms.Panel();
             this.pn_container = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pn_shawdow = new System.Windows.Forms.Panel();
             this.pn_leftDashBoard.SuspendLayout();
             this.pn_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();
@@ -450,31 +451,41 @@
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
+            // pn_container
+            // 
+            this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_container.Location = new System.Drawing.Point(220, 79);
+            this.pn_container.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_container.Name = "pn_container";
+            this.pn_container.Size = new System.Drawing.Size(1133, 584);
+            this.pn_container.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panel1.Location = new System.Drawing.Point(220, 79);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 584);
+            this.panel1.TabIndex = 4;
+            // 
             // pn_shawdow
             // 
-            this.pn_shawdow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.pn_shawdow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.pn_shawdow.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_shawdow.Location = new System.Drawing.Point(220, 69);
             this.pn_shawdow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn_shawdow.Name = "pn_shawdow";
-            this.pn_shawdow.Size = new System.Drawing.Size(1133, 9);
+            this.pn_shawdow.Size = new System.Drawing.Size(1133, 10);
             this.pn_shawdow.TabIndex = 2;
-            // 
-            // pn_container
-            // 
-            this.pn_container.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_container.Location = new System.Drawing.Point(220, 78);
-            this.pn_container.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pn_container.Name = "pn_container";
-            this.pn_container.Size = new System.Drawing.Size(1133, 585);
-            this.pn_container.TabIndex = 3;
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1353, 663);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pn_container);
             this.Controls.Add(this.pn_shawdow);
             this.Controls.Add(this.pn_tittleBar);
@@ -509,12 +520,13 @@
         private FontAwesome.Sharp.IconButton bt_maximize;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildform;
         private System.Windows.Forms.Label lb_tittleChildform;
-        private System.Windows.Forms.Panel pn_shawdow;
         private System.Windows.Forms.Panel pn_container;
         private FontAwesome.Sharp.IconButton bt_remind;
         private FontAwesome.Sharp.IconButton bt_mail;
         private FontAwesome.Sharp.IconButton bt_notifications;
         private FontAwesome.Sharp.IconButton bt_user;
         private FontAwesome.Sharp.IconButton bt_report;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pn_shawdow;
     }
 }

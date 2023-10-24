@@ -100,6 +100,12 @@
     <Compile Include="Forms\FormProject.Designer.cs">
       <DependentUpon>FormProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormFotgotPassword.resx">
       <DependentUpon>FormFotgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProject.resx">
+      <DependentUpon>FormProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
