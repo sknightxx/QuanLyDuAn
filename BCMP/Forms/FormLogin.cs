@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCMP.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.DTO;
 
 namespace BCMP
 {
@@ -65,11 +67,31 @@ namespace BCMP
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            dashboard dashboardD = new dashboard();
-            dashboardD.Show();
+            string userid = txt_userID.Text.ToString();
+            string password = txt_Password.Text.ToString();
+            if (string.IsNullOrEmpty(userid))
+            {
+                MessageBox.Show("Chưa điền tài khoản");
+            } else if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Chưa điền mật khẩu");
+            } else if(AuthService.Instance.LoginValidateEmployee(userid,password))
+            {
+                if(AuthService.Instance.ValidateIsDeactivated())
+                {
+                    MessageBox.Show("Tài khoản của bạn đã bị khoá");
+                } else
+                {
+                    this.Hide();
+                    dashboard dashboardD = new dashboard();
+                    dashboardD.Show();
+                }
+             
+            } else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+            }
             
-
         }
 
         private void txt_password_Enter(object sender, EventArgs e)
