@@ -12,7 +12,8 @@ namespace BCMP.Service
     public class AuthService
     {
         private static AuthService instance;
-        private static Employee empCur;
+        public static Employee empCur;
+        public static Role roleCur;
 
         public static AuthService Instance { 
             get { if (instance == null) instance = new AuthService();return instance; } 
@@ -28,6 +29,7 @@ namespace BCMP.Service
             {
                 return false;
             }
+            roleCur = RoleDAO.Instance.GetById(empCur.RoleId);
             return true;
         }
 

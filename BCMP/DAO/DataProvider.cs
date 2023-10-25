@@ -5,13 +5,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace BCMP.DAO
 {
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionSTR = "Data Source =.\\sqlexpress;Initial Catalog = BCMP; Integrated Security = True";
+        private string connectionSTR = "";
 
         public static DataProvider Instance
         {
@@ -19,7 +20,9 @@ namespace BCMP.DAO
             set => instance = value;
         }
 
-        private DataProvider() { }
+        private DataProvider() {
+            connectionSTR = ConfigurationManager.ConnectionStrings["CC"].ConnectionString;
+        }
 
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
@@ -47,10 +50,6 @@ namespace BCMP.DAO
                 adapter.Fill(data);
                 connection.Close();
 
-            }
-            foreach(DataRow row in data.Rows)
-            {
-                String asd = row["UserId"].ToString();
             }
 
             return data;
