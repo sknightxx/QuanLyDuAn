@@ -31,5 +31,18 @@ namespace BCMP.DAO
             }
             return emp;
         }
+
+        public List<Role> GetAllRole()
+        {
+            String query = "USP_GetRole";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query);
+            List<Role> list = new List<Role>();
+            foreach (DataRow row in result.Rows)
+            {
+                Role item = new Role(row);
+                list.Add(item);
+            }
+            return list;
+        }
     }
 }

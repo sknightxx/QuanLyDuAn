@@ -37,17 +37,29 @@
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.lb_phone = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
-            this.txt_department = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.lb_placeOfBirth = new System.Windows.Forms.Label();
-            this.txt_role = new System.Windows.Forms.TextBox();
+            this.txt_checkpassword = new System.Windows.Forms.TextBox();
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
-            this.txt_phone = new System.Windows.Forms.TextBox();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_save = new System.Windows.Forms.Button();
             this.txt_IdStaff = new System.Windows.Forms.TextBox();
             this.lb_IdStaff = new System.Windows.Forms.Label();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.cb_department = new System.Windows.Forms.ComboBox();
+            this.cb_role = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbuserid = new System.Windows.Forms.Label();
+            this.lbemail = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
+            this.lbphone = new System.Windows.Forms.Label();
+            this.lbpassword = new System.Windows.Forms.Label();
+            this.lbcheckpassword = new System.Windows.Forms.Label();
+            this.lbdepartment = new System.Windows.Forms.Label();
+            this.lbrole = new System.Windows.Forms.Label();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -132,7 +144,9 @@
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(242, 33);
-            this.txt_name.TabIndex = 21;
+            this.txt_name.TabIndex = 3;
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
+            this.txt_name.Leave += new System.EventHandler(this.txt_name_Leave);
             // 
             // txt_Email
             // 
@@ -140,7 +154,9 @@
             this.txt_Email.Multiline = true;
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(242, 33);
-            this.txt_Email.TabIndex = 20;
+            this.txt_Email.TabIndex = 2;
+            this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
+            this.txt_Email.Leave += new System.EventHandler(this.txt_Email_Leave);
             // 
             // lb_phone
             // 
@@ -160,19 +176,22 @@
             this.lb_department.BackColor = System.Drawing.Color.Transparent;
             this.lb_department.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_department.ForeColor = System.Drawing.Color.Black;
-            this.lb_department.Location = new System.Drawing.Point(207, 367);
+            this.lb_department.Location = new System.Drawing.Point(207, 491);
             this.lb_department.Name = "lb_department";
             this.lb_department.Size = new System.Drawing.Size(113, 21);
             this.lb_department.TabIndex = 23;
             this.lb_department.Text = "Department";
             // 
-            // txt_department
+            // txt_password
             // 
-            this.txt_department.Location = new System.Drawing.Point(353, 360);
-            this.txt_department.Multiline = true;
-            this.txt_department.Name = "txt_department";
-            this.txt_department.Size = new System.Drawing.Size(242, 33);
-            this.txt_department.TabIndex = 24;
+            this.txt_password.Location = new System.Drawing.Point(353, 360);
+            this.txt_password.Multiline = true;
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '•';
+            this.txt_password.Size = new System.Drawing.Size(242, 33);
+            this.txt_password.TabIndex = 5;
+            this.txt_password.UseSystemPasswordChar = true;
+            this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
             // 
             // lb_placeOfBirth
             // 
@@ -180,19 +199,22 @@
             this.lb_placeOfBirth.BackColor = System.Drawing.Color.Transparent;
             this.lb_placeOfBirth.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_placeOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.lb_placeOfBirth.Location = new System.Drawing.Point(207, 432);
+            this.lb_placeOfBirth.Location = new System.Drawing.Point(214, 558);
             this.lb_placeOfBirth.Name = "lb_placeOfBirth";
             this.lb_placeOfBirth.Size = new System.Drawing.Size(45, 21);
             this.lb_placeOfBirth.TabIndex = 25;
             this.lb_placeOfBirth.Text = "Role";
             // 
-            // txt_role
+            // txt_checkpassword
             // 
-            this.txt_role.Location = new System.Drawing.Point(351, 429);
-            this.txt_role.Multiline = true;
-            this.txt_role.Name = "txt_role";
-            this.txt_role.Size = new System.Drawing.Size(242, 33);
-            this.txt_role.TabIndex = 26;
+            this.txt_checkpassword.Location = new System.Drawing.Point(351, 429);
+            this.txt_checkpassword.Multiline = true;
+            this.txt_checkpassword.Name = "txt_checkpassword";
+            this.txt_checkpassword.PasswordChar = '•';
+            this.txt_checkpassword.Size = new System.Drawing.Size(242, 33);
+            this.txt_checkpassword.TabIndex = 6;
+            this.txt_checkpassword.UseSystemPasswordChar = true;
+            this.txt_checkpassword.Leave += new System.EventHandler(this.txt_checkpassword_Leave);
             // 
             // bt_saveAddUser
             // 
@@ -235,6 +257,18 @@
             // pn_containerFormAddUser
             // 
             this.pn_containerFormAddUser.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_containerFormAddUser.Controls.Add(this.lbrole);
+            this.pn_containerFormAddUser.Controls.Add(this.lbdepartment);
+            this.pn_containerFormAddUser.Controls.Add(this.lbcheckpassword);
+            this.pn_containerFormAddUser.Controls.Add(this.lbpassword);
+            this.pn_containerFormAddUser.Controls.Add(this.lbphone);
+            this.pn_containerFormAddUser.Controls.Add(this.lbname);
+            this.pn_containerFormAddUser.Controls.Add(this.lbemail);
+            this.pn_containerFormAddUser.Controls.Add(this.lbuserid);
+            this.pn_containerFormAddUser.Controls.Add(this.label2);
+            this.pn_containerFormAddUser.Controls.Add(this.label1);
+            this.pn_containerFormAddUser.Controls.Add(this.cb_role);
+            this.pn_containerFormAddUser.Controls.Add(this.cb_department);
             this.pn_containerFormAddUser.Controls.Add(this.txt_IdStaff);
             this.pn_containerFormAddUser.Controls.Add(this.lb_IdStaff);
             this.pn_containerFormAddUser.Controls.Add(this.bt_cancel);
@@ -242,9 +276,9 @@
             this.pn_containerFormAddUser.Controls.Add(this.txt_phone);
             this.pn_containerFormAddUser.Controls.Add(this.bt_cancelAddUser);
             this.pn_containerFormAddUser.Controls.Add(this.bt_saveAddUser);
-            this.pn_containerFormAddUser.Controls.Add(this.txt_role);
+            this.pn_containerFormAddUser.Controls.Add(this.txt_checkpassword);
             this.pn_containerFormAddUser.Controls.Add(this.lb_placeOfBirth);
-            this.pn_containerFormAddUser.Controls.Add(this.txt_department);
+            this.pn_containerFormAddUser.Controls.Add(this.txt_password);
             this.pn_containerFormAddUser.Controls.Add(this.lb_department);
             this.pn_containerFormAddUser.Controls.Add(this.lb_phone);
             this.pn_containerFormAddUser.Controls.Add(this.txt_Email);
@@ -258,13 +292,27 @@
             this.pn_containerFormAddUser.TabIndex = 0;
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
-            // txt_phone
+            // txt_IdStaff
             // 
-            this.txt_phone.Location = new System.Drawing.Point(353, 289);
-            this.txt_phone.Multiline = true;
-            this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(242, 33);
-            this.txt_phone.TabIndex = 27;
+            this.txt_IdStaff.Location = new System.Drawing.Point(353, 98);
+            this.txt_IdStaff.Multiline = true;
+            this.txt_IdStaff.Name = "txt_IdStaff";
+            this.txt_IdStaff.Size = new System.Drawing.Size(242, 33);
+            this.txt_IdStaff.TabIndex = 1;
+            this.txt_IdStaff.TextChanged += new System.EventHandler(this.txt_IdStaff_TextChanged);
+            this.txt_IdStaff.Leave += new System.EventHandler(this.txt_IdStaff_Leave);
+            // 
+            // lb_IdStaff
+            // 
+            this.lb_IdStaff.AutoSize = true;
+            this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
+            this.lb_IdStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
+            this.lb_IdStaff.Location = new System.Drawing.Point(207, 106);
+            this.lb_IdStaff.Name = "lb_IdStaff";
+            this.lb_IdStaff.Size = new System.Drawing.Size(70, 21);
+            this.lb_IdStaff.TabIndex = 30;
+            this.lb_IdStaff.Text = "ID Staff";
             // 
             // bt_cancel
             // 
@@ -278,7 +326,7 @@
             this.bt_cancel.Location = new System.Drawing.Point(565, 622);
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.Size = new System.Drawing.Size(113, 43);
-            this.bt_cancel.TabIndex = 29;
+            this.bt_cancel.TabIndex = 10;
             this.bt_cancel.Text = "CANCEL";
             this.bt_cancel.UseVisualStyleBackColor = false;
             // 
@@ -291,29 +339,142 @@
             this.bt_save.Location = new System.Drawing.Point(694, 622);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(113, 43);
-            this.bt_save.TabIndex = 28;
+            this.bt_save.TabIndex = 9;
             this.bt_save.Text = "SAVE";
             this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
-            // txt_IdStaff
+            // txt_phone
             // 
-            this.txt_IdStaff.Location = new System.Drawing.Point(353, 98);
-            this.txt_IdStaff.Multiline = true;
-            this.txt_IdStaff.Name = "txt_IdStaff";
-            this.txt_IdStaff.Size = new System.Drawing.Size(242, 33);
-            this.txt_IdStaff.TabIndex = 31;
+            this.txt_phone.Location = new System.Drawing.Point(353, 289);
+            this.txt_phone.Multiline = true;
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(242, 33);
+            this.txt_phone.TabIndex = 4;
+            this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
+            this.txt_phone.Leave += new System.EventHandler(this.txt_phone_Leave);
             // 
-            // lb_IdStaff
+            // cb_department
             // 
-            this.lb_IdStaff.AutoSize = true;
-            this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
-            this.lb_IdStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
-            this.lb_IdStaff.Location = new System.Drawing.Point(207, 106);
-            this.lb_IdStaff.Name = "lb_IdStaff";
-            this.lb_IdStaff.Size = new System.Drawing.Size(70, 21);
-            this.lb_IdStaff.TabIndex = 30;
-            this.lb_IdStaff.Text = "ID Staff";
+            this.cb_department.FormattingEnabled = true;
+            this.cb_department.Location = new System.Drawing.Point(351, 492);
+            this.cb_department.Name = "cb_department";
+            this.cb_department.Size = new System.Drawing.Size(242, 24);
+            this.cb_department.TabIndex = 7;
+            // 
+            // cb_role
+            // 
+            this.cb_role.FormattingEnabled = true;
+            this.cb_role.Location = new System.Drawing.Point(353, 555);
+            this.cb_role.Name = "cb_role";
+            this.cb_role.Size = new System.Drawing.Size(242, 24);
+            this.cb_role.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(207, 372);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Password";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(197, 441);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Check Password";
+            // 
+            // lbuserid
+            // 
+            this.lbuserid.AutoSize = true;
+            this.lbuserid.ForeColor = System.Drawing.Color.Black;
+            this.lbuserid.Location = new System.Drawing.Point(601, 115);
+            this.lbuserid.Name = "lbuserid";
+            this.lbuserid.Size = new System.Drawing.Size(44, 16);
+            this.lbuserid.TabIndex = 36;
+            this.lbuserid.Text = "label3";
+            this.lbuserid.Visible = false;
+            // 
+            // lbemail
+            // 
+            this.lbemail.AutoSize = true;
+            this.lbemail.Location = new System.Drawing.Point(601, 172);
+            this.lbemail.Name = "lbemail";
+            this.lbemail.Size = new System.Drawing.Size(44, 16);
+            this.lbemail.TabIndex = 37;
+            this.lbemail.Text = "label4";
+            this.lbemail.Visible = false;
+            // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Location = new System.Drawing.Point(601, 241);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(44, 16);
+            this.lbname.TabIndex = 38;
+            this.lbname.Text = "label5";
+            this.lbname.Visible = false;
+            // 
+            // lbphone
+            // 
+            this.lbphone.AutoSize = true;
+            this.lbphone.Location = new System.Drawing.Point(601, 305);
+            this.lbphone.Name = "lbphone";
+            this.lbphone.Size = new System.Drawing.Size(44, 16);
+            this.lbphone.TabIndex = 39;
+            this.lbphone.Text = "label6";
+            this.lbphone.Visible = false;
+            // 
+            // lbpassword
+            // 
+            this.lbpassword.AutoSize = true;
+            this.lbpassword.Location = new System.Drawing.Point(601, 376);
+            this.lbpassword.Name = "lbpassword";
+            this.lbpassword.Size = new System.Drawing.Size(44, 16);
+            this.lbpassword.TabIndex = 40;
+            this.lbpassword.Text = "label7";
+            this.lbpassword.Visible = false;
+            // 
+            // lbcheckpassword
+            // 
+            this.lbcheckpassword.AutoSize = true;
+            this.lbcheckpassword.Location = new System.Drawing.Point(601, 445);
+            this.lbcheckpassword.Name = "lbcheckpassword";
+            this.lbcheckpassword.Size = new System.Drawing.Size(44, 16);
+            this.lbcheckpassword.TabIndex = 41;
+            this.lbcheckpassword.Text = "label8";
+            this.lbcheckpassword.Visible = false;
+            // 
+            // lbdepartment
+            // 
+            this.lbdepartment.AutoSize = true;
+            this.lbdepartment.Location = new System.Drawing.Point(601, 500);
+            this.lbdepartment.Name = "lbdepartment";
+            this.lbdepartment.Size = new System.Drawing.Size(44, 16);
+            this.lbdepartment.TabIndex = 42;
+            this.lbdepartment.Text = "label9";
+            this.lbdepartment.Visible = false;
+            // 
+            // lbrole
+            // 
+            this.lbrole.AutoSize = true;
+            this.lbrole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbrole.Location = new System.Drawing.Point(601, 562);
+            this.lbrole.Name = "lbrole";
+            this.lbrole.Size = new System.Drawing.Size(51, 16);
+            this.lbrole.TabIndex = 43;
+            this.lbrole.Text = "label10";
+            this.lbrole.Visible = false;
             // 
             // FormAddUser
             // 
@@ -344,9 +505,9 @@
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label lb_phone;
         private System.Windows.Forms.Label lb_department;
-        private System.Windows.Forms.TextBox txt_department;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label lb_placeOfBirth;
-        private System.Windows.Forms.TextBox txt_role;
+        private System.Windows.Forms.TextBox txt_checkpassword;
         private System.Windows.Forms.Button bt_saveAddUser;
         private System.Windows.Forms.Button bt_cancelAddUser;
         private System.Windows.Forms.Panel pn_containerFormAddUser;
@@ -355,5 +516,17 @@
         private System.Windows.Forms.Button bt_save;
         private System.Windows.Forms.TextBox txt_IdStaff;
         private System.Windows.Forms.Label lb_IdStaff;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cb_role;
+        private System.Windows.Forms.ComboBox cb_department;
+        private System.Windows.Forms.Label lbrole;
+        private System.Windows.Forms.Label lbdepartment;
+        private System.Windows.Forms.Label lbcheckpassword;
+        private System.Windows.Forms.Label lbpassword;
+        private System.Windows.Forms.Label lbphone;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Label lbemail;
+        private System.Windows.Forms.Label lbuserid;
     }
 }

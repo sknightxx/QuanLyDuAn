@@ -43,5 +43,17 @@ namespace BCMP.Service
                 return true;
             } else { return false; }
         }
+
+        public bool EmployeeIsExist(string userid)
+        {
+            Employee emp = EmployeeDAO.Instance.GetById(userid);
+            if(emp == null)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
+        }
     }
 }

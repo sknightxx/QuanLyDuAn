@@ -45,5 +45,12 @@ namespace BCMP.DAO
             }
             return emp;
         }
+
+        public bool InsertEmployee(string email, string password,string phonenumber, string userid, int departmentid, int roleid)
+        {
+            String query = "USP_InsertEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, 0, phonenumber, userid, departmentid, roleid });
+            return result > 0;
+        }
     }
 }
