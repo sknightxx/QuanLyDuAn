@@ -11,12 +11,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCMP.Forms;
+using BCMP.Forms.User;
 using FontAwesome.Sharp;
 
 
 namespace BCMP
 {
-    public partial class Management : Form
+    public partial class dashboard : Form
     {
         private IconButton currenBtn;
         private Panel leftBorderBtn;
@@ -24,7 +25,7 @@ namespace BCMP
 
 
 
-        public Management()
+        public dashboard()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();

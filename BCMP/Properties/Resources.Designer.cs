@@ -83,6 +83,16 @@ namespace BCMP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _629235f0ad752419f8ecfe842 {
+            get {
+                object obj = ResourceManager.GetObject("629235f0ad752419f8ecfe842", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _switch {
             get {
                 object obj = ResourceManager.GetObject("switch", resourceCulture);
@@ -326,6 +336,16 @@ namespace BCMP.Properties {
         internal static System.Drawing.Bitmap user__3_ {
             get {
                 object obj = ResourceManager.GetObject("user (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4821246153762_f7cf5b667b259876816633f716183abb {
+            get {
+                object obj = ResourceManager.GetObject("z4821246153762_f7cf5b667b259876816633f716183abb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

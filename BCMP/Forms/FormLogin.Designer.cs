@@ -44,14 +44,17 @@
             this.lb_password = new System.Windows.Forms.Label();
             this.lb_id = new System.Windows.Forms.Label();
             this.lb_login = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();
             this.pn_right.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_left
             // 
-            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.pn_left.Controls.Add(this.pictureBox1);
             this.pn_left.Controls.Add(this.lb_logo);
             this.pn_left.Controls.Add(this.ptb_logo);
             this.pn_left.Dock = System.Windows.Forms.DockStyle.Left;
@@ -64,10 +67,10 @@
             // lb_logo
             // 
             this.lb_logo.AutoSize = true;
-            this.lb_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.lb_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
             this.lb_logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_logo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_logo.Location = new System.Drawing.Point(125, 231);
+            this.lb_logo.Location = new System.Drawing.Point(116, 269);
             this.lb_logo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_logo.Name = "lb_logo";
             this.lb_logo.Size = new System.Drawing.Size(80, 26);
@@ -78,10 +81,10 @@
             // ptb_logo
             // 
             this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
-            this.ptb_logo.Location = new System.Drawing.Point(92, 99);
+            this.ptb_logo.Location = new System.Drawing.Point(37, 134);
             this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
             this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.Size = new System.Drawing.Size(148, 119);
+            this.ptb_logo.Size = new System.Drawing.Size(111, 119);
             this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_logo.TabIndex = 2;
             this.ptb_logo.TabStop = false;
@@ -280,6 +283,16 @@
             this.lb_login.Text = "LOGIN";
             this.lb_login.Click += new System.EventHandler(this.lb_login_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Location = new System.Drawing.Point(166, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -297,6 +310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();
             this.pn_right.ResumeLayout(false);
             this.pn_right.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,6 +333,7 @@
         private FontAwesome.Sharp.IconButton bt_iconPass;
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.TextBox txt_userID;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

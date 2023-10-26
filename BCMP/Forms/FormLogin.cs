@@ -66,7 +66,7 @@ namespace BCMP
         private void bt_login_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Management dashboardD = new Management();
+            dashboard dashboardD = new dashboard();
             dashboardD.Show();
             
 

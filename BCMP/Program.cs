@@ -17,7 +17,7 @@ namespace BCMP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Management());
+            Application.Run(new FormLogin());
         }
     }
 }

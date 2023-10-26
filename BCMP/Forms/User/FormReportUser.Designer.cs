@@ -1,6 +1,6 @@
-﻿namespace BCMP.Forms
+﻿namespace BCMP.Forms.User
 {
-    partial class FormHome
+    partial class FormReportUser
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FormHome
+            // FormReportUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(902, 468);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormHome";
-            this.Text = "FormHome";
+            this.Name = "FormReportUser";
+            this.Text = "FormReportUser";
             this.ResumeLayout(false);
 
         }

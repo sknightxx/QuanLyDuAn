@@ -1,6 +1,6 @@
-﻿namespace BCMP.Forms
+﻿namespace BCMP.Forms.User
 {
-    partial class FormProject
+    partial class FormProjectUser
     {
         /// <summary>
         /// Required designer variable.
@@ -55,7 +55,7 @@
             this.pn_tittle.Margin = new System.Windows.Forms.Padding(2);
             this.pn_tittle.Name = "pn_tittle";
             this.pn_tittle.Size = new System.Drawing.Size(902, 58);
-            this.pn_tittle.TabIndex = 3;
+            this.pn_tittle.TabIndex = 5;
             // 
             // pn_search
             // 
@@ -87,9 +87,6 @@
             this.txt_search.Size = new System.Drawing.Size(361, 30);
             this.txt_search.TabIndex = 0;
             this.txt_search.Text = "Search for project";
-            this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
-            this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
-            this.txt_search.Move += new System.EventHandler(this.txt_search_Move);
             // 
             // bt_search
             // 
@@ -150,7 +147,6 @@
             this.bt_CreateProject.TabIndex = 19;
             this.bt_CreateProject.Text = "Create";
             this.bt_CreateProject.UseVisualStyleBackColor = false;
-            this.bt_CreateProject.Click += new System.EventHandler(this.bt_CreateProject_Click);
             // 
             // lb_MyWork
             // 
@@ -172,20 +168,18 @@
             this.pn_container.Margin = new System.Windows.Forms.Padding(2);
             this.pn_container.Name = "pn_container";
             this.pn_container.Size = new System.Drawing.Size(902, 468);
-            this.pn_container.TabIndex = 2;
+            this.pn_container.TabIndex = 4;
             // 
-            // FormProject
+            // FormProjectUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 468);
             this.Controls.Add(this.pn_tittle);
             this.Controls.Add(this.pn_container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormProject";
-            this.Text = "FormProject";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormProject_Paint);
+            this.Name = "FormProjectUser";
+            this.Text = "FormProjectUser";
             this.pn_tittle.ResumeLayout(false);
             this.pn_tittle.PerformLayout();
             this.pn_search.ResumeLayout(false);
@@ -198,13 +192,13 @@
         #endregion
 
         private System.Windows.Forms.Panel pn_tittle;
-        private System.Windows.Forms.Label lb_MyWork;
-        private System.Windows.Forms.Panel pn_container;
-        private System.Windows.Forms.Button bt_CreateProject;
-        private FontAwesome.Sharp.IconButton bt_others;
         private System.Windows.Forms.Panel pn_search;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton bt_search;
         private System.Windows.Forms.TextBox txt_search;
+        private FontAwesome.Sharp.IconButton bt_search;
+        private FontAwesome.Sharp.IconButton bt_others;
+        private System.Windows.Forms.Button bt_CreateProject;
+        private System.Windows.Forms.Label lb_MyWork;
+        private System.Windows.Forms.Panel pn_container;
     }
 }

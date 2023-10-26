@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BCMP.Forms
+namespace BCMP.Forms.User
 {
-    public partial class FormMission : Form
+    public partial class FormHomeUser : Form
     {
-        public FormMission()
+        public FormHomeUser()
         {
             InitializeComponent();
         }

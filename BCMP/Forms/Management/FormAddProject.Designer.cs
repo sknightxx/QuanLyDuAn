@@ -126,6 +126,7 @@
             this.cbb_department.Name = "cbb_department";
             this.cbb_department.Size = new System.Drawing.Size(296, 21);
             this.cbb_department.TabIndex = 6;
+            this.cbb_department.Leave += new System.EventHandler(this.cbb_department_Leave);
             // 
             // dateTimePicker1
             // 
@@ -161,12 +162,17 @@
             // 
             // txt_Description
             // 
+            this.txt_Description.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_Description.Location = new System.Drawing.Point(26, 337);
             this.txt_Description.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.Size = new System.Drawing.Size(618, 95);
             this.txt_Description.TabIndex = 10;
+            this.txt_Description.Text = "Enter desciption about project";
+            this.txt_Description.Enter += new System.EventHandler(this.txt_Description_Enter);
+            this.txt_Description.Leave += new System.EventHandler(this.txt_Description_Leave);
             // 
             // lb_member
             // 
@@ -182,12 +188,17 @@
             // 
             // txt_nameProject
             // 
+            this.txt_nameProject.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nameProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_nameProject.Location = new System.Drawing.Point(25, 166);
             this.txt_nameProject.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nameProject.Multiline = true;
             this.txt_nameProject.Name = "txt_nameProject";
             this.txt_nameProject.Size = new System.Drawing.Size(618, 29);
             this.txt_nameProject.TabIndex = 12;
+            this.txt_nameProject.Text = "Enter name of project";
+            this.txt_nameProject.Enter += new System.EventHandler(this.txt_nameProject_Enter);
+            this.txt_nameProject.Leave += new System.EventHandler(this.txt_nameProject_Leave);
             // 
             // bt_save
             // 
@@ -297,6 +308,8 @@
             this.txt_management.Name = "txt_management";
             this.txt_management.Size = new System.Drawing.Size(290, 29);
             this.txt_management.TabIndex = 16;
+            this.txt_management.Enter += new System.EventHandler(this.txt_management_Enter);
+            this.txt_management.Leave += new System.EventHandler(this.txt_management_Leave);
             // 
             // lb_Management
             // 
@@ -313,12 +326,18 @@
             // 
             // txt_IdProject
             // 
+            this.txt_IdProject.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_IdProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_IdProject.Location = new System.Drawing.Point(26, 96);
             this.txt_IdProject.Margin = new System.Windows.Forms.Padding(2);
             this.txt_IdProject.Multiline = true;
             this.txt_IdProject.Name = "txt_IdProject";
             this.txt_IdProject.Size = new System.Drawing.Size(210, 29);
             this.txt_IdProject.TabIndex = 14;
+            this.txt_IdProject.Text = "Enter ID project";
+            this.txt_IdProject.TextChanged += new System.EventHandler(this.txt_IdProject_TextChanged);
+            this.txt_IdProject.Enter += new System.EventHandler(this.txt_IdProject_Enter);
+            this.txt_IdProject.Leave += new System.EventHandler(this.txt_IdProject_Leave);
             // 
             // lb_IdProject
             // 
