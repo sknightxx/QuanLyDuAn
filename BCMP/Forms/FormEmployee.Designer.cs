@@ -1,6 +1,6 @@
 ﻿namespace BCMP.Forms
 {
-    partial class FormProject
+    partial class FormEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pn_tittle = new System.Windows.Forms.Panel();
+            this.pn_tittleForm = new System.Windows.Forms.Panel();
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
             this.bt_search = new FontAwesome.Sharp.IconButton();
             this.bt_others = new FontAwesome.Sharp.IconButton();
-            this.bt_CreateProject = new System.Windows.Forms.Button();
-            this.lb_MyWork = new System.Windows.Forms.Label();
+            this.bt_Create = new System.Windows.Forms.Button();
+            this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
-            this.pn_tittle.SuspendLayout();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pn_container.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pn_tittle
+            // pn_tittleForm
             // 
-            this.pn_tittle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pn_tittleForm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pn_tittle.BackColor = System.Drawing.Color.White;
-            this.pn_tittle.Controls.Add(this.pn_search);
-            this.pn_tittle.Controls.Add(this.bt_others);
-            this.pn_tittle.Controls.Add(this.bt_CreateProject);
-            this.pn_tittle.Controls.Add(this.lb_MyWork);
-            this.pn_tittle.Location = new System.Drawing.Point(0, 0);
-            this.pn_tittle.Margin = new System.Windows.Forms.Padding(2);
-            this.pn_tittle.Name = "pn_tittle";
-            this.pn_tittle.Size = new System.Drawing.Size(902, 58);
-            this.pn_tittle.TabIndex = 3;
+            this.pn_tittleForm.BackColor = System.Drawing.Color.White;
+            this.pn_tittleForm.Controls.Add(this.pn_search);
+            this.pn_tittleForm.Controls.Add(this.bt_others);
+            this.pn_tittleForm.Controls.Add(this.bt_Create);
+            this.pn_tittleForm.Controls.Add(this.lb_employee);
+            this.pn_tittleForm.Location = new System.Drawing.Point(0, 0);
+            this.pn_tittleForm.Margin = new System.Windows.Forms.Padding(2);
+            this.pn_tittleForm.Name = "pn_tittleForm";
+            this.pn_tittleForm.Size = new System.Drawing.Size(902, 58);
+            this.pn_tittleForm.TabIndex = 5;
             // 
             // pn_search
             // 
@@ -86,10 +88,9 @@
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(361, 30);
             this.txt_search.TabIndex = 0;
-            this.txt_search.Text = "Search for project";
+            this.txt_search.Text = "Search for employees";
             this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
             this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
-            this.txt_search.Move += new System.EventHandler(this.txt_search_Move);
             // 
             // bt_search
             // 
@@ -114,7 +115,7 @@
             // bt_others
             // 
             this.bt_others.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_others.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_others.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_others.FlatAppearance.BorderSize = 0;
             this.bt_others.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_others.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,80 +132,96 @@
             this.bt_others.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_others.UseVisualStyleBackColor = false;
             // 
-            // bt_CreateProject
+            // bt_Create
             // 
-            this.bt_CreateProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_CreateProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
-            this.bt_CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_CreateProject.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
-            this.bt_CreateProject.FlatAppearance.BorderSize = 0;
-            this.bt_CreateProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bt_CreateProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bt_CreateProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_CreateProject.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_CreateProject.ForeColor = System.Drawing.Color.White;
-            this.bt_CreateProject.Location = new System.Drawing.Point(693, 20);
-            this.bt_CreateProject.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_CreateProject.Name = "bt_CreateProject";
-            this.bt_CreateProject.Size = new System.Drawing.Size(92, 30);
-            this.bt_CreateProject.TabIndex = 19;
-            this.bt_CreateProject.Text = "Create";
-            this.bt_CreateProject.UseVisualStyleBackColor = false;
-            this.bt_CreateProject.Click += new System.EventHandler(this.bt_CreateProject_Click);
+            this.bt_Create.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_Create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_Create.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Create.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_Create.FlatAppearance.BorderSize = 0;
+            this.bt_Create.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bt_Create.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bt_Create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Create.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Create.ForeColor = System.Drawing.Color.White;
+            this.bt_Create.Location = new System.Drawing.Point(693, 20);
+            this.bt_Create.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Create.Name = "bt_Create";
+            this.bt_Create.Size = new System.Drawing.Size(92, 30);
+            this.bt_Create.TabIndex = 19;
+            this.bt_Create.Text = "Create";
+            this.bt_Create.UseVisualStyleBackColor = false;
+            this.bt_Create.Click += new System.EventHandler(this.bt_Create_Click);
             // 
-            // lb_MyWork
+            // lb_employee
             // 
-            this.lb_MyWork.AutoSize = true;
-            this.lb_MyWork.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_MyWork.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
-            this.lb_MyWork.Location = new System.Drawing.Point(23, 20);
-            this.lb_MyWork.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_MyWork.Name = "lb_MyWork";
-            this.lb_MyWork.Size = new System.Drawing.Size(87, 23);
-            this.lb_MyWork.TabIndex = 2;
-            this.lb_MyWork.Text = "My work";
+            this.lb_employee.AutoSize = true;
+            this.lb_employee.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.lb_employee.Location = new System.Drawing.Point(23, 20);
+            this.lb_employee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_employee.Name = "lb_employee";
+            this.lb_employee.Size = new System.Drawing.Size(103, 23);
+            this.lb_employee.TabIndex = 2;
+            this.lb_employee.Text = "Employee";
             // 
             // pn_container
             // 
             this.pn_container.BackColor = System.Drawing.Color.White;
+            this.pn_container.Controls.Add(this.lb_Name);
             this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_container.Location = new System.Drawing.Point(0, 0);
             this.pn_container.Margin = new System.Windows.Forms.Padding(2);
             this.pn_container.Name = "pn_container";
             this.pn_container.Size = new System.Drawing.Size(902, 468);
-            this.pn_container.TabIndex = 2;
+            this.pn_container.TabIndex = 4;
             // 
-            // FormProject
+            // lb_Name
+            // 
+            this.lb_Name.AutoSize = true;
+            this.lb_Name.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Name.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Name.ForeColor = System.Drawing.Color.Black;
+            this.lb_Name.Location = new System.Drawing.Point(37, 155);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(0, 19);
+            this.lb_Name.TabIndex = 18;
+            // 
+            // FormEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(902, 468);
-            this.Controls.Add(this.pn_tittle);
+            this.Controls.Add(this.pn_tittleForm);
             this.Controls.Add(this.pn_container);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormProject";
-            this.Text = "FormProject";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormProject_Paint);
-            this.pn_tittle.ResumeLayout(false);
-            this.pn_tittle.PerformLayout();
+            this.Name = "FormEmployee";
+            this.Text = "FormProfile";
+            this.pn_tittleForm.ResumeLayout(false);
+            this.pn_tittleForm.PerformLayout();
             this.pn_search.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pn_container.ResumeLayout(false);
+            this.pn_container.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel pn_tittle;
-        private System.Windows.Forms.Label lb_MyWork;
-        private System.Windows.Forms.Panel pn_container;
-        private System.Windows.Forms.Button bt_CreateProject;
-        private FontAwesome.Sharp.IconButton bt_others;
+        private System.Windows.Forms.Panel pn_tittleForm;
         private System.Windows.Forms.Panel pn_search;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton bt_search;
         private System.Windows.Forms.TextBox txt_search;
+        private FontAwesome.Sharp.IconButton bt_search;
+        private FontAwesome.Sharp.IconButton bt_others;
+        private System.Windows.Forms.Button bt_Create;
+        private System.Windows.Forms.Label lb_employee;
+        private System.Windows.Forms.Panel pn_container;
+        private System.Windows.Forms.Label lb_Name;
     }
 }

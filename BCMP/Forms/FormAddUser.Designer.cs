@@ -43,24 +43,25 @@
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
-            this.txt_phone = new System.Windows.Forms.TextBox();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_save = new System.Windows.Forms.Button();
             this.txt_IdStaff = new System.Windows.Forms.TextBox();
             this.lb_IdStaff = new System.Windows.Forms.Label();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
+            this.txt_phone = new System.Windows.Forms.TextBox();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_tittleFormAddUser
             // 
-            this.pn_tittleFormAddUser.BackColor = System.Drawing.Color.White;
+            this.pn_tittleFormAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pn_tittleFormAddUser.Controls.Add(this.bt_exit);
             this.pn_tittleFormAddUser.Controls.Add(this.lb_NewProfile);
             this.pn_tittleFormAddUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_tittleFormAddUser.Location = new System.Drawing.Point(0, 0);
+            this.pn_tittleFormAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_tittleFormAddUser.Name = "pn_tittleFormAddUser";
-            this.pn_tittleFormAddUser.Size = new System.Drawing.Size(843, 73);
+            this.pn_tittleFormAddUser.Size = new System.Drawing.Size(674, 58);
             this.pn_tittleFormAddUser.TabIndex = 1;
             // 
             // bt_exit
@@ -80,11 +81,11 @@
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_exit.Location = new System.Drawing.Point(779, 11);
-            this.bt_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_exit.Location = new System.Drawing.Point(622, 9);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_exit.Size = new System.Drawing.Size(40, 22);
+            this.bt_exit.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_exit.Size = new System.Drawing.Size(41, 18);
             this.bt_exit.TabIndex = 16;
             this.bt_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -96,9 +97,10 @@
             this.lb_NewProfile.AutoSize = true;
             this.lb_NewProfile.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_NewProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
-            this.lb_NewProfile.Location = new System.Drawing.Point(12, 11);
+            this.lb_NewProfile.Location = new System.Drawing.Point(10, 9);
+            this.lb_NewProfile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_NewProfile.Name = "lb_NewProfile";
-            this.lb_NewProfile.Size = new System.Drawing.Size(138, 27);
+            this.lb_NewProfile.Size = new System.Drawing.Size(114, 23);
             this.lb_NewProfile.TabIndex = 2;
             this.lb_NewProfile.Text = "New profile";
             // 
@@ -108,9 +110,10 @@
             this.lb_Email.BackColor = System.Drawing.Color.Transparent;
             this.lb_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Email.ForeColor = System.Drawing.Color.Black;
-            this.lb_Email.Location = new System.Drawing.Point(207, 163);
+            this.lb_Email.Location = new System.Drawing.Point(166, 130);
+            this.lb_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Email.Name = "lb_Email";
-            this.lb_Email.Size = new System.Drawing.Size(52, 21);
+            this.lb_Email.Size = new System.Drawing.Size(46, 19);
             this.lb_Email.TabIndex = 19;
             this.lb_Email.Text = "Email";
             // 
@@ -120,26 +123,29 @@
             this.lb_Name.BackColor = System.Drawing.Color.Transparent;
             this.lb_Name.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Name.ForeColor = System.Drawing.Color.Black;
-            this.lb_Name.Location = new System.Drawing.Point(207, 231);
+            this.lb_Name.Location = new System.Drawing.Point(166, 185);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(87, 21);
+            this.lb_Name.Size = new System.Drawing.Size(76, 19);
             this.lb_Name.TabIndex = 18;
             this.lb_Name.Text = "Full name";
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(353, 224);
+            this.txt_name.Location = new System.Drawing.Point(282, 179);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(242, 33);
+            this.txt_name.Size = new System.Drawing.Size(194, 27);
             this.txt_name.TabIndex = 21;
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(353, 155);
+            this.txt_Email.Location = new System.Drawing.Point(282, 124);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Email.Multiline = true;
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(242, 33);
+            this.txt_Email.Size = new System.Drawing.Size(194, 27);
             this.txt_Email.TabIndex = 20;
             // 
             // lb_phone
@@ -148,9 +154,10 @@
             this.lb_phone.BackColor = System.Drawing.Color.Transparent;
             this.lb_phone.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_phone.ForeColor = System.Drawing.Color.Black;
-            this.lb_phone.Location = new System.Drawing.Point(207, 301);
+            this.lb_phone.Location = new System.Drawing.Point(166, 241);
+            this.lb_phone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_phone.Name = "lb_phone";
-            this.lb_phone.Size = new System.Drawing.Size(62, 21);
+            this.lb_phone.Size = new System.Drawing.Size(53, 19);
             this.lb_phone.TabIndex = 22;
             this.lb_phone.Text = "Phone";
             // 
@@ -160,18 +167,20 @@
             this.lb_department.BackColor = System.Drawing.Color.Transparent;
             this.lb_department.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_department.ForeColor = System.Drawing.Color.Black;
-            this.lb_department.Location = new System.Drawing.Point(207, 367);
+            this.lb_department.Location = new System.Drawing.Point(166, 294);
+            this.lb_department.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_department.Name = "lb_department";
-            this.lb_department.Size = new System.Drawing.Size(113, 21);
+            this.lb_department.Size = new System.Drawing.Size(93, 19);
             this.lb_department.TabIndex = 23;
             this.lb_department.Text = "Department";
             // 
             // txt_department
             // 
-            this.txt_department.Location = new System.Drawing.Point(353, 360);
+            this.txt_department.Location = new System.Drawing.Point(282, 288);
+            this.txt_department.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_department.Multiline = true;
             this.txt_department.Name = "txt_department";
-            this.txt_department.Size = new System.Drawing.Size(242, 33);
+            this.txt_department.Size = new System.Drawing.Size(194, 27);
             this.txt_department.TabIndex = 24;
             // 
             // lb_placeOfBirth
@@ -180,18 +189,20 @@
             this.lb_placeOfBirth.BackColor = System.Drawing.Color.Transparent;
             this.lb_placeOfBirth.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_placeOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.lb_placeOfBirth.Location = new System.Drawing.Point(207, 432);
+            this.lb_placeOfBirth.Location = new System.Drawing.Point(166, 346);
+            this.lb_placeOfBirth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_placeOfBirth.Name = "lb_placeOfBirth";
-            this.lb_placeOfBirth.Size = new System.Drawing.Size(45, 21);
+            this.lb_placeOfBirth.Size = new System.Drawing.Size(39, 19);
             this.lb_placeOfBirth.TabIndex = 25;
             this.lb_placeOfBirth.Text = "Role";
             // 
             // txt_role
             // 
-            this.txt_role.Location = new System.Drawing.Point(351, 429);
+            this.txt_role.Location = new System.Drawing.Point(281, 343);
+            this.txt_role.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_role.Multiline = true;
             this.txt_role.Name = "txt_role";
-            this.txt_role.Size = new System.Drawing.Size(242, 33);
+            this.txt_role.Size = new System.Drawing.Size(194, 27);
             this.txt_role.TabIndex = 26;
             // 
             // bt_saveAddUser
@@ -205,9 +216,10 @@
             this.bt_saveAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_saveAddUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_saveAddUser.ForeColor = System.Drawing.Color.White;
-            this.bt_saveAddUser.Location = new System.Drawing.Point(83, 904);
+            this.bt_saveAddUser.Location = new System.Drawing.Point(66, 723);
+            this.bt_saveAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_saveAddUser.Name = "bt_saveAddUser";
-            this.bt_saveAddUser.Size = new System.Drawing.Size(75, 23);
+            this.bt_saveAddUser.Size = new System.Drawing.Size(60, 18);
             this.bt_saveAddUser.TabIndex = 4;
             this.bt_saveAddUser.Text = "Save";
             this.bt_saveAddUser.UseVisualStyleBackColor = false;
@@ -223,9 +235,10 @@
             this.bt_cancelAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancelAddUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
-            this.bt_cancelAddUser.Location = new System.Drawing.Point(-40, 904);
+            this.bt_cancelAddUser.Location = new System.Drawing.Point(-32, 723);
+            this.bt_cancelAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_cancelAddUser.Name = "bt_cancelAddUser";
-            this.bt_cancelAddUser.Size = new System.Drawing.Size(104, 37);
+            this.bt_cancelAddUser.Size = new System.Drawing.Size(83, 30);
             this.bt_cancelAddUser.TabIndex = 3;
             this.bt_cancelAddUser.Text = "Cancel";
             this.bt_cancelAddUser.UseVisualStyleBackColor = false;
@@ -253,18 +266,33 @@
             this.pn_containerFormAddUser.Controls.Add(this.lb_Email);
             this.pn_containerFormAddUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_containerFormAddUser.Location = new System.Drawing.Point(0, 0);
+            this.pn_containerFormAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_containerFormAddUser.Name = "pn_containerFormAddUser";
-            this.pn_containerFormAddUser.Size = new System.Drawing.Size(843, 688);
+            this.pn_containerFormAddUser.Size = new System.Drawing.Size(674, 550);
             this.pn_containerFormAddUser.TabIndex = 0;
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
-            // txt_phone
+            // txt_IdStaff
             // 
-            this.txt_phone.Location = new System.Drawing.Point(353, 289);
-            this.txt_phone.Multiline = true;
-            this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(242, 33);
-            this.txt_phone.TabIndex = 27;
+            this.txt_IdStaff.Location = new System.Drawing.Point(282, 78);
+            this.txt_IdStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_IdStaff.Multiline = true;
+            this.txt_IdStaff.Name = "txt_IdStaff";
+            this.txt_IdStaff.Size = new System.Drawing.Size(194, 27);
+            this.txt_IdStaff.TabIndex = 31;
+            // 
+            // lb_IdStaff
+            // 
+            this.lb_IdStaff.AutoSize = true;
+            this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
+            this.lb_IdStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
+            this.lb_IdStaff.Location = new System.Drawing.Point(166, 85);
+            this.lb_IdStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_IdStaff.Name = "lb_IdStaff";
+            this.lb_IdStaff.Size = new System.Drawing.Size(56, 19);
+            this.lb_IdStaff.TabIndex = 30;
+            this.lb_IdStaff.Text = "ID Staff";
             // 
             // bt_cancel
             // 
@@ -275,9 +303,10 @@
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
-            this.bt_cancel.Location = new System.Drawing.Point(565, 622);
+            this.bt_cancel.Location = new System.Drawing.Point(452, 498);
+            this.bt_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_cancel.Name = "bt_cancel";
-            this.bt_cancel.Size = new System.Drawing.Size(113, 43);
+            this.bt_cancel.Size = new System.Drawing.Size(90, 34);
             this.bt_cancel.TabIndex = 29;
             this.bt_cancel.Text = "CANCEL";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -288,41 +317,32 @@
             this.bt_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
-            this.bt_save.Location = new System.Drawing.Point(694, 622);
+            this.bt_save.Location = new System.Drawing.Point(555, 498);
+            this.bt_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_save.Name = "bt_save";
-            this.bt_save.Size = new System.Drawing.Size(113, 43);
+            this.bt_save.Size = new System.Drawing.Size(90, 34);
             this.bt_save.TabIndex = 28;
             this.bt_save.Text = "SAVE";
             this.bt_save.UseVisualStyleBackColor = false;
             // 
-            // txt_IdStaff
+            // txt_phone
             // 
-            this.txt_IdStaff.Location = new System.Drawing.Point(353, 98);
-            this.txt_IdStaff.Multiline = true;
-            this.txt_IdStaff.Name = "txt_IdStaff";
-            this.txt_IdStaff.Size = new System.Drawing.Size(242, 33);
-            this.txt_IdStaff.TabIndex = 31;
-            // 
-            // lb_IdStaff
-            // 
-            this.lb_IdStaff.AutoSize = true;
-            this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
-            this.lb_IdStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
-            this.lb_IdStaff.Location = new System.Drawing.Point(207, 106);
-            this.lb_IdStaff.Name = "lb_IdStaff";
-            this.lb_IdStaff.Size = new System.Drawing.Size(70, 21);
-            this.lb_IdStaff.TabIndex = 30;
-            this.lb_IdStaff.Text = "ID Staff";
+            this.txt_phone.Location = new System.Drawing.Point(282, 231);
+            this.txt_phone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_phone.Multiline = true;
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.Size = new System.Drawing.Size(194, 27);
+            this.txt_phone.TabIndex = 27;
             // 
             // FormAddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(843, 688);
+            this.ClientSize = new System.Drawing.Size(674, 550);
             this.Controls.Add(this.pn_tittleFormAddUser);
             this.Controls.Add(this.pn_containerFormAddUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormAddUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddUser";

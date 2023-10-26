@@ -16,7 +16,7 @@ using FontAwesome.Sharp;
 
 namespace BCMP
 {
-    public partial class dashboard : Form
+    public partial class Management : Form
     {
         private IconButton currenBtn;
         private Panel leftBorderBtn;
@@ -24,7 +24,7 @@ namespace BCMP
 
 
 
-        public dashboard()
+        public Management()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -84,7 +84,7 @@ namespace BCMP
                 bt_user.IconColor = color;
                 bt_user.ForeColor = color;
 
-                //FormProfife
+               
                 
                 
                 
@@ -131,13 +131,20 @@ namespace BCMP
 
         }
 
-        private void bt_profile_Click(object sender, EventArgs e)
+        private void bt_employee_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new FormProfile());
-            lb_tittleChildform.Text = "Profile";
+            OpenChildForm(new FormEmployee());
+            lb_tittleChildform.Text = "Employee";
 
 
+        }
+
+        private void bt_mission_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color6);
+            OpenChildForm(new FormMission());
+            lb_tittleChildform.Text = "Mission";
         }
 
         private void bt_project_Click(object sender, EventArgs e)
@@ -151,7 +158,7 @@ namespace BCMP
 
         private void bt_report_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
+            ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormReport());
             lb_tittleChildform.Text = "Report";
 
@@ -168,7 +175,10 @@ namespace BCMP
 
         private void ptb_logo_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
+            if ( currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
             Reset();
 
         }
