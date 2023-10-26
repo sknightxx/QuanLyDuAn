@@ -50,6 +50,7 @@ namespace BCMP.DAO
         {
             String query = "USP_InsertEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, 0, phonenumber, userid, departmentid, roleid });
+            bool res = result > 0;
             return result > 0;
         }
     }
