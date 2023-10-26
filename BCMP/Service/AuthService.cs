@@ -55,5 +55,15 @@ namespace BCMP.Service
                 return true;
             }
         }
+
+        public bool ProjectIsExist(string projectId)
+        {
+            Project emp = ProjectDAO.Instance.GetProjectById(projectId);
+            if (emp == null)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

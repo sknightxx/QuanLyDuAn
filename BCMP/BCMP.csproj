@@ -63,6 +63,7 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DepartmentDAO.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DAO\ProjectDAO.cs" />
     <Compile Include="DAO\RoleDAO.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
@@ -78,6 +79,7 @@
     </Compile>
     <Compile Include="DTO\Department.cs" />
     <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\Project.cs" />
     <Compile Include="DTO\Role.cs" />
     <Compile Include="Forms\FormAddProject.cs">
       <SubType>Form</SubType>
@@ -138,6 +140,7 @@
     <Compile Include="Service\AuthService.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\ProjectService.cs" />
     <Compile Include="Service\RoleService.cs" />
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>

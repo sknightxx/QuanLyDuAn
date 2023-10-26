@@ -33,9 +33,9 @@
             this.lb_department = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbb_department = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.cb_department = new System.Windows.Forms.ComboBox();
+            this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
+            this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
             this.lb_description = new System.Windows.Forms.Label();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.lb_member = new System.Windows.Forms.Label();
@@ -45,7 +45,13 @@
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
             this.pn_containerAddProject = new System.Windows.Forms.Panel();
+            this.lbdescription = new System.Windows.Forms.Label();
+            this.lbid = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_projectId = new System.Windows.Forms.TextBox();
             this.pn_tittleAddProject.SuspendLayout();
+            this.pn_containerAddProject.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_newProject
@@ -107,30 +113,30 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "To";
             // 
-            // cbb_department
+            // cb_department
             // 
-            this.cbb_department.FormattingEnabled = true;
-            this.cbb_department.Location = new System.Drawing.Point(32, 215);
-            this.cbb_department.Name = "cbb_department";
-            this.cbb_department.Size = new System.Drawing.Size(369, 24);
-            this.cbb_department.TabIndex = 6;
+            this.cb_department.FormattingEnabled = true;
+            this.cb_department.Location = new System.Drawing.Point(32, 215);
+            this.cb_department.Name = "cb_department";
+            this.cb_department.Size = new System.Drawing.Size(369, 24);
+            this.cb_department.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpkPlannedStart
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(441, 215);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(146, 22);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkPlannedStart.Location = new System.Drawing.Point(441, 215);
+            this.dtpkPlannedStart.Name = "dtpkPlannedStart";
+            this.dtpkPlannedStart.Size = new System.Drawing.Size(146, 22);
+            this.dtpkPlannedStart.TabIndex = 7;
+            this.dtpkPlannedStart.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // dateTimePicker2
+            // dtpkPlannedEnd
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(632, 217);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(172, 22);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkPlannedEnd.Location = new System.Drawing.Point(632, 217);
+            this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
+            this.dtpkPlannedEnd.Size = new System.Drawing.Size(172, 22);
+            this.dtpkPlannedEnd.TabIndex = 8;
             // 
             // lb_description
             // 
@@ -146,11 +152,12 @@
             // 
             // txt_Description
             // 
-            this.txt_Description.Location = new System.Drawing.Point(32, 319);
+            this.txt_Description.Location = new System.Drawing.Point(32, 327);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
             this.txt_Description.Size = new System.Drawing.Size(772, 118);
             this.txt_Description.TabIndex = 10;
+            this.txt_Description.Leave += new System.EventHandler(this.txt_Description_Leave);
             // 
             // lb_member
             // 
@@ -169,8 +176,9 @@
             this.txt_nameProject.Location = new System.Drawing.Point(32, 117);
             this.txt_nameProject.Multiline = true;
             this.txt_nameProject.Name = "txt_nameProject";
-            this.txt_nameProject.Size = new System.Drawing.Size(772, 35);
+            this.txt_nameProject.Size = new System.Drawing.Size(369, 35);
             this.txt_nameProject.TabIndex = 12;
+            this.txt_nameProject.Leave += new System.EventHandler(this.txt_nameProject_Leave);
             // 
             // bt_save
             // 
@@ -184,6 +192,7 @@
             this.bt_save.TabIndex = 13;
             this.bt_save.Text = "SAVE";
             this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // bt_cancel
             // 
@@ -245,11 +254,68 @@
             // pn_containerAddProject
             // 
             this.pn_containerAddProject.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_containerAddProject.Controls.Add(this.txt_projectId);
+            this.pn_containerAddProject.Controls.Add(this.lbdescription);
+            this.pn_containerAddProject.Controls.Add(this.lbid);
+            this.pn_containerAddProject.Controls.Add(this.lbname);
+            this.pn_containerAddProject.Controls.Add(this.label1);
+            this.pn_containerAddProject.Controls.Add(this.txt_Description);
             this.pn_containerAddProject.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_containerAddProject.Location = new System.Drawing.Point(0, 0);
             this.pn_containerAddProject.Name = "pn_containerAddProject";
             this.pn_containerAddProject.Size = new System.Drawing.Size(843, 688);
             this.pn_containerAddProject.TabIndex = 17;
+            // 
+            // lbdescription
+            // 
+            this.lbdescription.AutoSize = true;
+            this.lbdescription.Location = new System.Drawing.Point(32, 449);
+            this.lbdescription.Name = "lbdescription";
+            this.lbdescription.Size = new System.Drawing.Size(44, 16);
+            this.lbdescription.TabIndex = 16;
+            this.lbdescription.Text = "label6";
+            this.lbdescription.Visible = false;
+            // 
+            // lbid
+            // 
+            this.lbid.AutoSize = true;
+            this.lbid.Location = new System.Drawing.Point(432, 161);
+            this.lbid.Name = "lbid";
+            this.lbid.Size = new System.Drawing.Size(44, 16);
+            this.lbid.TabIndex = 15;
+            this.lbid.Text = "label5";
+            this.lbid.Visible = false;
+            // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Location = new System.Drawing.Point(32, 159);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(44, 16);
+            this.lbname.TabIndex = 14;
+            this.lbname.Text = "label4";
+            this.lbname.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label1.Location = new System.Drawing.Point(437, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 22);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Id of project";
+            // 
+            // txt_projectId
+            // 
+            this.txt_projectId.Location = new System.Drawing.Point(435, 117);
+            this.txt_projectId.Multiline = true;
+            this.txt_projectId.Name = "txt_projectId";
+            this.txt_projectId.Size = new System.Drawing.Size(369, 35);
+            this.txt_projectId.TabIndex = 17;
+            this.txt_projectId.Leave += new System.EventHandler(this.txt_projectId_Leave);
             // 
             // FormAddProject
             // 
@@ -262,11 +328,10 @@
             this.Controls.Add(this.bt_save);
             this.Controls.Add(this.txt_nameProject);
             this.Controls.Add(this.lb_member);
-            this.Controls.Add(this.txt_Description);
             this.Controls.Add(this.lb_description);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.cbb_department);
+            this.Controls.Add(this.dtpkPlannedEnd);
+            this.Controls.Add(this.dtpkPlannedStart);
+            this.Controls.Add(this.cb_department);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lb_department);
@@ -281,6 +346,8 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormAddProject_Paint);
             this.pn_tittleAddProject.ResumeLayout(false);
             this.pn_tittleAddProject.PerformLayout();
+            this.pn_containerAddProject.ResumeLayout(false);
+            this.pn_containerAddProject.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,9 +360,9 @@
         private System.Windows.Forms.Label lb_department;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbb_department;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox cb_department;
+        private System.Windows.Forms.DateTimePicker dtpkPlannedStart;
+        private System.Windows.Forms.DateTimePicker dtpkPlannedEnd;
         private System.Windows.Forms.Label lb_description;
         private System.Windows.Forms.TextBox txt_Description;
         private System.Windows.Forms.Label lb_member;
@@ -305,5 +372,10 @@
         private FontAwesome.Sharp.IconButton bt_exit;
         private System.Windows.Forms.Panel pn_tittleAddProject;
         private System.Windows.Forms.Panel pn_containerAddProject;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbdescription;
+        private System.Windows.Forms.Label lbid;
+        private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.TextBox txt_projectId;
     }
 }
