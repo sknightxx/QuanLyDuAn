@@ -181,7 +181,6 @@ namespace BCMP
                 currentChildForm.Close();
             }
             Reset();
-
         }
 
         private void Reset()
