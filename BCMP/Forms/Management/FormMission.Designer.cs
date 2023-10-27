@@ -37,9 +37,11 @@
             this.pn_container = new System.Windows.Forms.Panel();
             this.bt_search = new FontAwesome.Sharp.IconButton();
             this.bt_others = new FontAwesome.Sharp.IconButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.pn_container.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_tittle
@@ -126,6 +128,7 @@
             // pn_container
             // 
             this.pn_container.BackColor = System.Drawing.Color.White;
+            this.pn_container.Controls.Add(this.button1);
             this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_container.Location = new System.Drawing.Point(0, 0);
             this.pn_container.Margin = new System.Windows.Forms.Padding(2);
@@ -173,6 +176,16 @@
             this.bt_others.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_others.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(693, 63);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Detail";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -188,6 +201,7 @@
             this.pn_search.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.pn_container.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -203,5 +217,6 @@
         private System.Windows.Forms.Button bt_CreateProject;
         private System.Windows.Forms.Label lb_MyWork;
         private System.Windows.Forms.Panel pn_container;
+        private System.Windows.Forms.Button button1;
     }
 }

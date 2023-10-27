@@ -39,7 +39,7 @@ namespace BCMP.Forms.Management
         private Label lb_relateProject;
         private Label lb_status;
         private ComboBox cbb_status;
-        private Label lb_Name;
+        private Label lb_Tittle;
 
         public FormAddMission()
         {
@@ -52,6 +52,13 @@ namespace BCMP.Forms.Management
             this.lb_Management = new System.Windows.Forms.Label();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbb_status = new System.Windows.Forms.ComboBox();
+            this.txt_relateProject = new System.Windows.Forms.TextBox();
+            this.lb_relateProject = new System.Windows.Forms.Label();
+            this.lb_status = new System.Windows.Forms.Label();
+            this.txt_document = new System.Windows.Forms.TextBox();
+            this.txt_Description = new System.Windows.Forms.TextBox();
+            this.lb_description = new System.Windows.Forms.Label();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
             this.lb_newMission = new System.Windows.Forms.Label();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
@@ -62,18 +69,11 @@ namespace BCMP.Forms.Management
             this.lb_member = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lb_description = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.pn_container = new System.Windows.Forms.Panel();
-            this.txt_Description = new System.Windows.Forms.TextBox();
             this.lb_document = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lb_Name = new System.Windows.Forms.Label();
-            this.txt_document = new System.Windows.Forms.TextBox();
-            this.lb_status = new System.Windows.Forms.Label();
-            this.txt_relateProject = new System.Windows.Forms.TextBox();
-            this.lb_relateProject = new System.Windows.Forms.Label();
-            this.cbb_status = new System.Windows.Forms.ComboBox();
+            this.lb_Tittle = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_container.SuspendLayout();
@@ -135,6 +135,93 @@ namespace BCMP.Forms.Management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 550);
             this.panel1.TabIndex = 17;
+            // 
+            // cbb_status
+            // 
+            this.cbb_status.FormattingEnabled = true;
+            this.cbb_status.Location = new System.Drawing.Point(26, 325);
+            this.cbb_status.Name = "cbb_status";
+            this.cbb_status.Size = new System.Drawing.Size(244, 21);
+            this.cbb_status.TabIndex = 22;
+            // 
+            // txt_relateProject
+            // 
+            this.txt_relateProject.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_relateProject.Location = new System.Drawing.Point(353, 323);
+            this.txt_relateProject.Multiline = true;
+            this.txt_relateProject.Name = "txt_relateProject";
+            this.txt_relateProject.Size = new System.Drawing.Size(244, 29);
+            this.txt_relateProject.TabIndex = 21;
+            this.txt_relateProject.Text = "Enter related project";
+            this.txt_relateProject.Enter += new System.EventHandler(this.txt_relateProject_Enter);
+            this.txt_relateProject.Leave += new System.EventHandler(this.txt_relateProject_Leave);
+            // 
+            // lb_relateProject
+            // 
+            this.lb_relateProject.AutoSize = true;
+            this.lb_relateProject.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_relateProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_relateProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_relateProject.Location = new System.Drawing.Point(349, 293);
+            this.lb_relateProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_relateProject.Name = "lb_relateProject";
+            this.lb_relateProject.Size = new System.Drawing.Size(107, 18);
+            this.lb_relateProject.TabIndex = 20;
+            this.lb_relateProject.Text = "Related project";
+            // 
+            // lb_status
+            // 
+            this.lb_status.AutoSize = true;
+            this.lb_status.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_status.Location = new System.Drawing.Point(22, 293);
+            this.lb_status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_status.Name = "lb_status";
+            this.lb_status.Size = new System.Drawing.Size(50, 18);
+            this.lb_status.TabIndex = 18;
+            this.lb_status.Text = "Status";
+            // 
+            // txt_document
+            // 
+            this.txt_document.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_document.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_document.Location = new System.Drawing.Point(26, 245);
+            this.txt_document.Multiline = true;
+            this.txt_document.Name = "txt_document";
+            this.txt_document.Size = new System.Drawing.Size(244, 29);
+            this.txt_document.TabIndex = 16;
+            this.txt_document.Text = "Attachments";
+            this.txt_document.Enter += new System.EventHandler(this.txt_document_Enter);
+            this.txt_document.Leave += new System.EventHandler(this.txt_document_Leave);
+            // 
+            // txt_Description
+            // 
+            this.txt_Description.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_Description.Location = new System.Drawing.Point(26, 398);
+            this.txt_Description.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Description.Multiline = true;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.Size = new System.Drawing.Size(618, 69);
+            this.txt_Description.TabIndex = 10;
+            this.txt_Description.Text = "Enter desciption about mission";
+            this.txt_Description.Enter += new System.EventHandler(this.txt_Description_Enter);
+            this.txt_Description.Leave += new System.EventHandler(this.txt_Description_Leave);
+            // 
+            // lb_description
+            // 
+            this.lb_description.AutoSize = true;
+            this.lb_description.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_description.Location = new System.Drawing.Point(22, 366);
+            this.lb_description.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_description.Name = "lb_description";
+            this.lb_description.Size = new System.Drawing.Size(83, 18);
+            this.lb_description.TabIndex = 9;
+            this.lb_description.Text = "Description";
             // 
             // pn_tittleAddProject
             // 
@@ -245,7 +332,7 @@ namespace BCMP.Forms.Management
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(618, 29);
             this.txt_name.TabIndex = 12;
-            this.txt_name.Text = "Enter name of mission";
+            this.txt_name.Text = "Enter tittle of mission";
             this.txt_name.Enter += new System.EventHandler(this.txt_name_Enter);
             this.txt_name.Leave += new System.EventHandler(this.txt_name_Leave);
             // 
@@ -283,19 +370,6 @@ namespace BCMP.Forms.Management
             this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // lb_description
-            // 
-            this.lb_description.AutoSize = true;
-            this.lb_description.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_description.Location = new System.Drawing.Point(22, 366);
-            this.lb_description.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_description.Name = "lb_description";
-            this.lb_description.Size = new System.Drawing.Size(83, 18);
-            this.lb_description.TabIndex = 9;
-            this.lb_description.Text = "Description";
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -315,7 +389,7 @@ namespace BCMP.Forms.Management
             this.pn_container.Controls.Add(this.label2);
             this.pn_container.Controls.Add(this.txt_name);
             this.pn_container.Controls.Add(this.label3);
-            this.pn_container.Controls.Add(this.lb_Name);
+            this.pn_container.Controls.Add(this.lb_Tittle);
             this.pn_container.Controls.Add(this.dateTimePicker1);
             this.pn_container.Controls.Add(this.dateTimePicker2);
             this.pn_container.Controls.Add(this.panel1);
@@ -326,20 +400,6 @@ namespace BCMP.Forms.Management
             this.pn_container.Size = new System.Drawing.Size(674, 550);
             this.pn_container.TabIndex = 22;
             this.pn_container.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_container_Paint);
-            // 
-            // txt_Description
-            // 
-            this.txt_Description.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_Description.Location = new System.Drawing.Point(26, 398);
-            this.txt_Description.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Description.Multiline = true;
-            this.txt_Description.Name = "txt_Description";
-            this.txt_Description.Size = new System.Drawing.Size(618, 69);
-            this.txt_Description.TabIndex = 10;
-            this.txt_Description.Text = "Enter desciption about mission";
-            this.txt_Description.Enter += new System.EventHandler(this.txt_Description_Enter);
-            this.txt_Description.Leave += new System.EventHandler(this.txt_Description_Leave);
             // 
             // lb_document
             // 
@@ -367,78 +427,18 @@ namespace BCMP.Forms.Management
             this.label2.TabIndex = 4;
             this.label2.Text = "From";
             // 
-            // lb_Name
+            // lb_Tittle
             // 
-            this.lb_Name.AutoSize = true;
-            this.lb_Name.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_Name.Location = new System.Drawing.Point(21, 138);
-            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(121, 18);
-            this.lb_Name.TabIndex = 1;
-            this.lb_Name.Text = "Name of mission";
-            // 
-            // txt_document
-            // 
-            this.txt_document.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_document.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_document.Location = new System.Drawing.Point(26, 245);
-            this.txt_document.Multiline = true;
-            this.txt_document.Name = "txt_document";
-            this.txt_document.Size = new System.Drawing.Size(244, 29);
-            this.txt_document.TabIndex = 16;
-            this.txt_document.Text = "Attachments";
-            this.txt_document.Enter += new System.EventHandler(this.txt_document_Enter);
-            this.txt_document.Leave += new System.EventHandler(this.txt_document_Leave);
-            // 
-            // lb_status
-            // 
-            this.lb_status.AutoSize = true;
-            this.lb_status.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_status.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_status.Location = new System.Drawing.Point(22, 293);
-            this.lb_status.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_status.Name = "lb_status";
-            this.lb_status.Size = new System.Drawing.Size(50, 18);
-            this.lb_status.TabIndex = 18;
-            this.lb_status.Text = "Status";
-            // 
-            // txt_relateProject
-            // 
-            this.txt_relateProject.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_relateProject.Location = new System.Drawing.Point(353, 323);
-            this.txt_relateProject.Multiline = true;
-            this.txt_relateProject.Name = "txt_relateProject";
-            this.txt_relateProject.Size = new System.Drawing.Size(244, 29);
-            this.txt_relateProject.TabIndex = 21;
-            this.txt_relateProject.Text = "Enter related project";
-            this.txt_relateProject.Enter += new System.EventHandler(this.txt_relateProject_Enter);
-            this.txt_relateProject.Leave += new System.EventHandler(this.txt_relateProject_Leave);
-            // 
-            // lb_relateProject
-            // 
-            this.lb_relateProject.AutoSize = true;
-            this.lb_relateProject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_relateProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_relateProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_relateProject.Location = new System.Drawing.Point(349, 293);
-            this.lb_relateProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_relateProject.Name = "lb_relateProject";
-            this.lb_relateProject.Size = new System.Drawing.Size(107, 18);
-            this.lb_relateProject.TabIndex = 20;
-            this.lb_relateProject.Text = "Related project";
-            // 
-            // cbb_status
-            // 
-            this.cbb_status.FormattingEnabled = true;
-            this.cbb_status.Location = new System.Drawing.Point(26, 325);
-            this.cbb_status.Name = "cbb_status";
-            this.cbb_status.Size = new System.Drawing.Size(244, 21);
-            this.cbb_status.TabIndex = 22;
+            this.lb_Tittle.AutoSize = true;
+            this.lb_Tittle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_Tittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Tittle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_Tittle.Location = new System.Drawing.Point(21, 138);
+            this.lb_Tittle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Tittle.Name = "lb_Tittle";
+            this.lb_Tittle.Size = new System.Drawing.Size(39, 18);
+            this.lb_Tittle.TabIndex = 1;
+            this.lb_Tittle.Text = "Tittle";
             // 
             // FormAddMission
             // 
@@ -527,14 +527,14 @@ namespace BCMP.Forms.Management
         {
             if (txt_name.Text == "")
             {
-                txt_name.Text = "Enter name of mission";
+                txt_name.Text = "Enter tittle of mission";
                 txt_name.ForeColor = Color.Black;
             }
         }
 
         private void txt_name_Enter(object sender, EventArgs e)
         {
-            if (txt_name.Text == "Enter name of mission")
+            if (txt_name.Text == "Enter tittle of mission")
             {
                 txt_name.Text = "";
                 txt_name.ForeColor = Color.Gray;

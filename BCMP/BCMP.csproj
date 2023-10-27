@@ -63,6 +63,18 @@
     <Compile Include="Forms\Management\FormAddMission.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Management\FormDetailMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormDetailMission.Designer.cs">
+      <DependentUpon>FormDetailMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\FormDetailProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormDetailProject.Designer.cs">
+      <DependentUpon>FormDetailProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\User\FormHomeUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Management\FormAddMission.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailMission.resx">
+      <DependentUpon>FormDetailMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailProject.resx">
+      <DependentUpon>FormDetailProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
       <DependentUpon>FormHomeUser.cs</DependentUpon>
