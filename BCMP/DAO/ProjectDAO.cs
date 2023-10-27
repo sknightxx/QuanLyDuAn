@@ -50,5 +50,33 @@ namespace BCMP.DAO
             }
             return pro;
         }
+
+        public bool DeleteProjectByProjectId(string projectId)
+        {
+            string query = "USP_DeleteProject @projectId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId });
+            return result > 0;
+        }
+
+        public bool UpdateProjectByProjectId(string projectId, string name, string description, DateTime plannedStartDate, DateTime plannedEndDate, int departmentId)
+        {
+            string query = "USP_UpdateProject @projectId , @name , @description , @plannedStartDate , @plannedEndDate";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId, name, description, plannedStartDate, plannedEndDate, departmentId });
+            return result > 0;
+        }
+
+        public bool UpdateActualStartProject(string projectId , DateTime actualStartDate)
+        {
+            String query = "USP_UpdateActualStartProject @projectId , @actualStartDate";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId, actualStartDate });
+            return result > 0;
+        }
+
+        public bool UpdateActualEndProject(string projectId, DateTime actualEndDate)
+        {
+            String query = "USP_UpdateActualEndProject @projectId , @actualEndDate";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId, actualEndDate });
+            return result > 0;
+        }
     }
 }

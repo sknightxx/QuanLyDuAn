@@ -38,5 +38,23 @@ namespace BCMP.Service
             }
             return false;
         }
+
+        public bool UpdateEmployeeByManager(string email, string password, string phonenumber, string userid, int departmentid, int roleid, bool isDeativated)
+        {
+            if (EmployeeDAO.Instance.UpdateEmployeeByUserId(email, password, phonenumber, userid, departmentid, roleid, isDeativated))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool DeleteEmployeeByManager(string userId)
+        {
+            if(EmployeeDAO.Instance.DeleteEmployeeByUserId(userId))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

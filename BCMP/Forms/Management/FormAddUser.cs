@@ -63,7 +63,7 @@ namespace BCMP.Forms
         #region Check Validated Employee Input
         private void txt_Email_TextChanged(object sender, EventArgs e)
         {
-
+        
         }
 
         private void txt_Email_Leave(object sender, EventArgs e)

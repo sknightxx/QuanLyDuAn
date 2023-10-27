@@ -53,5 +53,27 @@ namespace BCMP.DAO
             bool res = result > 0;
             return result > 0;
         }
+
+        public bool DeleteEmployeeByUserId(string userId)
+        {
+            String query = "USP_DeleteEmployee @userId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { userId });
+            return result > 0;
+        }
+
+        public bool UpdateEmployeeByUserId(string email, string password, string phonenumber, string userid, int departmentid, int roleid , bool isDeativated)
+        {
+            int deactivated = 0;
+            if(isDeativated == false)
+            {
+                deactivated = 0;
+            } else
+            {
+                deactivated = 1;
+            }
+            String query = "USP_UpdateEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, deactivated, phonenumber, userid, departmentid, roleid });
+            return result > 0;
+        }
     }
 }

@@ -26,6 +26,15 @@ namespace BCMP.Service
         {
             return roles = RoleDAO.Instance.GetAllRole();
         }
+
+        public bool InsertRole(string title, string description)
+        {
+            if(RoleDAO.Instance.InsertRole(title, description))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 
 }

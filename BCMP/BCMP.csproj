@@ -60,6 +60,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\MissionDAO.cs" />
+    <Compile Include="DTO\Mission.cs" />
     <Compile Include="Forms\Management\FormAddMission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +184,7 @@
     <Compile Include="Service\AuthService.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\MissionService.cs" />
     <Compile Include="Service\ProjectService.cs" />
     <Compile Include="Service\RoleService.cs" />
     <EmbeddedResource Include="dashboard.resx">

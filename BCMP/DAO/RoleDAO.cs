@@ -44,5 +44,26 @@ namespace BCMP.DAO
             }
             return list;
         }
+
+        public bool InsertRole(string title, string description)
+        {
+            string query = "USP_InsertRole @title , @description";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { title, description });
+            return result > 0;
+        }
+
+        public bool UpdateRole(int roleId , string title, string description)
+        {
+            string query = "USP_UpdateRole @roleId , @title , @description";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {roleId, title, description });
+            return result > 0;
+        }
+
+        public bool DeleteRole(int roleId)
+        {
+            string query = "USP_DeleteRole @roleId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { roleId});
+            return result > 0;
+        }
     }
 }
