@@ -51,7 +51,6 @@
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pn_tittleAddProject.SuspendLayout();
-            this.pn_containerAddProject.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_newProject
@@ -379,8 +378,6 @@
             this.Text = "FormAddProject";
             this.pn_tittleAddProject.ResumeLayout(false);
             this.pn_tittleAddProject.PerformLayout();
-            this.pn_containerAddProject.ResumeLayout(false);
-            this.pn_containerAddProject.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

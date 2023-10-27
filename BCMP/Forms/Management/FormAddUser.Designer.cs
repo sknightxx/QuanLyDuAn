@@ -43,6 +43,9 @@
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
+            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
             this.txt_IdStaff = new System.Windows.Forms.TextBox();
             this.lb_IdStaff = new System.Windows.Forms.Label();
             this.bt_cancel = new System.Windows.Forms.Button();

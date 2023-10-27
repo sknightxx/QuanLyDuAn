@@ -41,6 +41,8 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -85,6 +87,11 @@
     <Compile Include="Forms\User\FormReportUser.Designer.cs">
       <DependentUpon>FormReportUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DepartmentDAO.cs" />
+    <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DAO\ProjectDAO.cs" />
+    <Compile Include="DAO\RoleDAO.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +104,10 @@
     <Compile Include="DesignControls\DsTextbox.Designer.cs">
       <DependentUpon>DsTextbox.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\Department.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\Project.cs" />
+    <Compile Include="DTO\Role.cs" />
     <Compile Include="Forms\Management\FormAddProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +179,11 @@
     <EmbeddedResource Include="Forms\User\FormMissionUser.resx">
       <DependentUpon>FormMissionUser.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Service\AuthService.cs" />
+    <Compile Include="Service\DepartmentService.cs" />
+    <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\ProjectService.cs" />
+    <Compile Include="Service\RoleService.cs" />
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
