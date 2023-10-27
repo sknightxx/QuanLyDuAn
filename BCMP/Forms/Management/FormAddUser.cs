@@ -68,7 +68,7 @@ namespace BCMP.Forms
 
         private void txt_Email_Leave(object sender, EventArgs e)
         {
-            if (txt_Email.Text.ToString() == "")
+           /* if (txt_Email.Text.ToString() == "")
             {
                 lbemail.Visible = true;
                 lbemail.Text = "Is empty";
@@ -88,11 +88,11 @@ namespace BCMP.Forms
                     lbemail.Text = "Email is invalid";
                     lbemail.ForeColor = Color.Red;
                 }
-            }
+            }*/
         }
         private void txt_phone_Leave(object sender, EventArgs e)
         {
-            if (txt_phone.Text.ToString() == "")
+            /*if (txt_phone.Text.ToString() == "")
             {
                 lbphone.Visible = true;
                 lbphone.Text = "Is empty";
@@ -110,7 +110,7 @@ namespace BCMP.Forms
                     lbphone.Text = "Length of phone is required at least 10";
                     lbphone.ForeColor = Color.Red;
                 }
-            }
+            }*/
         }
 
         private void txt_phone_TextChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace BCMP.Forms
 
         private void txt_password_Leave(object sender, EventArgs e)
         {
-            if (txt_password.Text.ToString() == "")
+            /*if (txt_password.Text.ToString() == "")
             {
                 lbpassword.Visible = true;
                 lbpassword.Text = "Is empty";
@@ -154,12 +154,12 @@ namespace BCMP.Forms
                     lbpassword.Text = "Length at least 8";
                     lbpassword.ForeColor = Color.Red;
                 }
-            }
+            }*/
         }
 
         private void txt_checkpassword_Leave(object sender, EventArgs e)
         {
-            if (txt_checkpassword.Text.ToString() == "")
+            /*if (txt_checkpassword.Text.ToString() == "")
             {
                 lbcheckpassword.Visible = true;
                 lbcheckpassword.Text = "Is empty";
@@ -179,7 +179,7 @@ namespace BCMP.Forms
                     lbcheckpassword.Text = "The confirm password is not correct";
                     lbcheckpassword.ForeColor = Color.Red;
                 }
-            }
+            }*/
         }
 
         private void txt_IdStaff_TextChanged(object sender, EventArgs e)
@@ -201,7 +201,7 @@ namespace BCMP.Forms
 
         private void txt_IdStaff_Leave(object sender, EventArgs e)
         {
-            if (txt_IdStaff.Text.ToString() == "")
+            /*if (txt_IdStaff.Text.ToString() == "")
             {
                 lbuserid.Visible = true;
                 lbuserid.Text = "Is empty";
@@ -221,12 +221,12 @@ namespace BCMP.Forms
                     lbuserid.Text = "Valid";
                     lbuserid.ForeColor = Color.Green;
                 }
-            }
+            }*/
         }
 
         private void txt_name_Leave(object sender, EventArgs e)
         {
-            if (txt_name.Text.ToString() == "")
+            /*if (txt_name.Text.ToString() == "")
             {
                 lbname.Visible = true;
                 lbname.Text = "Is empty";
@@ -237,7 +237,7 @@ namespace BCMP.Forms
                 lbname.Visible = true;
                 lbname.Text = "Valid";
                 lbname.ForeColor = Color.Green;
-            }
+            }*/
         }
 
         private void txt_name_TextChanged(object sender, EventArgs e)
@@ -257,29 +257,29 @@ namespace BCMP.Forms
 
         public void LoadDataDepartment()
         {
-            List<String> list = new List<String>();
+            /*List<String> list = new List<String>();
             foreach(Department item in DepartmentService.Instance.GetAllListDepartment())
             {
                 list.Add(item.Name);
             }
-            cb_department.DataSource = list;
+            cb_department.DataSource = list;*/
         }
 
         public void LoadDataRole()
         {
-            List<String> list = new List<String>();
+            /*List<String> list = new List<String>();
             foreach(Role item in RoleService.Instance.GetAllListRole())
             {
                 list.Add(item.Title);
             }
-            cb_role.DataSource = list;
+            cb_role.DataSource = list;*/
         }
 
         
 
         private void bt_save_Click(object sender, EventArgs e)
         {
-            if(lbuserid.Text == "Valid" && lbname.Text == "Valid" &&
+            /*if(lbuserid.Text == "Valid" && lbname.Text == "Valid" &&
                 lbpassword.Text == "Valid" && lbcheckpassword.Text == "Valid" &&
                 lbemail.Text == "Valid")
             {
@@ -315,7 +315,7 @@ namespace BCMP.Forms
             } else
             {
                 MessageBox.Show("Inputs are missed");
-            }
+            }*/
         }
 
         
