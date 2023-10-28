@@ -37,20 +37,27 @@
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.lb_phone = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
-            this.txt_department = new System.Windows.Forms.TextBox();
             this.lb_placeOfBirth = new System.Windows.Forms.Label();
-            this.txt_role = new System.Windows.Forms.TextBox();
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
-            this.txt_phone = new System.Windows.Forms.TextBox();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_save = new System.Windows.Forms.Button();
+            this.txt_confirmPassword = new System.Windows.Forms.TextBox();
+            this.lb_confirmPassword = new System.Windows.Forms.Label();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.lb_password = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txt_IdStaff = new System.Windows.Forms.TextBox();
             this.lb_IdStaff = new System.Windows.Forms.Label();
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_phone = new System.Windows.Forms.TextBox();
+            this.lb_ValidFullname = new System.Windows.Forms.Label();
+            this.lb_ValidIdStaff = new System.Windows.Forms.Label();
+            this.lb_ValidEmail = new System.Windows.Forms.Label();
+            this.lb_ValidPhone = new System.Windows.Forms.Label();
+            this.lb_ValidPassword = new System.Windows.Forms.Label();
+            this.lb_ValidConfirm = new System.Windows.Forms.Label();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +69,7 @@
             this.pn_tittleFormAddUser.Controls.Add(this.lb_NewProfile);
             this.pn_tittleFormAddUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_tittleFormAddUser.Location = new System.Drawing.Point(0, 0);
-            this.pn_tittleFormAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_tittleFormAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.pn_tittleFormAddUser.Name = "pn_tittleFormAddUser";
             this.pn_tittleFormAddUser.Size = new System.Drawing.Size(674, 58);
             this.pn_tittleFormAddUser.TabIndex = 1;
@@ -85,7 +92,7 @@
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_exit.Location = new System.Drawing.Point(622, 9);
-            this.bt_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(2);
             this.bt_exit.Name = "bt_exit";
             this.bt_exit.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
             this.bt_exit.Size = new System.Drawing.Size(41, 18);
@@ -135,8 +142,8 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(282, 179);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_name.Location = new System.Drawing.Point(307, 177);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(2);
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(194, 27);
@@ -144,8 +151,8 @@
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(282, 124);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Email.Location = new System.Drawing.Point(307, 122);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Email.Multiline = true;
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(194, 27);
@@ -177,15 +184,6 @@
             this.lb_department.TabIndex = 23;
             this.lb_department.Text = "Department";
             // 
-            // txt_department
-            // 
-            this.txt_department.Location = new System.Drawing.Point(282, 288);
-            this.txt_department.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_department.Multiline = true;
-            this.txt_department.Name = "txt_department";
-            this.txt_department.Size = new System.Drawing.Size(194, 27);
-            this.txt_department.TabIndex = 24;
-            // 
             // lb_placeOfBirth
             // 
             this.lb_placeOfBirth.AutoSize = true;
@@ -199,15 +197,6 @@
             this.lb_placeOfBirth.TabIndex = 25;
             this.lb_placeOfBirth.Text = "Role";
             // 
-            // txt_role
-            // 
-            this.txt_role.Location = new System.Drawing.Point(281, 343);
-            this.txt_role.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_role.Multiline = true;
-            this.txt_role.Name = "txt_role";
-            this.txt_role.Size = new System.Drawing.Size(194, 27);
-            this.txt_role.TabIndex = 26;
-            // 
             // bt_saveAddUser
             // 
             this.bt_saveAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
@@ -220,7 +209,7 @@
             this.bt_saveAddUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_saveAddUser.ForeColor = System.Drawing.Color.White;
             this.bt_saveAddUser.Location = new System.Drawing.Point(66, 723);
-            this.bt_saveAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_saveAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.bt_saveAddUser.Name = "bt_saveAddUser";
             this.bt_saveAddUser.Size = new System.Drawing.Size(60, 18);
             this.bt_saveAddUser.TabIndex = 4;
@@ -239,7 +228,7 @@
             this.bt_cancelAddUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelAddUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_cancelAddUser.Location = new System.Drawing.Point(-32, 723);
-            this.bt_cancelAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_cancelAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancelAddUser.Name = "bt_cancelAddUser";
             this.bt_cancelAddUser.Size = new System.Drawing.Size(83, 30);
             this.bt_cancelAddUser.TabIndex = 3;
@@ -251,6 +240,18 @@
             // pn_containerFormAddUser
             // 
             this.pn_containerFormAddUser.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidConfirm);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidPassword);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidPhone);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidEmail);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidIdStaff);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidFullname);
+            this.pn_containerFormAddUser.Controls.Add(this.txt_confirmPassword);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_confirmPassword);
+            this.pn_containerFormAddUser.Controls.Add(this.txt_password);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_password);
+            this.pn_containerFormAddUser.Controls.Add(this.comboBox2);
+            this.pn_containerFormAddUser.Controls.Add(this.comboBox1);
             this.pn_containerFormAddUser.Controls.Add(this.txt_IdStaff);
             this.pn_containerFormAddUser.Controls.Add(this.lb_IdStaff);
             this.pn_containerFormAddUser.Controls.Add(this.bt_cancel);
@@ -258,9 +259,7 @@
             this.pn_containerFormAddUser.Controls.Add(this.txt_phone);
             this.pn_containerFormAddUser.Controls.Add(this.bt_cancelAddUser);
             this.pn_containerFormAddUser.Controls.Add(this.bt_saveAddUser);
-            this.pn_containerFormAddUser.Controls.Add(this.txt_role);
             this.pn_containerFormAddUser.Controls.Add(this.lb_placeOfBirth);
-            this.pn_containerFormAddUser.Controls.Add(this.txt_department);
             this.pn_containerFormAddUser.Controls.Add(this.lb_department);
             this.pn_containerFormAddUser.Controls.Add(this.lb_phone);
             this.pn_containerFormAddUser.Controls.Add(this.txt_Email);
@@ -269,16 +268,76 @@
             this.pn_containerFormAddUser.Controls.Add(this.lb_Email);
             this.pn_containerFormAddUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_containerFormAddUser.Location = new System.Drawing.Point(0, 0);
-            this.pn_containerFormAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_containerFormAddUser.Margin = new System.Windows.Forms.Padding(2);
             this.pn_containerFormAddUser.Name = "pn_containerFormAddUser";
             this.pn_containerFormAddUser.Size = new System.Drawing.Size(674, 550);
             this.pn_containerFormAddUser.TabIndex = 0;
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
+            // txt_confirmPassword
+            // 
+            this.txt_confirmPassword.Location = new System.Drawing.Point(307, 433);
+            this.txt_confirmPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_confirmPassword.Multiline = true;
+            this.txt_confirmPassword.Name = "txt_confirmPassword";
+            this.txt_confirmPassword.Size = new System.Drawing.Size(194, 27);
+            this.txt_confirmPassword.TabIndex = 37;
+            // 
+            // lb_confirmPassword
+            // 
+            this.lb_confirmPassword.AutoSize = true;
+            this.lb_confirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lb_confirmPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_confirmPassword.ForeColor = System.Drawing.Color.Black;
+            this.lb_confirmPassword.Location = new System.Drawing.Point(166, 443);
+            this.lb_confirmPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_confirmPassword.Name = "lb_confirmPassword";
+            this.lb_confirmPassword.Size = new System.Drawing.Size(131, 19);
+            this.lb_confirmPassword.TabIndex = 36;
+            this.lb_confirmPassword.Text = "Confirm password";
+            // 
+            // txt_password
+            // 
+            this.txt_password.Location = new System.Drawing.Point(307, 387);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_password.Multiline = true;
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(194, 27);
+            this.txt_password.TabIndex = 35;
+            // 
+            // lb_password
+            // 
+            this.lb_password.AutoSize = true;
+            this.lb_password.BackColor = System.Drawing.Color.Transparent;
+            this.lb_password.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_password.ForeColor = System.Drawing.Color.Black;
+            this.lb_password.Location = new System.Drawing.Point(166, 397);
+            this.lb_password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_password.Name = "lb_password";
+            this.lb_password.Size = new System.Drawing.Size(72, 19);
+            this.lb_password.TabIndex = 34;
+            this.lb_password.Text = "Password";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(307, 342);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(194, 21);
+            this.comboBox2.TabIndex = 33;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(307, 292);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(194, 21);
+            this.comboBox1.TabIndex = 32;
+            // 
             // txt_IdStaff
             // 
-            this.txt_IdStaff.Location = new System.Drawing.Point(282, 78);
-            this.txt_IdStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_IdStaff.Location = new System.Drawing.Point(307, 76);
+            this.txt_IdStaff.Margin = new System.Windows.Forms.Padding(2);
             this.txt_IdStaff.Multiline = true;
             this.txt_IdStaff.Name = "txt_IdStaff";
             this.txt_IdStaff.Size = new System.Drawing.Size(194, 27);
@@ -307,7 +366,7 @@
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_cancel.Location = new System.Drawing.Point(452, 498);
-            this.bt_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.Size = new System.Drawing.Size(90, 34);
             this.bt_cancel.TabIndex = 29;
@@ -321,7 +380,7 @@
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Location = new System.Drawing.Point(555, 498);
-            this.bt_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_save.Margin = new System.Windows.Forms.Padding(2);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(90, 34);
             this.bt_save.TabIndex = 28;
@@ -330,12 +389,66 @@
             // 
             // txt_phone
             // 
-            this.txt_phone.Location = new System.Drawing.Point(282, 231);
-            this.txt_phone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_phone.Location = new System.Drawing.Point(307, 229);
+            this.txt_phone.Margin = new System.Windows.Forms.Padding(2);
             this.txt_phone.Multiline = true;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(194, 27);
             this.txt_phone.TabIndex = 27;
+            // 
+            // lb_ValidFullname
+            // 
+            this.lb_ValidFullname.AutoSize = true;
+            this.lb_ValidFullname.Location = new System.Drawing.Point(507, 185);
+            this.lb_ValidFullname.Name = "lb_ValidFullname";
+            this.lb_ValidFullname.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidFullname.TabIndex = 38;
+            this.lb_ValidFullname.Text = "label3";
+            // 
+            // lb_ValidIdStaff
+            // 
+            this.lb_ValidIdStaff.AutoSize = true;
+            this.lb_ValidIdStaff.Location = new System.Drawing.Point(507, 85);
+            this.lb_ValidIdStaff.Name = "lb_ValidIdStaff";
+            this.lb_ValidIdStaff.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidIdStaff.TabIndex = 39;
+            this.lb_ValidIdStaff.Text = "label1";
+            // 
+            // lb_ValidEmail
+            // 
+            this.lb_ValidEmail.AutoSize = true;
+            this.lb_ValidEmail.Location = new System.Drawing.Point(506, 130);
+            this.lb_ValidEmail.Name = "lb_ValidEmail";
+            this.lb_ValidEmail.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidEmail.TabIndex = 40;
+            this.lb_ValidEmail.Text = "label2";
+            // 
+            // lb_ValidPhone
+            // 
+            this.lb_ValidPhone.AutoSize = true;
+            this.lb_ValidPhone.Location = new System.Drawing.Point(507, 232);
+            this.lb_ValidPhone.Name = "lb_ValidPhone";
+            this.lb_ValidPhone.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidPhone.TabIndex = 41;
+            this.lb_ValidPhone.Text = "label4";
+            // 
+            // lb_ValidPassword
+            // 
+            this.lb_ValidPassword.AutoSize = true;
+            this.lb_ValidPassword.Location = new System.Drawing.Point(507, 397);
+            this.lb_ValidPassword.Name = "lb_ValidPassword";
+            this.lb_ValidPassword.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidPassword.TabIndex = 42;
+            this.lb_ValidPassword.Text = "label5";
+            // 
+            // lb_ValidConfirm
+            // 
+            this.lb_ValidConfirm.AutoSize = true;
+            this.lb_ValidConfirm.Location = new System.Drawing.Point(507, 443);
+            this.lb_ValidConfirm.Name = "lb_ValidConfirm";
+            this.lb_ValidConfirm.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidConfirm.TabIndex = 43;
+            this.lb_ValidConfirm.Text = "label6";
             // 
             // FormAddUser
             // 
@@ -345,7 +458,7 @@
             this.Controls.Add(this.pn_tittleFormAddUser);
             this.Controls.Add(this.pn_containerFormAddUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAddUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddUser";
@@ -367,9 +480,7 @@
         private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label lb_phone;
         private System.Windows.Forms.Label lb_department;
-        private System.Windows.Forms.TextBox txt_department;
         private System.Windows.Forms.Label lb_placeOfBirth;
-        private System.Windows.Forms.TextBox txt_role;
         private System.Windows.Forms.Button bt_saveAddUser;
         private System.Windows.Forms.Button bt_cancelAddUser;
         private System.Windows.Forms.Panel pn_containerFormAddUser;
@@ -378,5 +489,17 @@
         private System.Windows.Forms.Button bt_save;
         private System.Windows.Forms.TextBox txt_IdStaff;
         private System.Windows.Forms.Label lb_IdStaff;
+        private System.Windows.Forms.TextBox txt_confirmPassword;
+        private System.Windows.Forms.Label lb_confirmPassword;
+        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Label lb_password;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lb_ValidFullname;
+        private System.Windows.Forms.Label lb_ValidConfirm;
+        private System.Windows.Forms.Label lb_ValidPassword;
+        private System.Windows.Forms.Label lb_ValidPhone;
+        private System.Windows.Forms.Label lb_ValidEmail;
+        private System.Windows.Forms.Label lb_ValidIdStaff;
     }
 }

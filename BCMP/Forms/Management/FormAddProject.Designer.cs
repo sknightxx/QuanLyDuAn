@@ -48,6 +48,9 @@
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lb_ValidIdProject = new System.Windows.Forms.Label();
+            this.lb_ValidNameProject = new System.Windows.Forms.Label();
+            this.lb_ValidDesciption = new System.Windows.Forms.Label();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_containerAddProject.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -316,6 +319,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lb_ValidDesciption);
+            this.panel1.Controls.Add(this.lb_ValidNameProject);
+            this.panel1.Controls.Add(this.lb_ValidIdProject);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -331,6 +337,33 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(138, 20);
             this.dateTimePicker1.TabIndex = 18;
+            // 
+            // lb_ValidIdProject
+            // 
+            this.lb_ValidIdProject.AutoSize = true;
+            this.lb_ValidIdProject.Location = new System.Drawing.Point(253, 101);
+            this.lb_ValidIdProject.Name = "lb_ValidIdProject";
+            this.lb_ValidIdProject.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidIdProject.TabIndex = 19;
+            this.lb_ValidIdProject.Text = "label1";
+            // 
+            // lb_ValidNameProject
+            // 
+            this.lb_ValidNameProject.AutoSize = true;
+            this.lb_ValidNameProject.Location = new System.Drawing.Point(30, 209);
+            this.lb_ValidNameProject.Name = "lb_ValidNameProject";
+            this.lb_ValidNameProject.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidNameProject.TabIndex = 20;
+            this.lb_ValidNameProject.Text = "label2";
+            // 
+            // lb_ValidDesciption
+            // 
+            this.lb_ValidDesciption.AutoSize = true;
+            this.lb_ValidDesciption.Location = new System.Drawing.Point(30, 447);
+            this.lb_ValidDesciption.Name = "lb_ValidDesciption";
+            this.lb_ValidDesciption.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidDesciption.TabIndex = 21;
+            this.lb_ValidDesciption.Text = "label3";
             // 
             // FormAddProject
             // 
@@ -354,6 +387,7 @@
             this.pn_containerAddProject.ResumeLayout(false);
             this.pn_containerAddProject.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +415,8 @@
         private System.Windows.Forms.Label lb_IdProject;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label lb_ValidDesciption;
+        private System.Windows.Forms.Label lb_ValidNameProject;
+        private System.Windows.Forms.Label lb_ValidIdProject;
     }
 }

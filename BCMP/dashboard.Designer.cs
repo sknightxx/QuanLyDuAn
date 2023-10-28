@@ -29,36 +29,38 @@
         private void InitializeComponent()
         {
             this.pn_leftDashBoard = new System.Windows.Forms.Panel();
-            this.pn_logo = new System.Windows.Forms.Panel();
-            this.pn_tittleBar = new System.Windows.Forms.Panel();
-            this.lb_tittleChildform = new System.Windows.Forms.Label();
-            this.pn_container = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pn_shawdow = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bt_user = new FontAwesome.Sharp.IconButton();
-            this.bt_remind = new FontAwesome.Sharp.IconButton();
-            this.bt_mail = new FontAwesome.Sharp.IconButton();
-            this.bt_notifications = new FontAwesome.Sharp.IconButton();
-            this.iconCurrentChildform = new FontAwesome.Sharp.IconPictureBox();
-            this.bt_minimize = new FontAwesome.Sharp.IconButton();
-            this.bt_maximize = new FontAwesome.Sharp.IconButton();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_mission = new FontAwesome.Sharp.IconButton();
             this.bt_setting = new FontAwesome.Sharp.IconButton();
             this.bt_report = new FontAwesome.Sharp.IconButton();
+            this.pn_logo = new System.Windows.Forms.Panel();
             this.ptb_logo = new System.Windows.Forms.PictureBox();
             this.bt_project = new FontAwesome.Sharp.IconButton();
             this.bt_home = new FontAwesome.Sharp.IconButton();
             this.bt_profile = new FontAwesome.Sharp.IconButton();
+            this.pn_tittleBar = new System.Windows.Forms.Panel();
+            this.bt_user = new FontAwesome.Sharp.IconButton();
+            this.bt_remind = new FontAwesome.Sharp.IconButton();
+            this.bt_mail = new FontAwesome.Sharp.IconButton();
+            this.bt_notifications = new FontAwesome.Sharp.IconButton();
+            this.lb_tittleChildform = new System.Windows.Forms.Label();
+            this.iconCurrentChildform = new FontAwesome.Sharp.IconPictureBox();
+            this.bt_minimize = new FontAwesome.Sharp.IconButton();
+            this.bt_maximize = new FontAwesome.Sharp.IconButton();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.pn_container = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pn_shawdow = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.pn_leftDashBoard.SuspendLayout();
-            this.pn_logo.SuspendLayout();
-            this.pn_tittleBar.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildform)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pn_logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();
+            this.pn_tittleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildform)).BeginInit();
+            this.pn_container.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_leftDashBoard
@@ -79,6 +81,101 @@
             this.pn_leftDashBoard.Size = new System.Drawing.Size(176, 530);
             this.pn_leftDashBoard.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 411);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(176, 119);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(176, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bt_mission
+            // 
+            this.bt_mission.BackColor = System.Drawing.Color.Transparent;
+            this.bt_mission.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_mission.FlatAppearance.BorderSize = 0;
+            this.bt_mission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_mission.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_mission.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_mission.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
+            this.bt_mission.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_mission.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_mission.IconSize = 40;
+            this.bt_mission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_mission.Location = new System.Drawing.Point(2, 202);
+            this.bt_mission.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_mission.Name = "bt_mission";
+            this.bt_mission.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_mission.Size = new System.Drawing.Size(176, 48);
+            this.bt_mission.TabIndex = 10;
+            this.bt_mission.Text = "   Mission";
+            this.bt_mission.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_mission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_mission.UseVisualStyleBackColor = false;
+            this.bt_mission.Click += new System.EventHandler(this.bt_mission_Click);
+            // 
+            // bt_setting
+            // 
+            this.bt_setting.BackColor = System.Drawing.Color.Transparent;
+            this.bt_setting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_setting.FlatAppearance.BorderSize = 0;
+            this.bt_setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_setting.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_setting.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_setting.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.bt_setting.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_setting.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_setting.IconSize = 40;
+            this.bt_setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_setting.Location = new System.Drawing.Point(2, 358);
+            this.bt_setting.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_setting.Name = "bt_setting";
+            this.bt_setting.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_setting.Size = new System.Drawing.Size(176, 48);
+            this.bt_setting.TabIndex = 8;
+            this.bt_setting.Text = "   Setting";
+            this.bt_setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_setting.UseVisualStyleBackColor = false;
+            this.bt_setting.Click += new System.EventHandler(this.bt_setting_Click);
+            // 
+            // bt_report
+            // 
+            this.bt_report.BackColor = System.Drawing.Color.Transparent;
+            this.bt_report.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_report.FlatAppearance.BorderSize = 0;
+            this.bt_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_report.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_report.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_report.IconChar = FontAwesome.Sharp.IconChar.LineChart;
+            this.bt_report.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_report.IconSize = 40;
+            this.bt_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_report.Location = new System.Drawing.Point(2, 306);
+            this.bt_report.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_report.Name = "bt_report";
+            this.bt_report.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_report.Size = new System.Drawing.Size(176, 48);
+            this.bt_report.TabIndex = 9;
+            this.bt_report.Text = "   Report";
+            this.bt_report.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_report.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_report.UseVisualStyleBackColor = false;
+            this.bt_report.Click += new System.EventHandler(this.bt_report_Click);
+            // 
             // pn_logo
             // 
             this.pn_logo.Controls.Add(this.ptb_logo);
@@ -88,6 +185,95 @@
             this.pn_logo.Name = "pn_logo";
             this.pn_logo.Size = new System.Drawing.Size(176, 94);
             this.pn_logo.TabIndex = 2;
+            // 
+            // ptb_logo
+            // 
+            this.ptb_logo.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
+            this.ptb_logo.Location = new System.Drawing.Point(20, 14);
+            this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
+            this.ptb_logo.Name = "ptb_logo";
+            this.ptb_logo.Size = new System.Drawing.Size(135, 64);
+            this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_logo.TabIndex = 1;
+            this.ptb_logo.TabStop = false;
+            this.ptb_logo.Click += new System.EventHandler(this.ptb_logo_Click);
+            // 
+            // bt_project
+            // 
+            this.bt_project.BackColor = System.Drawing.Color.Transparent;
+            this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_project.FlatAppearance.BorderSize = 0;
+            this.bt_project.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_project.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_project.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.bt_project.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_project.IconSize = 40;
+            this.bt_project.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_project.Location = new System.Drawing.Point(2, 254);
+            this.bt_project.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_project.Name = "bt_project";
+            this.bt_project.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_project.Size = new System.Drawing.Size(176, 48);
+            this.bt_project.TabIndex = 7;
+            this.bt_project.Text = "   Project";
+            this.bt_project.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_project.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_project.UseVisualStyleBackColor = false;
+            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
+            // 
+            // bt_home
+            // 
+            this.bt_home.BackColor = System.Drawing.Color.Transparent;
+            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_home.FlatAppearance.BorderSize = 0;
+            this.bt_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_home.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.bt_home.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_home.IconSize = 40;
+            this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_home.Location = new System.Drawing.Point(2, 98);
+            this.bt_home.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_home.Name = "bt_home";
+            this.bt_home.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_home.Size = new System.Drawing.Size(176, 48);
+            this.bt_home.TabIndex = 5;
+            this.bt_home.Text = "   Home";
+            this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_home.UseVisualStyleBackColor = false;
+            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
+            // 
+            // bt_profile
+            // 
+            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
+            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_profile.FlatAppearance.BorderSize = 0;
+            this.bt_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_profile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_profile.ForeColor = System.Drawing.Color.DarkOrange;
+            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.bt_profile.IconColor = System.Drawing.Color.DarkOrange;
+            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_profile.IconSize = 40;
+            this.bt_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_profile.Location = new System.Drawing.Point(2, 150);
+            this.bt_profile.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_profile.Name = "bt_profile";
+            this.bt_profile.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_profile.Size = new System.Drawing.Size(176, 48);
+            this.bt_profile.TabIndex = 6;
+            this.bt_profile.Text = "   Employee";
+            this.bt_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_profile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_profile.UseVisualStyleBackColor = false;
+            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
             // 
             // pn_tittleBar
             // 
@@ -108,57 +294,6 @@
             this.pn_tittleBar.Size = new System.Drawing.Size(906, 55);
             this.pn_tittleBar.TabIndex = 1;
             this.pn_tittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_tittleBar_MouseDown);
-            // 
-            // lb_tittleChildform
-            // 
-            this.lb_tittleChildform.AutoSize = true;
-            this.lb_tittleChildform.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tittleChildform.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lb_tittleChildform.Location = new System.Drawing.Point(51, 24);
-            this.lb_tittleChildform.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_tittleChildform.Name = "lb_tittleChildform";
-            this.lb_tittleChildform.Size = new System.Drawing.Size(50, 19);
-            this.lb_tittleChildform.TabIndex = 2;
-            this.lb_tittleChildform.Text = "Home";
-            // 
-            // pn_container
-            // 
-            this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_container.Location = new System.Drawing.Point(176, 63);
-            this.pn_container.Margin = new System.Windows.Forms.Padding(2);
-            this.pn_container.Name = "pn_container";
-            this.pn_container.Size = new System.Drawing.Size(906, 467);
-            this.pn_container.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panel1.Location = new System.Drawing.Point(176, 63);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(8, 467);
-            this.panel1.TabIndex = 4;
-            // 
-            // pn_shawdow
-            // 
-            this.pn_shawdow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.pn_shawdow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_shawdow.Location = new System.Drawing.Point(176, 55);
-            this.pn_shawdow.Margin = new System.Windows.Forms.Padding(2);
-            this.pn_shawdow.Name = "pn_shawdow";
-            this.pn_shawdow.Size = new System.Drawing.Size(906, 8);
-            this.pn_shawdow.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 411);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 119);
-            this.panel2.TabIndex = 0;
             // 
             // bt_user
             // 
@@ -262,6 +397,18 @@
             this.bt_notifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_notifications.UseVisualStyleBackColor = false;
             // 
+            // lb_tittleChildform
+            // 
+            this.lb_tittleChildform.AutoSize = true;
+            this.lb_tittleChildform.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tittleChildform.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lb_tittleChildform.Location = new System.Drawing.Point(51, 24);
+            this.lb_tittleChildform.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_tittleChildform.Name = "lb_tittleChildform";
+            this.lb_tittleChildform.Size = new System.Drawing.Size(50, 19);
+            this.lb_tittleChildform.TabIndex = 2;
+            this.lb_tittleChildform.Text = "Home";
+            // 
             // iconCurrentChildform
             // 
             this.iconCurrentChildform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
@@ -359,180 +506,46 @@
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
-            // pictureBox1
+            // pn_container
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pn_container.AutoScroll = true;
+            this.pn_container.Controls.Add(this.vScrollBar1);
+            this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_container.Location = new System.Drawing.Point(176, 63);
+            this.pn_container.Margin = new System.Windows.Forms.Padding(2);
+            this.pn_container.Name = "pn_container";
+            this.pn_container.Size = new System.Drawing.Size(906, 467);
+            this.pn_container.TabIndex = 3;
             // 
-            // bt_mission
+            // panel1
             // 
-            this.bt_mission.BackColor = System.Drawing.Color.Transparent;
-            this.bt_mission.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_mission.FlatAppearance.BorderSize = 0;
-            this.bt_mission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_mission.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mission.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_mission.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
-            this.bt_mission.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_mission.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_mission.IconSize = 40;
-            this.bt_mission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_mission.Location = new System.Drawing.Point(2, 202);
-            this.bt_mission.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_mission.Name = "bt_mission";
-            this.bt_mission.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_mission.Size = new System.Drawing.Size(176, 48);
-            this.bt_mission.TabIndex = 10;
-            this.bt_mission.Text = "   Mission";
-            this.bt_mission.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_mission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_mission.UseVisualStyleBackColor = false;
-            this.bt_mission.Click += new System.EventHandler(this.bt_mission_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panel1.Location = new System.Drawing.Point(176, 63);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(8, 467);
+            this.panel1.TabIndex = 4;
             // 
-            // bt_setting
+            // pn_shawdow
             // 
-            this.bt_setting.BackColor = System.Drawing.Color.Transparent;
-            this.bt_setting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_setting.FlatAppearance.BorderSize = 0;
-            this.bt_setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_setting.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_setting.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_setting.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.bt_setting.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_setting.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_setting.IconSize = 40;
-            this.bt_setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_setting.Location = new System.Drawing.Point(2, 358);
-            this.bt_setting.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_setting.Name = "bt_setting";
-            this.bt_setting.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_setting.Size = new System.Drawing.Size(176, 48);
-            this.bt_setting.TabIndex = 8;
-            this.bt_setting.Text = "   Setting";
-            this.bt_setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_setting.UseVisualStyleBackColor = false;
-            this.bt_setting.Click += new System.EventHandler(this.bt_setting_Click);
+            this.pn_shawdow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.pn_shawdow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_shawdow.Location = new System.Drawing.Point(176, 55);
+            this.pn_shawdow.Margin = new System.Windows.Forms.Padding(2);
+            this.pn_shawdow.Name = "pn_shawdow";
+            this.pn_shawdow.Size = new System.Drawing.Size(906, 8);
+            this.pn_shawdow.TabIndex = 2;
             // 
-            // bt_report
+            // vScrollBar1
             // 
-            this.bt_report.BackColor = System.Drawing.Color.Transparent;
-            this.bt_report.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_report.FlatAppearance.BorderSize = 0;
-            this.bt_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_report.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_report.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_report.IconChar = FontAwesome.Sharp.IconChar.LineChart;
-            this.bt_report.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_report.IconSize = 40;
-            this.bt_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.Location = new System.Drawing.Point(2, 306);
-            this.bt_report.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_report.Name = "bt_report";
-            this.bt_report.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_report.Size = new System.Drawing.Size(176, 48);
-            this.bt_report.TabIndex = 9;
-            this.bt_report.Text = "   Report";
-            this.bt_report.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_report.UseVisualStyleBackColor = false;
-            this.bt_report.Click += new System.EventHandler(this.bt_report_Click);
-            // 
-            // ptb_logo
-            // 
-            this.ptb_logo.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
-            this.ptb_logo.Location = new System.Drawing.Point(20, 14);
-            this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
-            this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.Size = new System.Drawing.Size(135, 64);
-            this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_logo.TabIndex = 1;
-            this.ptb_logo.TabStop = false;
-            this.ptb_logo.Click += new System.EventHandler(this.ptb_logo_Click);
-            // 
-            // bt_project
-            // 
-            this.bt_project.BackColor = System.Drawing.Color.Transparent;
-            this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_project.FlatAppearance.BorderSize = 0;
-            this.bt_project.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_project.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_project.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.bt_project.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_project.IconSize = 40;
-            this.bt_project.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_project.Location = new System.Drawing.Point(2, 254);
-            this.bt_project.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_project.Name = "bt_project";
-            this.bt_project.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_project.Size = new System.Drawing.Size(176, 48);
-            this.bt_project.TabIndex = 7;
-            this.bt_project.Text = "   Project";
-            this.bt_project.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_project.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_project.UseVisualStyleBackColor = false;
-            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
-            // 
-            // bt_home
-            // 
-            this.bt_home.BackColor = System.Drawing.Color.Transparent;
-            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_home.FlatAppearance.BorderSize = 0;
-            this.bt_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_home.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.bt_home.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_home.IconSize = 40;
-            this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.Location = new System.Drawing.Point(2, 98);
-            this.bt_home.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_home.Name = "bt_home";
-            this.bt_home.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_home.Size = new System.Drawing.Size(176, 48);
-            this.bt_home.TabIndex = 5;
-            this.bt_home.Text = "   Home";
-            this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_home.UseVisualStyleBackColor = false;
-            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
-            // 
-            // bt_profile
-            // 
-            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
-            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_profile.FlatAppearance.BorderSize = 0;
-            this.bt_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_profile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_profile.ForeColor = System.Drawing.Color.DarkOrange;
-            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_profile.IconColor = System.Drawing.Color.DarkOrange;
-            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_profile.IconSize = 40;
-            this.bt_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.Location = new System.Drawing.Point(2, 150);
-            this.bt_profile.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_profile.Name = "bt_profile";
-            this.bt_profile.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_profile.Size = new System.Drawing.Size(176, 48);
-            this.bt_profile.TabIndex = 6;
-            this.bt_profile.Text = "   Employee";
-            this.bt_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_profile.UseVisualStyleBackColor = false;
-            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
+            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.vScrollBar1.Location = new System.Drawing.Point(889, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 467);
+            this.vScrollBar1.TabIndex = 0;
+            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
             // dashboard
             // 
@@ -550,13 +563,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "dashboard";
             this.pn_leftDashBoard.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pn_logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();
             this.pn_tittleBar.ResumeLayout(false);
             this.pn_tittleBar.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildform)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();
+            this.pn_container.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -587,5 +601,6 @@
         private FontAwesome.Sharp.IconButton bt_mission;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

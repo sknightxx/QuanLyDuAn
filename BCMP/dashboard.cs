@@ -246,6 +246,9 @@ namespace BCMP
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            pn_container.VerticalScroll.Value = vScrollBar1.Value;
+        }
     }
 }

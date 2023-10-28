@@ -79,5 +79,7 @@ namespace BCMP.Forms
             FormDetailProject DetailProjectForm = new FormDetailProject();
             DetailProjectForm.Show();
         }
+
+        
     }
 }
