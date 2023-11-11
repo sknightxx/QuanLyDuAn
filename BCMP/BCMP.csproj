@@ -60,8 +60,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Management\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\DropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\Management\FormAddMission.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormDepartmentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormDepartmentData.Designer.cs">
+      <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Management\FormDetailMission.cs">
       <SubType>Form</SubType>
@@ -75,6 +90,26 @@
     <Compile Include="Forms\Management\FormDetailProject.Designer.cs">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Management\FormDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormDocument.Designer.cs">
+      <DependentUpon>FormDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\FormPublicData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormPublicData.Designer.cs">
+      <DependentUpon>FormPublicData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\InformationForm.Designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\MenuColorTable.cs" />
+    <Compile Include="Forms\Management\MenuRenderer.cs" />
     <Compile Include="Forms\User\FormHomeUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,14 +217,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Management\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
+      <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailMission.resx">
       <DependentUpon>FormDetailMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDocument.resx">
+      <DependentUpon>FormDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormPublicData.resx">
+      <DependentUpon>FormPublicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\InformationForm.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
       <DependentUpon>FormHomeUser.cs</DependentUpon>

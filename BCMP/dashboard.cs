@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCMP.Forms;
+using BCMP.Forms.Management;
 using BCMP.Forms.User;
 using FontAwesome.Sharp;
 
@@ -44,11 +45,7 @@ namespace BCMP
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(255, 140, 0);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 144);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+
         }
 
         private void ActivateButton(object senderBtn, Color color)
@@ -58,7 +55,7 @@ namespace BCMP
                 //Button
                 DisableButton();
                 currenBtn = (IconButton)senderBtn;
-                currenBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currenBtn.BackColor = Color.FromArgb(50, 55, 60);
                 currenBtn.ForeColor = color;
                 currenBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currenBtn.IconColor = color;
@@ -97,10 +94,10 @@ namespace BCMP
         {
             if (currenBtn != null)
             {
-                currenBtn.BackColor = Color.FromArgb(31, 32, 71);
-                currenBtn.ForeColor = Color.DarkOrange;
+                currenBtn.BackColor = Color.FromArgb(35, 40, 45);
+                currenBtn.ForeColor = Color.Snow;
                 currenBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currenBtn.IconColor = Color.DarkOrange;
+                currenBtn.IconColor = Color.Snow;
                 currenBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currenBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -134,7 +131,7 @@ namespace BCMP
 
         private void bt_employee_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color5);
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormEmployee());
             lb_tittleChildform.Text = "Employee";
 
@@ -143,14 +140,14 @@ namespace BCMP
 
         private void bt_mission_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color6);
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormMission());
             lb_tittleChildform.Text = "Mission";
         }
 
         private void bt_project_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormProject());
             lb_tittleChildform.Text = "Project";
 
@@ -159,17 +156,17 @@ namespace BCMP
 
         private void bt_report_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormReport());
             lb_tittleChildform.Text = "Report";
 
         }
 
-        private void bt_setting_Click(object sender, EventArgs e)
+        private void bt_document_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new FormSetting());
-            lb_tittleChildform.Text = "Setting";
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormDocument());
+            lb_tittleChildform.Text = "Document";
 
 
         }
@@ -188,17 +185,17 @@ namespace BCMP
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildform.IconChar = IconChar.Home;
-            iconCurrentChildform.ForeColor = Color.DarkOrange;
+            iconCurrentChildform.ForeColor = Color.Snow;
             lb_tittleChildform.Text = "Home";
-            lb_tittleChildform.ForeColor = Color.DarkOrange;
-            bt_maximize.IconColor = Color.DarkOrange;
-            bt_minimize.IconColor = Color.DarkOrange;
-            bt_exit.IconColor = Color.DarkOrange;
-            bt_notifications.IconColor = Color.DarkOrange;
-            bt_remind.IconColor = Color.DarkOrange;
-            bt_mail.IconColor = Color.DarkOrange;
-            bt_user.IconColor = Color.DarkOrange;
-            bt_user.ForeColor = Color.DarkOrange;
+            lb_tittleChildform.ForeColor = Color.Snow;
+            bt_maximize.IconColor = Color.Snow;
+            bt_minimize.IconColor = Color.Snow;
+            bt_exit.IconColor = Color.Snow;
+            bt_notifications.IconColor = Color.Snow;
+            bt_remind.IconColor = Color.Snow;
+            bt_mail.IconColor = Color.Snow;
+            bt_user.IconColor = Color.Snow;
+            bt_user.ForeColor = Color.Snow;
             pn_container.Controls.Clear();
 
 
@@ -249,6 +246,17 @@ namespace BCMP
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             pn_container.VerticalScroll.Value = vScrollBar1.Value;
+        }
+
+        private void bt_user_Click(object sender, EventArgs e)
+        {
+            dropdownMenu1.Show(bt_user, bt_user.Width, 0);
+        }
+
+        private void bt_Info_Click(object sender, EventArgs e)
+        {
+            InformationForm informationForm = new InformationForm();
+            informationForm.Show();
         }
     }
 }

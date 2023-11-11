@@ -41,6 +41,12 @@
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
+            this.lb_ValidConfirm = new System.Windows.Forms.Label();
+            this.lb_ValidPassword = new System.Windows.Forms.Label();
+            this.lb_ValidPhone = new System.Windows.Forms.Label();
+            this.lb_ValidEmail = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lb_ValidFullname = new System.Windows.Forms.Label();
             this.txt_confirmPassword = new System.Windows.Forms.TextBox();
             this.lb_confirmPassword = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
@@ -52,12 +58,9 @@
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_phone = new System.Windows.Forms.TextBox();
-            this.lb_ValidFullname = new System.Windows.Forms.Label();
-            this.lb_ValidIdStaff = new System.Windows.Forms.Label();
-            this.lb_ValidEmail = new System.Windows.Forms.Label();
-            this.lb_ValidPhone = new System.Windows.Forms.Label();
-            this.lb_ValidPassword = new System.Windows.Forms.Label();
-            this.lb_ValidConfirm = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lb_outsource = new System.Windows.Forms.Label();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -120,7 +123,7 @@
             this.lb_Email.BackColor = System.Drawing.Color.Transparent;
             this.lb_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Email.ForeColor = System.Drawing.Color.Black;
-            this.lb_Email.Location = new System.Drawing.Point(166, 130);
+            this.lb_Email.Location = new System.Drawing.Point(166, 126);
             this.lb_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Email.Name = "lb_Email";
             this.lb_Email.Size = new System.Drawing.Size(46, 19);
@@ -133,7 +136,7 @@
             this.lb_Name.BackColor = System.Drawing.Color.Transparent;
             this.lb_Name.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Name.ForeColor = System.Drawing.Color.Black;
-            this.lb_Name.Location = new System.Drawing.Point(166, 185);
+            this.lb_Name.Location = new System.Drawing.Point(166, 175);
             this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Name.Name = "lb_Name";
             this.lb_Name.Size = new System.Drawing.Size(76, 19);
@@ -142,7 +145,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(307, 177);
+            this.txt_name.Location = new System.Drawing.Point(307, 171);
             this.txt_name.Margin = new System.Windows.Forms.Padding(2);
             this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
@@ -164,7 +167,7 @@
             this.lb_phone.BackColor = System.Drawing.Color.Transparent;
             this.lb_phone.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_phone.ForeColor = System.Drawing.Color.Black;
-            this.lb_phone.Location = new System.Drawing.Point(166, 241);
+            this.lb_phone.Location = new System.Drawing.Point(166, 222);
             this.lb_phone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_phone.Name = "lb_phone";
             this.lb_phone.Size = new System.Drawing.Size(53, 19);
@@ -177,7 +180,7 @@
             this.lb_department.BackColor = System.Drawing.Color.Transparent;
             this.lb_department.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_department.ForeColor = System.Drawing.Color.Black;
-            this.lb_department.Location = new System.Drawing.Point(166, 294);
+            this.lb_department.Location = new System.Drawing.Point(166, 262);
             this.lb_department.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_department.Name = "lb_department";
             this.lb_department.Size = new System.Drawing.Size(93, 19);
@@ -190,7 +193,7 @@
             this.lb_placeOfBirth.BackColor = System.Drawing.Color.Transparent;
             this.lb_placeOfBirth.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_placeOfBirth.ForeColor = System.Drawing.Color.Black;
-            this.lb_placeOfBirth.Location = new System.Drawing.Point(166, 346);
+            this.lb_placeOfBirth.Location = new System.Drawing.Point(166, 301);
             this.lb_placeOfBirth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_placeOfBirth.Name = "lb_placeOfBirth";
             this.lb_placeOfBirth.Size = new System.Drawing.Size(39, 19);
@@ -240,11 +243,14 @@
             // pn_containerFormAddUser
             // 
             this.pn_containerFormAddUser.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_containerFormAddUser.Controls.Add(this.label1);
+            this.pn_containerFormAddUser.Controls.Add(this.textBox1);
+            this.pn_containerFormAddUser.Controls.Add(this.lb_outsource);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidConfirm);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidPassword);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidPhone);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidEmail);
-            this.pn_containerFormAddUser.Controls.Add(this.lb_ValidIdStaff);
+            this.pn_containerFormAddUser.Controls.Add(this.label7);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidFullname);
             this.pn_containerFormAddUser.Controls.Add(this.txt_confirmPassword);
             this.pn_containerFormAddUser.Controls.Add(this.lb_confirmPassword);
@@ -274,9 +280,63 @@
             this.pn_containerFormAddUser.TabIndex = 0;
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
+            // lb_ValidConfirm
+            // 
+            this.lb_ValidConfirm.AutoSize = true;
+            this.lb_ValidConfirm.Location = new System.Drawing.Point(507, 456);
+            this.lb_ValidConfirm.Name = "lb_ValidConfirm";
+            this.lb_ValidConfirm.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidConfirm.TabIndex = 43;
+            this.lb_ValidConfirm.Text = "label6";
+            // 
+            // lb_ValidPassword
+            // 
+            this.lb_ValidPassword.AutoSize = true;
+            this.lb_ValidPassword.Location = new System.Drawing.Point(507, 402);
+            this.lb_ValidPassword.Name = "lb_ValidPassword";
+            this.lb_ValidPassword.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidPassword.TabIndex = 42;
+            this.lb_ValidPassword.Text = "label5";
+            // 
+            // lb_ValidPhone
+            // 
+            this.lb_ValidPhone.AutoSize = true;
+            this.lb_ValidPhone.Location = new System.Drawing.Point(507, 226);
+            this.lb_ValidPhone.Name = "lb_ValidPhone";
+            this.lb_ValidPhone.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidPhone.TabIndex = 41;
+            this.lb_ValidPhone.Text = "label4";
+            // 
+            // lb_ValidEmail
+            // 
+            this.lb_ValidEmail.AutoSize = true;
+            this.lb_ValidEmail.Location = new System.Drawing.Point(506, 130);
+            this.lb_ValidEmail.Name = "lb_ValidEmail";
+            this.lb_ValidEmail.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidEmail.TabIndex = 40;
+            this.lb_ValidEmail.Text = "label2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(507, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "label7";
+            // 
+            // lb_ValidFullname
+            // 
+            this.lb_ValidFullname.AutoSize = true;
+            this.lb_ValidFullname.Location = new System.Drawing.Point(507, 179);
+            this.lb_ValidFullname.Name = "lb_ValidFullname";
+            this.lb_ValidFullname.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidFullname.TabIndex = 38;
+            this.lb_ValidFullname.Text = "label3";
+            // 
             // txt_confirmPassword
             // 
-            this.txt_confirmPassword.Location = new System.Drawing.Point(307, 433);
+            this.txt_confirmPassword.Location = new System.Drawing.Point(308, 448);
             this.txt_confirmPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txt_confirmPassword.Multiline = true;
             this.txt_confirmPassword.Name = "txt_confirmPassword";
@@ -289,7 +349,7 @@
             this.lb_confirmPassword.BackColor = System.Drawing.Color.Transparent;
             this.lb_confirmPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_confirmPassword.ForeColor = System.Drawing.Color.Black;
-            this.lb_confirmPassword.Location = new System.Drawing.Point(166, 443);
+            this.lb_confirmPassword.Location = new System.Drawing.Point(166, 452);
             this.lb_confirmPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_confirmPassword.Name = "lb_confirmPassword";
             this.lb_confirmPassword.Size = new System.Drawing.Size(131, 19);
@@ -298,7 +358,7 @@
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(307, 387);
+            this.txt_password.Location = new System.Drawing.Point(308, 394);
             this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
@@ -311,7 +371,7 @@
             this.lb_password.BackColor = System.Drawing.Color.Transparent;
             this.lb_password.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_password.ForeColor = System.Drawing.Color.Black;
-            this.lb_password.Location = new System.Drawing.Point(166, 397);
+            this.lb_password.Location = new System.Drawing.Point(166, 396);
             this.lb_password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_password.Name = "lb_password";
             this.lb_password.Size = new System.Drawing.Size(72, 19);
@@ -321,7 +381,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(307, 342);
+            this.comboBox2.Location = new System.Drawing.Point(308, 302);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(194, 21);
             this.comboBox2.TabIndex = 33;
@@ -329,7 +389,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(307, 292);
+            this.comboBox1.Location = new System.Drawing.Point(308, 263);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(194, 21);
             this.comboBox1.TabIndex = 32;
@@ -349,7 +409,7 @@
             this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
             this.lb_IdStaff.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
-            this.lb_IdStaff.Location = new System.Drawing.Point(166, 85);
+            this.lb_IdStaff.Location = new System.Drawing.Point(166, 81);
             this.lb_IdStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_IdStaff.Name = "lb_IdStaff";
             this.lb_IdStaff.Size = new System.Drawing.Size(56, 19);
@@ -389,66 +449,43 @@
             // 
             // txt_phone
             // 
-            this.txt_phone.Location = new System.Drawing.Point(307, 229);
+            this.txt_phone.Location = new System.Drawing.Point(308, 218);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(2);
             this.txt_phone.Multiline = true;
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(194, 27);
             this.txt_phone.TabIndex = 27;
             // 
-            // lb_ValidFullname
+            // label1
             // 
-            this.lb_ValidFullname.AutoSize = true;
-            this.lb_ValidFullname.Location = new System.Drawing.Point(507, 185);
-            this.lb_ValidFullname.Name = "lb_ValidFullname";
-            this.lb_ValidFullname.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidFullname.TabIndex = 38;
-            this.lb_ValidFullname.Text = "label3";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(507, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "label1";
             // 
-            // lb_ValidIdStaff
+            // textBox1
             // 
-            this.lb_ValidIdStaff.AutoSize = true;
-            this.lb_ValidIdStaff.Location = new System.Drawing.Point(507, 85);
-            this.lb_ValidIdStaff.Name = "lb_ValidIdStaff";
-            this.lb_ValidIdStaff.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidIdStaff.TabIndex = 39;
-            this.lb_ValidIdStaff.Text = "label1";
+            this.textBox1.Location = new System.Drawing.Point(308, 346);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 27);
+            this.textBox1.TabIndex = 45;
             // 
-            // lb_ValidEmail
+            // lb_outsource
             // 
-            this.lb_ValidEmail.AutoSize = true;
-            this.lb_ValidEmail.Location = new System.Drawing.Point(506, 130);
-            this.lb_ValidEmail.Name = "lb_ValidEmail";
-            this.lb_ValidEmail.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidEmail.TabIndex = 40;
-            this.lb_ValidEmail.Text = "label2";
-            // 
-            // lb_ValidPhone
-            // 
-            this.lb_ValidPhone.AutoSize = true;
-            this.lb_ValidPhone.Location = new System.Drawing.Point(507, 232);
-            this.lb_ValidPhone.Name = "lb_ValidPhone";
-            this.lb_ValidPhone.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidPhone.TabIndex = 41;
-            this.lb_ValidPhone.Text = "label4";
-            // 
-            // lb_ValidPassword
-            // 
-            this.lb_ValidPassword.AutoSize = true;
-            this.lb_ValidPassword.Location = new System.Drawing.Point(507, 397);
-            this.lb_ValidPassword.Name = "lb_ValidPassword";
-            this.lb_ValidPassword.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidPassword.TabIndex = 42;
-            this.lb_ValidPassword.Text = "label5";
-            // 
-            // lb_ValidConfirm
-            // 
-            this.lb_ValidConfirm.AutoSize = true;
-            this.lb_ValidConfirm.Location = new System.Drawing.Point(507, 443);
-            this.lb_ValidConfirm.Name = "lb_ValidConfirm";
-            this.lb_ValidConfirm.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidConfirm.TabIndex = 43;
-            this.lb_ValidConfirm.Text = "label6";
+            this.lb_outsource.AutoSize = true;
+            this.lb_outsource.BackColor = System.Drawing.Color.Transparent;
+            this.lb_outsource.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_outsource.ForeColor = System.Drawing.Color.Black;
+            this.lb_outsource.Location = new System.Drawing.Point(166, 345);
+            this.lb_outsource.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_outsource.Name = "lb_outsource";
+            this.lb_outsource.Size = new System.Drawing.Size(80, 19);
+            this.lb_outsource.TabIndex = 44;
+            this.lb_outsource.Text = "Outsource";
             // 
             // FormAddUser
             // 
@@ -500,6 +537,9 @@
         private System.Windows.Forms.Label lb_ValidPassword;
         private System.Windows.Forms.Label lb_ValidPhone;
         private System.Windows.Forms.Label lb_ValidEmail;
-        private System.Windows.Forms.Label lb_ValidIdStaff;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lb_outsource;
     }
 }
