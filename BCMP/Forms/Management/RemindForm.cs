@@ -11,24 +11,19 @@ using System.Windows.Forms;
 
 namespace BCMP.Forms.Management
 {
-    public partial class ChangePasswordForm : Form
+    public partial class RemindForm : Form
     {
-        public ChangePasswordForm()
+        public RemindForm()
         {
             InitializeComponent();
         }
 
-        private void lb_Email_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bt_cancel_Click(object sender, EventArgs e)
+        private void bt_exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void pn_containerChangePass_Paint(object sender, PaintEventArgs e)
+        private void pn_containerInformation_Paint(object sender, PaintEventArgs e)
         {
             int borderRadius = 10; // Độ cong của góc (có thể điều chỉnh)
             Rectangle bounds = new Rectangle(0, 0, this.Width, this.Height);

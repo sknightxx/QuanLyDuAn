@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pn_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_logo = new System.Windows.Forms.Label();
             this.ptb_logo = new System.Windows.Forms.PictureBox();
             this.pn_right = new System.Windows.Forms.Panel();
@@ -39,21 +40,20 @@
             this.bt_iconPass = new FontAwesome.Sharp.IconButton();
             this.bt_login = new System.Windows.Forms.Button();
             this.llb_forgotpassword = new System.Windows.Forms.LinkLabel();
-            this.lb_exit = new System.Windows.Forms.Label();
             this.lb_gachngang2 = new System.Windows.Forms.Label();
             this.lb_password = new System.Windows.Forms.Label();
             this.lb_id = new System.Windows.Forms.Label();
             this.lb_login = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bt_iconExit = new FontAwesome.Sharp.IconButton();
             this.pn_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();
             this.pn_right.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_left
             // 
-            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.pn_left.Controls.Add(this.pictureBox1);
             this.pn_left.Controls.Add(this.lb_logo);
             this.pn_left.Controls.Add(this.ptb_logo);
@@ -64,10 +64,20 @@
             this.pn_left.Size = new System.Drawing.Size(333, 498);
             this.pn_left.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Location = new System.Drawing.Point(166, 150);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 119);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // lb_logo
             // 
             this.lb_logo.AutoSize = true;
-            this.lb_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.lb_logo.BackColor = System.Drawing.Color.Transparent;
             this.lb_logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_logo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lb_logo.Location = new System.Drawing.Point(116, 269);
@@ -92,6 +102,7 @@
             // pn_right
             // 
             this.pn_right.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_right.Controls.Add(this.bt_iconExit);
             this.pn_right.Controls.Add(this.txt_userID);
             this.pn_right.Controls.Add(this.txt_Password);
             this.pn_right.Controls.Add(this.bt_IconUser);
@@ -99,7 +110,6 @@
             this.pn_right.Controls.Add(this.bt_iconPass);
             this.pn_right.Controls.Add(this.bt_login);
             this.pn_right.Controls.Add(this.llb_forgotpassword);
-            this.pn_right.Controls.Add(this.lb_exit);
             this.pn_right.Controls.Add(this.lb_gachngang2);
             this.pn_right.Controls.Add(this.lb_password);
             this.pn_right.Controls.Add(this.lb_id);
@@ -150,7 +160,7 @@
             this.bt_IconUser.FlatAppearance.BorderSize = 0;
             this.bt_IconUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_IconUser.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_IconUser.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.bt_IconUser.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_IconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_IconUser.IconSize = 28;
             this.bt_IconUser.Location = new System.Drawing.Point(270, 134);
@@ -177,7 +187,7 @@
             this.bt_iconPass.FlatAppearance.BorderSize = 0;
             this.bt_iconPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_iconPass.IconChar = FontAwesome.Sharp.IconChar.UnlockKeyhole;
-            this.bt_iconPass.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.bt_iconPass.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_iconPass.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_iconPass.IconSize = 28;
             this.bt_iconPass.Location = new System.Drawing.Point(270, 231);
@@ -189,7 +199,7 @@
             // 
             // bt_login
             // 
-            this.bt_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.bt_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,7 +219,7 @@
             this.llb_forgotpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llb_forgotpassword.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.llb_forgotpassword.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.llb_forgotpassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.llb_forgotpassword.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.llb_forgotpassword.Location = new System.Drawing.Point(186, 474);
             this.llb_forgotpassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llb_forgotpassword.Name = "llb_forgotpassword";
@@ -219,19 +229,6 @@
             this.llb_forgotpassword.Text = "Forgot Password?";
             this.llb_forgotpassword.VisitedLinkColor = System.Drawing.Color.Orange;
             this.llb_forgotpassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_forgotpassword_LinkClicked);
-            // 
-            // lb_exit
-            // 
-            this.lb_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lb_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.lb_exit.Location = new System.Drawing.Point(308, 2);
-            this.lb_exit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_exit.Name = "lb_exit";
-            this.lb_exit.Size = new System.Drawing.Size(25, 29);
-            this.lb_exit.TabIndex = 9;
-            this.lb_exit.Text = "x";
-            this.lb_exit.Click += new System.EventHandler(this.label1_Click);
             // 
             // lb_gachngang2
             // 
@@ -248,7 +245,7 @@
             // 
             this.lb_password.AutoSize = true;
             this.lb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.lb_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_password.Location = new System.Drawing.Point(19, 191);
             this.lb_password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_password.Name = "lb_password";
@@ -261,7 +258,7 @@
             // 
             this.lb_id.AutoSize = true;
             this.lb_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.lb_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_id.Location = new System.Drawing.Point(19, 99);
             this.lb_id.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_id.Name = "lb_id";
@@ -274,7 +271,7 @@
             // 
             this.lb_login.AutoSize = true;
             this.lb_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.lb_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_login.Location = new System.Drawing.Point(113, 50);
             this.lb_login.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_login.Name = "lb_login";
@@ -283,15 +280,23 @@
             this.lb_login.Text = "LOGIN";
             this.lb_login.Click += new System.EventHandler(this.lb_login_Click);
             // 
-            // pictureBox1
+            // bt_iconExit
             // 
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
-            this.pictureBox1.Location = new System.Drawing.Point(166, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.bt_iconExit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_iconExit.FlatAppearance.BorderSize = 0;
+            this.bt_iconExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_iconExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.bt_iconExit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_iconExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.bt_iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_iconExit.IconSize = 30;
+            this.bt_iconExit.Location = new System.Drawing.Point(300, 5);
+            this.bt_iconExit.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_iconExit.Name = "bt_iconExit";
+            this.bt_iconExit.Size = new System.Drawing.Size(28, 24);
+            this.bt_iconExit.TabIndex = 31;
+            this.bt_iconExit.UseVisualStyleBackColor = false;
+            this.bt_iconExit.Click += new System.EventHandler(this.bt_iconExit_Click);
             // 
             // FormLogin
             // 
@@ -307,10 +312,10 @@
             this.Text = "Form1";
             this.pn_left.ResumeLayout(false);
             this.pn_left.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();
             this.pn_right.ResumeLayout(false);
             this.pn_right.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,7 +331,6 @@
         private System.Windows.Forms.Label lb_gachngang;
         private System.Windows.Forms.Label lb_gachngang2;
         private System.Windows.Forms.Label lb_password;
-        private System.Windows.Forms.Label lb_exit;
         private System.Windows.Forms.LinkLabel llb_forgotpassword;
         private System.Windows.Forms.Button bt_login;
         private FontAwesome.Sharp.IconButton bt_IconUser;
@@ -334,6 +338,7 @@
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.TextBox txt_userID;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton bt_iconExit;
     }
 }
 

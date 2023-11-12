@@ -59,7 +59,7 @@
             // bt_EditMission
             // 
             this.bt_EditMission.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_EditMission.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_EditMission.BackColor = System.Drawing.Color.Black;
             this.bt_EditMission.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_EditMission.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_EditMission.FlatAppearance.BorderSize = 0;
@@ -143,7 +143,7 @@
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Location = new System.Drawing.Point(680, 423);
             this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
@@ -236,7 +236,7 @@
             this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

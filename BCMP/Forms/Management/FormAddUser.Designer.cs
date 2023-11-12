@@ -41,6 +41,9 @@
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lb_outsource = new System.Windows.Forms.Label();
             this.lb_ValidConfirm = new System.Windows.Forms.Label();
             this.lb_ValidPassword = new System.Windows.Forms.Label();
             this.lb_ValidPhone = new System.Windows.Forms.Label();
@@ -58,9 +61,6 @@
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_phone = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lb_outsource = new System.Windows.Forms.Label();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +90,7 @@
             this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,7 +109,7 @@
             // 
             this.lb_NewProfile.AutoSize = true;
             this.lb_NewProfile.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NewProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.lb_NewProfile.ForeColor = System.Drawing.Color.Black;
             this.lb_NewProfile.Location = new System.Drawing.Point(10, 9);
             this.lb_NewProfile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_NewProfile.Name = "lb_NewProfile";
@@ -280,6 +280,37 @@
             this.pn_containerFormAddUser.TabIndex = 0;
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(507, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(308, 346);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 27);
+            this.textBox1.TabIndex = 45;
+            // 
+            // lb_outsource
+            // 
+            this.lb_outsource.AutoSize = true;
+            this.lb_outsource.BackColor = System.Drawing.Color.Transparent;
+            this.lb_outsource.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_outsource.ForeColor = System.Drawing.Color.Black;
+            this.lb_outsource.Location = new System.Drawing.Point(166, 345);
+            this.lb_outsource.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_outsource.Name = "lb_outsource";
+            this.lb_outsource.Size = new System.Drawing.Size(80, 19);
+            this.lb_outsource.TabIndex = 44;
+            this.lb_outsource.Text = "Outsource";
+            // 
             // lb_ValidConfirm
             // 
             this.lb_ValidConfirm.AutoSize = true;
@@ -424,7 +455,7 @@
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Location = new System.Drawing.Point(452, 498);
             this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
@@ -435,7 +466,7 @@
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
@@ -455,37 +486,6 @@
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(194, 27);
             this.txt_phone.TabIndex = 27;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(507, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "label1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(308, 346);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 27);
-            this.textBox1.TabIndex = 45;
-            // 
-            // lb_outsource
-            // 
-            this.lb_outsource.AutoSize = true;
-            this.lb_outsource.BackColor = System.Drawing.Color.Transparent;
-            this.lb_outsource.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_outsource.ForeColor = System.Drawing.Color.Black;
-            this.lb_outsource.Location = new System.Drawing.Point(166, 345);
-            this.lb_outsource.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_outsource.Name = "lb_outsource";
-            this.lb_outsource.Size = new System.Drawing.Size(80, 19);
-            this.lb_outsource.TabIndex = 44;
-            this.lb_outsource.Text = "Outsource";
             // 
             // FormAddUser
             // 

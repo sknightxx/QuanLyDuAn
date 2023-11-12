@@ -108,8 +108,26 @@
     <Compile Include="Forms\Management\InformationForm.Designer.cs">
       <DependentUpon>InformationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Management\MailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\MailForm.Designer.cs">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Management\MenuColorTable.cs" />
     <Compile Include="Forms\Management\MenuRenderer.cs" />
+    <Compile Include="Forms\Management\Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\RemindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\RemindForm.Designer.cs">
+      <DependentUpon>RemindForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\User\FormHomeUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +258,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\InformationForm.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\MailForm.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\RemindForm.resx">
+      <DependentUpon>RemindForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
       <DependentUpon>FormHomeUser.cs</DependentUpon>

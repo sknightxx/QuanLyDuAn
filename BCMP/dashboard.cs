@@ -258,5 +258,29 @@ namespace BCMP
             InformationForm informationForm = new InformationForm();
             informationForm.Show();
         }
+
+        private void bt_changePassword_Click(object sender, EventArgs e)
+        {
+            ChangePasswordForm changePasswordForm = new ChangePasswordForm();
+            changePasswordForm.Show();
+        }
+
+        private void bt_notifications_Click(object sender, EventArgs e)
+        {
+            Notification notificationForm = new Notification();
+            notificationForm.Show();
+        }
+
+        private void bt_mail_Click(object sender, EventArgs e)
+        {
+            MailForm mailForm = new MailForm();
+            mailForm.Show();
+        }
+
+        private void bt_remind_Click(object sender, EventArgs e)
+        {
+            RemindForm remindForm = new RemindForm();
+            remindForm.Show();
+        }
     }
 }

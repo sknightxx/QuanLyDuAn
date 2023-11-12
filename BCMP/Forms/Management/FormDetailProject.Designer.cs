@@ -46,9 +46,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_member
@@ -91,7 +89,7 @@
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
@@ -112,7 +110,7 @@
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Location = new System.Drawing.Point(680, 423);
             this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
@@ -211,7 +209,7 @@
             this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -292,20 +290,11 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.vScrollBar1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(902, 468);
             this.panel2.TabIndex = 21;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(885, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 468);
-            this.vScrollBar1.TabIndex = 0;
             // 
             // FormDetailProject
             // 
@@ -320,7 +309,6 @@
             this.Text = "FormDetailProject";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +333,5 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lb_NameProject;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

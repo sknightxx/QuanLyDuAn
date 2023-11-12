@@ -58,6 +58,12 @@ namespace BCMP.Forms.Management
             this.lb_Management = new System.Windows.Forms.Label();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_ValidDescription = new System.Windows.Forms.Label();
+            this.lb_ValidRelate = new System.Windows.Forms.Label();
+            this.lb_ValidDocument = new System.Windows.Forms.Label();
+            this.lb_ValidManagement = new System.Windows.Forms.Label();
+            this.lb_ValidTittle = new System.Windows.Forms.Label();
+            this.lb_ValidIdMission = new System.Windows.Forms.Label();
             this.cbb_status = new System.Windows.Forms.ComboBox();
             this.txt_relateProject = new System.Windows.Forms.TextBox();
             this.lb_relateProject = new System.Windows.Forms.Label();
@@ -80,12 +86,6 @@ namespace BCMP.Forms.Management
             this.lb_document = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_Tittle = new System.Windows.Forms.Label();
-            this.lb_ValidIdMission = new System.Windows.Forms.Label();
-            this.lb_ValidTittle = new System.Windows.Forms.Label();
-            this.lb_ValidManagement = new System.Windows.Forms.Label();
-            this.lb_ValidDocument = new System.Windows.Forms.Label();
-            this.lb_ValidRelate = new System.Windows.Forms.Label();
-            this.lb_ValidDescription = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_container.SuspendLayout();
@@ -153,6 +153,60 @@ namespace BCMP.Forms.Management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 550);
             this.panel1.TabIndex = 17;
+            // 
+            // lb_ValidDescription
+            // 
+            this.lb_ValidDescription.AutoSize = true;
+            this.lb_ValidDescription.Location = new System.Drawing.Point(21, 469);
+            this.lb_ValidDescription.Name = "lb_ValidDescription";
+            this.lb_ValidDescription.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidDescription.TabIndex = 28;
+            this.lb_ValidDescription.Text = "label8";
+            // 
+            // lb_ValidRelate
+            // 
+            this.lb_ValidRelate.AutoSize = true;
+            this.lb_ValidRelate.Location = new System.Drawing.Point(352, 355);
+            this.lb_ValidRelate.Name = "lb_ValidRelate";
+            this.lb_ValidRelate.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidRelate.TabIndex = 27;
+            this.lb_ValidRelate.Text = "label7";
+            // 
+            // lb_ValidDocument
+            // 
+            this.lb_ValidDocument.AutoSize = true;
+            this.lb_ValidDocument.Location = new System.Drawing.Point(25, 277);
+            this.lb_ValidDocument.Name = "lb_ValidDocument";
+            this.lb_ValidDocument.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidDocument.TabIndex = 26;
+            this.lb_ValidDocument.Text = "label6";
+            // 
+            // lb_ValidManagement
+            // 
+            this.lb_ValidManagement.AutoSize = true;
+            this.lb_ValidManagement.Location = new System.Drawing.Point(352, 125);
+            this.lb_ValidManagement.Name = "lb_ValidManagement";
+            this.lb_ValidManagement.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidManagement.TabIndex = 25;
+            this.lb_ValidManagement.Text = "label5";
+            // 
+            // lb_ValidTittle
+            // 
+            this.lb_ValidTittle.AutoSize = true;
+            this.lb_ValidTittle.Location = new System.Drawing.Point(25, 197);
+            this.lb_ValidTittle.Name = "lb_ValidTittle";
+            this.lb_ValidTittle.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidTittle.TabIndex = 24;
+            this.lb_ValidTittle.Text = "label4";
+            // 
+            // lb_ValidIdMission
+            // 
+            this.lb_ValidIdMission.AutoSize = true;
+            this.lb_ValidIdMission.Location = new System.Drawing.Point(25, 125);
+            this.lb_ValidIdMission.Name = "lb_ValidIdMission";
+            this.lb_ValidIdMission.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidIdMission.TabIndex = 23;
+            this.lb_ValidIdMission.Text = "label1";
             // 
             // cbb_status
             // 
@@ -257,7 +311,7 @@ namespace BCMP.Forms.Management
             // 
             this.lb_newMission.AutoSize = true;
             this.lb_newMission.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_newMission.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.lb_newMission.ForeColor = System.Drawing.Color.Black;
             this.lb_newMission.Location = new System.Drawing.Point(10, 9);
             this.lb_newMission.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_newMission.Name = "lb_newMission";
@@ -276,9 +330,9 @@ namespace BCMP.Forms.Management
             this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_exit.ForeColor = System.Drawing.Color.Black;
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,7 +355,7 @@ namespace BCMP.Forms.Management
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Location = new System.Drawing.Point(450, 489);
             this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
@@ -315,7 +369,7 @@ namespace BCMP.Forms.Management
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
@@ -457,60 +511,6 @@ namespace BCMP.Forms.Management
             this.lb_Tittle.Size = new System.Drawing.Size(39, 18);
             this.lb_Tittle.TabIndex = 1;
             this.lb_Tittle.Text = "Tittle";
-            // 
-            // lb_ValidIdMission
-            // 
-            this.lb_ValidIdMission.AutoSize = true;
-            this.lb_ValidIdMission.Location = new System.Drawing.Point(25, 125);
-            this.lb_ValidIdMission.Name = "lb_ValidIdMission";
-            this.lb_ValidIdMission.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidIdMission.TabIndex = 23;
-            this.lb_ValidIdMission.Text = "label1";
-            // 
-            // lb_ValidTittle
-            // 
-            this.lb_ValidTittle.AutoSize = true;
-            this.lb_ValidTittle.Location = new System.Drawing.Point(25, 197);
-            this.lb_ValidTittle.Name = "lb_ValidTittle";
-            this.lb_ValidTittle.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidTittle.TabIndex = 24;
-            this.lb_ValidTittle.Text = "label4";
-            // 
-            // lb_ValidManagement
-            // 
-            this.lb_ValidManagement.AutoSize = true;
-            this.lb_ValidManagement.Location = new System.Drawing.Point(352, 125);
-            this.lb_ValidManagement.Name = "lb_ValidManagement";
-            this.lb_ValidManagement.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidManagement.TabIndex = 25;
-            this.lb_ValidManagement.Text = "label5";
-            // 
-            // lb_ValidDocument
-            // 
-            this.lb_ValidDocument.AutoSize = true;
-            this.lb_ValidDocument.Location = new System.Drawing.Point(25, 277);
-            this.lb_ValidDocument.Name = "lb_ValidDocument";
-            this.lb_ValidDocument.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidDocument.TabIndex = 26;
-            this.lb_ValidDocument.Text = "label6";
-            // 
-            // lb_ValidRelate
-            // 
-            this.lb_ValidRelate.AutoSize = true;
-            this.lb_ValidRelate.Location = new System.Drawing.Point(352, 355);
-            this.lb_ValidRelate.Name = "lb_ValidRelate";
-            this.lb_ValidRelate.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidRelate.TabIndex = 27;
-            this.lb_ValidRelate.Text = "label7";
-            // 
-            // lb_ValidDescription
-            // 
-            this.lb_ValidDescription.AutoSize = true;
-            this.lb_ValidDescription.Location = new System.Drawing.Point(21, 469);
-            this.lb_ValidDescription.Name = "lb_ValidDescription";
-            this.lb_ValidDescription.Size = new System.Drawing.Size(35, 13);
-            this.lb_ValidDescription.TabIndex = 28;
-            this.lb_ValidDescription.Text = "label8";
             // 
             // FormAddMission
             // 

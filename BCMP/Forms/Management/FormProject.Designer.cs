@@ -37,8 +37,8 @@
             this.bt_CreateProject = new System.Windows.Forms.Button();
             this.lb_MyWork = new System.Windows.Forms.Label();
             this.pn_background = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pn_container = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -117,7 +117,7 @@
             // bt_others
             // 
             this.bt_others.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_others.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_others.BackColor = System.Drawing.Color.Black;
             this.bt_others.FlatAppearance.BorderSize = 0;
             this.bt_others.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_others.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,7 +137,7 @@
             // bt_CreateProject
             // 
             this.bt_CreateProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_CreateProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_CreateProject.BackColor = System.Drawing.Color.Black;
             this.bt_CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_CreateProject.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_CreateProject.FlatAppearance.BorderSize = 0;
@@ -159,7 +159,7 @@
             // 
             this.lb_MyWork.AutoSize = true;
             this.lb_MyWork.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_MyWork.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.lb_MyWork.ForeColor = System.Drawing.Color.Black;
             this.lb_MyWork.Location = new System.Drawing.Point(23, 20);
             this.lb_MyWork.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_MyWork.Name = "lb_MyWork";
@@ -178,16 +178,6 @@
             this.pn_background.Size = new System.Drawing.Size(902, 410);
             this.pn_background.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(693, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "detail";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pn_container
             // 
             this.pn_container.AutoScroll = true;
@@ -197,6 +187,16 @@
             this.pn_container.Name = "pn_container";
             this.pn_container.Size = new System.Drawing.Size(902, 410);
             this.pn_container.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(693, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "detail";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormProject
             // 

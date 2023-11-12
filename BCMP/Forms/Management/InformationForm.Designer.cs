@@ -41,9 +41,9 @@
             this.lb_Name = new System.Windows.Forms.Label();
             this.lb_Email = new System.Windows.Forms.Label();
             this.pn_containerInformation = new System.Windows.Forms.Panel();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_containerInformation.SuspendLayout();
             this.pn_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
@@ -189,30 +189,7 @@
             this.pn_containerInformation.Name = "pn_containerInformation";
             this.pn_containerInformation.Size = new System.Drawing.Size(428, 469);
             this.pn_containerInformation.TabIndex = 50;
-            // 
-            // pn_user
-            // 
-            this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Location = new System.Drawing.Point(114, 32);
-            this.pn_user.Name = "pn_user";
-            this.pn_user.Size = new System.Drawing.Size(178, 97);
-            this.pn_user.TabIndex = 0;
-            // 
-            // iconUser
-            // 
-            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
-            this.iconUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconUser.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
-            this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 97;
-            this.iconUser.Location = new System.Drawing.Point(0, 0);
-            this.iconUser.Name = "iconUser";
-            this.iconUser.Size = new System.Drawing.Size(178, 97);
-            this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconUser.TabIndex = 1;
-            this.iconUser.TabStop = false;
+            this.pn_containerInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerInformation_Paint);
             // 
             // bt_exit
             // 
@@ -242,6 +219,30 @@
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
+            // pn_user
+            // 
+            this.pn_user.Controls.Add(this.iconUser);
+            this.pn_user.Location = new System.Drawing.Point(114, 32);
+            this.pn_user.Name = "pn_user";
+            this.pn_user.Size = new System.Drawing.Size(178, 97);
+            this.pn_user.TabIndex = 0;
+            // 
+            // iconUser
+            // 
+            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
+            this.iconUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconUser.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconUser.IconSize = 97;
+            this.iconUser.Location = new System.Drawing.Point(0, 0);
+            this.iconUser.Name = "iconUser";
+            this.iconUser.Size = new System.Drawing.Size(178, 97);
+            this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconUser.TabIndex = 1;
+            this.iconUser.TabStop = false;
+            // 
             // InformationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +262,7 @@
             this.Controls.Add(this.pn_containerInformation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InformationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InformationForm";
             this.Load += new System.EventHandler(this.InformationForm_Load);
             this.pn_containerInformation.ResumeLayout(false);
