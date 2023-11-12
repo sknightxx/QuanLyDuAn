@@ -32,8 +32,8 @@
             this.bt_download = new FontAwesome.Sharp.IconButton();
             this.bt_upload = new FontAwesome.Sharp.IconButton();
             this.pn_tittle = new System.Windows.Forms.Panel();
-            this.bt_print = new FontAwesome.Sharp.IconButton();
             this.bt_delete = new FontAwesome.Sharp.IconButton();
+            this.bt_print = new FontAwesome.Sharp.IconButton();
             this.lb_file = new System.Windows.Forms.Label();
             this.bt_departmentData = new System.Windows.Forms.Button();
             this.bt_publicData = new System.Windows.Forms.Button();
@@ -118,26 +118,6 @@
             this.pn_tittle.Size = new System.Drawing.Size(906, 110);
             this.pn_tittle.TabIndex = 7;
             // 
-            // bt_print
-            // 
-            this.bt_print.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_print.BackColor = System.Drawing.Color.White;
-            this.bt_print.FlatAppearance.BorderSize = 0;
-            this.bt_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_print.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_print.ForeColor = System.Drawing.Color.White;
-            this.bt_print.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.bt_print.IconColor = System.Drawing.Color.Black;
-            this.bt_print.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_print.IconSize = 32;
-            this.bt_print.Location = new System.Drawing.Point(840, 68);
-            this.bt_print.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_print.Name = "bt_print";
-            this.bt_print.Size = new System.Drawing.Size(44, 30);
-            this.bt_print.TabIndex = 24;
-            this.bt_print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_print.UseVisualStyleBackColor = false;
-            // 
             // bt_delete
             // 
             this.bt_delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -157,6 +137,26 @@
             this.bt_delete.TabIndex = 20;
             this.bt_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_delete.UseVisualStyleBackColor = false;
+            // 
+            // bt_print
+            // 
+            this.bt_print.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_print.BackColor = System.Drawing.Color.White;
+            this.bt_print.FlatAppearance.BorderSize = 0;
+            this.bt_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_print.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_print.ForeColor = System.Drawing.Color.White;
+            this.bt_print.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.bt_print.IconColor = System.Drawing.Color.Black;
+            this.bt_print.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_print.IconSize = 32;
+            this.bt_print.Location = new System.Drawing.Point(840, 68);
+            this.bt_print.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_print.Name = "bt_print";
+            this.bt_print.Size = new System.Drawing.Size(44, 30);
+            this.bt_print.TabIndex = 24;
+            this.bt_print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_print.UseVisualStyleBackColor = false;
             // 
             // lb_file
             // 
@@ -222,6 +222,8 @@
             this.txt_search.Size = new System.Drawing.Size(361, 30);
             this.txt_search.TabIndex = 0;
             this.txt_search.Text = "Search for document";
+            this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
+            this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
             // 
             // bt_search
             // 

@@ -53,5 +53,25 @@ namespace BCMP.Forms.Management
             OpenChildForm(new FormDepartmentData());
 
         }
+
+        private void txt_search_Leave(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "")
+            {
+                txt_search.Text = "Search for document";
+                txt_search.Multiline = true;
+                txt_search.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txt_search_Enter(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "Search for document")
+            {
+                txt_search.Text = "";
+                txt_search.Multiline = true;
+                txt_search.ForeColor = Color.Black;
+            }
+        }
     }
 }
