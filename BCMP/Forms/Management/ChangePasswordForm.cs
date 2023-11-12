@@ -44,5 +44,10 @@ namespace BCMP.Forms.Management
             this.Region = new Region(path);
             base.OnPaintBackground(e);
         }
+
+        private void bt_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -33,13 +33,13 @@
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.lb_phone = new System.Windows.Forms.Label();
             this.pn_containerChangePass = new System.Windows.Forms.Panel();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
+            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.lb_Email = new System.Windows.Forms.Label();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
-            this.txt_Email = new System.Windows.Forms.TextBox();
-            this.lb_Email = new System.Windows.Forms.Label();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_save = new System.Windows.Forms.Button();
             this.pn_containerChangePass.SuspendLayout();
             this.pn_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
@@ -108,80 +108,6 @@
             this.pn_containerChangePass.TabIndex = 62;
             this.pn_containerChangePass.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerChangePass_Paint);
             // 
-            // bt_exit
-            // 
-            this.bt_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_exit.Location = new System.Drawing.Point(376, 11);
-            this.bt_exit.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_exit.Size = new System.Drawing.Size(41, 18);
-            this.bt_exit.TabIndex = 17;
-            this.bt_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_exit.UseVisualStyleBackColor = false;
-            // 
-            // pn_user
-            // 
-            this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Location = new System.Drawing.Point(114, 32);
-            this.pn_user.Name = "pn_user";
-            this.pn_user.Size = new System.Drawing.Size(178, 97);
-            this.pn_user.TabIndex = 0;
-            // 
-            // iconUser
-            // 
-            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
-            this.iconUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.iconUser.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
-            this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 97;
-            this.iconUser.Location = new System.Drawing.Point(0, 0);
-            this.iconUser.Name = "iconUser";
-            this.iconUser.Size = new System.Drawing.Size(178, 97);
-            this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconUser.TabIndex = 1;
-            this.iconUser.TabStop = false;
-            // 
-            // txt_Email
-            // 
-            this.txt_Email.Location = new System.Drawing.Point(167, 250);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Email.Multiline = true;
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(194, 27);
-            this.txt_Email.TabIndex = 53;
-            // 
-            // lb_Email
-            // 
-            this.lb_Email.AutoSize = true;
-            this.lb_Email.BackColor = System.Drawing.Color.Transparent;
-            this.lb_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Email.ForeColor = System.Drawing.Color.Black;
-            this.lb_Email.Location = new System.Drawing.Point(19, 258);
-            this.lb_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_Email.Name = "lb_Email";
-            this.lb_Email.Size = new System.Drawing.Size(72, 19);
-            this.lb_Email.TabIndex = 52;
-            this.lb_Email.Text = "Password";
-            this.lb_Email.Click += new System.EventHandler(this.lb_Email_Click);
-            // 
             // bt_cancel
             // 
             this.bt_cancel.BackColor = System.Drawing.Color.White;
@@ -213,6 +139,81 @@
             this.bt_save.TabIndex = 60;
             this.bt_save.Text = "SAVE";
             this.bt_save.UseVisualStyleBackColor = false;
+            // 
+            // txt_Email
+            // 
+            this.txt_Email.Location = new System.Drawing.Point(167, 250);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Email.Multiline = true;
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(194, 27);
+            this.txt_Email.TabIndex = 53;
+            // 
+            // lb_Email
+            // 
+            this.lb_Email.AutoSize = true;
+            this.lb_Email.BackColor = System.Drawing.Color.Transparent;
+            this.lb_Email.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Email.ForeColor = System.Drawing.Color.Black;
+            this.lb_Email.Location = new System.Drawing.Point(19, 258);
+            this.lb_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Email.Name = "lb_Email";
+            this.lb_Email.Size = new System.Drawing.Size(72, 19);
+            this.lb_Email.TabIndex = 52;
+            this.lb_Email.Text = "Password";
+            this.lb_Email.Click += new System.EventHandler(this.lb_Email_Click);
+            // 
+            // bt_exit
+            // 
+            this.bt_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_exit.Location = new System.Drawing.Point(376, 11);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
+            this.bt_exit.Size = new System.Drawing.Size(41, 18);
+            this.bt_exit.TabIndex = 17;
+            this.bt_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
+            // pn_user
+            // 
+            this.pn_user.Controls.Add(this.iconUser);
+            this.pn_user.Location = new System.Drawing.Point(114, 32);
+            this.pn_user.Name = "pn_user";
+            this.pn_user.Size = new System.Drawing.Size(178, 97);
+            this.pn_user.TabIndex = 0;
+            // 
+            // iconUser
+            // 
+            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
+            this.iconUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iconUser.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconUser.IconSize = 97;
+            this.iconUser.Location = new System.Drawing.Point(0, 0);
+            this.iconUser.Name = "iconUser";
+            this.iconUser.Size = new System.Drawing.Size(178, 97);
+            this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconUser.TabIndex = 1;
+            this.iconUser.TabStop = false;
             // 
             // ChangePasswordForm
             // 
