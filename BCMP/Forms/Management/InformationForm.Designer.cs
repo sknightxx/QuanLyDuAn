@@ -44,6 +44,7 @@
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
+            this.lb_information = new System.Windows.Forms.Label();
             this.pn_containerInformation.SuspendLayout();
             this.pn_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
@@ -181,6 +182,7 @@
             // 
             // pn_containerInformation
             // 
+            this.pn_containerInformation.Controls.Add(this.lb_information);
             this.pn_containerInformation.Controls.Add(this.bt_exit);
             this.pn_containerInformation.Controls.Add(this.pn_user);
             this.pn_containerInformation.Controls.Add(this.txt_name);
@@ -222,7 +224,7 @@
             // pn_user
             // 
             this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Location = new System.Drawing.Point(114, 32);
+            this.pn_user.Location = new System.Drawing.Point(118, 37);
             this.pn_user.Name = "pn_user";
             this.pn_user.Size = new System.Drawing.Size(178, 97);
             this.pn_user.TabIndex = 0;
@@ -242,6 +244,16 @@
             this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconUser.TabIndex = 1;
             this.iconUser.TabStop = false;
+            // 
+            // lb_information
+            // 
+            this.lb_information.AutoSize = true;
+            this.lb_information.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_information.Location = new System.Drawing.Point(12, 9);
+            this.lb_information.Name = "lb_information";
+            this.lb_information.Size = new System.Drawing.Size(128, 25);
+            this.lb_information.TabIndex = 53;
+            this.lb_information.Text = "Information";
             // 
             // InformationForm
             // 
@@ -291,5 +303,6 @@
         private System.Windows.Forms.Panel pn_user;
         private FontAwesome.Sharp.IconPictureBox iconUser;
         private FontAwesome.Sharp.IconButton bt_exit;
+        private System.Windows.Forms.Label lb_information;
     }
 }

@@ -40,6 +40,7 @@
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
+            this.lb_ChangePass = new System.Windows.Forms.Label();
             this.pn_containerChangePass.SuspendLayout();
             this.pn_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
@@ -91,6 +92,7 @@
             // 
             // pn_containerChangePass
             // 
+            this.pn_containerChangePass.Controls.Add(this.lb_ChangePass);
             this.pn_containerChangePass.Controls.Add(this.bt_cancel);
             this.pn_containerChangePass.Controls.Add(this.bt_save);
             this.pn_containerChangePass.Controls.Add(this.txt_phone);
@@ -194,7 +196,7 @@
             // pn_user
             // 
             this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Location = new System.Drawing.Point(114, 32);
+            this.pn_user.Location = new System.Drawing.Point(111, 51);
             this.pn_user.Name = "pn_user";
             this.pn_user.Size = new System.Drawing.Size(178, 97);
             this.pn_user.TabIndex = 0;
@@ -214,6 +216,16 @@
             this.iconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconUser.TabIndex = 1;
             this.iconUser.TabStop = false;
+            // 
+            // lb_ChangePass
+            // 
+            this.lb_ChangePass.AutoSize = true;
+            this.lb_ChangePass.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ChangePass.Location = new System.Drawing.Point(12, 11);
+            this.lb_ChangePass.Name = "lb_ChangePass";
+            this.lb_ChangePass.Size = new System.Drawing.Size(196, 25);
+            this.lb_ChangePass.TabIndex = 62;
+            this.lb_ChangePass.Text = "Change Password";
             // 
             // ChangePasswordForm
             // 
@@ -246,5 +258,6 @@
         private System.Windows.Forms.Label lb_Email;
         private System.Windows.Forms.Button bt_cancel;
         private System.Windows.Forms.Button bt_save;
+        private System.Windows.Forms.Label lb_ChangePass;
     }
 }
