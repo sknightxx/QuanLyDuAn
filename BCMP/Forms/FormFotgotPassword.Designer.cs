@@ -30,6 +30,7 @@
         {
             this.lb_logo = new System.Windows.Forms.Label();
             this.pn_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_iconBackLogin = new FontAwesome.Sharp.IconButton();
             this.ptb_logo = new System.Windows.Forms.PictureBox();
             this.lb_fotgotpassword = new System.Windows.Forms.Label();
@@ -44,11 +45,10 @@
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_idPass = new System.Windows.Forms.TextBox();
             this.bt_sendmail = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_left.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();
             this.pn_right.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_logo
@@ -65,17 +65,27 @@
             // 
             // pn_left
             // 
-            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.pn_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.pn_left.Controls.Add(this.pictureBox1);
             this.pn_left.Controls.Add(this.bt_iconBackLogin);
             this.pn_left.Controls.Add(this.lb_logo);
             this.pn_left.Controls.Add(this.ptb_logo);
             this.pn_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_left.Location = new System.Drawing.Point(0, 0);
-            this.pn_left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_left.Margin = new System.Windows.Forms.Padding(2);
             this.pn_left.Name = "pn_left";
             this.pn_left.Size = new System.Drawing.Size(333, 498);
             this.pn_left.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Location = new System.Drawing.Point(174, 175);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
             // 
             // bt_iconBackLogin
             // 
@@ -90,7 +100,7 @@
             this.bt_iconBackLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_iconBackLogin.IconSize = 30;
             this.bt_iconBackLogin.Location = new System.Drawing.Point(12, 5);
-            this.bt_iconBackLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_iconBackLogin.Margin = new System.Windows.Forms.Padding(2);
             this.bt_iconBackLogin.Name = "bt_iconBackLogin";
             this.bt_iconBackLogin.Size = new System.Drawing.Size(28, 24);
             this.bt_iconBackLogin.TabIndex = 29;
@@ -101,7 +111,7 @@
             // 
             this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
             this.ptb_logo.Location = new System.Drawing.Point(50, 151);
-            this.ptb_logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
             this.ptb_logo.Name = "ptb_logo";
             this.ptb_logo.Size = new System.Drawing.Size(111, 119);
             this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -112,7 +122,7 @@
             // 
             this.lb_fotgotpassword.AutoSize = true;
             this.lb_fotgotpassword.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_fotgotpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.lb_fotgotpassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_fotgotpassword.Location = new System.Drawing.Point(99, 40);
             this.lb_fotgotpassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_fotgotpassword.Name = "lb_fotgotpassword";
@@ -124,7 +134,7 @@
             // 
             this.lb_userIdFotgotPass.AutoSize = true;
             this.lb_userIdFotgotPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_userIdFotgotPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.lb_userIdFotgotPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_userIdFotgotPass.Location = new System.Drawing.Point(22, 114);
             this.lb_userIdFotgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_userIdFotgotPass.Name = "lb_userIdFotgotPass";
@@ -146,7 +156,7 @@
             // 
             this.lb_email.AutoSize = true;
             this.lb_email.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.lb_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.lb_email.Location = new System.Drawing.Point(22, 206);
             this.lb_email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_email.Name = "lb_email";
@@ -180,7 +190,7 @@
             this.pn_right.Controls.Add(this.lb_fotgotpassword);
             this.pn_right.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_right.Location = new System.Drawing.Point(333, 0);
-            this.pn_right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_right.Margin = new System.Windows.Forms.Padding(2);
             this.pn_right.Name = "pn_right";
             this.pn_right.Size = new System.Drawing.Size(333, 498);
             this.pn_right.TabIndex = 4;
@@ -190,13 +200,13 @@
             this.bt_iconExit.BackColor = System.Drawing.Color.Transparent;
             this.bt_iconExit.FlatAppearance.BorderSize = 0;
             this.bt_iconExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_iconExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
+            this.bt_iconExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_iconExit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.bt_iconExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(78)))));
             this.bt_iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_iconExit.IconSize = 30;
             this.bt_iconExit.Location = new System.Drawing.Point(294, 5);
-            this.bt_iconExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_iconExit.Margin = new System.Windows.Forms.Padding(2);
             this.bt_iconExit.Name = "bt_iconExit";
             this.bt_iconExit.Size = new System.Drawing.Size(28, 24);
             this.bt_iconExit.TabIndex = 30;
@@ -209,11 +219,11 @@
             this.bt_iconMail.FlatAppearance.BorderSize = 0;
             this.bt_iconMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_iconMail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.bt_iconMail.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.bt_iconMail.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_iconMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_iconMail.IconSize = 28;
             this.bt_iconMail.Location = new System.Drawing.Point(272, 246);
-            this.bt_iconMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_iconMail.Margin = new System.Windows.Forms.Padding(2);
             this.bt_iconMail.Name = "bt_iconMail";
             this.bt_iconMail.Size = new System.Drawing.Size(28, 24);
             this.bt_iconMail.TabIndex = 28;
@@ -225,11 +235,11 @@
             this.bt_IconUserForgotPass.FlatAppearance.BorderSize = 0;
             this.bt_IconUserForgotPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_IconUserForgotPass.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_IconUserForgotPass.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.bt_IconUserForgotPass.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_IconUserForgotPass.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_IconUserForgotPass.IconSize = 28;
             this.bt_IconUserForgotPass.Location = new System.Drawing.Point(272, 158);
-            this.bt_IconUserForgotPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_IconUserForgotPass.Margin = new System.Windows.Forms.Padding(2);
             this.bt_IconUserForgotPass.Name = "bt_IconUserForgotPass";
             this.bt_IconUserForgotPass.Size = new System.Drawing.Size(28, 24);
             this.bt_IconUserForgotPass.TabIndex = 27;
@@ -242,7 +252,7 @@
             this.txt_email.Font = new System.Drawing.Font("Prestige Elite Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txt_email.Location = new System.Drawing.Point(42, 246);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_email.Multiline = true;
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '*';
@@ -260,7 +270,7 @@
             this.txt_idPass.Font = new System.Drawing.Font("Prestige Elite Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_idPass.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txt_idPass.Location = new System.Drawing.Point(42, 157);
-            this.txt_idPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_idPass.Margin = new System.Windows.Forms.Padding(2);
             this.txt_idPass.Multiline = true;
             this.txt_idPass.Name = "txt_idPass";
             this.txt_idPass.Size = new System.Drawing.Size(225, 24);
@@ -271,27 +281,17 @@
             // 
             // bt_sendmail
             // 
-            this.bt_sendmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.bt_sendmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.bt_sendmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sendmail.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sendmail.ForeColor = System.Drawing.Color.Gainsboro;
             this.bt_sendmail.Location = new System.Drawing.Point(26, 350);
-            this.bt_sendmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_sendmail.Margin = new System.Windows.Forms.Padding(2);
             this.bt_sendmail.Name = "bt_sendmail";
             this.bt_sendmail.Size = new System.Drawing.Size(274, 37);
             this.bt_sendmail.TabIndex = 24;
             this.bt_sendmail.Text = "SEND MAIL";
             this.bt_sendmail.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
-            this.pictureBox1.Location = new System.Drawing.Point(174, 175);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // FormFotgotPassword
             // 
@@ -301,16 +301,16 @@
             this.Controls.Add(this.pn_right);
             this.Controls.Add(this.pn_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormFotgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fotgotPassword";
             this.pn_left.ResumeLayout(false);
             this.pn_left.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();
             this.pn_right.ResumeLayout(false);
             this.pn_right.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -115,7 +115,7 @@
             // bt_others
             // 
             this.bt_others.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_others.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_others.BackColor = System.Drawing.Color.Black;
             this.bt_others.FlatAppearance.BorderSize = 0;
             this.bt_others.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_others.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,7 +135,7 @@
             // bt_Create
             // 
             this.bt_Create.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_Create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_Create.BackColor = System.Drawing.Color.Black;
             this.bt_Create.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_Create.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_Create.FlatAppearance.BorderSize = 0;
@@ -157,7 +157,7 @@
             // 
             this.lb_employee.AutoSize = true;
             this.lb_employee.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.lb_employee.ForeColor = System.Drawing.Color.Black;
             this.lb_employee.Location = new System.Drawing.Point(23, 20);
             this.lb_employee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_employee.Name = "lb_employee";

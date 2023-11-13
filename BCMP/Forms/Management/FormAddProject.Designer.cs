@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbb_department = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.lb_description = new System.Windows.Forms.Label();
             this.txt_Description = new System.Windows.Forms.TextBox();
@@ -45,19 +44,23 @@
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
             this.pn_containerAddProject = new System.Windows.Forms.Panel();
-            this.txt_management = new System.Windows.Forms.TextBox();
-            this.lb_Management = new System.Windows.Forms.Label();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_ValidDesciption = new System.Windows.Forms.Label();
+            this.lb_ValidNameProject = new System.Windows.Forms.Label();
+            this.lb_ValidIdProject = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pn_tittleAddProject.SuspendLayout();
+            this.pn_containerAddProject.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_newProject
             // 
             this.lb_newProject.AutoSize = true;
             this.lb_newProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_newProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.lb_newProject.ForeColor = System.Drawing.Color.Black;
             this.lb_newProject.Location = new System.Drawing.Point(10, 9);
             this.lb_newProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_newProject.Name = "lb_newProject";
@@ -71,7 +74,7 @@
             this.lb_NameProject.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_NameProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_NameProject.Location = new System.Drawing.Point(21, 138);
+            this.lb_NameProject.Location = new System.Drawing.Point(21, 150);
             this.lb_NameProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_NameProject.Name = "lb_NameProject";
             this.lb_NameProject.Size = new System.Drawing.Size(114, 18);
@@ -84,7 +87,7 @@
             this.lb_department.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_department.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_department.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_department.Location = new System.Drawing.Point(22, 224);
+            this.lb_department.Location = new System.Drawing.Point(22, 233);
             this.lb_department.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_department.Name = "lb_department";
             this.lb_department.Size = new System.Drawing.Size(85, 18);
@@ -97,7 +100,7 @@
             this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label2.Location = new System.Drawing.Point(366, 224);
+            this.label2.Location = new System.Drawing.Point(366, 233);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 18);
@@ -110,7 +113,7 @@
             this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label3.Location = new System.Drawing.Point(522, 224);
+            this.label3.Location = new System.Drawing.Point(522, 233);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 18);
@@ -120,27 +123,17 @@
             // cbb_department
             // 
             this.cbb_department.FormattingEnabled = true;
-            this.cbb_department.Location = new System.Drawing.Point(26, 254);
+            this.cbb_department.Location = new System.Drawing.Point(26, 263);
             this.cbb_department.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_department.Name = "cbb_department";
             this.cbb_department.Size = new System.Drawing.Size(296, 21);
             this.cbb_department.TabIndex = 6;
             this.cbb_department.Leave += new System.EventHandler(this.cbb_department_Leave);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(353, 254);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(506, 256);
+            this.dateTimePicker2.Location = new System.Drawing.Point(506, 265);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(138, 20);
@@ -152,7 +145,7 @@
             this.lb_description.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_description.Location = new System.Drawing.Point(22, 302);
+            this.lb_description.Location = new System.Drawing.Point(22, 315);
             this.lb_description.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_description.Name = "lb_description";
             this.lb_description.Size = new System.Drawing.Size(83, 18);
@@ -163,7 +156,7 @@
             // 
             this.txt_Description.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_Description.Location = new System.Drawing.Point(26, 337);
+            this.txt_Description.Location = new System.Drawing.Point(26, 350);
             this.txt_Description.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Description.Multiline = true;
             this.txt_Description.Name = "txt_Description";
@@ -189,7 +182,7 @@
             // 
             this.txt_nameProject.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nameProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_nameProject.Location = new System.Drawing.Point(25, 166);
+            this.txt_nameProject.Location = new System.Drawing.Point(25, 178);
             this.txt_nameProject.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nameProject.Multiline = true;
             this.txt_nameProject.Name = "txt_nameProject";
@@ -201,7 +194,7 @@
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_save.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_save.ForeColor = System.Drawing.Color.White;
@@ -221,7 +214,7 @@
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_cancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Location = new System.Drawing.Point(450, 489);
             this.bt_cancel.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancel.Name = "bt_cancel";
@@ -246,7 +239,7 @@
             this.bt_exit.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,8 +269,6 @@
             // pn_containerAddProject
             // 
             this.pn_containerAddProject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pn_containerAddProject.Controls.Add(this.txt_management);
-            this.pn_containerAddProject.Controls.Add(this.lb_Management);
             this.pn_containerAddProject.Controls.Add(this.txt_IdProject);
             this.pn_containerAddProject.Controls.Add(this.lb_IdProject);
             this.pn_containerAddProject.Controls.Add(this.txt_Description);
@@ -287,7 +278,6 @@
             this.pn_containerAddProject.Controls.Add(this.label3);
             this.pn_containerAddProject.Controls.Add(this.lb_NameProject);
             this.pn_containerAddProject.Controls.Add(this.cbb_department);
-            this.pn_containerAddProject.Controls.Add(this.dateTimePicker1);
             this.pn_containerAddProject.Controls.Add(this.lb_description);
             this.pn_containerAddProject.Controls.Add(this.dateTimePicker2);
             this.pn_containerAddProject.Controls.Add(this.panel1);
@@ -298,30 +288,6 @@
             this.pn_containerAddProject.Size = new System.Drawing.Size(674, 550);
             this.pn_containerAddProject.TabIndex = 17;
             this.pn_containerAddProject.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerAddProject_Paint);
-            // 
-            // txt_management
-            // 
-            this.txt_management.Location = new System.Drawing.Point(353, 96);
-            this.txt_management.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_management.Multiline = true;
-            this.txt_management.Name = "txt_management";
-            this.txt_management.Size = new System.Drawing.Size(290, 29);
-            this.txt_management.TabIndex = 16;
-            this.txt_management.Enter += new System.EventHandler(this.txt_management_Enter);
-            this.txt_management.Leave += new System.EventHandler(this.txt_management_Leave);
-            // 
-            // lb_Management
-            // 
-            this.lb_Management.AutoSize = true;
-            this.lb_Management.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Management.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_Management.Location = new System.Drawing.Point(350, 68);
-            this.lb_Management.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_Management.Name = "lb_Management";
-            this.lb_Management.Size = new System.Drawing.Size(94, 18);
-            this.lb_Management.TabIndex = 15;
-            this.lb_Management.Text = "Management";
             // 
             // txt_IdProject
             // 
@@ -353,11 +319,51 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lb_ValidDesciption);
+            this.panel1.Controls.Add(this.lb_ValidNameProject);
+            this.panel1.Controls.Add(this.lb_ValidIdProject);
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(674, 550);
             this.panel1.TabIndex = 17;
+            // 
+            // lb_ValidDesciption
+            // 
+            this.lb_ValidDesciption.AutoSize = true;
+            this.lb_ValidDesciption.Location = new System.Drawing.Point(30, 447);
+            this.lb_ValidDesciption.Name = "lb_ValidDesciption";
+            this.lb_ValidDesciption.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidDesciption.TabIndex = 21;
+            this.lb_ValidDesciption.Text = "label3";
+            // 
+            // lb_ValidNameProject
+            // 
+            this.lb_ValidNameProject.AutoSize = true;
+            this.lb_ValidNameProject.Location = new System.Drawing.Point(30, 209);
+            this.lb_ValidNameProject.Name = "lb_ValidNameProject";
+            this.lb_ValidNameProject.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidNameProject.TabIndex = 20;
+            this.lb_ValidNameProject.Text = "label2";
+            // 
+            // lb_ValidIdProject
+            // 
+            this.lb_ValidIdProject.AutoSize = true;
+            this.lb_ValidIdProject.Location = new System.Drawing.Point(253, 101);
+            this.lb_ValidIdProject.Name = "lb_ValidIdProject";
+            this.lb_ValidIdProject.Size = new System.Drawing.Size(35, 13);
+            this.lb_ValidIdProject.TabIndex = 19;
+            this.lb_ValidIdProject.Text = "label1";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(350, 265);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(138, 20);
+            this.dateTimePicker1.TabIndex = 18;
             // 
             // FormAddProject
             // 
@@ -378,6 +384,10 @@
             this.Text = "FormAddProject";
             this.pn_tittleAddProject.ResumeLayout(false);
             this.pn_tittleAddProject.PerformLayout();
+            this.pn_containerAddProject.ResumeLayout(false);
+            this.pn_containerAddProject.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,7 +401,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbb_department;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label lb_description;
         private System.Windows.Forms.TextBox txt_Description;
@@ -404,8 +413,10 @@
         private System.Windows.Forms.Panel pn_containerAddProject;
         private System.Windows.Forms.TextBox txt_IdProject;
         private System.Windows.Forms.Label lb_IdProject;
-        private System.Windows.Forms.TextBox txt_management;
-        private System.Windows.Forms.Label lb_Management;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label lb_ValidDesciption;
+        private System.Windows.Forms.Label lb_ValidNameProject;
+        private System.Windows.Forms.Label lb_ValidIdProject;
     }
 }

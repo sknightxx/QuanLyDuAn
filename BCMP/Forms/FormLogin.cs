@@ -136,5 +136,10 @@ namespace BCMP
         {
 
         }
+
+        private void bt_iconExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

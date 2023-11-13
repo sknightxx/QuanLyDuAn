@@ -1,4 +1,5 @@
 ﻿using BCMP.Forms;
+using BCMP.Forms.Management;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace BCMP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new dashboard());
         }
     }
 }

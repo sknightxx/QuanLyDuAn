@@ -84,32 +84,15 @@ namespace BCMP.Forms
             }
         }
 
-        private void txt_management_Leave(object sender, EventArgs e)
-        {
-            if (txt_management.Text == "")
-            {
-                txt_management.Text = "Enter ";
-                txt_management.Multiline = false;
-                txt_management.ForeColor = Color.Black;
-            }
-        }
+        
 
-        private void txt_management_Enter(object sender, EventArgs e)
-        {
-            if (txt_management.Text == "")
-            {
-                txt_management.Text = "Enter ";
-                txt_management.Multiline = false;
-                txt_management.ForeColor = Color.Gray;
-            }
-        }
+        
 
         private void txt_nameProject_Leave(object sender, EventArgs e)
         {
             if (txt_nameProject.Text == "")
             {
                 txt_nameProject.Text = "Enter name of project";
-                txt_nameProject.Multiline = false;
                 txt_nameProject.ForeColor = Color.Black;
             }
         }
@@ -119,7 +102,6 @@ namespace BCMP.Forms
             if (txt_nameProject.Text == "Enter name of project")
             {
                 txt_nameProject.Text = "";
-                txt_nameProject.Multiline = false;
                 txt_nameProject.ForeColor = Color.Gray;
             }
         }
@@ -134,7 +116,6 @@ namespace BCMP.Forms
             if (txt_Description.Text == "")
             {
                 txt_Description.Text = "Enter desciption about project";
-                txt_Description.Multiline = false;
                 txt_Description.ForeColor = Color.Black;
             }
         }
@@ -144,7 +125,6 @@ namespace BCMP.Forms
             if (txt_Description.Text == "Enter desciption about project")
             {
                 txt_Description.Text = "";
-                txt_Description.Multiline = false;
                 txt_Description.ForeColor = Color.Gray;
             }
         }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.Forms.Management;
 
 namespace BCMP.Forms
 {
@@ -72,5 +73,13 @@ namespace BCMP.Forms
             this.Region = new Region(path);
             base.OnPaintBackground(e);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDetailProject DetailProjectForm = new FormDetailProject();
+            DetailProjectForm.Show();
+        }
+
+        
     }
 }
