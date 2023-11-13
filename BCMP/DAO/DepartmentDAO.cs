@@ -32,5 +32,26 @@ namespace BCMP.DAO
             }
             return list;
         }
+
+        public bool InsertDepartment(string name)
+        {
+            string query = "USP_InsertDepartment @name";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { name });
+            return result > 0;
+        }
+
+        public bool UpdateDepartment(string name, int departmentId)
+        {
+            string query = "USP_UpdateDepartment @name , @departmentId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { name, departmentId });
+            return result > 0;
+        }
+
+        public bool DeleteDepartment(int departmentId)
+        {
+            string query = "USP_DeleteDepartment @departmentId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { departmentId });
+            return result > 0;
+        }
     }
 }

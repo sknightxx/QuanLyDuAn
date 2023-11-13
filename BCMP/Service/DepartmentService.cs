@@ -27,7 +27,32 @@ namespace BCMP.Service
             return departments = DepartmentDAO.Instance.GetAllDepartment();
         }
 
-        
+        public bool InsertDepartmentByManger(string name)
+        {
+            if (DepartmentDAO.Instance.InsertDepartment(name))
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool UpdateDepartmentByManager(string name, int departmentId)
+        {
+            if (DepartmentDAO.Instance.UpdateDepartment(name, departmentId))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool DeleteDepartemntByManager(int departmentId)
+        {
+            if (DepartmentDAO.Instance.DeleteDepartment(departmentId))
+            {
+                return true;
+            }
+            return false;
+        }
+
 
 
     }

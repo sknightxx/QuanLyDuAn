@@ -61,56 +61,54 @@ namespace BCMP.Forms
        
 
         #region Check Validated Employee Input
-        private void txt_Email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txt_Email_Leave(object sender, EventArgs e)
         {
-           /* if (txt_Email.Text.ToString() == "")
+            if (txt_Email.Text.ToString() == "")
             {
-                lbemail.Visible = true;
-                lbemail.Text = "Is empty";
-                lbemail.ForeColor = Color.Red;
+                lb_ValidEmail.Visible = true;
+                lb_ValidEmail.Text = "Is empty";
+                lb_ValidEmail.ForeColor = Color.Red;
             }
             else
             {
                 if (EmployeeService.Instance.EmailValidate(txt_Email.Text.ToString()))
                 {
-                    lbemail.Visible = true;
-                    lbemail.Text = "Valid";
-                    lbemail.ForeColor = Color.Green;
+                    lb_ValidEmail.Visible = true;
+                    lb_ValidEmail.Text = "Valid";
+                    lb_ValidEmail.ForeColor = Color.Green;
                 }
                 else
                 {
-                    lbemail.Visible = true;
-                    lbemail.Text = "Email is invalid";
-                    lbemail.ForeColor = Color.Red;
+                    lb_ValidEmail.Visible = true;
+                    lb_ValidEmail.Text = "Email is invalid";
+                    lb_ValidEmail.ForeColor = Color.Red;
                 }
-            }*/
+            }
         }
         private void txt_phone_Leave(object sender, EventArgs e)
         {
-            /*if (txt_phone.Text.ToString() == "")
+            if (txt_phone.Text.ToString() == "")
             {
-                lbphone.Visible = true;
-                lbphone.Text = "Is empty";
-                lbphone.ForeColor = Color.Red;
-            } else
+                lb_ValidPhone.Visible = true;
+                lb_ValidPhone.Text = "Is empty";
+                lb_ValidPhone.ForeColor = Color.Red;
+            }
+            else
             {
-                if(txt_phone.Text.Length > 9 && txt_phone.Text.Length <12)
+                if (txt_phone.Text.Length > 9 && txt_phone.Text.Length < 12)
                 {
-                    lbphone.Visible = true;
-                    lbphone.Text = "Valid";
-                    lbphone.ForeColor = Color.Green;
-                } else
-                {
-                    lbphone.Visible = true;
-                    lbphone.Text = "Length of phone is required at least 10";
-                    lbphone.ForeColor = Color.Red;
+                    lb_ValidPhone.Visible = true;
+                    lb_ValidPhone.Text = "Valid";
+                    lb_ValidPhone.ForeColor = Color.Green;
                 }
-            }*/
+                else
+                {
+                    lb_ValidPhone.Visible = true;
+                    lb_ValidPhone.Text = "Length of phone is required at least 10";
+                    lb_ValidPhone.ForeColor = Color.Red;
+                }
+            }
         }
 
         private void txt_phone_TextChanged(object sender, EventArgs e)
@@ -134,52 +132,52 @@ namespace BCMP.Forms
 
         private void txt_password_Leave(object sender, EventArgs e)
         {
-            /*if (txt_password.Text.ToString() == "")
+            if (txt_password.Text.ToString() == "")
             {
-                lbpassword.Visible = true;
-                lbpassword.Text = "Is empty";
-                lbpassword.ForeColor = Color.Red;
+                lb_ValidPassword.Visible = true;
+                lb_ValidPassword.Text = "Is empty";
+                lb_ValidPassword.ForeColor = Color.Red;
             }
             else
             {
                 if (txt_password.Text.Length > 7)
                 {
-                    lbpassword.Visible = true;
-                    lbpassword.Text = "Valid";
-                    lbpassword.ForeColor = Color.Green;
+                    lb_ValidPassword.Visible = true;
+                    lb_ValidPassword.Text = "Valid";
+                    lb_ValidPassword.ForeColor = Color.Green;
                 }
                 else
                 {
-                    lbpassword.Visible = true;
-                    lbpassword.Text = "Length at least 8";
-                    lbpassword.ForeColor = Color.Red;
+                    lb_ValidPassword.Visible = true;
+                    lb_ValidPassword.Text = "Length at least 8";
+                    lb_ValidPassword.ForeColor = Color.Red;
                 }
-            }*/
+            }
         }
 
         private void txt_checkpassword_Leave(object sender, EventArgs e)
         {
-            /*if (txt_checkpassword.Text.ToString() == "")
+            if (txt_confirmPassword.Text.ToString() == "")
             {
-                lbcheckpassword.Visible = true;
-                lbcheckpassword.Text = "Is empty";
-                lbcheckpassword.ForeColor = Color.Red;
+                lb_ValidConfirm.Visible = true;
+                lb_ValidConfirm.Text = "Is empty";
+                lb_ValidConfirm.ForeColor = Color.Red;
             }
             else
             {
-                if (txt_checkpassword.Text.ToString().Equals(txt_password.Text.ToString()))
+                if (txt_confirmPassword.Text.ToString().Equals(txt_password.Text.ToString()))
                 {
-                    lbcheckpassword.Visible = true;
-                    lbcheckpassword.Text = "Valid";
-                    lbcheckpassword.ForeColor = Color.Green;
+                    lb_ValidConfirm.Visible = true;
+                    lb_ValidConfirm.Text = "Valid";
+                    lb_ValidConfirm.ForeColor = Color.Green;
                 }
                 else
                 {
-                    lbcheckpassword.Visible = true;
-                    lbcheckpassword.Text = "The confirm password is not correct";
-                    lbcheckpassword.ForeColor = Color.Red;
+                    lb_ValidConfirm.Visible = true;
+                    lb_ValidConfirm.Text = "The confirm password is not correct";
+                    lb_ValidConfirm.ForeColor = Color.Red;
                 }
-            }*/
+            }
         }
 
         private void txt_IdStaff_TextChanged(object sender, EventArgs e)
@@ -201,43 +199,43 @@ namespace BCMP.Forms
 
         private void txt_IdStaff_Leave(object sender, EventArgs e)
         {
-            /*if (txt_IdStaff.Text.ToString() == "")
+            if (txt_IdStaff.Text.ToString() == "")
             {
-                lbuserid.Visible = true;
-                lbuserid.Text = "Is empty";
-                lbuserid.ForeColor = Color.Red;
+                lb_Valid_UserId.Visible = true;
+                lb_Valid_UserId.Text = "Is empty";
+                lb_Valid_UserId.ForeColor = Color.Red;
             }
             else
             {
                 if (AuthService.Instance.EmployeeIsExist(txt_IdStaff.Text.ToString()))
                 {
-                    lbuserid.Visible = true;
-                    lbuserid.Text = "User id is already exist";
-                    lbuserid.ForeColor = Color.Red;
+                    lb_Valid_UserId.Visible = true;
+                    lb_Valid_UserId.Text = "User id is already exist";
+                    lb_Valid_UserId.ForeColor = Color.Red;
                 }
                 else
                 {
-                    lbuserid.Visible = true;
-                    lbuserid.Text = "Valid";
-                    lbuserid.ForeColor = Color.Green;
+                    lb_Valid_UserId.Visible = true;
+                    lb_Valid_UserId.Text = "Valid";
+                    lb_Valid_UserId.ForeColor = Color.Green;
                 }
-            }*/
+            }
         }
 
         private void txt_name_Leave(object sender, EventArgs e)
         {
-            /*if (txt_name.Text.ToString() == "")
+            if (txt_name.Text.ToString() == "")
             {
-                lbname.Visible = true;
-                lbname.Text = "Is empty";
-                lbname.ForeColor = Color.Red;
+                lb_ValidFullname.Visible = true;
+                lb_ValidFullname.Text = "Is empty";
+                lb_ValidFullname.ForeColor = Color.Red;
             }
             else
             {
-                lbname.Visible = true;
-                lbname.Text = "Valid";
-                lbname.ForeColor = Color.Green;
-            }*/
+                lb_ValidFullname.Visible = true;
+                lb_ValidFullname.Text = "Valid";
+                lb_ValidFullname.ForeColor = Color.Green;
+            }
         }
 
         private void txt_name_TextChanged(object sender, EventArgs e)
@@ -257,31 +255,31 @@ namespace BCMP.Forms
 
         public void LoadDataDepartment()
         {
-            /*List<String> list = new List<String>();
-            foreach(Department item in DepartmentService.Instance.GetAllListDepartment())
+            List<String> list = new List<String>();
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
             {
                 list.Add(item.Name);
             }
-            cb_department.DataSource = list;*/
+            cb_Department.DataSource = list;
         }
 
         public void LoadDataRole()
         {
-            /*List<String> list = new List<String>();
-            foreach(Role item in RoleService.Instance.GetAllListRole())
+            List<String> list = new List<String>();
+            foreach (Role item in RoleService.Instance.GetAllListRole())
             {
                 list.Add(item.Title);
             }
-            cb_role.DataSource = list;*/
+            cb_Role.DataSource = list;
         }
 
         
 
         private void bt_save_Click(object sender, EventArgs e)
         {
-            /*if(lbuserid.Text == "Valid" && lbname.Text == "Valid" &&
-                lbpassword.Text == "Valid" && lbcheckpassword.Text == "Valid" &&
-                lbemail.Text == "Valid")
+            if (lb_Valid_UserId.Text == "Valid" && lb_ValidFullname.Text == "Valid" &&
+                lb_ValidPassword.Text == "Valid" && lb_ValidConfirm.Text == "Valid" &&
+                lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid")
             {
                 String userid = txt_IdStaff.Text.ToString();
                 String password = txt_password.Text.ToString();
@@ -290,9 +288,9 @@ namespace BCMP.Forms
                 String phone = txt_phone.Text.ToString();
                 int departmentid = 0;
                 int roleid = 0;
-                foreach(Department item in DepartmentService.Instance.GetAllListDepartment())
+                foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
                 {
-                    if (item.Name.Equals(cb_department.SelectedItem.ToString()))
+                    if (item.Name.Equals(cb_Department.SelectedItem.ToString()))
                     {
                         departmentid = item.DepartmentId;
                     }
@@ -300,24 +298,24 @@ namespace BCMP.Forms
 
                 foreach (Role item in RoleService.Instance.GetAllListRole())
                 {
-                    if (item.Title.Equals(cb_role.SelectedItem.ToString()))
+                    if (item.Title.Equals(cb_Role.SelectedItem.ToString()))
                     {
                         roleid = item.RoleId;
                     }
                 }
-                if (EmployeeService.Instance.InsertEmployeeVaildate(email, password,phone, userid, departmentid, roleid))
+                if (EmployeeService.Instance.InsertEmployeeVaildate(email, password, phone, userid, departmentid, roleid))
                 {
                     MessageBox.Show("Add employee successfully");
-                } else
+                }
+                else
                 {
                     MessageBox.Show("Add employee failed");
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show("Inputs are missed");
-            }*/
+            }
         }
-
-        
     }
 }

@@ -60,6 +60,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\MissionDAO.cs" />
+    <Compile Include="DTO\Mission.cs" />
     <Compile Include="Forms\Management\ChangePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +279,7 @@
     <Compile Include="Service\AuthService.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\MissionService.cs" />
     <Compile Include="Service\ProjectService.cs" />
     <Compile Include="Service\RoleService.cs" />
     <EmbeddedResource Include="dashboard.resx">
@@ -330,6 +333,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BCMP.DTO.Project.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
