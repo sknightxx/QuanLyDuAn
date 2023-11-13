@@ -29,5 +29,41 @@ namespace BCMP.Service
             }
             return false;
         }
+
+        public bool UpdateProjectByManager(string projectId, string name, string description, DateTime plannedStartDate, DateTime plannedEndDate, int departmentId)
+        {
+            if (ProjectDAO.Instance.UpdateProjectByProjectId(projectId, name, description, plannedStartDate, plannedEndDate, departmentId))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool DeleteProjectByManger(string projectId)
+        {
+            if (ProjectDAO.Instance.DeleteProjectByProjectId(projectId))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateActualStartProjectBySystem(string projectId, DateTime actualStartDate)
+        {
+            if (ProjectDAO.Instance.UpdateActualStartProject(projectId, actualStartDate))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateActualEndProjectBySystem(string projectId, DateTime actualEndDate)
+        {
+            if (ProjectDAO.Instance.UpdateActualStartProject(projectId, actualEndDate))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
