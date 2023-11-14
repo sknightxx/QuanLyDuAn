@@ -386,10 +386,11 @@
             // 
             this.txt_confirmPassword.Location = new System.Drawing.Point(385, 560);
             this.txt_confirmPassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_confirmPassword.Multiline = true;
             this.txt_confirmPassword.Name = "txt_confirmPassword";
-            this.txt_confirmPassword.Size = new System.Drawing.Size(242, 33);
+            this.txt_confirmPassword.PasswordChar = '*';
+            this.txt_confirmPassword.Size = new System.Drawing.Size(242, 22);
             this.txt_confirmPassword.TabIndex = 37;
+            this.txt_confirmPassword.UseSystemPasswordChar = true;
             this.txt_confirmPassword.Leave += new System.EventHandler(this.txt_checkpassword_Leave);
             // 
             // lb_confirmPassword
@@ -409,10 +410,11 @@
             // 
             this.txt_password.Location = new System.Drawing.Point(385, 492);
             this.txt_password.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(242, 33);
+            this.txt_password.PasswordChar = '*';
+            this.txt_password.Size = new System.Drawing.Size(242, 22);
             this.txt_password.TabIndex = 35;
+            this.txt_password.UseSystemPasswordChar = true;
             this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
             // 
             // lb_password
@@ -432,7 +434,7 @@
             // 
             this.cb_Role.FormattingEnabled = true;
             this.cb_Role.Location = new System.Drawing.Point(385, 378);
-            this.cb_Role.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Role.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Role.Name = "cb_Role";
             this.cb_Role.Size = new System.Drawing.Size(242, 24);
             this.cb_Role.TabIndex = 33;
@@ -441,7 +443,7 @@
             // 
             this.cb_Department.FormattingEnabled = true;
             this.cb_Department.Location = new System.Drawing.Point(385, 329);
-            this.cb_Department.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_Department.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Department.Name = "cb_Department";
             this.cb_Department.Size = new System.Drawing.Size(242, 24);
             this.cb_Department.TabIndex = 32;

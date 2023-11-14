@@ -26,9 +26,8 @@ namespace BCMP.Forms
 
         private void bt_CreateProject_Click(object sender, EventArgs e)
         {
-            
-
             FormAddProject AddProjectForm = new FormAddProject();
+            AddProjectForm.InsertProject += P_InsertProject;
             AddProjectForm.Show();
         }
 
@@ -97,6 +96,12 @@ namespace BCMP.Forms
                 FormDetailProject DetailProjectForm = new FormDetailProject(currProject);
                 DetailProjectForm.Show();
             }
+        }
+
+        private void P_InsertProject(object sender, EventArgs e)
+        {
+            proList = ProjectDAO.Instance.GetAllProject();
+            LoadProjectList();
         }
 
     }

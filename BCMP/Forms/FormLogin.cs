@@ -82,9 +82,11 @@ namespace BCMP
                     MessageBox.Show("Tài khoản của bạn đã bị khoá");
                 } else
                 {
-                    this.Hide();
                     dashboard dashboardD = new dashboard();
-                    dashboardD.Show();
+                    this.Hide();
+                    dashboardD.ShowDialog();
+                    txt_Password.Text = "";
+                    this.Show();
                 }
              
             } else
