@@ -18,6 +18,13 @@ namespace BCMP.Forms
 {
     public partial class FormAddProject : Form
     {
+
+        private event EventHandler insertProject;
+        public event EventHandler InsertProject
+        {
+            add { insertProject += value; }
+            remove { insertProject -= value; }
+        }
         public FormAddProject()
         {
             InitializeComponent();
@@ -206,6 +213,7 @@ namespace BCMP.Forms
                 {
                     MessageBox.Show("Add Project Successfully");
                     DefaultState();
+                    insertProject(this, new EventArgs());
                 }
                 else
                 {

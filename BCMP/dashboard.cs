@@ -204,7 +204,7 @@ namespace BCMP
         private void bt_exit_Click(object sender, EventArgs e)
         {
 
-            Application.Exit();
+            this.Close();
         }
 
         private bool isMaximized = false;
@@ -281,6 +281,11 @@ namespace BCMP
         {
             RemindForm remindForm = new RemindForm();
             remindForm.Show();
+        }
+
+        private void bt_logOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
