@@ -28,17 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
             this.SuspendLayout();
             // 
             // FormHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(902, 468);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormHome";
-            this.Text = "FormHome";
             this.ResumeLayout(false);
 
         }

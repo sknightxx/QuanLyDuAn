@@ -16,5 +16,25 @@ namespace BCMP.Forms.User
         {
             InitializeComponent();
         }
+
+        private void txt_search_Leave(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "")
+            {
+                txt_search.Text = "Search for project";
+                txt_search.Multiline = true;
+                txt_search.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txt_search_Enter(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "Search for project")
+            {
+                txt_search.Text = "";
+                txt_search.Multiline = true;
+                txt_search.ForeColor = Color.Black;
+            }
+        }
     }
 }

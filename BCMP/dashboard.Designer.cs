@@ -58,6 +58,9 @@
             this.bt_home = new FontAwesome.Sharp.IconButton();
             this.bt_profile = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bt_language = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_vietnamese = new System.Windows.Forms.ToolStripMenuItem();
+            this.bt_english = new System.Windows.Forms.ToolStripMenuItem();
             this.pn_leftDashBoard.SuspendLayout();
             this.pn_logo.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,7 +87,7 @@
             this.pn_leftDashBoard.Location = new System.Drawing.Point(0, 0);
             this.pn_leftDashBoard.Margin = new System.Windows.Forms.Padding(2);
             this.pn_leftDashBoard.Name = "pn_leftDashBoard";
-            this.pn_leftDashBoard.Size = new System.Drawing.Size(176, 530);
+            this.pn_leftDashBoard.Size = new System.Drawing.Size(220, 662);
             this.pn_leftDashBoard.TabIndex = 0;
             // 
             // pn_logo
@@ -94,16 +97,17 @@
             this.pn_logo.Location = new System.Drawing.Point(0, 0);
             this.pn_logo.Margin = new System.Windows.Forms.Padding(2);
             this.pn_logo.Name = "pn_logo";
-            this.pn_logo.Size = new System.Drawing.Size(176, 94);
+            this.pn_logo.Size = new System.Drawing.Size(220, 118);
             this.pn_logo.TabIndex = 2;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 411);
+            this.panel2.Location = new System.Drawing.Point(0, 513);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 119);
+            this.panel2.Size = new System.Drawing.Size(220, 149);
             this.panel2.TabIndex = 0;
             // 
             // pn_tittleBar
@@ -119,10 +123,10 @@
             this.pn_tittleBar.Controls.Add(this.bt_maximize);
             this.pn_tittleBar.Controls.Add(this.bt_exit);
             this.pn_tittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_tittleBar.Location = new System.Drawing.Point(176, 0);
+            this.pn_tittleBar.Location = new System.Drawing.Point(220, 0);
             this.pn_tittleBar.Margin = new System.Windows.Forms.Padding(2);
             this.pn_tittleBar.Name = "pn_tittleBar";
-            this.pn_tittleBar.Size = new System.Drawing.Size(906, 55);
+            this.pn_tittleBar.Size = new System.Drawing.Size(1132, 69);
             this.pn_tittleBar.TabIndex = 1;
             this.pn_tittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_tittleBar_MouseDown);
             // 
@@ -131,10 +135,10 @@
             this.lb_tittleChildform.AutoSize = true;
             this.lb_tittleChildform.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tittleChildform.ForeColor = System.Drawing.Color.Snow;
-            this.lb_tittleChildform.Location = new System.Drawing.Point(51, 24);
+            this.lb_tittleChildform.Location = new System.Drawing.Point(64, 30);
             this.lb_tittleChildform.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_tittleChildform.Name = "lb_tittleChildform";
-            this.lb_tittleChildform.Size = new System.Drawing.Size(50, 19);
+            this.lb_tittleChildform.Size = new System.Drawing.Size(59, 21);
             this.lb_tittleChildform.TabIndex = 2;
             this.lb_tittleChildform.Text = "Home";
             // 
@@ -143,18 +147,18 @@
             this.pn_container.AutoScroll = true;
             this.pn_container.Controls.Add(this.vScrollBar1);
             this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_container.Location = new System.Drawing.Point(176, 63);
+            this.pn_container.Location = new System.Drawing.Point(220, 79);
             this.pn_container.Margin = new System.Windows.Forms.Padding(2);
             this.pn_container.Name = "pn_container";
-            this.pn_container.Size = new System.Drawing.Size(906, 467);
+            this.pn_container.Size = new System.Drawing.Size(1132, 583);
             this.pn_container.TabIndex = 3;
             // 
             // vScrollBar1
             // 
             this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(889, 0);
+            this.vScrollBar1.Location = new System.Drawing.Point(1115, 0);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 467);
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 583);
             this.vScrollBar1.TabIndex = 0;
             this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
@@ -163,54 +167,57 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panel1.Location = new System.Drawing.Point(176, 63);
+            this.panel1.Location = new System.Drawing.Point(220, 79);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(8, 467);
+            this.panel1.Size = new System.Drawing.Size(10, 583);
             this.panel1.TabIndex = 4;
             // 
             // pn_shawdow
             // 
             this.pn_shawdow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.pn_shawdow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_shawdow.Location = new System.Drawing.Point(176, 55);
+            this.pn_shawdow.Location = new System.Drawing.Point(220, 69);
             this.pn_shawdow.Margin = new System.Windows.Forms.Padding(2);
             this.pn_shawdow.Name = "pn_shawdow";
-            this.pn_shawdow.Size = new System.Drawing.Size(906, 8);
+            this.pn_shawdow.Size = new System.Drawing.Size(1132, 10);
             this.pn_shawdow.TabIndex = 2;
             // 
             // dropdownMenu1
             // 
+            this.dropdownMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.dropdownMenu1.IsMainMenu = false;
             this.dropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bt_Info,
             this.bt_changePassword,
+            this.bt_language,
             this.bt_logOut});
             this.dropdownMenu1.MenuItemHeight = 25;
             this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Snow;
             this.dropdownMenu1.Name = "dropdownMenu1";
             this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Black;
-            this.dropdownMenu1.Size = new System.Drawing.Size(169, 70);
+            this.dropdownMenu1.Size = new System.Drawing.Size(194, 100);
             // 
             // bt_Info
             // 
             this.bt_Info.Name = "bt_Info";
-            this.bt_Info.Size = new System.Drawing.Size(168, 22);
+            this.bt_Info.Size = new System.Drawing.Size(193, 24);
             this.bt_Info.Text = "Information";
             this.bt_Info.Click += new System.EventHandler(this.bt_Info_Click);
             // 
             // bt_changePassword
             // 
             this.bt_changePassword.Name = "bt_changePassword";
-            this.bt_changePassword.Size = new System.Drawing.Size(168, 22);
+            this.bt_changePassword.Size = new System.Drawing.Size(193, 24);
             this.bt_changePassword.Text = "Change Password";
             this.bt_changePassword.Click += new System.EventHandler(this.bt_changePassword_Click);
             // 
             // bt_logOut
             // 
             this.bt_logOut.Name = "bt_logOut";
-            this.bt_logOut.Size = new System.Drawing.Size(168, 22);
+            this.bt_logOut.Size = new System.Drawing.Size(193, 24);
             this.bt_logOut.Text = "Log out";
+            this.bt_logOut.Click += new System.EventHandler(this.bt_logOut_Click);
             // 
             // bt_user
             // 
@@ -228,11 +235,11 @@
             this.bt_user.IconColor = System.Drawing.Color.Snow;
             this.bt_user.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_user.IconSize = 25;
-            this.bt_user.Location = new System.Drawing.Point(761, 18);
+            this.bt_user.Location = new System.Drawing.Point(951, 22);
             this.bt_user.Margin = new System.Windows.Forms.Padding(2);
             this.bt_user.Name = "bt_user";
-            this.bt_user.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_user.Size = new System.Drawing.Size(142, 26);
+            this.bt_user.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_user.Size = new System.Drawing.Size(178, 32);
             this.bt_user.TabIndex = 14;
             this.bt_user.Text = "Name User";
             this.bt_user.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -256,11 +263,11 @@
             this.bt_remind.IconColor = System.Drawing.Color.Snow;
             this.bt_remind.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_remind.IconSize = 25;
-            this.bt_remind.Location = new System.Drawing.Point(724, 21);
+            this.bt_remind.Location = new System.Drawing.Point(905, 26);
             this.bt_remind.Margin = new System.Windows.Forms.Padding(2);
             this.bt_remind.Name = "bt_remind";
-            this.bt_remind.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_remind.Size = new System.Drawing.Size(32, 24);
+            this.bt_remind.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_remind.Size = new System.Drawing.Size(40, 30);
             this.bt_remind.TabIndex = 13;
             this.bt_remind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_remind.UseVisualStyleBackColor = false;
@@ -282,11 +289,11 @@
             this.bt_mail.IconColor = System.Drawing.Color.Snow;
             this.bt_mail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_mail.IconSize = 25;
-            this.bt_mail.Location = new System.Drawing.Point(687, 24);
+            this.bt_mail.Location = new System.Drawing.Point(859, 30);
             this.bt_mail.Margin = new System.Windows.Forms.Padding(2);
             this.bt_mail.Name = "bt_mail";
-            this.bt_mail.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_mail.Size = new System.Drawing.Size(32, 18);
+            this.bt_mail.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_mail.Size = new System.Drawing.Size(40, 22);
             this.bt_mail.TabIndex = 12;
             this.bt_mail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_mail.UseVisualStyleBackColor = false;
@@ -308,11 +315,11 @@
             this.bt_notifications.IconColor = System.Drawing.Color.Snow;
             this.bt_notifications.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_notifications.IconSize = 25;
-            this.bt_notifications.Location = new System.Drawing.Point(650, 24);
+            this.bt_notifications.Location = new System.Drawing.Point(812, 30);
             this.bt_notifications.Margin = new System.Windows.Forms.Padding(2);
             this.bt_notifications.Name = "bt_notifications";
-            this.bt_notifications.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_notifications.Size = new System.Drawing.Size(32, 18);
+            this.bt_notifications.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_notifications.Size = new System.Drawing.Size(40, 22);
             this.bt_notifications.TabIndex = 11;
             this.bt_notifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_notifications.UseVisualStyleBackColor = false;
@@ -325,11 +332,11 @@
             this.iconCurrentChildform.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildform.IconColor = System.Drawing.Color.Snow;
             this.iconCurrentChildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildform.IconSize = 31;
-            this.iconCurrentChildform.Location = new System.Drawing.Point(15, 16);
+            this.iconCurrentChildform.IconSize = 39;
+            this.iconCurrentChildform.Location = new System.Drawing.Point(19, 20);
             this.iconCurrentChildform.Margin = new System.Windows.Forms.Padding(2);
             this.iconCurrentChildform.Name = "iconCurrentChildform";
-            this.iconCurrentChildform.Size = new System.Drawing.Size(32, 31);
+            this.iconCurrentChildform.Size = new System.Drawing.Size(40, 39);
             this.iconCurrentChildform.TabIndex = 2;
             this.iconCurrentChildform.TabStop = false;
             // 
@@ -349,11 +356,11 @@
             this.bt_minimize.IconColor = System.Drawing.Color.Snow;
             this.bt_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_minimize.IconSize = 20;
-            this.bt_minimize.Location = new System.Drawing.Point(836, 2);
+            this.bt_minimize.Location = new System.Drawing.Point(1045, 2);
             this.bt_minimize.Margin = new System.Windows.Forms.Padding(2);
             this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_minimize.Size = new System.Drawing.Size(32, 15);
+            this.bt_minimize.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_minimize.Size = new System.Drawing.Size(40, 19);
             this.bt_minimize.TabIndex = 9;
             this.bt_minimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_minimize.UseVisualStyleBackColor = false;
@@ -376,11 +383,11 @@
             this.bt_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_maximize.IconSize = 20;
             this.bt_maximize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_maximize.Location = new System.Drawing.Point(853, 2);
+            this.bt_maximize.Location = new System.Drawing.Point(1066, 2);
             this.bt_maximize.Margin = new System.Windows.Forms.Padding(2);
             this.bt_maximize.Name = "bt_maximize";
-            this.bt_maximize.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_maximize.Size = new System.Drawing.Size(32, 18);
+            this.bt_maximize.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_maximize.Size = new System.Drawing.Size(40, 22);
             this.bt_maximize.TabIndex = 10;
             this.bt_maximize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_maximize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -404,11 +411,11 @@
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 20;
             this.bt_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_exit.Location = new System.Drawing.Point(872, 2);
+            this.bt_exit.Location = new System.Drawing.Point(1090, 2);
             this.bt_exit.Margin = new System.Windows.Forms.Padding(2);
             this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_exit.Size = new System.Drawing.Size(32, 18);
+            this.bt_exit.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_exit.Size = new System.Drawing.Size(40, 22);
             this.bt_exit.TabIndex = 9;
             this.bt_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bt_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -428,11 +435,11 @@
             this.bt_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_report.IconSize = 40;
             this.bt_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.Location = new System.Drawing.Point(0, 358);
+            this.bt_report.Location = new System.Drawing.Point(0, 448);
             this.bt_report.Margin = new System.Windows.Forms.Padding(2);
             this.bt_report.Name = "bt_report";
-            this.bt_report.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_report.Size = new System.Drawing.Size(176, 48);
+            this.bt_report.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_report.Size = new System.Drawing.Size(220, 60);
             this.bt_report.TabIndex = 9;
             this.bt_report.Text = "   Report";
             this.bt_report.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -453,11 +460,11 @@
             this.bt_document.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_document.IconSize = 40;
             this.bt_document.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_document.Location = new System.Drawing.Point(2, 306);
+            this.bt_document.Location = new System.Drawing.Point(2, 382);
             this.bt_document.Margin = new System.Windows.Forms.Padding(2);
             this.bt_document.Name = "bt_document";
-            this.bt_document.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_document.Size = new System.Drawing.Size(176, 48);
+            this.bt_document.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_document.Size = new System.Drawing.Size(220, 60);
             this.bt_document.TabIndex = 8;
             this.bt_document.Text = "   Document";
             this.bt_document.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,11 +485,11 @@
             this.bt_mission.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_mission.IconSize = 40;
             this.bt_mission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_mission.Location = new System.Drawing.Point(2, 202);
+            this.bt_mission.Location = new System.Drawing.Point(2, 252);
             this.bt_mission.Margin = new System.Windows.Forms.Padding(2);
             this.bt_mission.Name = "bt_mission";
-            this.bt_mission.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_mission.Size = new System.Drawing.Size(176, 48);
+            this.bt_mission.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_mission.Size = new System.Drawing.Size(220, 60);
             this.bt_mission.TabIndex = 10;
             this.bt_mission.Text = "   Mission";
             this.bt_mission.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -495,10 +502,10 @@
             this.ptb_logo.BackColor = System.Drawing.Color.Transparent;
             this.ptb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
-            this.ptb_logo.Location = new System.Drawing.Point(20, 14);
+            this.ptb_logo.Location = new System.Drawing.Point(25, 18);
             this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
             this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.Size = new System.Drawing.Size(135, 64);
+            this.ptb_logo.Size = new System.Drawing.Size(169, 80);
             this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_logo.TabIndex = 1;
             this.ptb_logo.TabStop = false;
@@ -517,11 +524,11 @@
             this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_project.IconSize = 40;
             this.bt_project.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_project.Location = new System.Drawing.Point(2, 254);
+            this.bt_project.Location = new System.Drawing.Point(2, 318);
             this.bt_project.Margin = new System.Windows.Forms.Padding(2);
             this.bt_project.Name = "bt_project";
-            this.bt_project.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_project.Size = new System.Drawing.Size(176, 48);
+            this.bt_project.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_project.Size = new System.Drawing.Size(220, 60);
             this.bt_project.TabIndex = 7;
             this.bt_project.Text = "   Project";
             this.bt_project.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -542,11 +549,11 @@
             this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_home.IconSize = 40;
             this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.Location = new System.Drawing.Point(2, 98);
+            this.bt_home.Location = new System.Drawing.Point(2, 122);
             this.bt_home.Margin = new System.Windows.Forms.Padding(2);
             this.bt_home.Name = "bt_home";
-            this.bt_home.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_home.Size = new System.Drawing.Size(176, 48);
+            this.bt_home.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_home.Size = new System.Drawing.Size(220, 60);
             this.bt_home.TabIndex = 5;
             this.bt_home.Text = "   Home";
             this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -567,11 +574,11 @@
             this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_profile.IconSize = 40;
             this.bt_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.Location = new System.Drawing.Point(2, 150);
+            this.bt_profile.Location = new System.Drawing.Point(2, 188);
             this.bt_profile.Margin = new System.Windows.Forms.Padding(2);
             this.bt_profile.Name = "bt_profile";
-            this.bt_profile.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_profile.Size = new System.Drawing.Size(176, 48);
+            this.bt_profile.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.bt_profile.Size = new System.Drawing.Size(220, 60);
             this.bt_profile.TabIndex = 6;
             this.bt_profile.Text = "   Employee";
             this.bt_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -582,19 +589,41 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.logo_color;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // bt_language
+            // 
+            this.bt_language.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bt_vietnamese,
+            this.bt_english});
+            this.bt_language.Name = "bt_language";
+            this.bt_language.Size = new System.Drawing.Size(193, 24);
+            this.bt_language.Text = "Language";
+            // 
+            // bt_vietnamese
+            // 
+            this.bt_vietnamese.Name = "bt_vietnamese";
+            this.bt_vietnamese.Size = new System.Drawing.Size(224, 26);
+            this.bt_vietnamese.Text = "Vietnamese";
+            // 
+            // bt_english
+            // 
+            this.bt_english.Name = "bt_english";
+            this.bt_english.Size = new System.Drawing.Size(224, 26);
+            this.bt_english.Text = "English";
+            // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1082, 530);
+            this.ClientSize = new System.Drawing.Size(1352, 662);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pn_container);
             this.Controls.Add(this.pn_shawdow);
@@ -650,5 +679,8 @@
         private System.Windows.Forms.ToolStripMenuItem bt_Info;
         private System.Windows.Forms.ToolStripMenuItem bt_changePassword;
         private System.Windows.Forms.ToolStripMenuItem bt_logOut;
+        private System.Windows.Forms.ToolStripMenuItem bt_language;
+        private System.Windows.Forms.ToolStripMenuItem bt_vietnamese;
+        private System.Windows.Forms.ToolStripMenuItem bt_english;
     }
 }

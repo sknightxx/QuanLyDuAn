@@ -8,22 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.DAO;
 using BCMP.Forms.Management;
+using BCMP.Service;
+using BCMP.DTO;
 
 namespace BCMP.Forms
 {
     public partial class FormProject : Form
     {
+        private static List<Project> proList = ProjectDAO.Instance.GetAllProject();
         public FormProject()
         {
             InitializeComponent();
+            LoadProjectList();
         }
 
         private void bt_CreateProject_Click(object sender, EventArgs e)
         {
-            
-
             FormAddProject AddProjectForm = new FormAddProject();
+            AddProjectForm.InsertProject += P_InsertProject;
             AddProjectForm.Show();
         }
 
@@ -76,10 +80,29 @@ namespace BCMP.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormDetailProject DetailProjectForm = new FormDetailProject();
-            DetailProjectForm.Show();
+
         }
 
-        
+        public void LoadProjectList()
+        {
+            dtgv_Project.DataSource = proList;
+        }
+
+        private void dtgv_Project_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_Project.Columns[e.ColumnIndex].Name == "Detail")
+            {
+                Project currProject = ProjectDAO.Instance.GetProjectById(dtgv_Project.Rows[e.RowIndex].Cells[0].Value.ToString());
+                FormDetailProject DetailProjectForm = new FormDetailProject(currProject);
+                DetailProjectForm.Show();
+            }
+        }
+
+        private void P_InsertProject(object sender, EventArgs e)
+        {
+            proList = ProjectDAO.Instance.GetAllProject();
+            LoadProjectList();
+        }
+
     }
 }

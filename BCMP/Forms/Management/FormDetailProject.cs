@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BCMP.DAO;
+using BCMP.DTO;
+using BCMP.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +16,15 @@ namespace BCMP.Forms.Management
 {
     public partial class FormDetailProject : Form
     {
-        public FormDetailProject()
+        private Project currentProject;
+
+        public Project CurrentProject { get => currentProject; set => currentProject = value; }
+
+        public FormDetailProject(Project currentProject)
         {
             InitializeComponent();
+            CurrentProject = currentProject;
+            LoadCurrentProject();
         }
 
         private void bt_exit_Click(object sender, EventArgs e)
@@ -63,6 +72,30 @@ namespace BCMP.Forms.Management
 
             this.Region = new Region(path);
             base.OnPaintBackground(e);
+        }
+
+        public void LoadCurrentProject()
+        {
+            txt_IdProject.Text = currentProject.ProjectId.ToString();
+            txt_nameProject.Text = currentProject.Name.ToString();
+            txt_Description.Text = currentProject.Description.ToString();
+            LoadDepartmentData();
+            dtpkPlannedEnd.Text = currentProject.PlannedEndDate.ToString();
+            dtpkPlannedStart.Text = currentProject.PlannedStartDate.ToString();
+        }
+
+        public void LoadDepartmentData()
+        {
+            List<String> list = new List<String>();
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                list.Add(item.Name);
+                if (item.DepartmentId.Equals(currentProject.DepartmentId))
+                {
+                    cbb_department.Text = item.Name;
+                }
+            }
+            cbb_department.DataSource = list;
         }
     }
 }

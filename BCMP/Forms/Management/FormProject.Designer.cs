@@ -28,187 +28,195 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProject));
             this.pn_tittle = new System.Windows.Forms.Panel();
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.bt_CreateProject = new System.Windows.Forms.Button();
             this.lb_MyWork = new System.Windows.Forms.Label();
             this.pn_background = new System.Windows.Forms.Panel();
             this.pn_container = new System.Windows.Forms.Panel();
+            this.dtgv_Project = new System.Windows.Forms.DataGridView();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pn_background.SuspendLayout();
             this.pn_container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Project)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_tittle
             // 
+            resources.ApplyResources(this.pn_tittle, "pn_tittle");
             this.pn_tittle.BackColor = System.Drawing.Color.White;
             this.pn_tittle.Controls.Add(this.pn_search);
             this.pn_tittle.Controls.Add(this.bt_others);
             this.pn_tittle.Controls.Add(this.bt_CreateProject);
             this.pn_tittle.Controls.Add(this.lb_MyWork);
-            this.pn_tittle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_tittle.Location = new System.Drawing.Point(0, 0);
-            this.pn_tittle.Margin = new System.Windows.Forms.Padding(2);
             this.pn_tittle.Name = "pn_tittle";
-            this.pn_tittle.Size = new System.Drawing.Size(902, 58);
-            this.pn_tittle.TabIndex = 3;
             // 
             // pn_search
             // 
-            this.pn_search.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.pn_search, "pn_search");
             this.pn_search.Controls.Add(this.panel2);
             this.pn_search.Controls.Add(this.bt_search);
-            this.pn_search.Location = new System.Drawing.Point(223, 20);
             this.pn_search.Name = "pn_search";
-            this.pn_search.Size = new System.Drawing.Size(397, 30);
-            this.pn_search.TabIndex = 21;
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.txt_search);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(36, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(361, 30);
-            this.panel2.TabIndex = 15;
             // 
             // txt_search
             // 
-            this.txt_search.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.txt_search, "txt_search");
             this.txt_search.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_search.Location = new System.Drawing.Point(0, 0);
-            this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(361, 30);
-            this.txt_search.TabIndex = 0;
-            this.txt_search.Text = "Search for project";
             this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
             this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
             this.txt_search.Move += new System.EventHandler(this.txt_search_Move);
             // 
-            // bt_search
-            // 
-            this.bt_search.BackColor = System.Drawing.Color.White;
-            this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_search.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bt_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            this.bt_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.bt_search.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
-            this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_search.IconSize = 30;
-            this.bt_search.Location = new System.Drawing.Point(0, 0);
-            this.bt_search.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_search.Name = "bt_search";
-            this.bt_search.Size = new System.Drawing.Size(36, 30);
-            this.bt_search.TabIndex = 14;
-            this.bt_search.UseVisualStyleBackColor = false;
-            // 
-            // bt_others
-            // 
-            this.bt_others.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_others.BackColor = System.Drawing.Color.Black;
-            this.bt_others.FlatAppearance.BorderSize = 0;
-            this.bt_others.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_others.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_others.ForeColor = System.Drawing.Color.White;
-            this.bt_others.IconChar = FontAwesome.Sharp.IconChar.Ellipsis;
-            this.bt_others.IconColor = System.Drawing.Color.White;
-            this.bt_others.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_others.IconSize = 32;
-            this.bt_others.Location = new System.Drawing.Point(805, 20);
-            this.bt_others.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_others.Name = "bt_others";
-            this.bt_others.Size = new System.Drawing.Size(44, 30);
-            this.bt_others.TabIndex = 20;
-            this.bt_others.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_others.UseVisualStyleBackColor = false;
-            // 
             // bt_CreateProject
             // 
-            this.bt_CreateProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.bt_CreateProject, "bt_CreateProject");
             this.bt_CreateProject.BackColor = System.Drawing.Color.Black;
             this.bt_CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_CreateProject.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
             this.bt_CreateProject.FlatAppearance.BorderSize = 0;
             this.bt_CreateProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_CreateProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bt_CreateProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_CreateProject.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_CreateProject.ForeColor = System.Drawing.Color.White;
-            this.bt_CreateProject.Location = new System.Drawing.Point(693, 20);
-            this.bt_CreateProject.Margin = new System.Windows.Forms.Padding(2);
             this.bt_CreateProject.Name = "bt_CreateProject";
-            this.bt_CreateProject.Size = new System.Drawing.Size(92, 30);
-            this.bt_CreateProject.TabIndex = 19;
-            this.bt_CreateProject.Text = "Create";
             this.bt_CreateProject.UseVisualStyleBackColor = false;
             this.bt_CreateProject.Click += new System.EventHandler(this.bt_CreateProject_Click);
             // 
             // lb_MyWork
             // 
-            this.lb_MyWork.AutoSize = true;
-            this.lb_MyWork.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lb_MyWork, "lb_MyWork");
             this.lb_MyWork.ForeColor = System.Drawing.Color.Black;
-            this.lb_MyWork.Location = new System.Drawing.Point(23, 20);
-            this.lb_MyWork.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_MyWork.Name = "lb_MyWork";
-            this.lb_MyWork.Size = new System.Drawing.Size(87, 23);
-            this.lb_MyWork.TabIndex = 2;
-            this.lb_MyWork.Text = "My work";
             // 
             // pn_background
             // 
+            resources.ApplyResources(this.pn_background, "pn_background");
             this.pn_background.BackColor = System.Drawing.Color.White;
             this.pn_background.Controls.Add(this.pn_container);
-            this.pn_background.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_background.Location = new System.Drawing.Point(0, 58);
-            this.pn_background.Margin = new System.Windows.Forms.Padding(2);
             this.pn_background.Name = "pn_background";
-            this.pn_background.Size = new System.Drawing.Size(902, 410);
-            this.pn_background.TabIndex = 2;
             // 
             // pn_container
             // 
-            this.pn_container.AutoScroll = true;
+            resources.ApplyResources(this.pn_container, "pn_container");
+            this.pn_container.Controls.Add(this.dtgv_Project);
             this.pn_container.Controls.Add(this.button1);
-            this.pn_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_container.Location = new System.Drawing.Point(0, 0);
             this.pn_container.Name = "pn_container";
-            this.pn_container.Size = new System.Drawing.Size(902, 410);
-            this.pn_container.TabIndex = 2;
+            // 
+            // dtgv_Project
+            // 
+            resources.ApplyResources(this.dtgv_Project, "dtgv_Project");
+            this.dtgv_Project.AutoGenerateColumns = false;
+            this.dtgv_Project.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Project.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.projectIdDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.plannedStartDateDataGridViewTextBoxColumn,
+            this.plannedEndDateDataGridViewTextBoxColumn,
+            this.Detail});
+            this.dtgv_Project.DataSource = this.projectBindingSource;
+            this.dtgv_Project.Name = "dtgv_Project";
+            this.dtgv_Project.RowTemplate.Height = 24;
+            this.dtgv_Project.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Project_CellContentClick);
+            // 
+            // Detail
+            // 
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            this.Detail.UseColumnTextForButtonValue = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(693, 20);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "detail";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // projectIdDataGridViewTextBoxColumn
+            // 
+            this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
+            resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
+            this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // plannedStartDateDataGridViewTextBoxColumn
+            // 
+            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
+            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
+            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
+            // 
+            // plannedEndDateDataGridViewTextBoxColumn
+            // 
+            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
+            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
+            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
+            // 
+            // projectBindingSource
+            // 
+            this.projectBindingSource.DataSource = typeof(BCMP.DTO.Project);
+            // 
+            // bt_search
+            // 
+            resources.ApplyResources(this.bt_search, "bt_search");
+            this.bt_search.BackColor = System.Drawing.Color.White;
+            this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            this.bt_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.bt_search.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(160)))), ((int)(((byte)(166)))));
+            this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_search.IconSize = 30;
+            this.bt_search.Name = "bt_search";
+            this.bt_search.UseVisualStyleBackColor = false;
+            // 
+            // bt_others
+            // 
+            resources.ApplyResources(this.bt_others, "bt_others");
+            this.bt_others.BackColor = System.Drawing.Color.Black;
+            this.bt_others.FlatAppearance.BorderSize = 0;
+            this.bt_others.ForeColor = System.Drawing.Color.White;
+            this.bt_others.IconChar = FontAwesome.Sharp.IconChar.Ellipsis;
+            this.bt_others.IconColor = System.Drawing.Color.White;
+            this.bt_others.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_others.IconSize = 32;
+            this.bt_others.Name = "bt_others";
+            this.bt_others.UseVisualStyleBackColor = false;
+            // 
             // FormProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(902, 468);
             this.Controls.Add(this.pn_background);
             this.Controls.Add(this.pn_tittle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormProject";
-            this.Text = "FormProject";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormProject_Paint);
             this.pn_tittle.ResumeLayout(false);
             this.pn_tittle.PerformLayout();
@@ -217,6 +225,8 @@
             this.panel2.PerformLayout();
             this.pn_background.ResumeLayout(false);
             this.pn_container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Project)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +244,12 @@
         private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pn_container;
+        private System.Windows.Forms.DataGridView dtgv_Project;
+        private System.Windows.Forms.BindingSource projectBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn projectIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedStartDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedEndDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Detail;
     }
 }

@@ -35,17 +35,152 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Firebase.Auth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Firebase.Auth.1.0.0\lib\netstandard1.1\Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Storage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebaseStorage.net.1.0.3\lib\netstandard1.1\Firebase.Storage.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -54,12 +189,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\MissionDAO.cs" />
+    <Compile Include="DTO\Mission.cs" />
     <Compile Include="Forms\Management\ChangePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,11 +269,17 @@
     <Compile Include="Forms\Management\RemindForm.Designer.cs">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\User\FormHomeUser.cs">
+    <Compile Include="Forms\User\DetailMissionUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\User\FormHomeUser.Designer.cs">
-      <DependentUpon>FormHomeUser.cs</DependentUpon>
+    <Compile Include="Forms\User\DetailMissionUser.Designer.cs">
+      <DependentUpon>DetailMissionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\DetailProjectUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\DetailProjectUser.Designer.cs">
+      <DependentUpon>DetailProjectUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\User\FormMissionUser.cs">
       <SubType>Form</SubType>
@@ -145,12 +292,6 @@
     </Compile>
     <Compile Include="Forms\User\FormProjectUser.Designer.cs">
       <DependentUpon>FormProjectUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\User\FormReportUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\User\FormReportUser.Designer.cs">
-      <DependentUpon>FormReportUser.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DepartmentDAO.cs" />
@@ -235,11 +376,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormFotgotPassword.en.resx">
+      <DependentUpon>FormFotgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFotgotPassword.vi.resx">
+      <DependentUpon>FormFotgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.en.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.vi.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\ChangePasswordForm.en.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\ChangePasswordForm.vi.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddMission.vi.resx">
+      <DependentUpon>FormAddMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddProject.vi.resx">
+      <DependentUpon>FormAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUser.vi.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
       <DependentUpon>FormDepartmentData.cs</DependentUpon>
@@ -247,29 +415,80 @@
     <EmbeddedResource Include="Forms\Management\FormDetailMission.resx">
       <DependentUpon>FormDetailMission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailMission.vi.resx">
+      <DependentUpon>FormDetailMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.resx">
+      <DependentUpon>FormDetailProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailProject.vi.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDocument.resx">
       <DependentUpon>FormDocument.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDocument.vi.resx">
+      <DependentUpon>FormDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormEmployee.vi.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormMission.en.resx">
+      <DependentUpon>FormMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormMission.vi.resx">
+      <DependentUpon>FormMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormProject.vi.resx">
+      <DependentUpon>FormProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormPublicData.resx">
       <DependentUpon>FormPublicData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\InformationForm.en.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\InformationForm.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\InformationForm.vi.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\MailForm.en.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\MailForm.resx">
       <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\MailForm.vi.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\Notification.en.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\Notification.vi.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\RemindForm.en.resx">
+      <DependentUpon>RemindForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
-      <DependentUpon>FormHomeUser.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Management\RemindForm.vi.resx">
+      <DependentUpon>RemindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\DetailMissionUser.resx">
+      <DependentUpon>DetailMissionUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\DetailProjectUser.resx">
+      <DependentUpon>DetailProjectUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormMissionUser.resx">
       <DependentUpon>FormMissionUser.cs</DependentUpon>
@@ -277,6 +496,8 @@
     <Compile Include="Service\AuthService.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Service\FirebaseService.cs" />
+    <Compile Include="Service\MissionService.cs" />
     <Compile Include="Service\ProjectService.cs" />
     <Compile Include="Service\RoleService.cs" />
     <EmbeddedResource Include="dashboard.resx">
@@ -315,9 +536,6 @@
     <EmbeddedResource Include="Forms\User\FormProjectUser.resx">
       <DependentUpon>FormProjectUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\FormReportUser.resx">
-      <DependentUpon>FormReportUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -330,6 +548,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BCMP.DTO.Project.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -429,6 +648,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\z4821246153762_f7cf5b667b259876816633f716183abb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

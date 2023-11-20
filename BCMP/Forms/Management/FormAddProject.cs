@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BCMP.DTO;
+using BCMP.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,17 +11,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace BCMP.Forms
 {
     public partial class FormAddProject : Form
     {
+
+        private event EventHandler insertProject;
+        public event EventHandler InsertProject
+        {
+            add { insertProject += value; }
+            remove { insertProject -= value; }
+        }
         public FormAddProject()
         {
             InitializeComponent();
-    
-
-
+            LoadDataDepartment();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -66,11 +75,26 @@ namespace BCMP.Forms
 
         private void txt_IdProject_Leave(object sender, EventArgs e)
         {
-            if (txt_IdProject.Text == "")
+            if (txt_IdProject.Text.ToString() == "")
             {
-                txt_IdProject.Text = "Enter ID project";
-                txt_IdProject.Multiline = false;
-                txt_IdProject.ForeColor = Color.Black;
+                lb_ValidIdProject.Visible = true;
+                lb_ValidIdProject.Text = "Is empty";
+                lb_ValidIdProject.ForeColor = Color.Red;
+            }
+            else
+            {
+                if (AuthService.Instance.ProjectIsExist(txt_IdProject.Text.ToString()))
+                {
+                    lb_ValidIdProject.Visible = true;
+                    lb_ValidIdProject.Text = "This Identity is already exist";
+                    lb_ValidIdProject.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lb_ValidIdProject.Visible = true;
+                    lb_ValidIdProject.Text = "Valid";
+                    lb_ValidIdProject.ForeColor = Color.Green;
+                }
             }
         }
 
@@ -90,10 +114,17 @@ namespace BCMP.Forms
 
         private void txt_nameProject_Leave(object sender, EventArgs e)
         {
-            if (txt_nameProject.Text == "")
+            if (txt_nameProject.Text.ToString() == "")
             {
-                txt_nameProject.Text = "Enter name of project";
-                txt_nameProject.ForeColor = Color.Black;
+                lb_ValidNameProject.Visible = true;
+                lb_ValidNameProject.Text = "Is empty";
+                lb_ValidNameProject.ForeColor = Color.Red;
+            }
+            else
+            {
+                lb_ValidNameProject.Visible = true;
+                lb_ValidNameProject.Text = "Valid";
+                lb_ValidNameProject.ForeColor = Color.Green;
             }
         }
 
@@ -113,10 +144,17 @@ namespace BCMP.Forms
 
         private void txt_Description_Leave(object sender, EventArgs e)
         {
-            if (txt_Description.Text == "")
+            if (txt_Description.Text.ToString() == "")
             {
-                txt_Description.Text = "Enter desciption about project";
-                txt_Description.ForeColor = Color.Black;
+                lb_ValidDesciption.Visible = true;
+                lb_ValidDesciption.Text = "Is empty";
+                lb_ValidDesciption.ForeColor = Color.Red;
+            }
+            else
+            {
+                lb_ValidDesciption.Visible = true;
+                lb_ValidDesciption.Text = "Valid";
+                lb_ValidDesciption.ForeColor = Color.Green;
             }
         }
 
@@ -133,6 +171,62 @@ namespace BCMP.Forms
         {
 
         }
+
+        public void DefaultState()
+        {
+            lb_ValidNameProject.Visible = false;
+            lb_ValidIdProject.Visible = false;
+            lb_ValidIdProject.Visible = false;
+
+            txt_Description.Text = "";
+            txt_nameProject.Text = "";
+            txt_IdProject.Text = "";
+        }
+        public void LoadDataDepartment()
+        {
+            List<String> list = new List<String>();
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                list.Add(item.Name);
+            }
+            cbb_department.DataSource = list;
+        }
+
+        private void bt_save_Click(object sender, EventArgs e)
+        {
+            string projectid = txt_IdProject.Text.ToString();
+            string name = txt_nameProject.Text.ToString();
+            string description = txt_Description.Text.ToString();
+            DateTime plannedStartDate = dtpkPlannedStart.Value;
+            DateTime plannedEndDate = dtpkPlannedEnd.Value;
+            int departmentId = 0;
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                if (item.Name.Equals(cbb_department.SelectedItem.ToString()))
+                {
+                    departmentId = item.DepartmentId;
+                }
+            }
+            if (lb_ValidNameProject.Text == "Valid" && lb_ValidDesciption.Text == "Valid" && lb_ValidIdProject.Text == "Valid")
+            {
+                if (ProjectService.Instance.InsertValidateProject(projectid, name, description, plannedStartDate, plannedEndDate, departmentId))
+                {
+                    MessageBox.Show("Add Project Successfully");
+                    DefaultState();
+                    insertProject(this, new EventArgs());
+                }
+                else
+                {
+                    MessageBox.Show("Add Project Failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inputs are missed");
+            }
+        }
     }
+
+
 }
 
