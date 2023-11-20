@@ -9,17 +9,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.ModelBinding;
 using System.Windows.Forms;
+using BCMP.DTO;
+using BCMP.DAO;
+using BCMP.Service;
+
 using FontAwesome.Sharp;
+using BCMP.Forms.Management;
 
 namespace BCMP.Forms
 {
     public partial class FormEmployee : Form
     {
+
+        private List<Employee> empList = EmployeeDAO.Instance.GetAllEmployee();
         public FormEmployee()
         {
             InitializeComponent();
-
+            LoadDataListEmloyee();
         }
+
+        private void LoadDataListEmloyee()
+        {
+            dtgv_ListEmp.DataSource = empList;
+        }
+
 
         private void lb_employees_TextChanged(object sender, EventArgs e)
         {
@@ -29,6 +42,7 @@ namespace BCMP.Forms
         private void bt_addUser_Click(object sender, EventArgs e)
         {
             FormAddUser AddUserForm = new FormAddUser();
+            AddUserForm.InsertEmployee += E_InsertEmployee;
             AddUserForm.Show();
             
         }
@@ -61,6 +75,37 @@ namespace BCMP.Forms
         {
             FormAddUser AddUserForm = new FormAddUser();
             AddUserForm.Show();
+        }
+
+        private void E_InsertEmployee(object sender, EventArgs e)
+        {
+            empList = EmployeeDAO.Instance.GetAllEmployee();
+            LoadDataListEmloyee();
+        }
+
+        private void E_UpdateEmployee(object sender, EventArgs e)
+        {
+            empList = EmployeeDAO.Instance.GetAllEmployee();
+            LoadDataListEmloyee();
+        }
+
+        private void dtgv_ListEmp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "Edit")
+            {
+                Employee currEmployee = EmployeeDAO.Instance.GetById(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString());
+                FormAddUser formAddUser = new FormAddUser(currEmployee);
+                formAddUser.UpdateEmployee += E_UpdateEmployee;
+                formAddUser.Show();
+            } else if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "IsDeactivated")
+            {
+                bool isDeactivated = (bool)dtgv_ListEmp.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                // Now you can use 'isDeactivated' to perform any actions based on whether it's checked or not
+                if(EmployeeService.Instance.UpdateIsDeactivatedEmployeeByManager(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString(), isDeactivated))
+                {
+                    empList = EmployeeDAO.Instance.GetAllEmployee();
+                }
+            }
         }
     }
 }

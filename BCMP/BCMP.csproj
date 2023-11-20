@@ -201,6 +201,7 @@
   <ItemGroup>
     <Compile Include="DAO\MissionDAO.cs" />
     <Compile Include="DTO\Mission.cs" />
+    <Compile Include="EventsHandler\UpdateProjectEventArgs.cs" />
     <Compile Include="Forms\Management\ChangePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -382,11 +383,17 @@
     <EmbeddedResource Include="Forms\FormLogin.vi.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\ChangePasswordForm.en.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\ChangePasswordForm.vi.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddMission.en.resx">
+      <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
@@ -409,6 +416,9 @@
     <EmbeddedResource Include="Forms\Management\FormDetailMission.vi.resx">
       <DependentUpon>FormDetailMission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailProject.en.resx">
+      <DependentUpon>FormDetailProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,11 +431,20 @@
     <EmbeddedResource Include="Forms\Management\FormDocument.vi.resx">
       <DependentUpon>FormDocument.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormEmployee.en.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormEmployee.vi.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormMission.en.resx">
+      <DependentUpon>FormMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormMission.vi.resx">
       <DependentUpon>FormMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormProject.en.resx">
+      <DependentUpon>FormProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormProject.vi.resx">
       <DependentUpon>FormProject.cs</DependentUpon>
@@ -521,6 +540,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BCMP.DTO.Employee.datasource" />
+    <None Include="Properties\DataSources\BCMP.DTO.Mission.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Project.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

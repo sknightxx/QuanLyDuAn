@@ -41,13 +41,13 @@
             this.dtgv_Project = new System.Windows.Forms.DataGridView();
             this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.projectBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,6 +66,7 @@
             this.pn_tittle.Controls.Add(this.bt_CreateProject);
             this.pn_tittle.Controls.Add(this.lb_MyWork);
             this.pn_tittle.Name = "pn_tittle";
+            this.pn_tittle.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_tittle_Paint);
             // 
             // pn_search
             // 
@@ -153,34 +154,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // projectIdDataGridViewTextBoxColumn
-            // 
-            this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
-            resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
-            this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // plannedStartDateDataGridViewTextBoxColumn
-            // 
-            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
-            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
-            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
-            // 
-            // plannedEndDateDataGridViewTextBoxColumn
-            // 
-            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
-            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
-            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
-            // 
-            // projectBindingSource
-            // 
-            this.projectBindingSource.DataSource = typeof(BCMP.DTO.Project);
-            // 
             // bt_search
             // 
             resources.ApplyResources(this.bt_search, "bt_search");
@@ -208,6 +181,34 @@
             this.bt_others.IconSize = 32;
             this.bt_others.Name = "bt_others";
             this.bt_others.UseVisualStyleBackColor = false;
+            // 
+            // projectIdDataGridViewTextBoxColumn
+            // 
+            this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
+            resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
+            this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // plannedStartDateDataGridViewTextBoxColumn
+            // 
+            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
+            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
+            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
+            // 
+            // plannedEndDateDataGridViewTextBoxColumn
+            // 
+            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
+            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
+            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
+            // 
+            // projectBindingSource
+            // 
+            this.projectBindingSource.DataSource = typeof(BCMP.DTO.Project);
             // 
             // FormProject
             // 

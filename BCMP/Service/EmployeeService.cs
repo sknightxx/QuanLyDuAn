@@ -56,5 +56,23 @@ namespace BCMP.Service
             }
             return false;
         }
+
+        public bool UpdateIsDeactivatedEmployeeByManager(string userid, bool isDeativated)
+        {
+            if (EmployeeDAO.Instance.UpdateIsDeactivatedEmployee(userid, isDeativated))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateChangePassword(string userid,string newpassword)
+        {
+            if (EmployeeDAO.Instance.UpdatePasswordEmployee(userid, newpassword))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

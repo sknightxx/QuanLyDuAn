@@ -1,4 +1,8 @@
-﻿using System;
+﻿using BCMP.DAO;
+using BCMP.DTO;
+using BCMP.Service;
+using Firebase.Auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +17,12 @@ namespace BCMP.Forms.Management
 {
     public partial class ChangePasswordForm : Form
     {
-        public ChangePasswordForm()
+        private Employee currEmployee;
+        public ChangePasswordForm(Employee currEmployee)
         {
             InitializeComponent();
+            this.currEmployee = currEmployee;
+            LoadDataEmployee();
         }
 
         private void lb_Email_Click(object sender, EventArgs e)
@@ -49,5 +56,45 @@ namespace BCMP.Forms.Management
         {
             this.Close();
         }
+
+        private void LoadDataEmployee()
+        {
+            txt_IdStaff.Enabled = false;
+            txt_IdStaff.Text = currEmployee.UserId.ToString();
+        }
+
+        private void bt_save_Click(object sender, EventArgs e)
+        {
+            if (txt_Password.Text.ToString().Equals(""))
+            {
+                MessageBox.Show("Your Old Password is empty");
+            } else if(!AuthService.Instance.LoginValidateEmployee(txt_IdStaff.Text.ToString(), txt_Password.Text.ToString()))
+            {
+                MessageBox.Show("Your Old Password is not correct");
+            } else if (txt_ConfirmPassword.Text.ToString().Equals(""))
+            {
+                MessageBox.Show("Your New Password is empty");
+            } else
+            {
+                if (txt_ConfirmPassword.Text.Length > 7)
+                {
+                    if (EmployeeService.Instance.UpdateChangePassword(txt_IdStaff.Text.ToString(), txt_ConfirmPassword.Text.ToString()))
+                    {
+                        MessageBox.Show("Update your password sucessfully");
+                    } else
+                    {
+                        MessageBox.Show("Update your password failed");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Your New Password must have length at least is 8");
+                }
+            }
+        }
+
+        
+            
+        
     }
 }

@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordForm));
             this.txt_IdStaff = new System.Windows.Forms.TextBox();
             this.lb_IdStaff = new System.Windows.Forms.Label();
-            this.txt_phone = new System.Windows.Forms.TextBox();
+            this.txt_ConfirmPassword = new System.Windows.Forms.TextBox();
             this.lb_phone = new System.Windows.Forms.Label();
             this.pn_containerChangePass = new System.Windows.Forms.Panel();
             this.lb_ChangePass = new System.Windows.Forms.Label();
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
-            this.txt_Email = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
             this.lb_Email = new System.Windows.Forms.Label();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
@@ -59,10 +59,11 @@
             this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
             this.lb_IdStaff.Name = "lb_IdStaff";
             // 
-            // txt_phone
+            // txt_ConfirmPassword
             // 
-            resources.ApplyResources(this.txt_phone, "txt_phone");
-            this.txt_phone.Name = "txt_phone";
+            resources.ApplyResources(this.txt_ConfirmPassword, "txt_ConfirmPassword");
+            this.txt_ConfirmPassword.Name = "txt_ConfirmPassword";
+            this.txt_ConfirmPassword.UseSystemPasswordChar = true;
             // 
             // lb_phone
             // 
@@ -77,11 +78,11 @@
             this.pn_containerChangePass.Controls.Add(this.lb_ChangePass);
             this.pn_containerChangePass.Controls.Add(this.bt_cancel);
             this.pn_containerChangePass.Controls.Add(this.bt_save);
-            this.pn_containerChangePass.Controls.Add(this.txt_phone);
+            this.pn_containerChangePass.Controls.Add(this.txt_ConfirmPassword);
             this.pn_containerChangePass.Controls.Add(this.txt_IdStaff);
             this.pn_containerChangePass.Controls.Add(this.lb_phone);
             this.pn_containerChangePass.Controls.Add(this.lb_IdStaff);
-            this.pn_containerChangePass.Controls.Add(this.txt_Email);
+            this.pn_containerChangePass.Controls.Add(this.txt_Password);
             this.pn_containerChangePass.Controls.Add(this.lb_Email);
             this.pn_containerChangePass.Controls.Add(this.bt_exit);
             this.pn_containerChangePass.Controls.Add(this.pn_user);
@@ -112,11 +113,13 @@
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
-            // txt_Email
+            // txt_Password
             // 
-            resources.ApplyResources(this.txt_Email, "txt_Email");
-            this.txt_Email.Name = "txt_Email";
+            resources.ApplyResources(this.txt_Password, "txt_Password");
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.UseSystemPasswordChar = true;
             // 
             // lb_Email
             // 
@@ -158,7 +161,7 @@
             this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 97;
+            this.iconUser.IconSize = 119;
             this.iconUser.Name = "iconUser";
             this.iconUser.TabStop = false;
             // 
@@ -180,13 +183,13 @@
         #endregion
         private System.Windows.Forms.TextBox txt_IdStaff;
         private System.Windows.Forms.Label lb_IdStaff;
-        private System.Windows.Forms.TextBox txt_phone;
+        private System.Windows.Forms.TextBox txt_ConfirmPassword;
         private System.Windows.Forms.Label lb_phone;
         private System.Windows.Forms.Panel pn_containerChangePass;
         private FontAwesome.Sharp.IconButton bt_exit;
         private System.Windows.Forms.Panel pn_user;
         private FontAwesome.Sharp.IconPictureBox iconUser;
-        private System.Windows.Forms.TextBox txt_Email;
+        private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Label lb_Email;
         private System.Windows.Forms.Button bt_cancel;
         private System.Windows.Forms.Button bt_save;

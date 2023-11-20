@@ -121,18 +121,27 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>902, 468</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Detail.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lb_MyWork.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="plannedStartDateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="bt_CreateProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>693, 20</value>
+  <data name="&gt;&gt;Edit.Name" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="&gt;&gt;plannedStartDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>plannedStartDateDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="projectIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="pn_background.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 410</value>
@@ -149,18 +158,14 @@
   <data name="txt_search.Text" xml:space="preserve">
     <value>Search for project</value>
   </data>
-  <data name="projectIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <data name="pn_background.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>pn_search</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bt_CreateProject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -171,17 +176,15 @@
   <data name="bt_search.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 30</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pn_tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="bt_CreateProject.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;Detail.Name" xml:space="preserve">
+    <value>Detail</value>
   </data>
   <data name="txt_search.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;bt_search.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="pn_tittle.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -234,17 +237,20 @@
   <data name="lb_MyWork.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 13.8pt, style=Bold</value>
   </data>
+  <data name="pn_tittle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="dtgv_Project.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="bt_CreateProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>693, 20</value>
   </data>
   <data name="bt_others.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="pn_tittle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;bt_search.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -279,9 +285,6 @@
   <data name="bt_CreateProject.Text" xml:space="preserve">
     <value>Create</value>
   </data>
-  <data name="plannedEndDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <data name="bt_others.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -303,11 +306,8 @@
   <data name="pn_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;pn_background.Name" xml:space="preserve">
-    <value>pn_background</value>
-  </data>
-  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <data name="&gt;&gt;dtgv_Project.Parent" xml:space="preserve">
+    <value>pn_container</value>
   </data>
   <data name="txt_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -330,8 +330,8 @@
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="bt_search.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;pn_background.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="plannedStartDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
@@ -339,14 +339,14 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_MyWork.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="bt_CreateProject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="bt_CreateProject.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
+  <data name="&gt;&gt;pn_tittle.Name" xml:space="preserve">
+    <value>pn_tittle</value>
   </data>
   <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>nameDataGridViewTextBoxColumn</value>
@@ -381,8 +381,8 @@
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;pn_search.Name" xml:space="preserve">
-    <value>pn_search</value>
+  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="bt_CreateProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 30</value>
@@ -399,8 +399,8 @@
   <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 410</value>
   </data>
-  <data name="&gt;&gt;Detail.Name" xml:space="preserve">
-    <value>Detail</value>
+  <data name="dtgv_Project.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 4</value>
   </data>
   <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
@@ -411,11 +411,17 @@
   <data name="lb_MyWork.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 23</value>
   </data>
+  <data name="&gt;&gt;pn_search.Name" xml:space="preserve">
+    <value>pn_search</value>
+  </data>
   <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
     <value>pn_container</value>
   </data>
   <data name="&gt;&gt;pn_container.Parent" xml:space="preserve">
     <value>pn_background</value>
+  </data>
+  <data name="pn_container.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;pn_tittle.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -441,8 +447,8 @@
   <data name="&gt;&gt;lb_MyWork.Parent" xml:space="preserve">
     <value>pn_tittle</value>
   </data>
-  <data name="pn_search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>397, 30</value>
+  <data name="dtgv_Project.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="plannedStartDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>PlannedStartDate</value>
@@ -456,12 +462,6 @@
   <data name="bt_others.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="dtgv_Project.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 4</value>
-  </data>
-  <data name="&gt;&gt;pn_tittle.Name" xml:space="preserve">
-    <value>pn_tittle</value>
-  </data>
   <data name="txt_search.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -470,6 +470,9 @@
   </data>
   <data name="bt_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pn_search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>397, 30</value>
   </data>
   <data name="&gt;&gt;plannedEndDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>plannedEndDateDataGridViewTextBoxColumn</value>
@@ -486,8 +489,8 @@
   <data name="button1.Text" xml:space="preserve">
     <value>detail</value>
   </data>
-  <data name="&gt;&gt;dtgv_Project.Parent" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="Edit.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="pn_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 20</value>
@@ -501,8 +504,14 @@
   <data name="pn_search.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="bt_CreateProject.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
   <data name="&gt;&gt;bt_CreateProject.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;Edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bt_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -543,8 +552,8 @@
   <data name="dtgv_Project.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pn_container.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pn_background.Name" xml:space="preserve">
+    <value>pn_background</value>
   </data>
   <data name="&gt;&gt;bt_CreateProject.Parent" xml:space="preserve">
     <value>pn_tittle</value>
@@ -552,11 +561,14 @@
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pn_background.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="plannedEndDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
-  <data name="Detail.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="bt_search.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Edit.HeaderText" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="&gt;&gt;Detail.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -567,16 +579,22 @@
   <data name="&gt;&gt;txt_search.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="projectBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Detail.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+  <metadata name="Edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="projectBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>

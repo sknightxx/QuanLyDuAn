@@ -24,7 +24,7 @@ namespace BCMP.Service
         public bool InsertValidateMission(string title, string description, DateTime plannedStartDate, DateTime plannedEndDate, int isPublic, string projectId, string userId)
         {
             if (MissionDAO.Instance.InsertMissions(title, description, plannedStartDate, plannedEndDate, isPublic, projectId, userId))
-                {
+            {
                 return true;
             }
             return false;

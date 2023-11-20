@@ -1,4 +1,6 @@
 ﻿using BCMP.DTO;
+using BCMP.DAO;
+
 using BCMP.Service;
 using System;
 using System.Collections.Generic;
@@ -13,11 +15,15 @@ using System.Windows;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using MessageBox = System.Windows.Forms.MessageBox;
+using BCMP.EventsHandler;
 
 namespace BCMP.Forms
 {
     public partial class FormAddProject : Form
     {
+
+        private Project currProject;
+
 
         private event EventHandler insertProject;
         public event EventHandler InsertProject
@@ -25,10 +31,36 @@ namespace BCMP.Forms
             add { insertProject += value; }
             remove { insertProject -= value; }
         }
+
+        private event EventHandler updateProject;
+
+        public event EventHandler UpdateProject
+        {
+            add { updateProject += value; }
+            remove { updateProject -= value; }
+        }
+
+        public FormAddProject(Project currPorject)
+        {
+            InitializeComponent();
+            LoadDataDepartment();
+            this.currProject = currPorject;
+            txt_IdProject.Enabled = false;
+            txt_IdProject.Text = currProject.ProjectId.ToString();
+            txt_Description.Text = currProject.Description;
+            txt_nameProject.Text = currProject.Name;
+            dtpkPlannedEnd.Text = currProject.PlannedEndDate.ToString();
+            dtpkPlannedStart.Text = currProject.PlannedStartDate.ToString();
+            cbb_department.Text = DepartmentDAO.Instance.GetDepartmentById(currPorject.DepartmentId).Name.ToString();
+            txt_Description_Leave(this, new EventArgs());
+            txt_nameProject_Leave(this, new EventArgs());
+        }
+
         public FormAddProject()
         {
             InitializeComponent();
             LoadDataDepartment();
+            currProject = null;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -194,6 +226,17 @@ namespace BCMP.Forms
 
         private void bt_save_Click(object sender, EventArgs e)
         {
+            if(currProject == null)
+            {
+                AddNewProject();
+            } else
+            {
+                UpdateCurrentProject();
+            }
+        }
+
+        private void AddNewProject()
+        {
             string projectid = txt_IdProject.Text.ToString();
             string name = txt_nameProject.Text.ToString();
             string description = txt_Description.Text.ToString();
@@ -214,10 +257,48 @@ namespace BCMP.Forms
                     MessageBox.Show("Add Project Successfully");
                     DefaultState();
                     insertProject(this, new EventArgs());
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Add Project Failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inputs are missed");
+            }
+        }
+
+        private void UpdateCurrentProject()
+        {
+            txt_IdProject.Enabled = false;
+            string projectid = txt_IdProject.Text.ToString();
+            string name = txt_nameProject.Text.ToString();
+            string description = txt_Description.Text.ToString();
+            DateTime plannedStartDate = dtpkPlannedStart.Value;
+            DateTime plannedEndDate = dtpkPlannedEnd.Value;
+            int departmentId = 0;
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                if (item.Name.Equals(cbb_department.SelectedItem.ToString()))
+                {
+                    departmentId = item.DepartmentId;
+                }
+            }
+            if (lb_ValidDesciption.Text == "Valid" && lb_ValidNameProject.Text == "Valid")
+            {
+                if (ProjectService.Instance.UpdateProjectByManager(projectid, name, description, plannedStartDate, plannedEndDate, departmentId))
+                {
+                    MessageBox.Show("Update Project Successfully");
+                    DefaultState();
+
+                    updateProject(this, new EventArgs());
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Update Project Failed");
                 }
             }
             else

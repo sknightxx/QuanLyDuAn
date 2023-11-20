@@ -60,7 +60,7 @@ namespace BCMP.DAO
 
         public bool UpdateProjectByProjectId(string projectId, string name, string description, DateTime plannedStartDate, DateTime plannedEndDate, int departmentId)
         {
-            string query = "USP_UpdateProject @projectId , @name , @description , @plannedStartDate , @plannedEndDate";
+            string query = "USP_UpdateProject @projectId , @name , @description , @plannedStartDate , @plannedEndDate , @departmentId";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId, name, description, plannedStartDate, plannedEndDate, departmentId });
             return result > 0;
         }

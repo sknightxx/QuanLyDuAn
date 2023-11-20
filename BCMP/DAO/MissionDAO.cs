@@ -24,9 +24,9 @@ namespace BCMP.DAO
 
         public bool InsertMissions(string title, string description, DateTime plannedStartDate, DateTime plannedEndDate, int isPublic, string projectId, string userId)
         {
-            string query = "USP_InsertMission @title = , @description = ,@progress = , @plannedStartDate = , @plannedEndDate , @isPublic , @status , @projectId , @userId";
-            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { title, description, 0.0, plannedStartDate, plannedEndDate, isPublic, "TO DO", projectId, userId });
-            return result.Rows.Count > 0;
+            string query = "USP_InsertMission @title , @description , @progress , @plannedStartDate , @plannedEndDate , @isPublic , @status , @projectId , @userId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { title, description, 0.0, plannedStartDate, plannedEndDate, isPublic, "TO DO", projectId, userId });
+            return result > 0;
         }
 
         public List<Mission> GetAllMissionsByProjectId(string projectId)
