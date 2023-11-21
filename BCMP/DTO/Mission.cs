@@ -45,7 +45,7 @@ namespace BCMP.DTO
             this.MissionId = (int)row["MissionId"];
             this.Title = row["Title"].ToString();
             this.Description = row["Description"].ToString();
-            this.Progress = (float)row["Progress"];
+            this.Progress = float.Parse(row["Progress"].ToString());
             this.PlannedStartDate = (DateTime?)row["PlannedStartDate"];
             this.PlannedEndDate = (DateTime?)row["PlannedEndDate"];
             var actualStartDateTemp = row["ActualStartDate"];
@@ -66,6 +66,7 @@ namespace BCMP.DTO
             {
                 this.ActualEndDate = null;
             }
+            this.Status = row["Status"].ToString();
             this.ProjectId = row["ProjectId"].ToString();
             this.UserId = row["UserId"].ToString();
         }

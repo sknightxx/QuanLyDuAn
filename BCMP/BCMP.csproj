@@ -200,7 +200,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\MissionDAO.cs" />
+    <Compile Include="DAO\NotificationDAO.cs" />
     <Compile Include="DTO\Mission.cs" />
+    <Compile Include="DTO\Notification.cs" />
     <Compile Include="EventsHandler\UpdateProjectEventArgs.cs" />
     <Compile Include="Forms\Management\ChangePasswordForm.cs">
       <SubType>Form</SubType>
@@ -258,11 +260,11 @@
     </Compile>
     <Compile Include="Forms\Management\MenuColorTable.cs" />
     <Compile Include="Forms\Management\MenuRenderer.cs" />
-    <Compile Include="Forms\Management\Notification.cs">
+    <Compile Include="Forms\Management\Notifications.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Management\Notification.Designer.cs">
-      <DependentUpon>Notification.cs</DependentUpon>
+    <Compile Include="Forms\Management\Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Management\RemindForm.cs">
       <SubType>Form</SubType>
@@ -410,6 +412,9 @@
     <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
       <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDetailMission.en.resx">
+      <DependentUpon>FormDetailMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailMission.resx">
       <DependentUpon>FormDetailMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -467,11 +472,14 @@
     <EmbeddedResource Include="Forms\Management\MailForm.vi.resx">
       <DependentUpon>MailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\Notification.resx">
-      <DependentUpon>Notification.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Management\Notifications.en.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\Notification.vi.resx">
-      <DependentUpon>Notification.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Management\Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\Notifications.vi.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
@@ -545,6 +553,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BCMP.DTO.Employee.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Mission.datasource" />
+    <None Include="Properties\DataSources\BCMP.DTO.Notification.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Project.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

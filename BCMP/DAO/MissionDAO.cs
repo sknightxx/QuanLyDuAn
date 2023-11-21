@@ -29,11 +29,35 @@ namespace BCMP.DAO
             return result > 0;
         }
 
+        public Mission GetMissionById(int missionId)
+        {
+            string query = "USP_GetMissionById @missionId";
+            Mission mission = null;
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { missionId });
+            foreach (DataRow row in data.Rows)
+            {
+                mission = new Mission(row);
+            }
+            return mission;
+        }
+
         public List<Mission> GetAllMissionsByProjectId(string projectId)
         {
             List<Mission> list = new List<Mission>();
             string query = "USP_GetMissionByProjectId @projectId";
             DataTable result = DataProvider.Instance.ExcuteQuery(query,new object[] {projectId});
+            foreach (DataRow row in result.Rows)
+            {
+                list.Add(new Mission(row));
+            }
+            return list;
+        }
+
+        public List<Mission> GetAllMissionsByUserId(string userid)
+        {
+            List<Mission> list = new List<Mission>();
+            string query = "USP_GetMissionByUserId @userId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { userid });
             foreach (DataRow row in result.Rows)
             {
                 list.Add(new Mission(row));
@@ -54,6 +78,7 @@ namespace BCMP.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {missionId, title, description, 0.0, plannedStartDate, plannedEndDate, isPublic, status, projectId, userId });
             return result > 0;
         }
+
 
         public bool UpdateActualStartMission(int missionId, DateTime actualStartDate)
         {

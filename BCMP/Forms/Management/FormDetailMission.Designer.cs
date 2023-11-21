@@ -41,9 +41,7 @@
             this.txt_management = new System.Windows.Forms.TextBox();
             this.dtp_To = new System.Windows.Forms.DateTimePicker();
             this.txt_tittle = new System.Windows.Forms.TextBox();
-            this.txt_IdMission = new System.Windows.Forms.TextBox();
             this.lb_Tittle = new System.Windows.Forms.Label();
-            this.lb_IdMission = new System.Windows.Forms.Label();
             this.cbb_status = new System.Windows.Forms.ComboBox();
             this.txt_relateProject = new System.Windows.Forms.TextBox();
             this.lb_relateProject = new System.Windows.Forms.Label();
@@ -55,6 +53,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_container.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bt_EditMission
@@ -82,20 +81,16 @@
             this.pn_container.Controls.Add(this.label2);
             this.pn_container.Controls.Add(this.label3);
             this.pn_container.Controls.Add(this.lb_document);
-            this.pn_container.Controls.Add(this.txt_management);
             this.pn_container.Controls.Add(this.dtp_To);
             this.pn_container.Controls.Add(this.bt_exit);
             this.pn_container.Controls.Add(this.txt_tittle);
-            this.pn_container.Controls.Add(this.txt_IdMission);
             this.pn_container.Controls.Add(this.bt_EditMission);
             this.pn_container.Controls.Add(this.lb_Tittle);
-            this.pn_container.Controls.Add(this.lb_IdMission);
             this.pn_container.Controls.Add(this.cbb_status);
             this.pn_container.Controls.Add(this.txt_relateProject);
             this.pn_container.Controls.Add(this.lb_relateProject);
             this.pn_container.Controls.Add(this.lb_status);
             this.pn_container.Controls.Add(this.txt_document);
-            this.pn_container.Controls.Add(this.lb_Management);
             this.pn_container.Controls.Add(this.txt_Description);
             this.pn_container.Controls.Add(this.lb_description);
             this.pn_container.Controls.Add(this.panel1);
@@ -161,6 +156,7 @@
             resources.ApplyResources(this.txt_management, "txt_management");
             this.txt_management.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_management.Name = "txt_management";
+            this.txt_management.ReadOnly = true;
             // 
             // dtp_To
             // 
@@ -173,12 +169,7 @@
             resources.ApplyResources(this.txt_tittle, "txt_tittle");
             this.txt_tittle.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_tittle.Name = "txt_tittle";
-            // 
-            // txt_IdMission
-            // 
-            resources.ApplyResources(this.txt_IdMission, "txt_IdMission");
-            this.txt_IdMission.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_IdMission.Name = "txt_IdMission";
+            this.txt_tittle.ReadOnly = true;
             // 
             // lb_Tittle
             // 
@@ -187,17 +178,14 @@
             this.lb_Tittle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_Tittle.Name = "lb_Tittle";
             // 
-            // lb_IdMission
-            // 
-            resources.ApplyResources(this.lb_IdMission, "lb_IdMission");
-            this.lb_IdMission.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_IdMission.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_IdMission.Name = "lb_IdMission";
-            // 
             // cbb_status
             // 
             resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.FormattingEnabled = true;
+            this.cbb_status.Items.AddRange(new object[] {
+            resources.GetString("cbb_status.Items"),
+            resources.GetString("cbb_status.Items1"),
+            resources.GetString("cbb_status.Items2")});
             this.cbb_status.Name = "cbb_status";
             // 
             // txt_relateProject
@@ -205,6 +193,7 @@
             resources.ApplyResources(this.txt_relateProject, "txt_relateProject");
             this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_relateProject.Name = "txt_relateProject";
+            this.txt_relateProject.ReadOnly = true;
             // 
             // lb_relateProject
             // 
@@ -249,6 +238,8 @@
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.lb_Management);
+            this.panel1.Controls.Add(this.txt_management);
             this.panel1.Name = "panel1";
             // 
             // bt_exit
@@ -278,6 +269,8 @@
             this.Name = "FormDetailMission";
             this.pn_container.ResumeLayout(false);
             this.pn_container.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -285,8 +278,6 @@
         #endregion
         private System.Windows.Forms.Button bt_EditMission;
         private System.Windows.Forms.TextBox txt_management;
-        private System.Windows.Forms.TextBox txt_IdMission;
-        private System.Windows.Forms.Label lb_IdMission;
         private System.Windows.Forms.Label lb_document;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_tittle;

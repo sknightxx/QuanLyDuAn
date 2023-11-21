@@ -143,7 +143,7 @@ namespace BCMP
         private void bt_mission_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormMission());
+            OpenChildForm(new FormMission(empLogin));
             lb_tittleChildform.Text = "Mission";
         }
 
@@ -269,7 +269,7 @@ namespace BCMP
 
         private void bt_notifications_Click(object sender, EventArgs e)
         {
-            Notification notificationForm = new Notification();
+            Notifications notificationForm = new Notifications(empLogin);
             notificationForm.Show();
         }
 
