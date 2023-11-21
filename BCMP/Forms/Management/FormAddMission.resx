@@ -121,7 +121,13 @@
   <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>450, 489</value>
   </data>
+  <data name="&gt;&gt;lb_ValidDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;lb_newMission.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidDocument.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -148,6 +154,9 @@
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="txt_relateProject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lb_IdProject.TabIndex" type="System.Int32, mscorlib">
@@ -195,8 +204,14 @@
   <data name="pn_tittleAddProject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="&gt;&gt;lb_ValidDocument.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="lb_ValidManagement.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
+  </data>
+  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="lb_member.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -248,9 +263,6 @@
   </data>
   <data name="lb_member.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 372</value>
-  </data>
-  <data name="&gt;&gt;lb_description.Parent" xml:space="preserve">
-    <value>panel1</value>
   </data>
   <data name="&gt;&gt;txt_relateProject.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -330,9 +342,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>674, 550</value>
   </data>
-  <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 215</value>
-  </data>
   <data name="pn_tittleAddProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>674, 58</value>
   </data>
@@ -350,6 +359,12 @@
   </data>
   <data name="lb_ValidManagement.Location" type="System.Drawing.Point, System.Drawing">
     <value>352, 125</value>
+  </data>
+  <data name="&gt;&gt;lb_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidManagement.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 366</value>
@@ -384,9 +399,6 @@
   <data name="&gt;&gt;lb_Tittle.Name" xml:space="preserve">
     <value>lb_Tittle</value>
   </data>
-  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="lb_relateProject.Text" xml:space="preserve">
     <value>Related project</value>
   </data>
@@ -408,8 +420,8 @@
   <data name="&gt;&gt;txt_name.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lb_ValidDescription.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 20</value>
@@ -459,9 +471,6 @@
   <data name="&gt;&gt;pn_container.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lb_ValidTittle.Text" xml:space="preserve">
-    <value>label4</value>
-  </data>
   <data name="txt_IdProject.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -510,9 +519,6 @@
   <data name="&gt;&gt;lb_ValidManagement.Name" xml:space="preserve">
     <value>lb_ValidManagement</value>
   </data>
-  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="lb_relateProject.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -558,8 +564,8 @@
   <data name="lb_document.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
-  <data name="&gt;&gt;lb_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txt_IdProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 18</value>
@@ -579,8 +585,8 @@
   <data name="&gt;&gt;lb_document.Name" xml:space="preserve">
     <value>lb_document</value>
   </data>
-  <data name="txt_relateProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="txt_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="lb_ValidTittle.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
@@ -594,8 +600,8 @@
   <data name="lb_member.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="txt_document.Text" xml:space="preserve">
-    <value>Attachments</value>
+  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
     <value>350, 68</value>
@@ -617,9 +623,6 @@
   </data>
   <data name="lb_Tittle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;txt_IdProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lb_ValidDocument.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
@@ -645,8 +648,8 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>674, 550</value>
   </data>
-  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;lb_description.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="lb_newMission.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -659,9 +662,6 @@
   </data>
   <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 398</value>
-  </data>
-  <data name="lb_ValidRelate.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
   </data>
   <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -717,8 +717,8 @@
   <data name="lb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="&gt;&gt;lb_ValidManagement.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;lb_ValidDocument.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -780,8 +780,8 @@
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="&gt;&gt;lb_ValidDocument.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lb_ValidTittle.Text" xml:space="preserve">
+    <value>label4</value>
   </data>
   <data name="lb_ValidManagement.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -812,6 +812,9 @@
   </data>
   <data name="txt_IdProject.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="lb_IdProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 68</value>
@@ -939,7 +942,7 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="txt_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="dateTimePicker2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;txt_relateProject.Type" xml:space="preserve">
@@ -978,8 +981,8 @@
   <data name="lb_ValidDescription.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 215</value>
   </data>
   <data name="&gt;&gt;lb_ValidDocument.Name" xml:space="preserve">
     <value>lb_ValidDocument</value>
@@ -1053,8 +1056,8 @@
   <data name="&gt;&gt;lb_ValidDescription.Name" xml:space="preserve">
     <value>lb_ValidDescription</value>
   </data>
-  <data name="&gt;&gt;lb_ValidDocument.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="txt_document.Text" xml:space="preserve">
+    <value>Attachments</value>
   </data>
   <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1068,8 +1071,8 @@
   <data name="lb_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="dateTimePicker2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="lb_ValidRelate.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
   <data name="&gt;&gt;lb_Management.Parent" xml:space="preserve">
     <value>panel1</value>

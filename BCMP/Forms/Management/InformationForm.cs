@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BCMP.DAO;
+using BCMP.DTO;
+using BCMP.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +16,12 @@ namespace BCMP.Forms.Management
 {
     public partial class InformationForm : Form
     {
-        public InformationForm()
+        private Employee currEmployee;
+        public InformationForm(Employee currEmployee)
         {
             InitializeComponent();
+            this.currEmployee = currEmployee;
+            LoadDataCurrentEmployee();
         }
 
         private void InformationForm_Load(object sender, EventArgs e)
@@ -43,6 +49,36 @@ namespace BCMP.Forms.Management
 
             this.Region = new Region(path);
             base.OnPaintBackground(e);
+        }
+
+        private void LoadDataCurrentEmployee()
+        {
+            txt_IdStaff.Text = currEmployee.UserId.ToString();
+            txt_Email.Text = currEmployee.Email.ToString();
+            txt_phone.Text = currEmployee.PhoneNumber.ToString();
+            cbb_role.Text = RoleDAO.Instance.GetById(currEmployee.RoleId).Title.ToString();
+            cbb_department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
+
+        }
+
+        public void LoadDataDepartment()
+        {
+            List<String> list = new List<String>();
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                list.Add(item.Name);
+            }
+            cbb_department.DataSource = list;
+        }
+
+        public void LoadDataRole()
+        {
+            List<String> list = new List<String>();
+            foreach (Role item in RoleService.Instance.GetAllListRole())
+            {
+                list.Add(item.Title);
+            }
+            cbb_role.DataSource = list;
         }
     }
 }

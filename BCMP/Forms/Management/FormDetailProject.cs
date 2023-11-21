@@ -1,5 +1,6 @@
 ﻿using BCMP.DAO;
 using BCMP.DTO;
+using BCMP.EventsHandler;
 using BCMP.Service;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,14 @@ namespace BCMP.Forms.Management
     public partial class FormDetailProject : Form
     {
         private Project currentProject;
+
+        private event EventHandler updateProject;
+
+        public event EventHandler UpdateProject
+        {
+            add { updateProject += value; }
+            remove { updateProject -= value; }
+        }
 
         public Project CurrentProject { get => currentProject; set => currentProject = value; }
 
@@ -52,7 +61,8 @@ namespace BCMP.Forms.Management
 
         private void bt_save_Click(object sender, EventArgs e)
         {
-            FormAddProject AddProjectForm = new FormAddProject();
+            FormAddProject AddProjectForm = new FormAddProject(currentProject);
+            AddProjectForm.UpdateProject += P_Detail_Update;
             AddProjectForm.Show();
         }
 
@@ -96,6 +106,17 @@ namespace BCMP.Forms.Management
                 }
             }
             cbb_department.DataSource = list;
+            cbb_department.Text = DepartmentDAO.Instance.GetDepartmentById(currentProject.DepartmentId).Name.ToString();
+         
         }
+
+        private void P_Detail_Update(object sender, EventArgs e)
+        {
+            currentProject = ProjectDAO.Instance.GetProjectById(currentProject.ProjectId);
+            LoadCurrentProject();
+            updateProject(this, new EventArgs());
+
+        }
+
     }
 }

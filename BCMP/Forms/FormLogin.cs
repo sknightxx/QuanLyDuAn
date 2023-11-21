@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCMP.DTO;
+using BCMP.DAO;
 
 namespace BCMP
 {
@@ -82,7 +83,7 @@ namespace BCMP
                     MessageBox.Show("Tài khoản của bạn đã bị khoá");
                 } else
                 {
-                    dashboard dashboardD = new dashboard();
+                    dashboard dashboardD = new dashboard(EmployeeDAO.Instance.GetById(userid));
                     this.Hide();
                     dashboardD.ShowDialog();
                     txt_Password.Text = "";

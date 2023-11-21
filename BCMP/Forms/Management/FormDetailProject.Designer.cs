@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.cbb_department = new System.Windows.Forms.ComboBox();
             this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
             this.lb_IdProject = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
             this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,12 +108,14 @@
             resources.ApplyResources(this.txt_Description, "txt_Description");
             this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_Description.Name = "txt_Description";
+            this.txt_Description.ReadOnly = true;
             // 
             // txt_IdProject
             // 
             resources.ApplyResources(this.txt_IdProject, "txt_IdProject");
             this.txt_IdProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_IdProject.Name = "txt_IdProject";
+            this.txt_IdProject.ReadOnly = true;
             // 
             // lb_description
             // 
@@ -143,6 +145,24 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.label3.Name = "label3";
             // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
             // cbb_department
             // 
             resources.ApplyResources(this.cbb_department, "cbb_department");
@@ -167,6 +187,7 @@
             resources.ApplyResources(this.txt_nameProject, "txt_nameProject");
             this.txt_nameProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_nameProject.Name = "txt_nameProject";
+            this.txt_nameProject.ReadOnly = true;
             // 
             // dtpkPlannedStart
             // 
@@ -185,24 +206,6 @@
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // FormDetailProject
             // 

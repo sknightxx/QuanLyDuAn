@@ -53,5 +53,18 @@ namespace BCMP.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { departmentId });
             return result > 0;
         }
+
+        public Department GetDepartmentById(int departmentId)
+        {
+            Department getDepartment;
+            string query = "USP_GetDepartmentById @departmentId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { departmentId });
+            if (result.Rows.Count > 0)
+            {
+                getDepartment = new Department(result.Rows[0]);
+                return getDepartment;
+            }
+            return null;
+        }
     }
 }

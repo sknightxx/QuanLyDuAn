@@ -1,4 +1,5 @@
-﻿using BCMP.DTO;
+﻿using BCMP.DAO;
+using BCMP.DTO;
 using BCMP.Service;
 using System;
 using System.Collections.Generic;
@@ -17,12 +18,58 @@ namespace BCMP.Forms
 {
     public partial class FormAddUser : Form
     {
+
+
+        private Employee currEmployee;
+
+        private event EventHandler insertEmployee;
+        public event EventHandler InsertEmployee
+        {
+            add { insertEmployee += value; }
+            remove { insertEmployee -= value; }
+        }
+
+        private event EventHandler updateEmployee;
+
+        public event EventHandler UpdateEmployee
+        {
+            add { updateEmployee += value; }
+            remove { updateEmployee -= value; }
+        }
         public FormAddUser()
         {
             InitializeComponent();
             LoadDataDepartment();
             LoadDataRole();
+            currEmployee = null;
         }
+
+        public FormAddUser(Employee currEmployee)
+        {
+            InitializeComponent();
+            LoadDataDepartment();
+            LoadDataRole();
+            this.currEmployee = currEmployee;
+            LoadDataCurrentEmployee();
+        }
+
+        private void LoadDataCurrentEmployee()
+        {
+            txt_confirmPassword.Enabled = false;
+            txt_IdStaff.Enabled = false;
+            txt_IdStaff.Text = currEmployee.UserId.ToString();
+            txt_password.Text = currEmployee.Password.ToString();
+            txt_Email.Text = currEmployee.Email.ToString();
+            txt_phone.Text = currEmployee.PhoneNumber.ToString();
+            cb_Role.Text = RoleDAO.Instance.GetById(currEmployee.RoleId).Title.ToString();
+            cb_Department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
+            txt_Email_Leave(this, new EventArgs());
+            txt_phone_Leave(this, new EventArgs());
+            txt_password_Leave(this, new EventArgs());
+
+
+        }
+
 
         private void bt_cancelAddUser_MouseEnter(object sender, EventArgs e)
         {
@@ -277,8 +324,20 @@ namespace BCMP.Forms
 
         private void bt_save_Click(object sender, EventArgs e)
         {
+            if(currEmployee == null)
+            {
+                AddNewUser();
+            }
+            else
+            {
+                EditCurrentUser();
+            }
+        }
+
+        private void AddNewUser()
+        {
             if (lb_Valid_UserId.Text == "Valid" && lb_ValidFullname.Text == "Valid" &&
-                lb_ValidPassword.Text == "Valid" && lb_ValidConfirm.Text == "Valid" &&
+                lb_ValidPassword.Text == "Valid" &&
                 lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid")
             {
                 String userid = txt_IdStaff.Text.ToString();
@@ -306,10 +365,57 @@ namespace BCMP.Forms
                 if (EmployeeService.Instance.InsertEmployeeVaildate(email, password, phone, userid, departmentid, roleid))
                 {
                     MessageBox.Show("Add employee successfully");
+                    updateEmployee(this, new EventArgs());
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Add employee failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inputs are missed");
+            }
+        }
+
+        private void EditCurrentUser()
+        {
+            if (lb_ValidFullname.Text == "Valid" &&
+                lb_ValidPassword.Text == "Valid" &&
+                lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid")
+            {
+                String userid = txt_IdStaff.Text.ToString();
+                String password = txt_password.Text.ToString();
+                String email = txt_Email.Text.ToString();
+                String name = txt_name.Text.ToString();
+                String phone = txt_phone.Text.ToString();
+                int departmentid = 0;
+                int roleid = 0;
+                foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+                {
+                    if (item.Name.Equals(cb_Department.SelectedItem.ToString()))
+                    {
+                        departmentid = item.DepartmentId;
+                    }
+                }
+
+                foreach (Role item in RoleService.Instance.GetAllListRole())
+                {
+                    if (item.Title.Equals(cb_Role.SelectedItem.ToString()))
+                    {
+                        roleid = item.RoleId;
+                    }
+                }
+                if (EmployeeService.Instance.UpdateEmployeeByManager(email, password, phone, userid, departmentid, roleid,currEmployee.IsDeactivated))
+                {
+                    MessageBox.Show("Update employee successfully");
+                    updateEmployee(this, new EventArgs());
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Update employee failed");
                 }
             }
             else

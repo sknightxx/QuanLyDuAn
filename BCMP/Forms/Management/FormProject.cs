@@ -18,6 +18,8 @@ namespace BCMP.Forms
     public partial class FormProject : Form
     {
         private static List<Project> proList = ProjectDAO.Instance.GetAllProject();
+
+
         public FormProject()
         {
             InitializeComponent();
@@ -94,6 +96,7 @@ namespace BCMP.Forms
             {
                 Project currProject = ProjectDAO.Instance.GetProjectById(dtgv_Project.Rows[e.RowIndex].Cells[0].Value.ToString());
                 FormDetailProject DetailProjectForm = new FormDetailProject(currProject);
+                DetailProjectForm.UpdateProject += P_UpdateProject;
                 DetailProjectForm.Show();
             }
         }
@@ -104,5 +107,15 @@ namespace BCMP.Forms
             LoadProjectList();
         }
 
+        private void P_UpdateProject(object sender, EventArgs e)
+        {
+            proList = ProjectDAO.Instance.GetAllProject();
+            LoadProjectList();
+        }
+
+        private void pn_tittle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

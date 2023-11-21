@@ -4,7 +4,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Security;
 using BCMP.DTO;
+using Firebase.Auth;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BCMP.DAO
@@ -32,6 +35,18 @@ namespace BCMP.DAO
                 emp = new Employee(row);
             }
             return emp;
+        }
+
+        public List<Employee> GetAllEmployee()
+        {
+            string query = "USP_GetEmployee";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
         }
 
         public Employee GetById(string userid)
@@ -74,6 +89,29 @@ namespace BCMP.DAO
             }
             String query = "USP_UpdateEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, deactivated, phonenumber, userid, departmentid, roleid });
+            return result > 0;
+        }
+        
+        public bool UpdateIsDeactivatedEmployee(string userId, bool isDeactivated)
+        {
+            int deactivated = 0;
+            if (isDeactivated == false)
+            {
+                deactivated = 1;
+            }
+            else
+            {
+                deactivated = 0;
+            }
+            String query = "USP_UpdateIsDeactivatedEmployee @userId , @isDeactivated ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { userId,deactivated});
+            return result > 0;
+        }
+
+        public bool UpdatePasswordEmployee(string userId, string newpassword)
+        {
+            String query = "USP_UpdatePasswordEmployee @userId , @newpassword ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { userId, newpassword });
             return result > 0;
         }
     }

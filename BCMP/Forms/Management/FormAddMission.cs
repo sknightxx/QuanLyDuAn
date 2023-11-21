@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCMP.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace BCMP.Forms.Management
 {
@@ -74,6 +76,7 @@ namespace BCMP.Forms.Management
             this.lb_description = new System.Windows.Forms.Label();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
             this.lb_newMission = new System.Windows.Forms.Label();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.lb_IdProject = new System.Windows.Forms.Label();
@@ -86,7 +89,6 @@ namespace BCMP.Forms.Management
             this.lb_document = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_Tittle = new System.Windows.Forms.Label();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_container.SuspendLayout();
@@ -229,6 +231,24 @@ namespace BCMP.Forms.Management
             this.lb_newMission.ForeColor = System.Drawing.Color.Black;
             this.lb_newMission.Name = "lb_newMission";
             // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.Black;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
             // bt_cancel
             // 
             resources.ApplyResources(this.bt_cancel, "bt_cancel");
@@ -250,6 +270,7 @@ namespace BCMP.Forms.Management
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // lb_IdProject
             // 
@@ -330,24 +351,6 @@ namespace BCMP.Forms.Management
             this.lb_Tittle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_Tittle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_Tittle.Name = "lb_Tittle";
-            // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.Black;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // FormAddMission
             // 
@@ -518,6 +521,20 @@ namespace BCMP.Forms.Management
             {
                 txt_IdProject.Text = "";
                 txt_IdProject.ForeColor = Color.Gray;
+            }
+        }
+
+        private void bt_save_Click(object sender, EventArgs e)
+        {
+            DateTime plannedStartDate = dateTimePicker1.Value;
+            DateTime plannedEndDate = dateTimePicker2.Value;
+            if (MissionService.Instance.InsertValidateMission(txt_name.Text.ToString(), txt_Description.Text.ToString(), plannedStartDate, plannedEndDate, 0, txt_relateProject.Text.ToString(), txt_management.Text.ToString()))
+            {
+                MessageBox.Show("Add Mission Successfully");
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Add Mission Failed");
             }
         }
     }

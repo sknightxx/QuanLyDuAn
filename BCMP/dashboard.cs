@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.DTO;
 using BCMP.Forms;
 using BCMP.Forms.Management;
 using BCMP.Forms.User;
@@ -23,15 +24,16 @@ namespace BCMP
         private IconButton currenBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+        private Employee empLogin;
 
 
-
-        public dashboard()
+        public dashboard(Employee empLogin)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7,60);
             pn_leftDashBoard.Controls.Add(leftBorderBtn);
+            this.empLogin = empLogin;
 
             //form
             this.Text = string.Empty;
@@ -255,13 +257,13 @@ namespace BCMP
 
         private void bt_Info_Click(object sender, EventArgs e)
         {
-            InformationForm informationForm = new InformationForm();
+            InformationForm informationForm = new InformationForm(empLogin);
             informationForm.Show();
         }
 
         private void bt_changePassword_Click(object sender, EventArgs e)
         {
-            ChangePasswordForm changePasswordForm = new ChangePasswordForm();
+            ChangePasswordForm changePasswordForm = new ChangePasswordForm(empLogin);
             changePasswordForm.Show();
         }
 
