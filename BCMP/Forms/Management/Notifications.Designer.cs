@@ -36,11 +36,12 @@
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.notificationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isReadDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.missionIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notificationIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OpenMission = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pn_containerInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MyNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.notificationBindingSource)).BeginInit();
@@ -68,14 +69,16 @@
             this.dtgv_MyNotification.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_MyNotification.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.descriptionDataGridViewTextBoxColumn,
+            this.MissionId,
             this.titleDataGridViewTextBoxColumn,
             this.createDateDataGridViewTextBoxColumn,
             this.isReadDataGridViewCheckBoxColumn,
-            this.missionIdDataGridViewTextBoxColumn,
-            this.notificationIdDataGridViewTextBoxColumn});
+            this.notificationIdDataGridViewTextBoxColumn,
+            this.OpenMission});
             this.dtgv_MyNotification.DataSource = this.notificationBindingSource;
             resources.ApplyResources(this.dtgv_MyNotification, "dtgv_MyNotification");
             this.dtgv_MyNotification.Name = "dtgv_MyNotification";
+            this.dtgv_MyNotification.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_MyNotification_CellContentClick);
             // 
             // bt_exit
             // 
@@ -105,6 +108,12 @@
             resources.ApplyResources(this.descriptionDataGridViewTextBoxColumn, "descriptionDataGridViewTextBoxColumn");
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
+            // MissionId
+            // 
+            this.MissionId.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.MissionId, "MissionId");
+            this.MissionId.Name = "MissionId";
+            // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
@@ -123,17 +132,18 @@
             resources.ApplyResources(this.isReadDataGridViewCheckBoxColumn, "isReadDataGridViewCheckBoxColumn");
             this.isReadDataGridViewCheckBoxColumn.Name = "isReadDataGridViewCheckBoxColumn";
             // 
-            // missionIdDataGridViewTextBoxColumn
-            // 
-            this.missionIdDataGridViewTextBoxColumn.DataPropertyName = "MissionId";
-            resources.ApplyResources(this.missionIdDataGridViewTextBoxColumn, "missionIdDataGridViewTextBoxColumn");
-            this.missionIdDataGridViewTextBoxColumn.Name = "missionIdDataGridViewTextBoxColumn";
-            // 
             // notificationIdDataGridViewTextBoxColumn
             // 
             this.notificationIdDataGridViewTextBoxColumn.DataPropertyName = "NotificationId";
             resources.ApplyResources(this.notificationIdDataGridViewTextBoxColumn, "notificationIdDataGridViewTextBoxColumn");
             this.notificationIdDataGridViewTextBoxColumn.Name = "notificationIdDataGridViewTextBoxColumn";
+            // 
+            // OpenMission
+            // 
+            this.OpenMission.DataPropertyName = "OpenMission";
+            resources.ApplyResources(this.OpenMission, "OpenMission");
+            this.OpenMission.Name = "OpenMission";
+            this.OpenMission.Text = "OpenMission";
             // 
             // Notifications
             // 
@@ -158,10 +168,11 @@
         private System.Windows.Forms.Label lb_Notification;
         private System.Windows.Forms.BindingSource notificationBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MissionId;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn createDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isReadDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn missionIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn notificationIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn OpenMission;
     }
 }

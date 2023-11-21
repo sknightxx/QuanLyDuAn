@@ -54,5 +54,20 @@ namespace BCMP.Forms.Management
                 dtgv_MyNotification.DataSource = myNotifyList;
             }
         }
+
+        private void dtgv_MyNotification_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_MyNotification.Columns[e.ColumnIndex].Name == "OpenMission")
+            {
+                Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgv_MyNotification.Rows[e.RowIndex].Cells[1].Value.ToString()));
+                MessageBox.Show(mission.MissionId.ToString());
+                if (mission != null)
+                {
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    DetailMissionForm.Show();
+                }
+
+            }
+        }
     }
 }
