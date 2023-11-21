@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordForm));
-            this.txt_IdStaff = new System.Windows.Forms.TextBox();
-            this.lb_IdStaff = new System.Windows.Forms.Label();
             this.txt_ConfirmPassword = new System.Windows.Forms.TextBox();
             this.lb_phone = new System.Windows.Forms.Label();
             this.pn_containerChangePass = new System.Windows.Forms.Panel();
@@ -46,18 +44,6 @@
             this.pn_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_IdStaff
-            // 
-            resources.ApplyResources(this.txt_IdStaff, "txt_IdStaff");
-            this.txt_IdStaff.Name = "txt_IdStaff";
-            // 
-            // lb_IdStaff
-            // 
-            resources.ApplyResources(this.lb_IdStaff, "lb_IdStaff");
-            this.lb_IdStaff.BackColor = System.Drawing.Color.Transparent;
-            this.lb_IdStaff.ForeColor = System.Drawing.Color.Black;
-            this.lb_IdStaff.Name = "lb_IdStaff";
             // 
             // txt_ConfirmPassword
             // 
@@ -79,9 +65,7 @@
             this.pn_containerChangePass.Controls.Add(this.bt_cancel);
             this.pn_containerChangePass.Controls.Add(this.bt_save);
             this.pn_containerChangePass.Controls.Add(this.txt_ConfirmPassword);
-            this.pn_containerChangePass.Controls.Add(this.txt_IdStaff);
             this.pn_containerChangePass.Controls.Add(this.lb_phone);
-            this.pn_containerChangePass.Controls.Add(this.lb_IdStaff);
             this.pn_containerChangePass.Controls.Add(this.txt_Password);
             this.pn_containerChangePass.Controls.Add(this.lb_Email);
             this.pn_containerChangePass.Controls.Add(this.bt_exit);
@@ -181,8 +165,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txt_IdStaff;
-        private System.Windows.Forms.Label lb_IdStaff;
         private System.Windows.Forms.TextBox txt_ConfirmPassword;
         private System.Windows.Forms.Label lb_phone;
         private System.Windows.Forms.Panel pn_containerChangePass;

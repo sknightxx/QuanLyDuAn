@@ -59,7 +59,6 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.bt_save);
             this.panel1.Controls.Add(this.bt_cancel);
@@ -77,13 +76,14 @@
             this.panel1.Controls.Add(this.dtpkPlannedStart);
             this.panel1.Controls.Add(this.lb_NameProject);
             this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bt_save
             // 
-            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -91,11 +91,11 @@
             // 
             // bt_cancel
             // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -165,14 +165,14 @@
             // 
             // cbb_department
             // 
-            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.FormattingEnabled = true;
+            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.Name = "cbb_department";
             // 
             // dtpkPlannedEnd
             // 
-            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
             // 
             // lb_IdProject
@@ -191,8 +191,8 @@
             // 
             // dtpkPlannedStart
             // 
-            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Name = "dtpkPlannedStart";
             // 
             // lb_NameProject
@@ -206,6 +206,7 @@
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // FormDetailProject
             // 

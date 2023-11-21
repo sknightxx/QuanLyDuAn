@@ -19,7 +19,7 @@ namespace BCMP.Forms
     public partial class FormAddUser : Form
     {
 
-
+        private FormEmployee F;
         private Employee currEmployee;
 
         private event EventHandler insertEmployee;
@@ -36,12 +36,13 @@ namespace BCMP.Forms
             add { updateEmployee += value; }
             remove { updateEmployee -= value; }
         }
-        public FormAddUser()
+        public FormAddUser(FormEmployee f)
         {
             InitializeComponent();
             LoadDataDepartment();
             LoadDataRole();
             currEmployee = null;
+            F = f;
         }
 
         public FormAddUser(Employee currEmployee)
@@ -55,7 +56,12 @@ namespace BCMP.Forms
 
         private void LoadDataCurrentEmployee()
         {
-            txt_confirmPassword.Enabled = false;
+            txt_confirmPassword.Visible = false;
+            txt_password.Visible = false;
+            lb_ValidConfirm.Visible = false;
+            lb_ValidPassword.Visible = false;
+            lb_password.Visible = false;
+            lb_confirmPassword.Visible = false;
             txt_IdStaff.Enabled = false;
             txt_IdStaff.Text = currEmployee.UserId.ToString();
             txt_password.Text = currEmployee.Password.ToString();
@@ -65,8 +71,6 @@ namespace BCMP.Forms
             cb_Department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
             txt_Email_Leave(this, new EventArgs());
             txt_phone_Leave(this, new EventArgs());
-            txt_password_Leave(this, new EventArgs());
-
 
         }
 
@@ -337,8 +341,8 @@ namespace BCMP.Forms
         private void AddNewUser()
         {
             if (lb_Valid_UserId.Text == "Valid" && lb_ValidFullname.Text == "Valid" &&
-                lb_ValidPassword.Text == "Valid" &&
-                lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid")
+                lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid" && lb_ValidConfirm.Text == "Valid" &&
+                lb_ValidPassword.Text == "Valid")
             {
                 String userid = txt_IdStaff.Text.ToString();
                 String password = txt_password.Text.ToString();
@@ -365,7 +369,8 @@ namespace BCMP.Forms
                 if (EmployeeService.Instance.InsertEmployeeVaildate(email, password, phone, userid, departmentid, roleid))
                 {
                     MessageBox.Show("Add employee successfully");
-                    updateEmployee(this, new EventArgs());
+                    // insertEmployee(this, new EventArgs());
+                    F.LoadDataListEmloyee();
                     this.Close();
                 }
                 else
@@ -382,7 +387,6 @@ namespace BCMP.Forms
         private void EditCurrentUser()
         {
             if (lb_ValidFullname.Text == "Valid" &&
-                lb_ValidPassword.Text == "Valid" &&
                 lb_ValidEmail.Text == "Valid" && lb_ValidPhone.Text == "Valid")
             {
                 String userid = txt_IdStaff.Text.ToString();

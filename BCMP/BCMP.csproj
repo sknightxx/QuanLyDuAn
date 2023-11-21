@@ -431,6 +431,9 @@
     <EmbeddedResource Include="Forms\Management\FormDocument.vi.resx">
       <DependentUpon>FormDocument.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormEmployee.aa.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormEmployee.en.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </EmbeddedResource>

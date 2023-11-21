@@ -22,7 +22,6 @@ namespace BCMP.Forms.Management
         {
             InitializeComponent();
             this.currEmployee = currEmployee;
-            LoadDataEmployee();
         }
 
         private void lb_Email_Click(object sender, EventArgs e)
@@ -57,18 +56,14 @@ namespace BCMP.Forms.Management
             this.Close();
         }
 
-        private void LoadDataEmployee()
-        {
-            txt_IdStaff.Enabled = false;
-            txt_IdStaff.Text = currEmployee.UserId.ToString();
-        }
+       
 
         private void bt_save_Click(object sender, EventArgs e)
         {
             if (txt_Password.Text.ToString().Equals(""))
             {
                 MessageBox.Show("Your Old Password is empty");
-            } else if(!AuthService.Instance.LoginValidateEmployee(txt_IdStaff.Text.ToString(), txt_Password.Text.ToString()))
+            } else if(!AuthService.Instance.LoginValidateEmployee(currEmployee.UserId.ToString(), txt_Password.Text.ToString()))
             {
                 MessageBox.Show("Your Old Password is not correct");
             } else if (txt_ConfirmPassword.Text.ToString().Equals(""))
@@ -78,9 +73,10 @@ namespace BCMP.Forms.Management
             {
                 if (txt_ConfirmPassword.Text.Length > 7)
                 {
-                    if (EmployeeService.Instance.UpdateChangePassword(txt_IdStaff.Text.ToString(), txt_ConfirmPassword.Text.ToString()))
+                    if (EmployeeService.Instance.UpdateChangePassword(currEmployee.UserId.ToString(), txt_ConfirmPassword.Text.ToString()))
                     {
                         MessageBox.Show("Update your password sucessfully");
+                        this.Close();
                     } else
                     {
                         MessageBox.Show("Update your password failed");

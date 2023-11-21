@@ -41,11 +41,11 @@
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_ListEmp = new System.Windows.Forms.DataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
@@ -81,8 +81,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txt_search);
             resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.txt_search);
             this.panel2.Name = "panel2";
             // 
             // txt_search
@@ -95,9 +95,9 @@
             // 
             // bt_search
             // 
+            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.BackColor = System.Drawing.Color.White;
             this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.bt_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -143,15 +143,16 @@
             // 
             // pn_container
             // 
+            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.BackColor = System.Drawing.Color.White;
             this.pn_container.Controls.Add(this.dtgv_ListEmp);
             this.pn_container.Controls.Add(this.pn_tittleForm);
             this.pn_container.Controls.Add(this.lb_Name);
-            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.Name = "pn_container";
             // 
             // dtgv_ListEmp
             // 
+            resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.AutoGenerateColumns = false;
             this.dtgv_ListEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_ListEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -161,16 +162,9 @@
             this.IsDeactivated,
             this.Edit});
             this.dtgv_ListEmp.DataSource = this.employeeBindingSource;
-            resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.Name = "dtgv_ListEmp";
             this.dtgv_ListEmp.RowTemplate.Height = 24;
             this.dtgv_ListEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListEmp_CellContentClick);
-            // 
-            // Edit
-            // 
-            resources.ApplyResources(this.Edit, "Edit");
-            this.Edit.Name = "Edit";
-            this.Edit.Text = "Edit";
             // 
             // userIdDataGridViewTextBoxColumn
             // 
@@ -195,6 +189,12 @@
             this.IsDeactivated.DataPropertyName = "IsDeactivated";
             resources.ApplyResources(this.IsDeactivated, "IsDeactivated");
             this.IsDeactivated.Name = "IsDeactivated";
+            // 
+            // Edit
+            // 
+            resources.ApplyResources(this.Edit, "Edit");
+            this.Edit.Name = "Edit";
+            this.Edit.Text = "Edit";
             // 
             // employeeBindingSource
             // 
