@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCMP.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,14 @@ namespace BCMP.Forms.Management
 {
     public partial class FormDetailMission : Form
     {
-        public FormDetailMission()
+        private Mission currMission;
+        public FormDetailMission(Mission mission)
         {
             InitializeComponent();
+            currMission = mission;
+            LoadDataCurrMission();
+
+
         }
 
         private void bt_exit_Click(object sender, EventArgs e)
@@ -61,6 +67,21 @@ namespace BCMP.Forms.Management
 
             this.Region = new Region(path);
             base.OnPaintBackground(e);
+        }
+
+        private void LoadDataCurrMission()
+        {
+            if(currMission != null)
+            {
+                txt_management.Text = currMission.UserId.ToString();
+                txt_tittle.Text = currMission.Title.ToString();
+                txt_Description.Text = currMission.Description.ToString();
+                txt_relateProject.Text = currMission.ProjectId.ToString();
+                dtp_From.Text = currMission.PlannedStartDate.ToString();
+                dtp_To.Text = currMission.PlannedEndDate.ToString();
+                cbb_status.Text = currMission.Status.ToString();
+            }
+       
         }
 
       

@@ -19,6 +19,8 @@ namespace BCMP.Forms.Management
     {
         private Project currentProject;
 
+        private List<Mission> missionsList;
+
         private event EventHandler updateProject;
 
         public event EventHandler UpdateProject
@@ -34,6 +36,7 @@ namespace BCMP.Forms.Management
             InitializeComponent();
             CurrentProject = currentProject;
             LoadCurrentProject();
+            LoadDataListMission();
         }
 
         private void bt_exit_Click(object sender, EventArgs e)
@@ -118,5 +121,32 @@ namespace BCMP.Forms.Management
 
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LoadDataListMission()
+        {
+            if(currentProject != null)
+            {
+                missionsList = MissionDAO.Instance.GetAllMissionsByProjectId(currentProject.ProjectId.ToString());
+                dtgvMissionList.DataSource = missionsList;
+            }
+        }
+
+        private void dtgvMissionList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvMissionList.Columns[e.ColumnIndex].Name == "Detail")
+            {
+                Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMissionList.Rows[e.RowIndex].Cells[1].Value.ToString()));
+                if(mission != null)
+                {
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    DetailMissionForm.Show();
+                }
+
+            }
+        }
     }
 }

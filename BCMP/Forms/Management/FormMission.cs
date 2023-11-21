@@ -1,4 +1,6 @@
 ﻿using BCMP.Forms.Management;
+using BCMP.DTO;
+using BCMP.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,14 +11,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.Service;
+using System.Windows.Shell;
 
 namespace BCMP.Forms
 {
     public partial class FormMission : Form
     {
-        public FormMission()
+        private Employee currEmployee;
+        private List<Mission> myMissionList;
+        public FormMission(Employee employee)
         {
             InitializeComponent();
+            this.currEmployee = employee;
+            LoadDataMyMission();
         }
 
         private void txt_search_Leave(object sender, EventArgs e)
@@ -45,10 +53,52 @@ namespace BCMP.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormDetailMission detailMissionForm = new FormDetailMission();
-            detailMissionForm.Show();
+            
         }
 
-        
+        private void LoadDataMyMission()
+        {
+            if (currEmployee != null)
+            {
+                myMissionList = MissionDAO.Instance.GetAllMissionsByUserId(currEmployee.UserId.ToString());
+                dtgvMyMission.DataSource = myMissionList;
+            }
+            
+        }
+
+        private void dtgvMyMission_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvMyMission.Columns[e.ColumnIndex].Name == "Detail")
+            {
+                Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMyMission.Rows[e.RowIndex].Cells[1].Value.ToString()));
+                if (mission != null)
+                {
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    DetailMissionForm.Show();
+                }
+
+            }
+        }
+
+        private void dtgvMyMission_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgvMyMission.Columns[e.ColumnIndex].Name == "Status")
+            {
+                // Lấy giá trị được chọn từ ComboBox
+                DataGridViewComboBoxCell comboBoxCell = (DataGridViewComboBoxCell)dtgvMyMission.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                string status = comboBoxCell.Value.ToString();
+
+                // Thực hiện các hành động cần thiết với giá trị đã chọn
+                if (MissionService.Instance.UpdateStatusMissionByUser(int.Parse(dtgvMyMission.Rows[e.RowIndex].Cells[1].Value.ToString()), status))
+                {
+                    // Cập nhật thành công, có thể thực hiện các hành động khác ở đây
+                    LoadDataMyMission();
+                }
+                else
+                {
+                    // Xử lý khi cập nhật không thành công
+                }
+            }
+        }
     }
 }

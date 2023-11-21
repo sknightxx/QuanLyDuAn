@@ -266,7 +266,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 513);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 149);
             this.panel2.TabIndex = 0;
@@ -276,7 +276,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -571,26 +571,26 @@
             this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Snow;
             this.dropdownMenu1.Name = "dropdownMenu1";
             this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Black;
-            this.dropdownMenu1.Size = new System.Drawing.Size(211, 104);
+            this.dropdownMenu1.Size = new System.Drawing.Size(194, 76);
             // 
             // bt_Info
             // 
             this.bt_Info.Name = "bt_Info";
-            this.bt_Info.Size = new System.Drawing.Size(210, 24);
+            this.bt_Info.Size = new System.Drawing.Size(193, 24);
             this.bt_Info.Text = "Information";
             this.bt_Info.Click += new System.EventHandler(this.bt_Info_Click);
             // 
             // bt_changePassword
             // 
             this.bt_changePassword.Name = "bt_changePassword";
-            this.bt_changePassword.Size = new System.Drawing.Size(210, 24);
+            this.bt_changePassword.Size = new System.Drawing.Size(193, 24);
             this.bt_changePassword.Text = "Change Password";
             this.bt_changePassword.Click += new System.EventHandler(this.bt_changePassword_Click);
             // 
             // bt_logOut
             // 
             this.bt_logOut.Name = "bt_logOut";
-            this.bt_logOut.Size = new System.Drawing.Size(210, 24);
+            this.bt_logOut.Size = new System.Drawing.Size(193, 24);
             this.bt_logOut.Text = "Log out";
             this.bt_logOut.Click += new System.EventHandler(this.bt_logOut_Click);
             // 

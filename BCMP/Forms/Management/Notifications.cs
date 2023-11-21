@@ -8,14 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCMP.DTO;
+using BCMP.DAO;
 
 namespace BCMP.Forms.Management
 {
-    public partial class Notification : Form
+    public partial class Notifications : Form
     {
-        public Notification()
+        private List<Notification> myNotifyList;
+        private Employee currEmp;
+        public Notifications(Employee currEmp)
         {
             InitializeComponent();
+            this.currEmp = currEmp;
+            LoadDataNotification();
         }
 
         private void bt_exit_Click(object sender, EventArgs e)
@@ -38,6 +44,30 @@ namespace BCMP.Forms.Management
 
             this.Region = new Region(path);
             base.OnPaintBackground(e);
+        }
+
+        private void LoadDataNotification()
+        {
+            if(currEmp != null)
+            {
+                myNotifyList = NotificationDAO.Instance.GetNotificationByUserId(currEmp.UserId.ToString());
+                dtgv_MyNotification.DataSource = myNotifyList;
+            }
+        }
+
+        private void dtgv_MyNotification_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_MyNotification.Columns[e.ColumnIndex].Name == "OpenMission")
+            {
+                Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgv_MyNotification.Rows[e.RowIndex].Cells[1].Value.ToString()));
+                MessageBox.Show(mission.MissionId.ToString());
+                if (mission != null)
+                {
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    DetailMissionForm.Show();
+                }
+
+            }
         }
     }
 }

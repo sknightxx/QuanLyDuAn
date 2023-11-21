@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetailProject));
             this.lb_member = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.cbb_department = new System.Windows.Forms.ComboBox();
             this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
             this.lb_IdProject = new System.Windows.Forms.Label();
@@ -47,7 +47,21 @@
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
             this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dtgvMissionList = new System.Windows.Forms.DataGridView();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_member
@@ -59,10 +73,7 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.bt_save);
-            this.panel1.Controls.Add(this.bt_cancel);
             this.panel1.Controls.Add(this.txt_Description);
             this.panel1.Controls.Add(this.txt_IdProject);
             this.panel1.Controls.Add(this.lb_description);
@@ -77,13 +88,14 @@
             this.panel1.Controls.Add(this.dtpkPlannedStart);
             this.panel1.Controls.Add(this.lb_NameProject);
             this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bt_save
             // 
-            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -91,11 +103,11 @@
             // 
             // bt_cancel
             // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -145,34 +157,16 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.label3.Name = "label3";
             // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
             // cbb_department
             // 
-            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.FormattingEnabled = true;
+            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.Name = "cbb_department";
             // 
             // dtpkPlannedEnd
             // 
-            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
             // 
             // lb_IdProject
@@ -191,8 +185,8 @@
             // 
             // dtpkPlannedStart
             // 
-            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Name = "dtpkPlannedStart";
             // 
             // lb_NameProject
@@ -205,7 +199,108 @@
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.dtgvMissionList);
+            this.panel2.Controls.Add(this.bt_save);
+            this.panel2.Controls.Add(this.bt_cancel);
             this.panel2.Name = "panel2";
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // dtgvMissionList
+            // 
+            this.dtgvMissionList.AllowDrop = true;
+            this.dtgvMissionList.AutoGenerateColumns = false;
+            this.dtgvMissionList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMissionList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titleDataGridViewTextBoxColumn,
+            this.MissionId,
+            this.progressDataGridViewTextBoxColumn,
+            this.plannedStartDateDataGridViewTextBoxColumn,
+            this.plannedEndDateDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.userIdDataGridViewTextBoxColumn,
+            this.Detail});
+            this.dtgvMissionList.DataSource = this.missionBindingSource;
+            resources.ApplyResources(this.dtgvMissionList, "dtgvMissionList");
+            this.dtgvMissionList.Name = "dtgvMissionList";
+            this.dtgvMissionList.RowTemplate.Height = 24;
+            this.dtgvMissionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMissionList_CellContentClick);
+            // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
+            // missionBindingSource
+            // 
+            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            // 
+            // MissionId
+            // 
+            this.MissionId.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.MissionId, "MissionId");
+            this.MissionId.Name = "MissionId";
+            // 
+            // progressDataGridViewTextBoxColumn
+            // 
+            this.progressDataGridViewTextBoxColumn.DataPropertyName = "Progress";
+            resources.ApplyResources(this.progressDataGridViewTextBoxColumn, "progressDataGridViewTextBoxColumn");
+            this.progressDataGridViewTextBoxColumn.Name = "progressDataGridViewTextBoxColumn";
+            // 
+            // plannedStartDateDataGridViewTextBoxColumn
+            // 
+            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
+            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
+            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
+            // 
+            // plannedEndDateDataGridViewTextBoxColumn
+            // 
+            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
+            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
+            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            resources.ApplyResources(this.statusDataGridViewTextBoxColumn, "statusDataGridViewTextBoxColumn");
+            this.statusDataGridViewTextBoxColumn.Items.AddRange(new object[] {
+            "TO DO",
+            "IN PROGRESS",
+            "DONE"});
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.statusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // userIdDataGridViewTextBoxColumn
+            // 
+            this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
+            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
+            this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            // 
+            // Detail
+            // 
+            this.Detail.DataPropertyName = "Detail";
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
             // 
             // FormDetailProject
             // 
@@ -217,6 +312,9 @@
             this.Name = "FormDetailProject";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +339,15 @@
         private System.Windows.Forms.DateTimePicker dtpkPlannedStart;
         private System.Windows.Forms.Label lb_NameProject;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dtgvMissionList;
+        private System.Windows.Forms.BindingSource missionBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MissionId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn progressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedStartDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedEndDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Detail;
     }
 }

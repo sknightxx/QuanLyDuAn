@@ -28,8 +28,9 @@ namespace BCMP.Forms
             LoadDataListEmloyee();
         }
 
-        private void LoadDataListEmloyee()
+        public void LoadDataListEmloyee()
         {
+            empList = EmployeeDAO.Instance.GetAllEmployee();
             dtgv_ListEmp.DataSource = empList;
         }
 
@@ -41,7 +42,7 @@ namespace BCMP.Forms
    
         private void bt_addUser_Click(object sender, EventArgs e)
         {
-            FormAddUser AddUserForm = new FormAddUser();
+            FormAddUser AddUserForm = new FormAddUser(this);
             AddUserForm.InsertEmployee += E_InsertEmployee;
             AddUserForm.Show();
             
@@ -73,7 +74,7 @@ namespace BCMP.Forms
 
         private void bt_Create_Click(object sender, EventArgs e)
         {
-            FormAddUser AddUserForm = new FormAddUser();
+            FormAddUser AddUserForm = new FormAddUser(this);
             AddUserForm.Show();
         }
 
