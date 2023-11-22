@@ -20,8 +20,6 @@ namespace BCMP.Forms.Management
             InitializeComponent();
             currMission = mission;
             LoadDataCurrMission();
-
-
         }
 
         private void bt_exit_Click(object sender, EventArgs e)

@@ -34,23 +34,22 @@
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.bt_CreateProject = new System.Windows.Forms.Button();
             this.lb_MyWork = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.dtgvMyMission = new System.Windows.Forms.DataGridView();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.bt_others = new FontAwesome.Sharp.IconButton();
-            this.missionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.missionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,64 +90,6 @@
             this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
             this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
             // 
-            // bt_CreateProject
-            // 
-            resources.ApplyResources(this.bt_CreateProject, "bt_CreateProject");
-            this.bt_CreateProject.BackColor = System.Drawing.Color.Black;
-            this.bt_CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_CreateProject.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
-            this.bt_CreateProject.FlatAppearance.BorderSize = 0;
-            this.bt_CreateProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bt_CreateProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bt_CreateProject.ForeColor = System.Drawing.Color.White;
-            this.bt_CreateProject.Name = "bt_CreateProject";
-            this.bt_CreateProject.UseVisualStyleBackColor = false;
-            this.bt_CreateProject.Click += new System.EventHandler(this.bt_CreateProject_Click);
-            // 
-            // lb_MyWork
-            // 
-            resources.ApplyResources(this.lb_MyWork, "lb_MyWork");
-            this.lb_MyWork.ForeColor = System.Drawing.Color.Black;
-            this.lb_MyWork.Name = "lb_MyWork";
-            // 
-            // pn_container
-            // 
-            this.pn_container.BackColor = System.Drawing.Color.White;
-            this.pn_container.Controls.Add(this.dtgvMyMission);
-            this.pn_container.Controls.Add(this.button1);
-            resources.ApplyResources(this.pn_container, "pn_container");
-            this.pn_container.Name = "pn_container";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dtgvMyMission
-            // 
-            this.dtgvMyMission.AutoGenerateColumns = false;
-            this.dtgvMyMission.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvMyMission.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dtgvMyMission.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMyMission.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.titleDataGridViewTextBoxColumn,
-            this.MissionId,
-            this.progressDataGridViewTextBoxColumn,
-            this.plannedStartDateDataGridViewTextBoxColumn,
-            this.plannedEndDateDataGridViewTextBoxColumn,
-            this.Status,
-            this.projectIdDataGridViewTextBoxColumn,
-            this.Detail});
-            this.dtgvMyMission.DataSource = this.missionBindingSource1;
-            resources.ApplyResources(this.dtgvMyMission, "dtgvMyMission");
-            this.dtgvMyMission.Name = "dtgvMyMission";
-            this.dtgvMyMission.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgvMyMission.RowTemplate.Height = 24;
-            this.dtgvMyMission.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellContentClick);
-            this.dtgvMyMission.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellEndEdit);
-            // 
             // bt_search
             // 
             this.bt_search.BackColor = System.Drawing.Color.White;
@@ -177,25 +118,74 @@
             this.bt_others.Name = "bt_others";
             this.bt_others.UseVisualStyleBackColor = false;
             // 
-            // missionBindingSource1
+            // bt_CreateProject
             // 
-            this.missionBindingSource1.DataSource = typeof(BCMP.DTO.Mission);
+            resources.ApplyResources(this.bt_CreateProject, "bt_CreateProject");
+            this.bt_CreateProject.BackColor = System.Drawing.Color.Black;
+            this.bt_CreateProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_CreateProject.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.bt_CreateProject.FlatAppearance.BorderSize = 0;
+            this.bt_CreateProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bt_CreateProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bt_CreateProject.ForeColor = System.Drawing.Color.White;
+            this.bt_CreateProject.Name = "bt_CreateProject";
+            this.bt_CreateProject.UseVisualStyleBackColor = false;
+            this.bt_CreateProject.Click += new System.EventHandler(this.bt_CreateProject_Click);
             // 
-            // missionBindingSource
+            // lb_MyWork
             // 
-            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
+            resources.ApplyResources(this.lb_MyWork, "lb_MyWork");
+            this.lb_MyWork.ForeColor = System.Drawing.Color.Black;
+            this.lb_MyWork.Name = "lb_MyWork";
             // 
-            // titleDataGridViewTextBoxColumn
+            // pn_container
             // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.pn_container.BackColor = System.Drawing.Color.White;
+            this.pn_container.Controls.Add(this.dtgvMyMission);
+            resources.ApplyResources(this.pn_container, "pn_container");
+            this.pn_container.Name = "pn_container";
+            // 
+            // dtgvMyMission
+            // 
+            this.dtgvMyMission.AutoGenerateColumns = false;
+            this.dtgvMyMission.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvMyMission.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtgvMyMission.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMyMission.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.titleDataGridViewTextBoxColumn,
+            this.MissionId,
+            this.progressDataGridViewTextBoxColumn,
+            this.plannedStartDateDataGridViewTextBoxColumn,
+            this.plannedEndDateDataGridViewTextBoxColumn,
+            this.Status,
+            this.projectIdDataGridViewTextBoxColumn,
+            this.Detail});
+            this.dtgvMyMission.DataSource = this.missionBindingSource1;
+            resources.ApplyResources(this.dtgvMyMission, "dtgvMyMission");
+            this.dtgvMyMission.Name = "dtgvMyMission";
+            this.dtgvMyMission.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvMyMission.RowTemplate.Height = 24;
+            this.dtgvMyMission.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellContentClick);
+            this.dtgvMyMission.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellEndEdit);
             // 
             // MissionId
             // 
             this.MissionId.DataPropertyName = "MissionId";
             resources.ApplyResources(this.MissionId, "MissionId");
             this.MissionId.Name = "MissionId";
+            // 
+            // Detail
+            // 
+            this.Detail.DataPropertyName = "Detail";
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
             // 
             // progressDataGridViewTextBoxColumn
             // 
@@ -233,12 +223,13 @@
             resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
             this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
             // 
-            // Detail
+            // missionBindingSource1
             // 
-            this.Detail.DataPropertyName = "Detail";
-            resources.ApplyResources(this.Detail, "Detail");
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
+            this.missionBindingSource1.DataSource = typeof(BCMP.DTO.Mission);
+            // 
+            // missionBindingSource
+            // 
+            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
             // FormMission
             // 
@@ -272,7 +263,6 @@
         private System.Windows.Forms.Button bt_CreateProject;
         private System.Windows.Forms.Label lb_MyWork;
         private System.Windows.Forms.Panel pn_container;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource missionBindingSource;
         private System.Windows.Forms.DataGridView dtgvMyMission;
         private System.Windows.Forms.BindingSource missionBindingSource1;

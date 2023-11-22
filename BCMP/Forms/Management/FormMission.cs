@@ -70,11 +70,17 @@ namespace BCMP.Forms
         {
             if (dtgvMyMission.Columns[e.ColumnIndex].Name == "Detail")
             {
-                Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMyMission.Rows[e.RowIndex].Cells[1].Value.ToString()));
-                if (mission != null)
+                try
                 {
-                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
-                    DetailMissionForm.Show();
+                    Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMyMission.Rows[e.RowIndex].Cells[1].Value.ToString()));
+                    if (mission != null)
+                    {
+                        FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                        DetailMissionForm.Show();
+                    }
+                } catch
+                {
+                    MessageBox.Show("Err");
                 }
 
             }

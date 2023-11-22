@@ -74,8 +74,13 @@ namespace BCMP.Forms
 
         private void bt_Create_Click(object sender, EventArgs e)
         {
-            FormAddUser AddUserForm = new FormAddUser(this);
-            AddUserForm.Show();
+            if (AuthService.roleCur.Title == "Employee")
+            {
+            } else
+            {
+                FormAddUser AddUserForm = new FormAddUser(this);
+                AddUserForm.Show();
+            }
         }
 
         private void E_InsertEmployee(object sender, EventArgs e)
@@ -92,20 +97,26 @@ namespace BCMP.Forms
 
         private void dtgv_ListEmp_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "Edit")
+            try
             {
-                Employee currEmployee = EmployeeDAO.Instance.GetById(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString());
-                FormAddUser formAddUser = new FormAddUser(currEmployee);
-                formAddUser.UpdateEmployee += E_UpdateEmployee;
-                formAddUser.Show();
-            } else if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "IsDeactivated")
-            {
-                bool isDeactivated = (bool)dtgv_ListEmp.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-                // Now you can use 'isDeactivated' to perform any actions based on whether it's checked or not
-                if(EmployeeService.Instance.UpdateIsDeactivatedEmployeeByManager(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString(), isDeactivated))
+                if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "Edit")
                 {
-                    empList = EmployeeDAO.Instance.GetAllEmployee();
+                    Employee currEmployee = EmployeeDAO.Instance.GetById(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    FormAddUser formAddUser = new FormAddUser(currEmployee);
+                    formAddUser.UpdateEmployee += E_UpdateEmployee;
+                    formAddUser.Show();
+                } else if (dtgv_ListEmp.Columns[e.ColumnIndex].Name == "IsDeactivated")
+                {
+                    bool isDeactivated = (bool)dtgv_ListEmp.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                    // Now you can use 'isDeactivated' to perform any actions based on whether it's checked or not
+                    if(EmployeeService.Instance.UpdateIsDeactivatedEmployeeByManager(dtgv_ListEmp.Rows[e.RowIndex].Cells[0].Value.ToString(), isDeactivated))
+                    {
+                        empList = EmployeeDAO.Instance.GetAllEmployee();
+                    }
                 }
+            } catch
+            {
+                MessageBox.Show("aaa");
             }
         }
     }
