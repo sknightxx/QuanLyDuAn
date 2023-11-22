@@ -39,6 +39,8 @@
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_ListEmp = new System.Windows.Forms.DataGridView();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();

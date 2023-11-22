@@ -158,12 +158,6 @@ namespace BCMP.Forms
                 lb_ValidNameProject.Text = "Valid";
                 lb_ValidNameProject.ForeColor = Color.Green;
             }
-            else
-            {
-                lb_ValidNameProject.Visible = true;
-                lb_ValidNameProject.Text = "Valid";
-                lb_ValidNameProject.ForeColor = Color.Green;
-            }
         }
 
         private void txt_nameProject_Enter(object sender, EventArgs e)
@@ -261,37 +255,6 @@ namespace BCMP.Forms
             else
             {
                 MessageBox.Show("Inputs are missed");
-            }
-        }
-
-        public void DefaultState()
-        {
-            lb_ValidNameProject.Visible = false;
-            lb_ValidIdProject.Visible = false;
-            lb_ValidIdProject.Visible = false;
-
-            txt_Description.Text = "";
-            txt_nameProject.Text = "";
-            txt_IdProject.Text = "";
-        }
-        public void LoadDataDepartment()
-        {
-            List<String> list = new List<String>();
-            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
-            {
-                list.Add(item.Name);
-            }
-            cbb_department.DataSource = list;
-        }
-
-        private void bt_save_Click(object sender, EventArgs e)
-        {
-            if(currProject == null)
-            {
-                AddNewProject();
-            } else
-            {
-                UpdateCurrentProject();
             }
         }
 

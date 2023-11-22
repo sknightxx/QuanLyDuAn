@@ -117,51 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_remind.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 14</value>
+  <data name="lb_Valid_UserId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="lb_remind.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="lb_ValidConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 137</value>
+  <data name="lb_ValidPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="lb_ValidPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 401</value>
+  <data name="lb_ValidEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 14</value>
+  <data name="lb_ValidFullname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="txt_confirmPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 22</value>
   </data>
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 21, 0</value>
+  <data name="txt_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 22</value>
   </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
+  <data name="cb_Role.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 24</value>
   </data>
-  <data name="pn_containerInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pn_containerInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>571, 577</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>571, 577</value>
+  <data name="cb_Department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 24</value>
   </data>
 </root>

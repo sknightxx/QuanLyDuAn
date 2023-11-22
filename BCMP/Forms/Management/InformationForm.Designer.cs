@@ -43,8 +43,8 @@
             this.lb_Email = new System.Windows.Forms.Label();
             this.pn_containerInformation = new System.Windows.Forms.Panel();
             this.lb_information = new System.Windows.Forms.Label();
-            this.pn_user = new System.Windows.Forms.Panel();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
             this.pn_containerInformation.SuspendLayout();
             this.pn_user.SuspendLayout();
@@ -143,23 +143,6 @@
             resources.ApplyResources(this.lb_information, "lb_information");
             this.lb_information.Name = "lb_information";
             // 
-            // pn_user
-            // 
-            resources.ApplyResources(this.pn_user, "pn_user");
-            this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Name = "pn_user";
-            // 
-            // lb_information
-            // 
-            resources.ApplyResources(this.lb_information, "lb_information");
-            this.lb_information.Name = "lb_information";
-            // 
-            // pn_user
-            // 
-            resources.ApplyResources(this.pn_user, "pn_user");
-            this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Name = "pn_user";
-            // 
             // bt_exit
             // 
             resources.ApplyResources(this.bt_exit, "bt_exit");
@@ -178,6 +161,12 @@
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
+            // pn_user
+            // 
+            resources.ApplyResources(this.pn_user, "pn_user");
+            this.pn_user.Controls.Add(this.iconUser);
+            this.pn_user.Name = "pn_user";
+            // 
             // iconUser
             // 
             resources.ApplyResources(this.iconUser, "iconUser");
@@ -186,7 +175,7 @@
             this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 97;
+            this.iconUser.IconSize = 119;
             this.iconUser.Name = "iconUser";
             this.iconUser.TabStop = false;
             // 

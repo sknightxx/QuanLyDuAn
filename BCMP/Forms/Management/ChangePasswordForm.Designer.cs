@@ -37,8 +37,8 @@
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.lb_Email = new System.Windows.Forms.Label();
-            this.pn_user = new System.Windows.Forms.Panel();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.pn_user = new System.Windows.Forms.Panel();
             this.iconUser = new FontAwesome.Sharp.IconPictureBox();
             this.pn_containerChangePass.SuspendLayout();
             this.pn_user.SuspendLayout();
@@ -115,12 +115,6 @@
             this.lb_Email.ForeColor = System.Drawing.Color.Black;
             this.lb_Email.Name = "lb_Email";
             this.lb_Email.Click += new System.EventHandler(this.lb_Email_Click);
-            // 
-            // pn_user
-            // 
-            resources.ApplyResources(this.pn_user, "pn_user");
-            this.pn_user.Controls.Add(this.iconUser);
-            this.pn_user.Name = "pn_user";
             // 
             // bt_exit
             // 

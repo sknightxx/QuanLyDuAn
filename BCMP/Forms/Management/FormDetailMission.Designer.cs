@@ -38,8 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_document = new System.Windows.Forms.Label();
-            this.txt_management = new System.Windows.Forms.TextBox();
             this.dtp_To = new System.Windows.Forms.DateTimePicker();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.txt_tittle = new System.Windows.Forms.TextBox();
             this.lb_Tittle = new System.Windows.Forms.Label();
             this.cbb_status = new System.Windows.Forms.ComboBox();
@@ -47,11 +47,11 @@
             this.lb_relateProject = new System.Windows.Forms.Label();
             this.lb_status = new System.Windows.Forms.Label();
             this.txt_document = new System.Windows.Forms.TextBox();
-            this.lb_Management = new System.Windows.Forms.Label();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.lb_description = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.lb_Management = new System.Windows.Forms.Label();
+            this.txt_management = new System.Windows.Forms.TextBox();
             this.pn_container.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -151,18 +151,29 @@
             this.lb_document.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_document.Name = "lb_document";
             // 
-            // txt_management
-            // 
-            resources.ApplyResources(this.txt_management, "txt_management");
-            this.txt_management.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_management.Name = "txt_management";
-            this.txt_management.ReadOnly = true;
-            // 
             // dtp_To
             // 
             resources.ApplyResources(this.dtp_To, "dtp_To");
             this.dtp_To.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_To.Name = "dtp_To";
+            // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // txt_tittle
             // 
@@ -215,13 +226,6 @@
             this.txt_document.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_document.Name = "txt_document";
             // 
-            // lb_Management
-            // 
-            resources.ApplyResources(this.lb_Management, "lb_Management");
-            this.lb_Management.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_Management.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_Management.Name = "lb_Management";
-            // 
             // txt_Description
             // 
             resources.ApplyResources(this.txt_Description, "txt_Description");
@@ -242,23 +246,19 @@
             this.panel1.Controls.Add(this.txt_management);
             this.panel1.Name = "panel1";
             // 
-            // bt_exit
+            // lb_Management
             // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            resources.ApplyResources(this.lb_Management, "lb_Management");
+            this.lb_Management.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_Management.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_Management.Name = "lb_Management";
+            // 
+            // txt_management
+            // 
+            resources.ApplyResources(this.txt_management, "txt_management");
+            this.txt_management.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_management.Name = "txt_management";
+            this.txt_management.ReadOnly = true;
             // 
             // FormDetailMission
             // 

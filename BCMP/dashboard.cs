@@ -26,6 +26,7 @@ namespace BCMP
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private Employee empLogin;
+        private FormLogin fLogin;
 
 
         public dashboard(Employee empLogin)
@@ -35,7 +36,6 @@ namespace BCMP
             leftBorderBtn.Size = new Size(7,60);
             pn_leftDashBoard.Controls.Add(leftBorderBtn);
             this.empLogin = empLogin;
-
             //form
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -84,12 +84,6 @@ namespace BCMP
                 bt_mail.IconColor = color;
                 bt_user.IconColor = color;
                 bt_user.ForeColor = color;
-
-               
-                
-                
-                
-
             }
         }
 

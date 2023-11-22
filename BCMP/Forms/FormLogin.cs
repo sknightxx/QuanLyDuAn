@@ -88,7 +88,7 @@ namespace BCMP
                     }
                     else
                     {
-                        dashboard dashboardD = new dashboard();
+                        dashboard dashboardD = new dashboard(AuthService.empCur);
                         this.Hide();
                         dashboardD.ShowDialog();
                         txt_Password.Text = "";

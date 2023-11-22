@@ -406,9 +406,6 @@
     <EmbeddedResource Include="Forms\Management\FormAddMission.en.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\ChangePasswordForm.vi.resx">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddProject.vi.resx">
       <DependentUpon>FormAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUser.en.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddUser.vi.resx">
       <DependentUpon>FormAddUser.cs</DependentUpon>
@@ -435,9 +435,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.en.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\FormDetailMission.vi.resx">
-      <DependentUpon>FormDetailMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
@@ -490,9 +487,6 @@
     <EmbeddedResource Include="Forms\Management\MailForm.en.resx">
       <DependentUpon>MailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\InformationForm.vi.resx">
-      <DependentUpon>InformationForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\MailForm.resx">
       <DependentUpon>MailForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -512,9 +506,6 @@
       <DependentUpon>RemindForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.resx">
-      <DependentUpon>RemindForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management\RemindForm.vi.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.vi.resx">

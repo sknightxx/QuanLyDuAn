@@ -127,23 +127,15 @@
   <data name="bt_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="bt_document.Text" xml:space="preserve">
-    <value>   Tài liệu</value>
-  </data>
   <data name="bt_mission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="bt_mission.Text" xml:space="preserve">
-    <value>   Nhiệm vụ</value>
-  </data>
-  <data name="ptb_logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 94</value>
   </data>
   <data name="bt_project.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="bt_project.Text" xml:space="preserve">
-    <value>   Dự án</value>
   </data>
   <data name="bt_home.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -154,33 +146,53 @@
   <data name="bt_profile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="bt_profile.Text" xml:space="preserve">
-    <value>   Nhân viên</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 119</value>
+  </data>
+  <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 530</value>
+  </data>
+  <data name="ptb_logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 119</value>
+  </data>
+  <data name="pn_tittleBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 0</value>
+  </data>
+  <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 69</value>
+  </data>
   <data name="bt_user.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 18</value>
   </data>
   <data name="bt_remind.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 21</value>
+  </data>
   <data name="bt_mail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 24</value>
   </data>
   <data name="bt_notifications.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 24</value>
+  </data>
   <data name="lb_tittleChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_tittleChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 21</value>
-  </data>
-  <data name="lb_tittleChildform.Text" xml:space="preserve">
-    <value>Trang chủ</value>
   </data>
   <data name="iconCurrentChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -188,22 +200,46 @@
   <data name="bt_minimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_minimize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 2</value>
+  </data>
   <data name="bt_maximize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="bt_maximize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 2</value>
   </data>
   <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 2</value>
+  </data>
+  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 79</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 451</value>
+  </data>
   <data name="vScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 26</value>
+  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>845, 0</value>
   </data>
-  <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 26</value>
+  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 451</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 79</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 451</value>
+  </data>
+  <data name="pn_shawdow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 69</value>
+  </data>
+  <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>862, 10</value>
   </data>
 </root>

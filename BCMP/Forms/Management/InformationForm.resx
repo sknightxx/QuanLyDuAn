@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>428, 469</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbb_role.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="&gt;&gt;lb_phone.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lb_department.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>428, 469</value>
   </data>
   <data name="lb_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 19</value>
@@ -134,8 +137,8 @@
   <data name="&gt;&gt;pn_user.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;iconUser.Name" xml:space="preserve">
-    <value>iconUser</value>
+  <data name="lb_Email.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="cbb_role.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 421</value>
@@ -145,9 +148,6 @@
   </data>
   <data name="lb_phone.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 333</value>
-  </data>
-  <data name="&gt;&gt;lb_information.Parent" xml:space="preserve">
-    <value>pn_containerInformation</value>
   </data>
   <data name="lb_phone.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -177,6 +177,9 @@
   <data name="&gt;&gt;cbb_role.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="iconUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 97</value>
+  </data>
   <data name="&gt;&gt;lb_phone.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -186,8 +189,8 @@
   <data name="pn_containerInformation.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 279</value>
+  <data name="&gt;&gt;iconUser.Name" xml:space="preserve">
+    <value>iconUser</value>
   </data>
   <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 215</value>
@@ -327,6 +330,9 @@
   <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 27</value>
   </data>
+  <data name="iconUser.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 11</value>
   </data>
@@ -375,6 +381,9 @@
   <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
     <value>bt_exit</value>
   </data>
+  <data name="&gt;&gt;txt_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lb_IdStaff.Text" xml:space="preserve">
     <value>ID Staff</value>
   </data>
@@ -386,9 +395,6 @@
   </data>
   <data name="&gt;&gt;lb_role.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbb_role.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
   </data>
   <data name="pn_user.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 97</value>
@@ -410,9 +416,6 @@
   </data>
   <data name="lb_phone.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;cbb_role.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="lb_Email.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
@@ -498,11 +501,8 @@
   <data name="lb_information.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lb_Email.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="lb_Name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -540,8 +540,8 @@
   <data name="&gt;&gt;lb_Email.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lb_IdStaff.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lb_information.Parent" xml:space="preserve">
+    <value>pn_containerInformation</value>
   </data>
   <data name="&gt;&gt;pn_user.Parent" xml:space="preserve">
     <value>pn_containerInformation</value>
@@ -588,8 +588,8 @@
   <data name="pn_containerInformation.Size" type="System.Drawing.Size, System.Drawing">
     <value>428, 469</value>
   </data>
-  <data name="iconUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 97</value>
+  <data name="&gt;&gt;cbb_role.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;iconUser.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
@@ -612,17 +612,20 @@
   <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="iconUser.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;lb_IdStaff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txt_Email.Name" xml:space="preserve">
     <value>txt_Email</value>
   </data>
-  <data name="&gt;&gt;txt_name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lb_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pn_containerInformation.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 279</value>
   </data>
   <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 371</value>
@@ -637,6 +640,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>vi</value>
   </metadata>
 </root>

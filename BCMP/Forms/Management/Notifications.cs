@@ -17,10 +17,10 @@ namespace BCMP.Forms.Management
     {
         private List<Notification> myNotifyList;
         private Employee currEmp;
-        public Notifications(Employee currEmp)
+        
         private bool isDragging = false;
         private Point lastLocation;
-        public Notification()
+        public Notifications(Employee currEmp)
         {
             InitializeComponent();
             this.currEmp = currEmp;

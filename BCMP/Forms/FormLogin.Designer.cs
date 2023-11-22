@@ -43,6 +43,10 @@
             this.lb_id = new System.Windows.Forms.Label();
             this.lb_login = new System.Windows.Forms.Label();
             this.pn_left.SuspendLayout();
+            this.bt_IconUser = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptb_logo = new System.Windows.Forms.PictureBox();
+            this.bt_iconPass = new FontAwesome.Sharp.IconButton();
             this.pn_right.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).BeginInit();

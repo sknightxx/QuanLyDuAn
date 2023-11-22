@@ -89,76 +89,46 @@
             // 
             // bt_report
             // 
+            resources.ApplyResources(this.bt_report, "bt_report");
             this.bt_report.BackColor = System.Drawing.Color.Transparent;
             this.bt_report.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_report.FlatAppearance.BorderSize = 0;
-            this.bt_report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_report.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_report.ForeColor = System.Drawing.Color.Snow;
             this.bt_report.IconChar = FontAwesome.Sharp.IconChar.LineChart;
             this.bt_report.IconColor = System.Drawing.Color.Snow;
             this.bt_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_report.IconSize = 40;
-            this.bt_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.Location = new System.Drawing.Point(0, 448);
-            this.bt_report.Margin = new System.Windows.Forms.Padding(2);
             this.bt_report.Name = "bt_report";
-            this.bt_report.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_report.Size = new System.Drawing.Size(220, 60);
-            this.bt_report.TabIndex = 9;
-            this.bt_report.Text = "   Report";
-            this.bt_report.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_report.UseVisualStyleBackColor = false;
             this.bt_report.Click += new System.EventHandler(this.bt_report_Click);
             // 
             // bt_document
             // 
+            resources.ApplyResources(this.bt_document, "bt_document");
             this.bt_document.BackColor = System.Drawing.Color.Transparent;
             this.bt_document.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_document.FlatAppearance.BorderSize = 0;
-            this.bt_document.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_document.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_document.ForeColor = System.Drawing.Color.Snow;
             this.bt_document.IconChar = FontAwesome.Sharp.IconChar.FileInvoice;
             this.bt_document.IconColor = System.Drawing.Color.Snow;
             this.bt_document.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_document.IconSize = 40;
-            this.bt_document.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_document.Location = new System.Drawing.Point(2, 382);
-            this.bt_document.Margin = new System.Windows.Forms.Padding(2);
             this.bt_document.Name = "bt_document";
-            this.bt_document.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_document.Size = new System.Drawing.Size(220, 60);
-            this.bt_document.TabIndex = 8;
-            this.bt_document.Text = "   Document";
-            this.bt_document.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_document.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_document.UseVisualStyleBackColor = false;
             this.bt_document.Click += new System.EventHandler(this.bt_document_Click);
             // 
             // bt_mission
             // 
+            resources.ApplyResources(this.bt_mission, "bt_mission");
             this.bt_mission.BackColor = System.Drawing.Color.Transparent;
             this.bt_mission.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_mission.FlatAppearance.BorderSize = 0;
-            this.bt_mission.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_mission.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mission.ForeColor = System.Drawing.Color.Snow;
             this.bt_mission.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
             this.bt_mission.IconColor = System.Drawing.Color.Snow;
             this.bt_mission.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_mission.IconSize = 40;
-            this.bt_mission.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_mission.Location = new System.Drawing.Point(2, 252);
-            this.bt_mission.Margin = new System.Windows.Forms.Padding(2);
             this.bt_mission.Name = "bt_mission";
-            this.bt_mission.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_mission.Size = new System.Drawing.Size(220, 60);
-            this.bt_mission.TabIndex = 10;
-            this.bt_mission.Text = "   Mission";
-            this.bt_mission.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_mission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_mission.UseVisualStyleBackColor = false;
             this.bt_mission.Click += new System.EventHandler(this.bt_mission_Click);
             // 
@@ -170,90 +140,56 @@
             // 
             // ptb_logo
             // 
+            resources.ApplyResources(this.ptb_logo, "ptb_logo");
             this.ptb_logo.BackColor = System.Drawing.Color.Transparent;
             this.ptb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
-            this.ptb_logo.Location = new System.Drawing.Point(25, 18);
-            this.ptb_logo.Margin = new System.Windows.Forms.Padding(2);
             this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.Size = new System.Drawing.Size(169, 80);
-            this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_logo.TabIndex = 1;
             this.ptb_logo.TabStop = false;
             this.ptb_logo.Click += new System.EventHandler(this.ptb_logo_Click);
             // 
             // bt_project
             // 
+            resources.ApplyResources(this.bt_project, "bt_project");
             this.bt_project.BackColor = System.Drawing.Color.Transparent;
             this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_project.FlatAppearance.BorderSize = 0;
-            this.bt_project.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_project.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_project.ForeColor = System.Drawing.Color.Snow;
             this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
             this.bt_project.IconColor = System.Drawing.Color.Snow;
             this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_project.IconSize = 40;
-            this.bt_project.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_project.Location = new System.Drawing.Point(2, 318);
-            this.bt_project.Margin = new System.Windows.Forms.Padding(2);
             this.bt_project.Name = "bt_project";
-            this.bt_project.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_project.Size = new System.Drawing.Size(220, 60);
-            this.bt_project.TabIndex = 7;
-            this.bt_project.Text = "   Project";
-            this.bt_project.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_project.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_project.UseVisualStyleBackColor = false;
             this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
             // 
             // bt_home
             // 
+            resources.ApplyResources(this.bt_home, "bt_home");
             this.bt_home.BackColor = System.Drawing.Color.Transparent;
             this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_home.FlatAppearance.BorderSize = 0;
-            this.bt_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_home.ForeColor = System.Drawing.Color.Snow;
             this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
             this.bt_home.IconColor = System.Drawing.Color.Snow;
             this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_home.IconSize = 40;
-            this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.Location = new System.Drawing.Point(2, 122);
-            this.bt_home.Margin = new System.Windows.Forms.Padding(2);
             this.bt_home.Name = "bt_home";
-            this.bt_home.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_home.Size = new System.Drawing.Size(220, 60);
-            this.bt_home.TabIndex = 5;
-            this.bt_home.Text = "   Home";
-            this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_home.UseVisualStyleBackColor = false;
             this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
             // 
             // bt_profile
             // 
+            resources.ApplyResources(this.bt_profile, "bt_profile");
             this.bt_profile.BackColor = System.Drawing.Color.Transparent;
             this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_profile.FlatAppearance.BorderSize = 0;
-            this.bt_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_profile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_profile.ForeColor = System.Drawing.Color.Snow;
             this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
             this.bt_profile.IconColor = System.Drawing.Color.Snow;
             this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_profile.IconSize = 40;
-            this.bt_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.Location = new System.Drawing.Point(2, 188);
-            this.bt_profile.Margin = new System.Windows.Forms.Padding(2);
             this.bt_profile.Name = "bt_profile";
-            this.bt_profile.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
-            this.bt_profile.Size = new System.Drawing.Size(220, 60);
-            this.bt_profile.TabIndex = 6;
-            this.bt_profile.Text = "   Employee";
-            this.bt_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_profile.UseVisualStyleBackColor = false;
             this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
             // 
@@ -265,14 +201,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 149);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pn_tittleBar
@@ -291,11 +222,142 @@
             this.pn_tittleBar.Name = "pn_tittleBar";
             this.pn_tittleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_tittleBar_MouseDown);
             // 
+            // bt_user
+            // 
+            resources.ApplyResources(this.bt_user, "bt_user");
+            this.bt_user.BackColor = System.Drawing.Color.Transparent;
+            this.bt_user.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_user.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_user.FlatAppearance.BorderSize = 0;
+            this.bt_user.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_user.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_user.ForeColor = System.Drawing.Color.Snow;
+            this.bt_user.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            this.bt_user.IconColor = System.Drawing.Color.Snow;
+            this.bt_user.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_user.Name = "bt_user";
+            this.bt_user.UseVisualStyleBackColor = false;
+            this.bt_user.Click += new System.EventHandler(this.bt_user_Click);
+            // 
+            // bt_remind
+            // 
+            resources.ApplyResources(this.bt_remind, "bt_remind");
+            this.bt_remind.BackColor = System.Drawing.Color.Transparent;
+            this.bt_remind.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_remind.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_remind.FlatAppearance.BorderSize = 0;
+            this.bt_remind.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_remind.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_remind.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_remind.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
+            this.bt_remind.IconColor = System.Drawing.Color.Snow;
+            this.bt_remind.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_remind.Name = "bt_remind";
+            this.bt_remind.UseVisualStyleBackColor = false;
+            this.bt_remind.Click += new System.EventHandler(this.bt_remind_Click);
+            // 
+            // bt_mail
+            // 
+            resources.ApplyResources(this.bt_mail, "bt_mail");
+            this.bt_mail.BackColor = System.Drawing.Color.Transparent;
+            this.bt_mail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_mail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_mail.FlatAppearance.BorderSize = 0;
+            this.bt_mail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_mail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_mail.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_mail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.bt_mail.IconColor = System.Drawing.Color.Snow;
+            this.bt_mail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_mail.Name = "bt_mail";
+            this.bt_mail.UseVisualStyleBackColor = false;
+            this.bt_mail.Click += new System.EventHandler(this.bt_mail_Click);
+            // 
+            // bt_notifications
+            // 
+            resources.ApplyResources(this.bt_notifications, "bt_notifications");
+            this.bt_notifications.BackColor = System.Drawing.Color.Transparent;
+            this.bt_notifications.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_notifications.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_notifications.FlatAppearance.BorderSize = 0;
+            this.bt_notifications.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_notifications.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_notifications.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_notifications.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.bt_notifications.IconColor = System.Drawing.Color.Snow;
+            this.bt_notifications.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_notifications.Name = "bt_notifications";
+            this.bt_notifications.UseVisualStyleBackColor = false;
+            this.bt_notifications.Click += new System.EventHandler(this.bt_notifications_Click);
+            // 
             // lb_tittleChildform
             // 
             resources.ApplyResources(this.lb_tittleChildform, "lb_tittleChildform");
             this.lb_tittleChildform.ForeColor = System.Drawing.Color.Snow;
             this.lb_tittleChildform.Name = "lb_tittleChildform";
+            // 
+            // iconCurrentChildform
+            // 
+            resources.ApplyResources(this.iconCurrentChildform, "iconCurrentChildform");
+            this.iconCurrentChildform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.iconCurrentChildform.ForeColor = System.Drawing.Color.Snow;
+            this.iconCurrentChildform.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconCurrentChildform.IconColor = System.Drawing.Color.Snow;
+            this.iconCurrentChildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildform.IconSize = 31;
+            this.iconCurrentChildform.Name = "iconCurrentChildform";
+            this.iconCurrentChildform.TabStop = false;
+            // 
+            // bt_minimize
+            // 
+            resources.ApplyResources(this.bt_minimize, "bt_minimize");
+            this.bt_minimize.BackColor = System.Drawing.Color.Transparent;
+            this.bt_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_minimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_minimize.FlatAppearance.BorderSize = 0;
+            this.bt_minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_minimize.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_minimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.bt_minimize.IconColor = System.Drawing.Color.Snow;
+            this.bt_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_minimize.Name = "bt_minimize";
+            this.bt_minimize.UseVisualStyleBackColor = false;
+            this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
+            // 
+            // bt_maximize
+            // 
+            resources.ApplyResources(this.bt_maximize, "bt_maximize");
+            this.bt_maximize.BackColor = System.Drawing.Color.Transparent;
+            this.bt_maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_maximize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_maximize.FlatAppearance.BorderSize = 0;
+            this.bt_maximize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_maximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_maximize.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_maximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.bt_maximize.IconColor = System.Drawing.Color.Snow;
+            this.bt_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_maximize.Name = "bt_maximize";
+            this.bt_maximize.UseVisualStyleBackColor = false;
+            this.bt_maximize.Click += new System.EventHandler(this.bt_maximize_Click);
+            // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
+            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Snow;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // pn_container
             // 
@@ -375,337 +437,10 @@
             this.bt_logOut.Name = "bt_logOut";
             this.bt_logOut.Click += new System.EventHandler(this.bt_logOut_Click);
             // 
-            this.bt_logOut.Text = "Log out";
-            // 
-            // bt_user
-            // 
-            resources.ApplyResources(this.bt_user, "bt_user");
-            this.bt_user.BackColor = System.Drawing.Color.Transparent;
-            this.bt_user.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_user.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_user.FlatAppearance.BorderSize = 0;
-            this.bt_user.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_user.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_user.ForeColor = System.Drawing.Color.Snow;
-            this.bt_user.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
-            this.bt_user.IconColor = System.Drawing.Color.Snow;
-            this.bt_user.Location = new System.Drawing.Point(761, 18);
-            this.bt_user.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bt_user.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_user.UseVisualStyleBackColor = false;
-            this.bt_user.Click += new System.EventHandler(this.bt_user_Click);
-            // 
-            // bt_remind
-            // 
-            resources.ApplyResources(this.bt_remind, "bt_remind");
-            this.bt_remind.BackColor = System.Drawing.Color.Transparent;
-            this.bt_remind.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_remind.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_remind.FlatAppearance.BorderSize = 0;
-            this.bt_remind.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_remind.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_remind.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_remind.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
-            this.bt_remind.IconColor = System.Drawing.Color.Snow;
-            this.bt_remind.Location = new System.Drawing.Point(724, 21);
-            this.bt_remind.TabIndex = 13;
-            this.bt_remind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_remind.UseVisualStyleBackColor = false;
-            this.bt_remind.Click += new System.EventHandler(this.bt_remind_Click);
-            // 
-            // bt_mail
-            // 
-            resources.ApplyResources(this.bt_mail, "bt_mail");
-            this.bt_mail.BackColor = System.Drawing.Color.Transparent;
-            this.bt_mail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_mail.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_mail.FlatAppearance.BorderSize = 0;
-            this.bt_mail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_mail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_mail.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_mail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.bt_mail.IconColor = System.Drawing.Color.Snow;
-            this.bt_mail.Location = new System.Drawing.Point(687, 24);
-            this.bt_mail.TabIndex = 12;
-            this.bt_mail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_mail.UseVisualStyleBackColor = false;
-            this.bt_mail.Click += new System.EventHandler(this.bt_mail_Click);
-            // 
-            // bt_notifications
-            // 
-            resources.ApplyResources(this.bt_notifications, "bt_notifications");
-            this.bt_notifications.BackColor = System.Drawing.Color.Transparent;
-            this.bt_notifications.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_notifications.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_notifications.FlatAppearance.BorderSize = 0;
-            this.bt_notifications.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_notifications.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_notifications.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_notifications.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.bt_notifications.IconColor = System.Drawing.Color.Snow;
-            this.bt_notifications.Location = new System.Drawing.Point(650, 24);
-            this.bt_notifications.TabIndex = 11;
-            this.bt_notifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_notifications.UseVisualStyleBackColor = false;
-            this.bt_notifications.Click += new System.EventHandler(this.bt_notifications_Click);
-            // 
-            // lb_tittleChildform
-            // 
-            this.lb_tittleChildform.AutoSize = true;
-            this.lb_tittleChildform.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tittleChildform.ForeColor = System.Drawing.Color.Snow;
-            this.lb_tittleChildform.Location = new System.Drawing.Point(64, 30);
-            this.lb_tittleChildform.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lb_tittleChildform.Name = "lb_tittleChildform";
-            this.lb_tittleChildform.Size = new System.Drawing.Size(59, 21);
-            this.lb_tittleChildform.TabIndex = 2;
-            this.lb_tittleChildform.Text = "Home";
-            // 
-            // iconCurrentChildform
-            // 
-            resources.ApplyResources(this.iconCurrentChildform, "iconCurrentChildform");
-            this.iconCurrentChildform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.iconCurrentChildform.ForeColor = System.Drawing.Color.Snow;
-            this.iconCurrentChildform.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconCurrentChildform.IconSize = 39;
-            this.iconCurrentChildform.Location = new System.Drawing.Point(15, 16);
-            this.iconCurrentChildform.Size = new System.Drawing.Size(32, 31);
-            this.iconCurrentChildform.TabIndex = 2;
-            this.iconCurrentChildform.TabStop = false;
-            // 
-            // bt_minimize
-            // 
-            resources.ApplyResources(this.bt_minimize, "bt_minimize");
-            this.bt_minimize.BackColor = System.Drawing.Color.Transparent;
-            this.bt_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_minimize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_minimize.FlatAppearance.BorderSize = 0;
-            this.bt_minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_minimize.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_minimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.bt_minimize.IconColor = System.Drawing.Color.Snow;
-            this.bt_minimize.Location = new System.Drawing.Point(836, 2);
-            this.bt_minimize.TabIndex = 9;
-            this.bt_minimize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_minimize.UseVisualStyleBackColor = false;
-            this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
-            // 
-            // bt_maximize
-            // 
-            resources.ApplyResources(this.bt_maximize, "bt_maximize");
-            this.bt_maximize.BackColor = System.Drawing.Color.Transparent;
-            this.bt_maximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_maximize.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_maximize.FlatAppearance.BorderSize = 0;
-            this.bt_maximize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_maximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_maximize.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_maximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.bt_maximize.IconColor = System.Drawing.Color.Snow;
-            this.bt_maximize.Location = new System.Drawing.Point(853, 2);
-            this.bt_maximize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_maximize.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_maximize.UseVisualStyleBackColor = false;
-            this.bt_maximize.Click += new System.EventHandler(this.bt_maximize_Click);
-            // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(60)))));
-            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Snow;
-            this.bt_exit.Location = new System.Drawing.Point(872, 2);
-            this.bt_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_exit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
-            resources.ApplyResources(this.bt_report, "bt_report");
-            this.bt_report.BackColor = System.Drawing.Color.Transparent;
-            this.bt_report.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_report.FlatAppearance.BorderSize = 0;
-            this.bt_report.ForeColor = System.Drawing.Color.Snow;
-            this.bt_report.IconChar = FontAwesome.Sharp.IconChar.LineChart;
-            this.bt_report.IconColor = System.Drawing.Color.Snow;
-            this.bt_report.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_report.IconSize = 40;
-            this.bt_report.Name = "bt_report";
-            this.bt_report.UseVisualStyleBackColor = false;
-            this.bt_report.Click += new System.EventHandler(this.bt_report_Click);
-            this.bt_report.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_report.Location = new System.Drawing.Point(0, 358);
-            this.bt_report.Margin = new System.Windows.Forms.Padding(2);
-            resources.ApplyResources(this.bt_document, "bt_document");
-            this.bt_document.BackColor = System.Drawing.Color.Transparent;
-            this.bt_document.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_document.FlatAppearance.BorderSize = 0;
-            this.bt_document.ForeColor = System.Drawing.Color.Snow;
-            this.bt_document.IconChar = FontAwesome.Sharp.IconChar.FileInvoice;
-            this.bt_document.IconColor = System.Drawing.Color.Snow;
-            this.bt_document.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_document.IconSize = 40;
-            this.bt_document.Name = "bt_document";
-            this.bt_document.UseVisualStyleBackColor = false;
-            this.bt_document.Click += new System.EventHandler(this.bt_document_Click);
-            this.bt_document.BackColor = System.Drawing.Color.Transparent;
-            this.bt_document.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_document.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.bt_mission, "bt_mission");
-            this.bt_mission.BackColor = System.Drawing.Color.Transparent;
-            this.bt_mission.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_mission.FlatAppearance.BorderSize = 0;
-            this.bt_mission.ForeColor = System.Drawing.Color.Snow;
-            this.bt_mission.IconChar = FontAwesome.Sharp.IconChar.ListCheck;
-            this.bt_mission.IconColor = System.Drawing.Color.Snow;
-            this.bt_mission.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_mission.IconSize = 40;
-            this.bt_mission.Name = "bt_mission";
-            this.bt_mission.UseVisualStyleBackColor = false;
-            this.bt_mission.Click += new System.EventHandler(this.bt_mission_Click);
-            this.bt_document.Size = new System.Drawing.Size(176, 48);
-            this.bt_document.TabIndex = 8;
-            this.bt_document.Text = "   Document";
-            resources.ApplyResources(this.ptb_logo, "ptb_logo");
-            this.ptb_logo.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_logo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptb_logo.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
-            this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.TabStop = false;
-            this.ptb_logo.Click += new System.EventHandler(this.ptb_logo_Click);
-            this.bt_mission.BackColor = System.Drawing.Color.Transparent;
-            this.bt_mission.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_mission.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.bt_project, "bt_project");
-            this.bt_project.BackColor = System.Drawing.Color.Transparent;
-            this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_project.FlatAppearance.BorderSize = 0;
-            this.bt_project.ForeColor = System.Drawing.Color.Snow;
-            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.bt_project.IconColor = System.Drawing.Color.Snow;
-            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_project.IconSize = 40;
-            this.bt_project.Name = "bt_project";
-            this.bt_project.UseVisualStyleBackColor = false;
-            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
-            this.bt_mission.Size = new System.Drawing.Size(176, 48);
-            this.bt_mission.TabIndex = 10;
-            this.bt_mission.Text = "   Mission";
-            resources.ApplyResources(this.bt_home, "bt_home");
-            this.bt_home.BackColor = System.Drawing.Color.Transparent;
-            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_home.FlatAppearance.BorderSize = 0;
-            this.bt_home.ForeColor = System.Drawing.Color.Snow;
-            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.bt_home.IconColor = System.Drawing.Color.Snow;
-            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_home.IconSize = 40;
-            this.bt_home.Name = "bt_home";
-            this.bt_home.UseVisualStyleBackColor = false;
-            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
-            this.ptb_logo.Name = "ptb_logo";
-            this.ptb_logo.Size = new System.Drawing.Size(135, 64);
-            this.ptb_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            resources.ApplyResources(this.bt_profile, "bt_profile");
-            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
-            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_profile.FlatAppearance.BorderSize = 0;
-            this.bt_profile.ForeColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_profile.IconColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_profile.IconSize = 40;
-            this.bt_profile.Name = "bt_profile";
-            this.bt_profile.UseVisualStyleBackColor = false;
-            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
-            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.bt_project.IconColor = System.Drawing.Color.Snow;
-            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.logo_color;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.bt_project.Name = "bt_project";
-            this.bt_project.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_project.Size = new System.Drawing.Size(176, 48);
-            resources.ApplyResources(this, "$this");
-            this.bt_project.Text = "   Project";
-            this.bt_project.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_project.UseVisualStyleBackColor = false;
-            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
-            // 
-            // bt_Info
-            // 
-            this.bt_home.BackColor = System.Drawing.Color.Transparent;
-            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_home.FlatAppearance.BorderSize = 0;
-            this.bt_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_home.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_home.ForeColor = System.Drawing.Color.Snow;
-            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.bt_home.IconColor = System.Drawing.Color.Snow;
-            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_home.IconSize = 40;
-            this.bt_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.Location = new System.Drawing.Point(2, 98);
-            this.bt_home.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_home.Name = "bt_home";
-            this.bt_home.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_home.Size = new System.Drawing.Size(176, 48);
-            this.bt_home.TabIndex = 5;
-            this.bt_home.Text = "   Home";
-            this.bt_home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_home.UseVisualStyleBackColor = false;
-            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
-            // 
-            // bt_changePassword
-            // 
-            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
-            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_profile.FlatAppearance.BorderSize = 0;
-            this.bt_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_profile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_profile.ForeColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_profile.IconColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_profile.IconSize = 40;
-            this.bt_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.Location = new System.Drawing.Point(2, 150);
-            this.bt_profile.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_profile.Name = "bt_profile";
-            this.bt_profile.Padding = new System.Windows.Forms.Padding(9, 0, 16, 0);
-            this.bt_profile.Size = new System.Drawing.Size(176, 48);
-            this.bt_profile.TabIndex = 6;
-            this.bt_profile.Text = "   Employee";
-            this.bt_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_profile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_profile.UseVisualStyleBackColor = false;
-            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
-            // 
-            // bt_logOut
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1082, 530);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pn_container);
             this.Controls.Add(this.pn_shawdow);
