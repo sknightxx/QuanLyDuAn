@@ -66,7 +66,7 @@
             this.pn_tittle.BackColor = System.Drawing.Color.White;
             this.pn_tittle.Controls.Add(this.pn_search);
             this.pn_tittle.Controls.Add(this.bt_others);
-            this.pn_tittle.Controls.Add(this.bt_CreateProject);
+            this.pn_tittle.Controls.Add(this.bt_Create);
             this.pn_tittle.Controls.Add(this.lb_MyWork);
             this.pn_tittle.Name = "pn_tittle";
             // 
@@ -79,6 +79,7 @@
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.txt_search);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
@@ -151,6 +152,7 @@
             // 
             // bt_search
             // 
+            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.BackColor = System.Drawing.Color.White;
             this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.bt_search, "bt_search");
@@ -269,7 +271,7 @@
         private System.Windows.Forms.TextBox txt_search;
         private FontAwesome.Sharp.IconButton bt_search;
         private FontAwesome.Sharp.IconButton bt_others;
-        private System.Windows.Forms.Button bt_CreateProject;
+        private System.Windows.Forms.Button bt_Create;
         private System.Windows.Forms.Label lb_MyWork;
         private System.Windows.Forms.Panel pn_container;
         private System.Windows.Forms.Button button1;

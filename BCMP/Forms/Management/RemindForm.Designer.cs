@@ -45,6 +45,9 @@
             this.pn_containerInformation.Controls.Add(this.bt_exit);
             this.pn_containerInformation.Name = "pn_containerInformation";
             this.pn_containerInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerInformation_Paint);
+            this.pn_containerInformation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseDown);
+            this.pn_containerInformation.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseMove);
+            this.pn_containerInformation.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseUp);
             // 
             // lb_remind
             // 

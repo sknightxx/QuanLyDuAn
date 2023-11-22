@@ -134,6 +134,20 @@
             this.pn_containerInformation.Controls.Add(this.txt_name);
             this.pn_containerInformation.Name = "pn_containerInformation";
             this.pn_containerInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerInformation_Paint);
+            this.pn_containerInformation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseDown);
+            this.pn_containerInformation.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseMove);
+            this.pn_containerInformation.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseUp);
+            // 
+            // lb_information
+            // 
+            resources.ApplyResources(this.lb_information, "lb_information");
+            this.lb_information.Name = "lb_information";
+            // 
+            // pn_user
+            // 
+            resources.ApplyResources(this.pn_user, "pn_user");
+            this.pn_user.Controls.Add(this.iconUser);
+            this.pn_user.Name = "pn_user";
             // 
             // lb_information
             // 

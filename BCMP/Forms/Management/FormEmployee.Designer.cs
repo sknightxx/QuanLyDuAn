@@ -35,8 +35,6 @@
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.bt_Create = new System.Windows.Forms.Button();
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();

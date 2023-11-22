@@ -118,28 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txt_ConfirmPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 396</value>
+  <data name="cbb_role.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 518</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txt_ConfirmPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="cbb_role.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbb_role.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 24</value>
+  </data>
+  <data name="cbb_department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 458</value>
+  </data>
+  <data name="cbb_department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbb_department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 24</value>
+  </data>
+  <data name="txt_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 198</value>
+  </data>
+  <data name="txt_IdStaff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txt_ConfirmPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="txt_IdStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 32</value>
   </data>
-  <data name="txt_ConfirmPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 22</value>
+  <data name="lb_IdStaff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lb_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 241</value>
+    <value>67, 208</value>
   </data>
   <data name="lb_IdStaff.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 21</value>
   </data>
   <data name="txt_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 385</value>
+    <value>203, 400</value>
   </data>
   <data name="txt_phone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -147,68 +164,80 @@
   <data name="txt_phone.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 32</value>
   </data>
+  <data name="lb_role.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_role.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 517</value>
+  </data>
+  <data name="lb_role.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 457</value>
+  </data>
+  <data name="lb_department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 21</value>
+  </data>
   <data name="lb_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 395</value>
+    <value>67, 410</value>
   </data>
   <data name="lb_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 21</value>
+    <value>62, 21</value>
   </data>
-  <data name="lb_phone.Text" xml:space="preserve">
-    <value>New Password</value>
+  <data name="txt_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 334</value>
   </data>
-  <data name="lb_ChangePass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_ChangePass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 14</value>
-  </data>
-  <data name="lb_ChangePass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lb_ChangePass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 32</value>
-  </data>
-  <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 508</value>
-  </data>
-  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txt_Email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 42</value>
+  <data name="txt_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 32</value>
   </data>
-  <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 265</value>
   </data>
-  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 319</value>
-  </data>
-  <data name="txt_Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txt_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="txt_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
+  <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 32</value>
   </data>
-  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 22</value>
+  <data name="lb_Name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 274</value>
+  </data>
+  <data name="lb_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 21</value>
   </data>
   <data name="lb_Email.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 318</value>
+    <value>67, 343</value>
   </data>
   <data name="lb_Email.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>52, 21</value>
   </data>
-  <data name="lb_Email.Text" xml:space="preserve">
-    <value>Old Password</value>
+  <data name="lb_information.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lb_information.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 11</value>
+  </data>
+  <data name="lb_information.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_information.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 32</value>
   </data>
   <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -226,7 +255,7 @@
     <value>55, 22</value>
   </data>
   <data name="pn_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 63</value>
+    <value>157, 46</value>
   </data>
   <data name="pn_user.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -234,10 +263,10 @@
   <data name="pn_user.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 119</value>
   </data>
-  <data name="pn_containerChangePass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pn_containerInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="pn_containerChangePass.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pn_containerInformation.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 577</value>
   </data>
   <data name="iconUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">

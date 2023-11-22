@@ -14,6 +14,7 @@ using BCMP.DTO;
 using BCMP.Forms;
 using BCMP.Forms.Management;
 using BCMP.Forms.User;
+using BCMP.Service;
 using FontAwesome.Sharp;
 
 
@@ -288,6 +289,20 @@ namespace BCMP
         private void bt_logOut_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bt_vietnamese_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "vi");
+            Application.Restart();
+        }
+
+        private void bt_english_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
         }
     }
 }

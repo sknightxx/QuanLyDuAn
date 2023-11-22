@@ -17,9 +17,12 @@ namespace BCMP.Forms.Management
 {
     public partial class ChangePasswordForm : Form
     {
+        private bool isDragging = false;
+        private Point lastLocation;
         private Employee currEmployee;
         public ChangePasswordForm(Employee currEmployee)
         {
+
             InitializeComponent();
             this.currEmployee = currEmployee;
         }
@@ -54,6 +57,30 @@ namespace BCMP.Forms.Management
         private void bt_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pn_containerChangePass_MouseUp(object sender, MouseEventArgs e)
+        {
+            isDragging = false;
+
+        }
+
+        private void pn_containerChangePass_MouseDown(object sender, MouseEventArgs e)
+        {
+            isDragging = true;
+            lastLocation = e.Location;
+        }
+
+        private void pn_containerChangePass_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X,
+                    (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
         }
 
        

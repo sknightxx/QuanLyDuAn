@@ -158,6 +158,12 @@ namespace BCMP.Forms
                 lb_ValidNameProject.Text = "Valid";
                 lb_ValidNameProject.ForeColor = Color.Green;
             }
+            else
+            {
+                lb_ValidNameProject.Visible = true;
+                lb_ValidNameProject.Text = "Valid";
+                lb_ValidNameProject.ForeColor = Color.Green;
+            }
         }
 
         private void txt_nameProject_Enter(object sender, EventArgs e)
@@ -202,6 +208,60 @@ namespace BCMP.Forms
         private void txt_IdProject_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void DefaultState()
+        {
+            lb_ValidNameProject.Visible = false;
+            lb_ValidIdProject.Visible = false;
+            lb_ValidIdProject.Visible = false;
+
+            txt_Description.Text = "";
+            txt_nameProject.Text = "";
+            txt_IdProject.Text = "";
+        }
+        public void LoadDataDepartment()
+        {
+            List<String> list = new List<String>();
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                list.Add(item.Name);
+            }
+            cbb_department.DataSource = list;
+        }
+
+        private void bt_save_Click(object sender, EventArgs e)
+        {
+            string projectid = txt_IdProject.Text.ToString();
+            string name = txt_nameProject.Text.ToString();
+            string description = txt_Description.Text.ToString();
+            DateTime plannedStartDate = dtpkPlannedStart.Value;
+            DateTime plannedEndDate = dtpkPlannedEnd.Value;
+            int departmentId = 0;
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
+            {
+                if (item.Name.Equals(cbb_department.SelectedItem.ToString()))
+                {
+                    departmentId = item.DepartmentId;
+                }
+            }
+            if (lb_ValidNameProject.Text == "Valid" && lb_ValidDesciption.Text == "Valid" && lb_ValidIdProject.Text == "Valid")
+            {
+                if (ProjectService.Instance.InsertValidateProject(projectid, name, description, plannedStartDate, plannedEndDate, departmentId))
+                {
+                    MessageBox.Show("Add Project Successfully");
+                    DefaultState();
+                    insertProject(this, new EventArgs());
+                }
+                else
+                {
+                    MessageBox.Show("Add Project Failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inputs are missed");
+            }
         }
 
         public void DefaultState()
