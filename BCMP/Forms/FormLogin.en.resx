@@ -118,53 +118,119 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 14</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 188</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_remind.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lb_remind.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 25</value>
-  </data>
-  <data name="lb_remind.Text" xml:space="preserve">
-    <value>Nhắc nhở</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 137</value>
-  </data>
-  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 401</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 149</value>
   </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 14</value>
+  <data name="lb_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 336</value>
   </data>
-  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="lb_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 32</value>
   </data>
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 0, 21, 0</value>
+  <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 168</value>
   </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
+  <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 149</value>
   </data>
-  <data name="pn_containerInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pn_left.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 622</value>
+  </data>
+  <data name="bt_iconExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 6</value>
+  </data>
+  <data name="bt_iconExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="txt_userID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 171</value>
+  </data>
+  <data name="txt_userID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="pn_containerInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>571, 577</value>
+  <data name="txt_userID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 32</value>
+  </data>
+  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 288</value>
+  </data>
+  <data name="txt_Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 32</value>
+  </data>
+  <data name="bt_IconUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 168</value>
+  </data>
+  <data name="bt_IconUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="lb_gachngang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 204</value>
+  </data>
+  <data name="lb_gachngang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 1</value>
+  </data>
+  <data name="bt_iconPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 289</value>
+  </data>
+  <data name="bt_iconPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 30</value>
+  </data>
+  <data name="bt_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 434</value>
+  </data>
+  <data name="bt_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 46</value>
+  </data>
+  <data name="llb_forgotpassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 592</value>
+  </data>
+  <data name="llb_forgotpassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lb_gachngang2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 324</value>
+  </data>
+  <data name="lb_gachngang2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 1</value>
+  </data>
+  <data name="lb_password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 239</value>
+  </data>
+  <data name="lb_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 25</value>
+  </data>
+  <data name="lb_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 124</value>
+  </data>
+  <data name="lb_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 25</value>
+  </data>
+  <data name="lb_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 62</value>
+  </data>
+  <data name="lb_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 38</value>
+  </data>
+  <data name="pn_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>416, 0</value>
+  </data>
+  <data name="pn_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 622</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>120, 120</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>571, 577</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>832, 622</value>
   </data>
 </root>

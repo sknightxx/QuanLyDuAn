@@ -117,25 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bt_EditMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_comment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_EditMission.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1051, 521</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bt_EditMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="bt_EditMission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 37</value>
+  </data>
+  <data name="txt_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 425</value>
+  </data>
+  <data name="txt_comment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_comment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 72</value>
+  </data>
+  <data name="lb_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 425</value>
+  </data>
   <data name="lb_comment.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 18</value>
   </data>
   <data name="lb_comment.Text" xml:space="preserve">
     <value>Bình luận</value>
   </data>
-  <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>907, 521</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 42</value>
+  </data>
+  <data name="dtp_From.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 201</value>
+  </data>
+  <data name="dtp_From.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="dtp_From.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>703, 161</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 18</value>
@@ -143,17 +173,17 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Từ ngày</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>925, 161</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 18</value>
+    <value>62, 18</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Tới ngày</value>
+    <value>Kết thúc</value>
   </data>
-  <data name="lb_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 192</value>
   </data>
   <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 18</value>
@@ -161,8 +191,38 @@
   <data name="lb_document.Text" xml:space="preserve">
     <value>Tài liệu</value>
   </data>
-  <data name="lb_Tittle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="dtp_To.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 201</value>
+  </data>
+  <data name="dtp_To.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="dtp_To.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
+  </data>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1128, 9</value>
+  </data>
+  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 0, 21, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 30</value>
+  </data>
+  <data name="txt_tittle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 106</value>
+  </data>
+  <data name="txt_tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>905, 35</value>
+  </data>
+  <data name="lb_Tittle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 108</value>
   </data>
   <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 18</value>
@@ -170,26 +230,35 @@
   <data name="lb_Tittle.Text" xml:space="preserve">
     <value>Tiêu đề</value>
   </data>
-  <data name="lb_IdMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 274</value>
   </data>
-  <data name="lb_IdMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 18</value>
+  <data name="cbb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="lb_IdMission.Text" xml:space="preserve">
-    <value>Mã nhiệm vụ</value>
+  <data name="cbb_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 24</value>
   </data>
-  <data name="lb_relateProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_relateProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 345</value>
+  </data>
+  <data name="txt_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txt_relateProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 35</value>
+  </data>
+  <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 347</value>
   </data>
   <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 18</value>
+    <value>47, 18</value>
   </data>
   <data name="lb_relateProject.Text" xml:space="preserve">
-    <value>Dự án liên quan</value>
+    <value>Dự án</value>
   </data>
-  <data name="lb_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 274</value>
   </data>
   <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 18</value>
@@ -197,17 +266,26 @@
   <data name="lb_status.Text" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
-  <data name="lb_Management.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_document.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 190</value>
   </data>
-  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 18</value>
+  <data name="txt_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="lb_Management.Text" xml:space="preserve">
-    <value>Nhân viên quản lý</value>
+  <data name="txt_document.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 35</value>
   </data>
-  <data name="lb_description.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 274</value>
+  </data>
+  <data name="txt_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 105</value>
+  </data>
+  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 250</value>
   </data>
   <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 18</value>
@@ -215,10 +293,43 @@
   <data name="lb_description.Text" xml:space="preserve">
     <value>Mô tả</value>
   </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>547, 23</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 18</value>
+  </data>
+  <data name="lb_Management.Text" xml:space="preserve">
+    <value> Nhân viên đảm nhiệm</value>
+  </data>
+  <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>737, 21</value>
+  </data>
+  <data name="txt_management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txt_management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 35</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 576</value>
+  </data>
+  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 576</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 576</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
 </root>

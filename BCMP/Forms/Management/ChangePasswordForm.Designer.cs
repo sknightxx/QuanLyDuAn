@@ -72,6 +72,9 @@
             this.pn_containerChangePass.Controls.Add(this.pn_user);
             this.pn_containerChangePass.Name = "pn_containerChangePass";
             this.pn_containerChangePass.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerChangePass_Paint);
+            this.pn_containerChangePass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_containerChangePass_MouseDown);
+            this.pn_containerChangePass.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pn_containerChangePass_MouseMove);
+            this.pn_containerChangePass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pn_containerChangePass_MouseUp);
             // 
             // lb_ChangePass
             // 

@@ -14,6 +14,7 @@ using BCMP.DTO;
 using BCMP.Forms;
 using BCMP.Forms.Management;
 using BCMP.Forms.User;
+using BCMP.Service;
 using FontAwesome.Sharp;
 
 
@@ -25,6 +26,7 @@ namespace BCMP
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private Employee empLogin;
+        private FormLogin fLogin;
 
 
         public dashboard(Employee empLogin)
@@ -34,7 +36,6 @@ namespace BCMP
             leftBorderBtn.Size = new Size(7,60);
             pn_leftDashBoard.Controls.Add(leftBorderBtn);
             this.empLogin = empLogin;
-
             //form
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -83,12 +84,6 @@ namespace BCMP
                 bt_mail.IconColor = color;
                 bt_user.IconColor = color;
                 bt_user.ForeColor = color;
-
-               
-                
-                
-                
-
             }
         }
 
@@ -288,6 +283,20 @@ namespace BCMP
         private void bt_logOut_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bt_vietnamese_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "vi");
+            Application.Restart();
+        }
+
+        private void bt_english_Click(object sender, EventArgs e)
+        {
+            var changeLanguage = new ChangeLanguage();
+            changeLanguage.UpdateConfig("language", "en");
+            Application.Restart();
         }
     }
 }

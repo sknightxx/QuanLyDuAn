@@ -226,12 +226,35 @@ namespace BCMP.Forms
 
         private void bt_save_Click(object sender, EventArgs e)
         {
-            if(currProject == null)
+            string projectid = txt_IdProject.Text.ToString();
+            string name = txt_nameProject.Text.ToString();
+            string description = txt_Description.Text.ToString();
+            DateTime plannedStartDate = dtpkPlannedStart.Value;
+            DateTime plannedEndDate = dtpkPlannedEnd.Value;
+            int departmentId = 0;
+            foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
             {
-                AddNewProject();
-            } else
+                if (item.Name.Equals(cbb_department.SelectedItem.ToString()))
+                {
+                    departmentId = item.DepartmentId;
+                }
+            }
+            if (lb_ValidNameProject.Text == "Valid" && lb_ValidDesciption.Text == "Valid" && lb_ValidIdProject.Text == "Valid")
             {
-                UpdateCurrentProject();
+                if (ProjectService.Instance.InsertValidateProject(projectid, name, description, plannedStartDate, plannedEndDate, departmentId))
+                {
+                    MessageBox.Show("Add Project Successfully");
+                    DefaultState();
+                    insertProject(this, new EventArgs());
+                }
+                else
+                {
+                    MessageBox.Show("Add Project Failed");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Inputs are missed");
             }
         }
 

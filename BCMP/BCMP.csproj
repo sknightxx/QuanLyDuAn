@@ -272,11 +272,17 @@
     <Compile Include="Forms\Management\RemindForm.Designer.cs">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\User\FormHomeUser.cs">
+    <Compile Include="Forms\User\DetailMissionUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\User\FormHomeUser.Designer.cs">
-      <DependentUpon>FormHomeUser.cs</DependentUpon>
+    <Compile Include="Forms\User\DetailMissionUser.Designer.cs">
+      <DependentUpon>DetailMissionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\DetailProjectUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\DetailProjectUser.Designer.cs">
+      <DependentUpon>DetailProjectUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\User\FormMissionUser.cs">
       <SubType>Form</SubType>
@@ -289,12 +295,6 @@
     </Compile>
     <Compile Include="Forms\User\FormProjectUser.Designer.cs">
       <DependentUpon>FormProjectUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\User\FormReportUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\User\FormReportUser.Designer.cs">
-      <DependentUpon>FormReportUser.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DepartmentDAO.cs" />
@@ -379,8 +379,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dashboard.vi.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFotgotPassword.en.resx">
+      <DependentUpon>FormFotgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormFotgotPassword.vi.resx">
       <DependentUpon>FormFotgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.en.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.vi.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -405,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddProject.vi.resx">
       <DependentUpon>FormAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUser.en.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddUser.vi.resx">
       <DependentUpon>FormAddUser.cs</DependentUpon>
@@ -460,11 +472,20 @@
     <EmbeddedResource Include="Forms\Management\FormPublicData.resx">
       <DependentUpon>FormPublicData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\InformationForm.en.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\InformationForm.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\InformationForm.vi.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\MailForm.en.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\MailForm.resx">
       <DependentUpon>MailForm.cs</DependentUpon>
@@ -481,6 +502,9 @@
     <EmbeddedResource Include="Forms\Management\Notifications.vi.resx">
       <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\RemindForm.en.resx">
+      <DependentUpon>RemindForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -494,6 +518,7 @@
       <DependentUpon>FormMissionUser.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Service\AuthService.cs" />
+    <Compile Include="Service\ChangeLanguage.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
     <Compile Include="Service\FirebaseService.cs" />
@@ -535,9 +560,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormProjectUser.resx">
       <DependentUpon>FormProjectUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\FormReportUser.resx">
-      <DependentUpon>FormReportUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -654,6 +676,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\z4821246153762_f7cf5b667b259876816633f716183abb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

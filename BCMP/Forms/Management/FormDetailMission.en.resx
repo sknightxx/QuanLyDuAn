@@ -146,9 +146,6 @@
   <data name="lb_comment.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 425</value>
   </data>
-  <data name="lb_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
-  </data>
   <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -180,26 +177,17 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>703, 161</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 22</value>
-  </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>925, 161</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 22</value>
-  </data>
   <data name="lb_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 192</value>
-  </data>
-  <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
   </data>
   <data name="dtp_To.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -243,18 +231,6 @@
   <data name="lb_Tittle.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 108</value>
   </data>
-  <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 22</value>
-  </data>
-  <data name="cbb_status.Items" xml:space="preserve">
-    <value>TO DO</value>
-  </data>
-  <data name="cbb_status.Items1" xml:space="preserve">
-    <value>IN PROGRESS</value>
-  </data>
-  <data name="cbb_status.Items2" xml:space="preserve">
-    <value>DONE</value>
-  </data>
   <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 274</value>
   </data>
@@ -279,17 +255,11 @@
   <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 347</value>
   </data>
-  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
-  </data>
   <data name="lb_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 274</value>
-  </data>
-  <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
   </data>
   <data name="txt_document.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 190</value>
@@ -315,17 +285,11 @@
   <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
     <value>637, 250</value>
   </data>
-  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
-  </data>
   <data name="lb_Management.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 23</value>
-  </data>
-  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
   </data>
   <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 21</value>

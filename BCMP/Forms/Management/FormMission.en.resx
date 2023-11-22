@@ -158,6 +158,9 @@
   <data name="bt_CreateProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 38</value>
   </data>
+  <data name="bt_Create.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
   <data name="lb_MyWork.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 25</value>
   </data>

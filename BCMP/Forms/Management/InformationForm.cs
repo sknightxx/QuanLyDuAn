@@ -17,6 +17,8 @@ namespace BCMP.Forms.Management
     public partial class InformationForm : Form
     {
         private Employee currEmployee;
+        private bool isDragging = false;
+        private Point lastLocation;
         public InformationForm(Employee currEmployee)
         {
             InitializeComponent();
@@ -49,6 +51,29 @@ namespace BCMP.Forms.Management
 
             this.Region = new Region(path);
             base.OnPaintBackground(e);
+        }
+
+        private void pn_containerInformation_MouseUp(object sender, MouseEventArgs e)
+        {
+            isDragging = false;
+        }
+
+        private void pn_containerInformation_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X,
+                    (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void pn_containerInformation_MouseDown(object sender, MouseEventArgs e)
+        {
+            isDragging = true;
+            lastLocation = e.Location;
         }
 
         private void LoadDataCurrentEmployee()

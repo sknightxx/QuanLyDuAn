@@ -73,6 +73,7 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.txt_Description);
             this.panel1.Controls.Add(this.txt_IdProject);
@@ -94,6 +95,7 @@
             // 
             // bt_save
             // 
+            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.ForeColor = System.Drawing.Color.White;
@@ -103,6 +105,7 @@
             // 
             // bt_cancel
             // 
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;

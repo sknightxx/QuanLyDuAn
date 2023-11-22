@@ -68,33 +68,42 @@ namespace BCMP
 
         private void bt_login_Click(object sender, EventArgs e)
         {
-            string userid = txt_userID.Text.ToString();
-            string password = txt_Password.Text.ToString();
-            if (string.IsNullOrEmpty(userid))
+            try
             {
-                MessageBox.Show("Chưa điền tài khoản");
-            } else if (string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Chưa điền mật khẩu");
-            } else if(AuthService.Instance.LoginValidateEmployee(userid,password))
-            {
-                if(AuthService.Instance.ValidateIsDeactivated())
+                string userid = txt_userID.Text.ToString();
+                string password = txt_Password.Text.ToString();
+                if (string.IsNullOrEmpty(userid))
                 {
-                    MessageBox.Show("Tài khoản của bạn đã bị khoá");
-                } else
-                {
-                    dashboard dashboardD = new dashboard(EmployeeDAO.Instance.GetById(userid));
-                    this.Hide();
-                    dashboardD.ShowDialog();
-                    txt_Password.Text = "";
-                    this.Show();
+                    MessageBox.Show("Chưa điền tài khoản");
                 }
-             
-            } else
+                else if (string.IsNullOrEmpty(password))
+                {
+                    MessageBox.Show("Chưa điền mật khẩu");
+                }
+                else if (AuthService.Instance.LoginValidateEmployee(userid, password))
+                {
+                    if (AuthService.Instance.ValidateIsDeactivated())
+                    {
+                        MessageBox.Show("Tài khoản của bạn đã bị khoá");
+                    }
+                    else
+                    {
+                        dashboard dashboardD = new dashboard(AuthService.empCur);
+                        this.Hide();
+                        dashboardD.ShowDialog();
+                        txt_Password.Text = "";
+                        this.Show();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+                }
+            } catch
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
+                
             }
-            
         }
 
         private void txt_password_Enter(object sender, EventArgs e)
