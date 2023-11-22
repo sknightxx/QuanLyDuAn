@@ -376,6 +376,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dashboard.vi.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormFotgotPassword.en.resx">
       <DependentUpon>FormFotgotPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -494,6 +497,7 @@
       <DependentUpon>FormMissionUser.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Service\AuthService.cs" />
+    <Compile Include="Service\ChangeLanguage.cs" />
     <Compile Include="Service\DepartmentService.cs" />
     <Compile Include="Service\EmployeeService.cs" />
     <Compile Include="Service\FirebaseService.cs" />
