@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetailProject));
             this.lb_member = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_save = new System.Windows.Forms.Button();
-            this.bt_cancel = new System.Windows.Forms.Button();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.lb_description = new System.Windows.Forms.Label();
@@ -48,16 +46,18 @@
             this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgvMissionList = new System.Windows.Forms.DataGridView();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
-            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.bt_save = new System.Windows.Forms.Button();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).BeginInit();
@@ -89,34 +89,8 @@
             this.panel1.Controls.Add(this.dtpkPlannedStart);
             this.panel1.Controls.Add(this.lb_NameProject);
             this.panel1.Controls.Add(this.panel2);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // bt_save
-            // 
-            resources.ApplyResources(this.bt_save, "bt_save");
-            this.bt_save.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.bt_save, "bt_save");
-            this.bt_save.ForeColor = System.Drawing.Color.White;
-            this.bt_save.Name = "bt_save";
-            this.bt_save.UseVisualStyleBackColor = false;
-            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
-            // 
-            // bt_cancel
-            // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
-            this.bt_cancel.BackColor = System.Drawing.Color.White;
-            this.bt_cancel.FlatAppearance.BorderSize = 0;
-            this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
-            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
-            this.bt_cancel.Name = "bt_cancel";
-            this.bt_cancel.UseVisualStyleBackColor = false;
-            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
-            this.bt_cancel.MouseEnter += new System.EventHandler(this.bt_cancel_MouseEnter);
-            this.bt_cancel.MouseLeave += new System.EventHandler(this.bt_cancel_MouseLeave);
             // 
             // txt_Description
             // 
@@ -162,14 +136,14 @@
             // 
             // cbb_department
             // 
-            this.cbb_department.FormattingEnabled = true;
             resources.ApplyResources(this.cbb_department, "cbb_department");
+            this.cbb_department.FormattingEnabled = true;
             this.cbb_department.Name = "cbb_department";
             // 
             // dtpkPlannedEnd
             // 
-            this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
+            this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
             // 
             // lb_IdProject
@@ -188,8 +162,8 @@
             // 
             // dtpkPlannedStart
             // 
-            this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
+            this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkPlannedStart.Name = "dtpkPlannedStart";
             // 
             // lb_NameProject
@@ -210,8 +184,10 @@
             // 
             // dtgvMissionList
             // 
+            resources.ApplyResources(this.dtgvMissionList, "dtgvMissionList");
             this.dtgvMissionList.AllowDrop = true;
             this.dtgvMissionList.AutoGenerateColumns = false;
+            this.dtgvMissionList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvMissionList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvMissionList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titleDataGridViewTextBoxColumn,
@@ -223,10 +199,45 @@
             this.userIdDataGridViewTextBoxColumn,
             this.Detail});
             this.dtgvMissionList.DataSource = this.missionBindingSource;
-            resources.ApplyResources(this.dtgvMissionList, "dtgvMissionList");
             this.dtgvMissionList.Name = "dtgvMissionList";
             this.dtgvMissionList.RowTemplate.Height = 24;
             this.dtgvMissionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMissionList_CellContentClick);
+            // 
+            // MissionId
+            // 
+            this.MissionId.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.MissionId, "MissionId");
+            this.MissionId.Name = "MissionId";
+            // 
+            // Detail
+            // 
+            this.Detail.DataPropertyName = "Detail";
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            // 
+            // bt_save
+            // 
+            resources.ApplyResources(this.bt_save, "bt_save");
+            this.bt_save.BackColor = System.Drawing.Color.Black;
+            this.bt_save.ForeColor = System.Drawing.Color.White;
+            this.bt_save.Name = "bt_save";
+            this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
+            // 
+            // bt_cancel
+            // 
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
+            this.bt_cancel.BackColor = System.Drawing.Color.White;
+            this.bt_cancel.FlatAppearance.BorderSize = 0;
+            this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
+            this.bt_cancel.Name = "bt_cancel";
+            this.bt_cancel.UseVisualStyleBackColor = false;
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
+            this.bt_cancel.MouseEnter += new System.EventHandler(this.bt_cancel_MouseEnter);
+            this.bt_cancel.MouseLeave += new System.EventHandler(this.bt_cancel_MouseLeave);
             // 
             // bt_exit
             // 
@@ -246,21 +257,11 @@
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
-            // missionBindingSource
-            // 
-            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
-            // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
             resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
             this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            // 
-            // MissionId
-            // 
-            this.MissionId.DataPropertyName = "MissionId";
-            resources.ApplyResources(this.MissionId, "MissionId");
-            this.MissionId.Name = "MissionId";
             // 
             // progressDataGridViewTextBoxColumn
             // 
@@ -298,12 +299,9 @@
             resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
             this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
             // 
-            // Detail
+            // missionBindingSource
             // 
-            this.Detail.DataPropertyName = "Detail";
-            resources.ApplyResources(this.Detail, "Detail");
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
+            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
             // FormDetailProject
             // 

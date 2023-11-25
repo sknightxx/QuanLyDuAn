@@ -153,12 +153,6 @@
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_Tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;txt_management.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
   <data name="lb_comment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
@@ -168,11 +162,8 @@
   <data name="&gt;&gt;lb_relateProject.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;dtp_From.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txt_document.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="txt_tittle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 86</value>
   </data>
   <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
     <value>362, 86</value>
@@ -185,9 +176,6 @@
   </data>
   <data name="lb_status.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="lb_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;bt_EditMission.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -207,14 +195,14 @@
   <data name="&gt;&gt;lb_Tittle.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 17</value>
-  </data>
   <data name="lb_IdMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;txt_tittle.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="&gt;&gt;lb_relateProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lb_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -237,17 +225,20 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="lb_Management.Text" xml:space="preserve">
+    <value> Management staff</value>
+  </data>
   <data name="bt_EditMission.Location" type="System.Drawing.Point, System.Drawing">
     <value>788, 423</value>
-  </data>
-  <data name="txt_tittle.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;txt_tittle.Name" xml:space="preserve">
     <value>txt_tittle</value>
   </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="&gt;&gt;lb_IdMission.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="txt_tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_EditMission.Text" xml:space="preserve">
     <value>Edit</value>
@@ -267,14 +258,8 @@
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="txt_comment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="txt_IdMission.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 17</value>
-  </data>
-  <data name="lb_comment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="&gt;&gt;txt_comment.Parent" xml:space="preserve">
     <value>pn_container</value>
@@ -285,6 +270,9 @@
   <data name="txt_management.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
+  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
   <data name="bt_EditMission.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
@@ -293,6 +281,12 @@
   </data>
   <data name="&gt;&gt;lb_document.Name" xml:space="preserve">
     <value>lb_document</value>
+  </data>
+  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;lb_IdMission.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -321,11 +315,8 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="lb_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 345</value>
-  </data>
-  <data name="txt_tittle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="&gt;&gt;lb_document.Parent" xml:space="preserve">
     <value>pn_container</value>
@@ -333,8 +324,14 @@
   <data name="&gt;&gt;txt_management.Name" xml:space="preserve">
     <value>txt_management</value>
   </data>
+  <data name="lb_relateProject.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;txt_IdMission.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.Name" xml:space="preserve">
+    <value>lb_Management</value>
   </data>
   <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -344,6 +341,9 @@
   </data>
   <data name="&gt;&gt;lb_comment.Parent" xml:space="preserve">
     <value>pn_container</value>
+  </data>
+  <data name="dtp_From.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -360,26 +360,26 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="lb_relateProject.Text" xml:space="preserve">
-    <value>Related project</value>
-  </data>
   <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 18</value>
   </data>
   <data name="&gt;&gt;dtp_From.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
+  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 223</value>
+  </data>
   <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 223</value>
   </data>
-  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 203</value>
+  <data name="lb_Management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="bt_EditMission.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 30</value>
   </data>
-  <data name="lb_IdMission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 19</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lb_Tittle.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -402,6 +402,9 @@
   <data name="dtp_To.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="&gt;&gt;txt_IdMission.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="lb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
@@ -413,6 +416,9 @@
   </data>
   <data name="lb_IdMission.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="&gt;&gt;txt_relateProject.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="txt_management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -428,6 +434,9 @@
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="lb_Management.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -468,11 +477,11 @@
   <data name="&gt;&gt;txt_relateProject.Name" xml:space="preserve">
     <value>txt_relateProject</value>
   </data>
-  <data name="bt_EditMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>To</value>
   </data>
-  <data name="&gt;&gt;txt_document.Name" xml:space="preserve">
-    <value>txt_document</value>
+  <data name="lb_Tittle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="&gt;&gt;lb_comment.Name" xml:space="preserve">
     <value>lb_comment</value>
@@ -489,11 +498,8 @@
   <data name="&gt;&gt;cbb_status.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="&gt;&gt;cbb_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_Tittle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
+  <data name="&gt;&gt;txt_management.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;bt_EditMission.Parent" xml:space="preserve">
     <value>pn_container</value>
@@ -507,17 +513,14 @@
   <data name="&gt;&gt;lb_comment.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
+  <data name="txt_relateProject.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="txt_management.Size" type="System.Drawing.Size, System.Drawing">
     <value>290, 29</value>
   </data>
   <data name="lb_IdMission.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 18</value>
-  </data>
-  <data name="bt_cancel.Text" xml:space="preserve">
-    <value>CANCEL</value>
   </data>
   <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 223</value>
@@ -531,9 +534,6 @@
   <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 18</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 18</value>
-  </data>
   <data name="&gt;&gt;txt_management.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -543,11 +543,11 @@
   <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 282</value>
   </data>
-  <data name="&gt;&gt;lb_Tittle.Name" xml:space="preserve">
-    <value>lb_Tittle</value>
+  <data name="cbb_status.Items1" xml:space="preserve">
+    <value>IN PROGRESS</value>
   </data>
-  <data name="&gt;&gt;txt_relateProject.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;dtp_From.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txt_relateProject.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -561,8 +561,8 @@
   <data name="txt_comment.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="txt_tittle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 86</value>
+  <data name="lb_Tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 468</value>
@@ -570,11 +570,11 @@
   <data name="dtp_From.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;lb_Management.Name" xml:space="preserve">
-    <value>lb_Management</value>
+  <data name="&gt;&gt;lb_Tittle.Name" xml:space="preserve">
+    <value>lb_Tittle</value>
   </data>
-  <data name="lb_Management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>CANCEL</value>
   </data>
   <data name="pn_container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -588,14 +588,17 @@
   <data name="&gt;&gt;lb_Management.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lb_relateProject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
   <data name="lb_relateProject.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="txt_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
   </data>
   <data name="&gt;&gt;lb_IdMission.Name" xml:space="preserve">
     <value>lb_IdMission</value>
@@ -606,8 +609,8 @@
   <data name="cbb_status.Items2" xml:space="preserve">
     <value>DONE</value>
   </data>
-  <data name="cbb_status.Items1" xml:space="preserve">
-    <value>IN PROGRESS</value>
+  <data name="txt_comment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="dtp_From.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -618,23 +621,20 @@
   <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
-    <value>txt_Description</value>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
-  <data name="dtp_From.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 20</value>
+  <data name="&gt;&gt;cbb_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_relateProject.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_Management.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 203</value>
   </data>
   <data name="lb_document.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
-  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="lb_comment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -684,26 +684,29 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;dtp_To.Name" xml:space="preserve">
-    <value>dtp_To</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormDetailMission</value>
+  </data>
+  <data name="&gt;&gt;txt_tittle.Parent" xml:space="preserve">
+    <value>pn_container</value>
   </data>
   <data name="txt_comment.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="lb_relateProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
+  <data name="txt_tittle.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lb_IdMission.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="txt_relateProject.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="bt_EditMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;txt_document.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="lb_document.Text" xml:space="preserve">
     <value>Document</value>
@@ -723,9 +726,6 @@
   <data name="label2.Text" xml:space="preserve">
     <value>From</value>
   </data>
-  <data name="&gt;&gt;txt_document.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
   <data name="&gt;&gt;bt_cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -744,8 +744,8 @@
   <data name="lb_description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;txt_document.Parent" xml:space="preserve">
+    <value>pn_container</value>
   </data>
   <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
     <value>846, 7</value>
@@ -762,23 +762,23 @@
   <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
     <value>bt_cancel</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="&gt;&gt;txt_document.Name" xml:space="preserve">
+    <value>txt_document</value>
   </data>
   <data name="&gt;&gt;lb_document.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txt_tittle.Parent" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="lb_relateProject.Text" xml:space="preserve">
+    <value>Related project</value>
   </data>
   <data name="&gt;&gt;txt_relateProject.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 223</value>
+  <data name="lb_IdMission.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 19</value>
   </data>
-  <data name="&gt;&gt;lb_IdMission.Parent" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 18</value>
   </data>
   <data name="&gt;&gt;lb_Tittle.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -816,8 +816,8 @@
   <data name="lb_status.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 18</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -825,26 +825,26 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
-  <data name="&gt;&gt;txt_IdMission.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="lb_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 345</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>To</value>
+  <data name="txt_tittle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;txt_document.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="txt_document.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;lb_relateProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;dtp_To.Name" xml:space="preserve">
+    <value>dtp_To</value>
   </data>
   <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="lb_Management.Text" xml:space="preserve">
-    <value> Management staff</value>
+  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
+    <value>pn_container</value>
   </data>
   <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 18</value>
@@ -867,8 +867,8 @@
   <data name="lb_description.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 18</value>
+  <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>553, 17</value>
   </data>
   <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -891,14 +891,14 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>527, 131</value>
   </data>
-  <data name="txt_tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="lb_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;txt_IdMission.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
+    <value>txt_Description</value>
   </data>
   <data name="txt_IdMission.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>

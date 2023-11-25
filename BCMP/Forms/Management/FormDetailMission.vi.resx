@@ -128,6 +128,9 @@
   <data name="bt_EditMission.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 37</value>
   </data>
+  <data name="bt_EditMission.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
   <data name="txt_comment.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 425</value>
   </data>
@@ -141,7 +144,7 @@
     <value>45, 425</value>
   </data>
   <data name="lb_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 18</value>
+    <value>85, 22</value>
   </data>
   <data name="lb_comment.Text" xml:space="preserve">
     <value>Bình luận</value>
@@ -154,6 +157,9 @@
   </data>
   <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 42</value>
+  </data>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>Hủy</value>
   </data>
   <data name="dtp_From.Location" type="System.Drawing.Point, System.Drawing">
     <value>656, 201</value>
@@ -168,7 +174,7 @@
     <value>703, 161</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
+    <value>76, 22</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Từ ngày</value>
@@ -177,7 +183,7 @@
     <value>925, 161</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 18</value>
+    <value>76, 22</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Kết thúc</value>
@@ -186,7 +192,7 @@
     <value>36, 192</value>
   </data>
   <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 18</value>
+    <value>69, 22</value>
   </data>
   <data name="lb_document.Text" xml:space="preserve">
     <value>Tài liệu</value>
@@ -225,7 +231,7 @@
     <value>36, 108</value>
   </data>
   <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 18</value>
+    <value>71, 22</value>
   </data>
   <data name="lb_Tittle.Text" xml:space="preserve">
     <value>Tiêu đề</value>
@@ -252,7 +258,7 @@
     <value>40, 347</value>
   </data>
   <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
+    <value>58, 22</value>
   </data>
   <data name="lb_relateProject.Text" xml:space="preserve">
     <value>Dự án</value>
@@ -261,7 +267,7 @@
     <value>40, 274</value>
   </data>
   <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
+    <value>92, 22</value>
   </data>
   <data name="lb_status.Text" xml:space="preserve">
     <value>Trạng thái</value>
@@ -288,7 +294,7 @@
     <value>637, 250</value>
   </data>
   <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+    <value>54, 22</value>
   </data>
   <data name="lb_description.Text" xml:space="preserve">
     <value>Mô tả</value>
@@ -297,7 +303,7 @@
     <value>547, 23</value>
   </data>
   <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 18</value>
+    <value>188, 22</value>
   </data>
   <data name="lb_Management.Text" xml:space="preserve">
     <value> Nhân viên đảm nhiệm</value>

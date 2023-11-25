@@ -379,6 +379,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dashboard.en.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.vi.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,6 +415,9 @@
     <EmbeddedResource Include="Forms\Management\FormAddMission.vi.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddProject.en.resx">
+      <DependentUpon>FormAddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddProject.vi.resx">
       <DependentUpon>FormAddProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDetailProject.vi.resx">
       <DependentUpon>FormDetailProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDocument.en.resx">
+      <DependentUpon>FormDocument.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDocument.resx">
       <DependentUpon>FormDocument.cs</DependentUpon>
@@ -510,9 +519,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.vi.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
-      <DependentUpon>FormHomeUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormMissionUser.resx">
       <DependentUpon>FormMissionUser.cs</DependentUpon>

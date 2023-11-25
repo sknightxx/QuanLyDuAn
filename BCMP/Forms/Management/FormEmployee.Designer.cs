@@ -35,17 +35,17 @@
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.bt_others = new FontAwesome.Sharp.IconButton();
             this.bt_Create = new System.Windows.Forms.Button();
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_ListEmp = new System.Windows.Forms.DataGridView();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.bt_others = new FontAwesome.Sharp.IconButton();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
@@ -154,6 +154,9 @@
             // 
             resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.AutoGenerateColumns = false;
+            this.dtgv_ListEmp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_ListEmp.BackgroundColor = System.Drawing.Color.White;
+            this.dtgv_ListEmp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_ListEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_ListEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userIdDataGridViewTextBoxColumn,
@@ -165,6 +168,12 @@
             this.dtgv_ListEmp.Name = "dtgv_ListEmp";
             this.dtgv_ListEmp.RowTemplate.Height = 24;
             this.dtgv_ListEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListEmp_CellContentClick);
+            // 
+            // Edit
+            // 
+            resources.ApplyResources(this.Edit, "Edit");
+            this.Edit.Name = "Edit";
+            this.Edit.Text = "Edit";
             // 
             // userIdDataGridViewTextBoxColumn
             // 
@@ -189,12 +198,6 @@
             this.IsDeactivated.DataPropertyName = "IsDeactivated";
             resources.ApplyResources(this.IsDeactivated, "IsDeactivated");
             this.IsDeactivated.Name = "IsDeactivated";
-            // 
-            // Edit
-            // 
-            resources.ApplyResources(this.Edit, "Edit");
-            this.Edit.Name = "Edit";
-            this.Edit.Text = "Edit";
             // 
             // employeeBindingSource
             // 

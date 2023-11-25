@@ -33,8 +33,6 @@
             this.pn_containerInformation = new System.Windows.Forms.Panel();
             this.lb_Notification = new System.Windows.Forms.Label();
             this.dtgv_MyNotification = new System.Windows.Forms.DataGridView();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
-            this.notificationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +40,8 @@
             this.isReadDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.notificationIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OpenMission = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.notificationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_containerInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_MyNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.notificationBindingSource)).BeginInit();
@@ -79,28 +79,6 @@
             resources.ApplyResources(this.dtgv_MyNotification, "dtgv_MyNotification");
             this.dtgv_MyNotification.Name = "dtgv_MyNotification";
             this.dtgv_MyNotification.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_MyNotification_CellContentClick);
-            // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
-            // notificationBindingSource
-            // 
-            this.notificationBindingSource.DataSource = typeof(BCMP.DTO.Notification);
             // 
             // descriptionDataGridViewTextBoxColumn
             // 
@@ -144,6 +122,28 @@
             resources.ApplyResources(this.OpenMission, "OpenMission");
             this.OpenMission.Name = "OpenMission";
             this.OpenMission.Text = "OpenMission";
+            // 
+            // notificationBindingSource
+            // 
+            this.notificationBindingSource.DataSource = typeof(BCMP.DTO.Notification);
+            // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // Notifications
             // 

@@ -116,8 +116,9 @@ namespace BCMP.Forms.Management
             }
         }
 
-        
-            
-        
+        private void iconUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

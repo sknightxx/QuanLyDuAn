@@ -33,12 +33,12 @@
             this.pn_leftDashBoard = new System.Windows.Forms.Panel();
             this.bt_report = new FontAwesome.Sharp.IconButton();
             this.bt_document = new FontAwesome.Sharp.IconButton();
+            this.bt_project = new FontAwesome.Sharp.IconButton();
             this.bt_mission = new FontAwesome.Sharp.IconButton();
+            this.bt_profile = new FontAwesome.Sharp.IconButton();
+            this.bt_home = new FontAwesome.Sharp.IconButton();
             this.pn_logo = new System.Windows.Forms.Panel();
             this.ptb_logo = new System.Windows.Forms.PictureBox();
-            this.bt_project = new FontAwesome.Sharp.IconButton();
-            this.bt_home = new FontAwesome.Sharp.IconButton();
-            this.bt_profile = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_tittleBar = new System.Windows.Forms.Panel();
@@ -79,11 +79,11 @@
             this.pn_leftDashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.pn_leftDashBoard.Controls.Add(this.bt_report);
             this.pn_leftDashBoard.Controls.Add(this.bt_document);
-            this.pn_leftDashBoard.Controls.Add(this.bt_mission);
-            this.pn_leftDashBoard.Controls.Add(this.pn_logo);
             this.pn_leftDashBoard.Controls.Add(this.bt_project);
-            this.pn_leftDashBoard.Controls.Add(this.bt_home);
+            this.pn_leftDashBoard.Controls.Add(this.bt_mission);
             this.pn_leftDashBoard.Controls.Add(this.bt_profile);
+            this.pn_leftDashBoard.Controls.Add(this.bt_home);
+            this.pn_leftDashBoard.Controls.Add(this.pn_logo);
             this.pn_leftDashBoard.Controls.Add(this.panel2);
             this.pn_leftDashBoard.Name = "pn_leftDashBoard";
             // 
@@ -117,6 +117,21 @@
             this.bt_document.UseVisualStyleBackColor = false;
             this.bt_document.Click += new System.EventHandler(this.bt_document_Click);
             // 
+            // bt_project
+            // 
+            resources.ApplyResources(this.bt_project, "bt_project");
+            this.bt_project.BackColor = System.Drawing.Color.Transparent;
+            this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_project.FlatAppearance.BorderSize = 0;
+            this.bt_project.ForeColor = System.Drawing.Color.Snow;
+            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.bt_project.IconColor = System.Drawing.Color.Snow;
+            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_project.IconSize = 40;
+            this.bt_project.Name = "bt_project";
+            this.bt_project.UseVisualStyleBackColor = false;
+            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
+            // 
             // bt_mission
             // 
             resources.ApplyResources(this.bt_mission, "bt_mission");
@@ -131,6 +146,36 @@
             this.bt_mission.Name = "bt_mission";
             this.bt_mission.UseVisualStyleBackColor = false;
             this.bt_mission.Click += new System.EventHandler(this.bt_mission_Click);
+            // 
+            // bt_profile
+            // 
+            resources.ApplyResources(this.bt_profile, "bt_profile");
+            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
+            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_profile.FlatAppearance.BorderSize = 0;
+            this.bt_profile.ForeColor = System.Drawing.Color.Snow;
+            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.bt_profile.IconColor = System.Drawing.Color.Snow;
+            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_profile.IconSize = 40;
+            this.bt_profile.Name = "bt_profile";
+            this.bt_profile.UseVisualStyleBackColor = false;
+            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
+            // 
+            // bt_home
+            // 
+            resources.ApplyResources(this.bt_home, "bt_home");
+            this.bt_home.BackColor = System.Drawing.Color.Transparent;
+            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_home.FlatAppearance.BorderSize = 0;
+            this.bt_home.ForeColor = System.Drawing.Color.Snow;
+            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.bt_home.IconColor = System.Drawing.Color.Snow;
+            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_home.IconSize = 40;
+            this.bt_home.Name = "bt_home";
+            this.bt_home.UseVisualStyleBackColor = false;
+            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
             // 
             // pn_logo
             // 
@@ -148,51 +193,6 @@
             this.ptb_logo.TabStop = false;
             this.ptb_logo.Click += new System.EventHandler(this.ptb_logo_Click);
             // 
-            // bt_project
-            // 
-            resources.ApplyResources(this.bt_project, "bt_project");
-            this.bt_project.BackColor = System.Drawing.Color.Transparent;
-            this.bt_project.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_project.FlatAppearance.BorderSize = 0;
-            this.bt_project.ForeColor = System.Drawing.Color.Snow;
-            this.bt_project.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.bt_project.IconColor = System.Drawing.Color.Snow;
-            this.bt_project.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_project.IconSize = 40;
-            this.bt_project.Name = "bt_project";
-            this.bt_project.UseVisualStyleBackColor = false;
-            this.bt_project.Click += new System.EventHandler(this.bt_project_Click);
-            // 
-            // bt_home
-            // 
-            resources.ApplyResources(this.bt_home, "bt_home");
-            this.bt_home.BackColor = System.Drawing.Color.Transparent;
-            this.bt_home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_home.FlatAppearance.BorderSize = 0;
-            this.bt_home.ForeColor = System.Drawing.Color.Snow;
-            this.bt_home.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.bt_home.IconColor = System.Drawing.Color.Snow;
-            this.bt_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_home.IconSize = 40;
-            this.bt_home.Name = "bt_home";
-            this.bt_home.UseVisualStyleBackColor = false;
-            this.bt_home.Click += new System.EventHandler(this.bt_home_Click);
-            // 
-            // bt_profile
-            // 
-            resources.ApplyResources(this.bt_profile, "bt_profile");
-            this.bt_profile.BackColor = System.Drawing.Color.Transparent;
-            this.bt_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_profile.FlatAppearance.BorderSize = 0;
-            this.bt_profile.ForeColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.bt_profile.IconColor = System.Drawing.Color.Snow;
-            this.bt_profile.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_profile.IconSize = 40;
-            this.bt_profile.Name = "bt_profile";
-            this.bt_profile.UseVisualStyleBackColor = false;
-            this.bt_profile.Click += new System.EventHandler(this.bt_employee_Click);
-            // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
@@ -202,7 +202,7 @@
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::BCMP.Properties.Resources.z4821246153762_f7cf5b667b259876816633f716183abb;
+            this.pictureBox1.Image = global::BCMP.Properties.Resources.logo_color;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -235,6 +235,7 @@
             this.bt_user.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.bt_user.IconColor = System.Drawing.Color.Snow;
             this.bt_user.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_user.IconSize = 30;
             this.bt_user.Name = "bt_user";
             this.bt_user.UseVisualStyleBackColor = false;
             this.bt_user.Click += new System.EventHandler(this.bt_user_Click);
@@ -252,6 +253,7 @@
             this.bt_remind.IconChar = FontAwesome.Sharp.IconChar.ClockFour;
             this.bt_remind.IconColor = System.Drawing.Color.Snow;
             this.bt_remind.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_remind.IconSize = 30;
             this.bt_remind.Name = "bt_remind";
             this.bt_remind.UseVisualStyleBackColor = false;
             this.bt_remind.Click += new System.EventHandler(this.bt_remind_Click);
@@ -269,6 +271,7 @@
             this.bt_mail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
             this.bt_mail.IconColor = System.Drawing.Color.Snow;
             this.bt_mail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_mail.IconSize = 30;
             this.bt_mail.Name = "bt_mail";
             this.bt_mail.UseVisualStyleBackColor = false;
             this.bt_mail.Click += new System.EventHandler(this.bt_mail_Click);
@@ -286,6 +289,7 @@
             this.bt_notifications.IconChar = FontAwesome.Sharp.IconChar.Bell;
             this.bt_notifications.IconColor = System.Drawing.Color.Snow;
             this.bt_notifications.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_notifications.IconSize = 30;
             this.bt_notifications.Name = "bt_notifications";
             this.bt_notifications.UseVisualStyleBackColor = false;
             this.bt_notifications.Click += new System.EventHandler(this.bt_notifications_Click);
@@ -304,7 +308,7 @@
             this.iconCurrentChildform.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildform.IconColor = System.Drawing.Color.Snow;
             this.iconCurrentChildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildform.IconSize = 31;
+            this.iconCurrentChildform.IconSize = 39;
             this.iconCurrentChildform.Name = "iconCurrentChildform";
             this.iconCurrentChildform.TabStop = false;
             // 
@@ -321,6 +325,7 @@
             this.bt_minimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.bt_minimize.IconColor = System.Drawing.Color.Snow;
             this.bt_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_minimize.IconSize = 20;
             this.bt_minimize.Name = "bt_minimize";
             this.bt_minimize.UseVisualStyleBackColor = false;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
@@ -338,6 +343,7 @@
             this.bt_maximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.bt_maximize.IconColor = System.Drawing.Color.Snow;
             this.bt_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_maximize.IconSize = 20;
             this.bt_maximize.Name = "bt_maximize";
             this.bt_maximize.UseVisualStyleBackColor = false;
             this.bt_maximize.Click += new System.EventHandler(this.bt_maximize_Click);
@@ -355,6 +361,7 @@
             this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.bt_exit.IconColor = System.Drawing.Color.Snow;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 20;
             this.bt_exit.Name = "bt_exit";
             this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
@@ -448,6 +455,7 @@
             this.Controls.Add(this.pn_leftDashBoard);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dashboard";
+            this.Load += new System.EventHandler(this.dashboard_Load);
             this.pn_leftDashBoard.ResumeLayout(false);
             this.pn_logo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logo)).EndInit();

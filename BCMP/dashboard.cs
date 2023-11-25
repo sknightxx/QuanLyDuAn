@@ -26,7 +26,7 @@ namespace BCMP
         private Panel leftBorderBtn;
         private Form currentChildForm;
         private Employee empLogin;
-        private FormLogin fLogin;
+        //private FormLogin fLogin;
 
 
         public dashboard(Employee empLogin)
@@ -297,6 +297,11 @@ namespace BCMP
             var changeLanguage = new ChangeLanguage();
             changeLanguage.UpdateConfig("language", "en");
             Application.Restart();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
