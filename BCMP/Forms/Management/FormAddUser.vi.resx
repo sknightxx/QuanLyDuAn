@@ -121,30 +121,72 @@
   <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 11</value>
+  </data>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 0, 20, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
   <data name="lb_NewProfile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lb_NewProfile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
   <data name="lb_NewProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 23</value>
+    <value>212, 27</value>
   </data>
   <data name="lb_NewProfile.Text" xml:space="preserve">
     <value>Tạo mới nhân viên</value>
   </data>
+  <data name="pn_tittleFormAddUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 72</value>
+  </data>
   <data name="lb_Email.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 158</value>
+  </data>
+  <data name="lb_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
   </data>
   <data name="lb_Name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 219</value>
+  </data>
+  <data name="lb_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
   <data name="lb_Name.Text" xml:space="preserve">
     <value>Họ và tên</value>
+  </data>
+  <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 214</value>
+  </data>
+  <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 33</value>
+  </data>
+  <data name="txt_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 152</value>
+  </data>
+  <data name="txt_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 33</value>
   </data>
   <data name="lb_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_phone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 278</value>
+  </data>
   <data name="lb_phone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 19</value>
+    <value>111, 21</value>
   </data>
   <data name="lb_phone.Text" xml:space="preserve">
     <value>Số điện thoại</value>
@@ -152,8 +194,11 @@
   <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 328</value>
+  </data>
   <data name="lb_department.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 19</value>
+    <value>101, 21</value>
   </data>
   <data name="lb_department.Text" xml:space="preserve">
     <value>Phòng ban</value>
@@ -161,8 +206,11 @@
   <data name="lb_placeOfBirth.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_placeOfBirth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 376</value>
+  </data>
   <data name="lb_placeOfBirth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
+    <value>66, 21</value>
   </data>
   <data name="lb_placeOfBirth.Text" xml:space="preserve">
     <value>Vai trò</value>
@@ -170,53 +218,188 @@
   <data name="bt_saveAddUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_saveAddUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 904</value>
+  </data>
+  <data name="bt_saveAddUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
   <data name="bt_cancelAddUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="bt_cancelAddUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-40, 904</value>
+  </data>
+  <data name="bt_cancelAddUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 38</value>
+  </data>
+  <data name="cbType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 24</value>
   </data>
   <data name="lb_Valid_UserId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_Valid_UserId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 106</value>
+  </data>
+  <data name="lb_Valid_UserId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_Valid_UserId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
   <data name="lb_outsource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_outsource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 431</value>
+  </data>
+  <data name="lb_outsource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 21</value>
   </data>
   <data name="lb_ValidConfirm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_ValidConfirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 570</value>
+  </data>
+  <data name="lb_ValidConfirm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidConfirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
   <data name="lb_ValidPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_ValidPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 502</value>
+  </data>
+  <data name="lb_ValidPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
   <data name="lb_ValidPhone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_ValidPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 282</value>
+  </data>
+  <data name="lb_ValidPhone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
   <data name="lb_ValidEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_ValidEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>632, 162</value>
+  </data>
+  <data name="lb_ValidEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 439</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
   <data name="lb_ValidFullname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_ValidFullname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 224</value>
+  </data>
+  <data name="lb_ValidFullname.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidFullname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="txt_confirmPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 560</value>
+  </data>
+  <data name="txt_confirmPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
   </data>
   <data name="lb_confirmPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_confirmPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 565</value>
+  </data>
   <data name="lb_confirmPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 19</value>
+    <value>166, 21</value>
   </data>
   <data name="lb_confirmPassword.Text" xml:space="preserve">
     <value>Xác nhận mật khẩu</value>
   </data>
+  <data name="txt_password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 492</value>
+  </data>
+  <data name="txt_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 22</value>
+  </data>
   <data name="lb_password.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lb_password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 495</value>
+  </data>
+  <data name="lb_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
   </data>
   <data name="lb_password.Text" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
+  <data name="cb_Role.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 378</value>
+  </data>
+  <data name="cb_Role.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cb_Role.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 24</value>
+  </data>
+  <data name="cb_Department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 329</value>
+  </data>
+  <data name="cb_Department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cb_Department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 24</value>
+  </data>
+  <data name="txt_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 95</value>
+  </data>
+  <data name="txt_IdStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 33</value>
+  </data>
   <data name="lb_IdStaff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lb_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 101</value>
+  </data>
   <data name="lb_IdStaff.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 19</value>
+    <value>126, 21</value>
   </data>
   <data name="lb_IdStaff.Text" xml:space="preserve">
     <value>Mã nhân viên</value>
@@ -224,10 +407,34 @@
   <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 622</value>
+  </data>
+  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 42</value>
+  </data>
   <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>694, 622</value>
+  </data>
+  <data name="bt_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 42</value>
+  </data>
+  <data name="txt_phone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 272</value>
+  </data>
+  <data name="txt_phone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 33</value>
+  </data>
+  <data name="pn_containerFormAddUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 688</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>120, 120</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>842, 688</value>
   </data>
 </root>

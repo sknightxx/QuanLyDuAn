@@ -83,7 +83,7 @@ namespace BCMP.Forms.Management
             txt_phone.Text = currEmployee.PhoneNumber.ToString();
             cbb_role.Text = RoleDAO.Instance.GetById(currEmployee.RoleId).Title.ToString();
             cbb_department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
-
+            txt_name.Text = currEmployee.FullName.ToString();
         }
 
         public void LoadDataDepartment()
