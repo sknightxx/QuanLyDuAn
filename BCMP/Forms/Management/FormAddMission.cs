@@ -1,4 +1,6 @@
-﻿using BCMP.Service;
+﻿using BCMP.DAO;
+using BCMP.DTO;
+using BCMP.Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +18,14 @@ namespace BCMP.Forms.Management
 {
     public partial class FormAddMission : Form
     {
-        private TextBox txt_management;
+        #region Control
         private Label lb_Management;
-        private TextBox txt_IdProject;
         private Panel panel1;
         private Panel pn_tittleAddProject;
         private Label lb_newMission;
         private FontAwesome.Sharp.IconButton bt_exit;
         private Button bt_cancel;
         private Button bt_save;
-        private Label lb_IdProject;
         private TextBox txt_name;
         private Label lb_member;
         private Label label3;
@@ -48,18 +48,60 @@ namespace BCMP.Forms.Management
         private Label lb_ValidTittle;
         private Label lb_ValidIdMission;
         private Label lb_Tittle;
+        #endregion
 
-        public FormAddMission()
+        private Mission currMission;
+        private FormDetailMission f;
+        private Label label4;
+        private ComboBox cb_department;
+        private List<Department> listDepartment;
+        private List<Employee> listEmployee;
+        private ComboBox cb_ListEmp;
+        private FormDetailProject f_p;
+        private int departmentSelected = 0;
+        private Project currProject;
+
+        public Project CurrProject { get => currProject; set => currProject = value; }
+
+        public FormAddMission(FormDetailProject F_p)
         {
             InitializeComponent();
+            this.f_p = F_p;
+            lb_status.Visible = false;
+            lb_relateProject.Visible = false;
+            txt_relateProject.Visible = false;
+            CurrProject = f_p.CurrentProject;
+            LoadListDepartmentInProject(CurrProject.ProjectId);
+            LoadListEmployeeInProject(CurrProject.ProjectId, departmentSelected);
+        }
+
+
+
+
+        public FormAddMission(FormDetailMission F)
+        {
+            InitializeComponent();
+            this.f = F;
+            this.currMission = f.CurrMission;
+            if(currMission != null)
+            {
+                LoadDataCurrentMission();
+                LoadDataStatus();
+                CurrProject = ProjectDAO.Instance.GetProjectByMissionId(currMission.MissionId);
+                LoadListEmployeeInProject(currProject.ProjectId, departmentSelected);
+                LoadListDepartmentInProject(CurrProject.ProjectId);
+                cb_ListEmp.Text = currMission.UserId;
+                this.departmentSelected = ((Employee)listEmployee.Find(emp => emp.UserId == this.currMission.UserId)).DepartmentId;
+                LoadListEmployeeInProject(currProject.ProjectId, departmentSelected);
+                cb_department.Text = listDepartment.Find(dep=>dep.DepartmentId == departmentSelected).Name;
+            }
+
         }
 
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddMission));
-            this.txt_management = new System.Windows.Forms.TextBox();
             this.lb_Management = new System.Windows.Forms.Label();
-            this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_ValidDescription = new System.Windows.Forms.Label();
             this.lb_ValidRelate = new System.Windows.Forms.Label();
@@ -76,9 +118,9 @@ namespace BCMP.Forms.Management
             this.lb_description = new System.Windows.Forms.Label();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
             this.lb_newMission = new System.Windows.Forms.Label();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
-            this.lb_IdProject = new System.Windows.Forms.Label();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.lb_member = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -88,19 +130,13 @@ namespace BCMP.Forms.Management
             this.lb_document = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_Tittle = new System.Windows.Forms.Label();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.cb_department = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cb_ListEmp = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_container.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txt_management
-            // 
-            resources.ApplyResources(this.txt_management, "txt_management");
-            this.txt_management.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_management.Name = "txt_management";
-            this.txt_management.Enter += new System.EventHandler(this.txt_management_Enter);
-            this.txt_management.Leave += new System.EventHandler(this.txt_management_Leave);
             // 
             // lb_Management
             // 
@@ -109,17 +145,11 @@ namespace BCMP.Forms.Management
             this.lb_Management.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_Management.Name = "lb_Management";
             // 
-            // txt_IdProject
-            // 
-            resources.ApplyResources(this.txt_IdProject, "txt_IdProject");
-            this.txt_IdProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_IdProject.Name = "txt_IdProject";
-            this.txt_IdProject.Enter += new System.EventHandler(this.txt_IdProject_Enter);
-            this.txt_IdProject.Leave += new System.EventHandler(this.txt_IdProject_Leave);
-            // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.cb_ListEmp);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.cb_department);
             this.panel1.Controls.Add(this.lb_ValidDescription);
             this.panel1.Controls.Add(this.lb_ValidRelate);
             this.panel1.Controls.Add(this.lb_ValidDocument);
@@ -134,6 +164,7 @@ namespace BCMP.Forms.Management
             this.panel1.Controls.Add(this.lb_Management);
             this.panel1.Controls.Add(this.txt_Description);
             this.panel1.Controls.Add(this.lb_description);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // lb_ValidDescription
@@ -168,8 +199,12 @@ namespace BCMP.Forms.Management
             // 
             // cbb_status
             // 
-            resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.FormattingEnabled = true;
+            this.cbb_status.Items.AddRange(new object[] {
+            resources.GetString("cbb_status.Items"),
+            resources.GetString("cbb_status.Items1"),
+            resources.GetString("cbb_status.Items2")});
+            resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.Name = "cbb_status";
             // 
             // txt_relateProject
@@ -177,6 +212,7 @@ namespace BCMP.Forms.Management
             resources.ApplyResources(this.txt_relateProject, "txt_relateProject");
             this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_relateProject.Name = "txt_relateProject";
+            this.txt_relateProject.ReadOnly = true;
             this.txt_relateProject.Enter += new System.EventHandler(this.txt_relateProject_Enter);
             this.txt_relateProject.Leave += new System.EventHandler(this.txt_relateProject_Leave);
             // 
@@ -219,10 +255,10 @@ namespace BCMP.Forms.Management
             // 
             // pn_tittleAddProject
             // 
-            resources.ApplyResources(this.pn_tittleAddProject, "pn_tittleAddProject");
             this.pn_tittleAddProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pn_tittleAddProject.Controls.Add(this.lb_newMission);
             this.pn_tittleAddProject.Controls.Add(this.bt_exit);
+            resources.ApplyResources(this.pn_tittleAddProject, "pn_tittleAddProject");
             this.pn_tittleAddProject.Name = "pn_tittleAddProject";
             // 
             // lb_newMission
@@ -231,13 +267,31 @@ namespace BCMP.Forms.Management
             this.lb_newMission.ForeColor = System.Drawing.Color.Black;
             this.lb_newMission.Name = "lb_newMission";
             // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.Black;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
             // bt_cancel
             // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -247,19 +301,12 @@ namespace BCMP.Forms.Management
             // 
             // bt_save
             // 
-            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
             this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
-            // 
-            // lb_IdProject
-            // 
-            resources.ApplyResources(this.lb_IdProject, "lb_IdProject");
-            this.lb_IdProject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_IdProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_IdProject.Name = "lb_IdProject";
             // 
             // txt_name
             // 
@@ -285,23 +332,19 @@ namespace BCMP.Forms.Management
             // 
             // dateTimePicker1
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // dateTimePicker2
             // 
-            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
             this.dateTimePicker2.Name = "dateTimePicker2";
             // 
             // pn_container
             // 
-            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pn_container.Controls.Add(this.txt_management);
-            this.pn_container.Controls.Add(this.txt_IdProject);
-            this.pn_container.Controls.Add(this.lb_IdProject);
             this.pn_container.Controls.Add(this.lb_document);
             this.pn_container.Controls.Add(this.label2);
             this.pn_container.Controls.Add(this.txt_name);
@@ -310,6 +353,7 @@ namespace BCMP.Forms.Management
             this.pn_container.Controls.Add(this.dateTimePicker1);
             this.pn_container.Controls.Add(this.dateTimePicker2);
             this.pn_container.Controls.Add(this.panel1);
+            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.Name = "pn_container";
             this.pn_container.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_container_Paint);
             // 
@@ -334,23 +378,25 @@ namespace BCMP.Forms.Management
             this.lb_Tittle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_Tittle.Name = "lb_Tittle";
             // 
-            // bt_exit
+            // cb_department
             // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.Black;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            this.cb_department.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_department, "cb_department");
+            this.cb_department.Name = "cb_department";
+            this.cb_department.SelectedIndexChanged += new System.EventHandler(this.cb_department_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label4.Name = "label4";
+            // 
+            // cb_ListEmp
+            // 
+            this.cb_ListEmp.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_ListEmp, "cb_ListEmp");
+            this.cb_ListEmp.Name = "cb_ListEmp";
             // 
             // FormAddMission
             // 
@@ -413,23 +459,7 @@ namespace BCMP.Forms.Management
             base.OnPaintBackground(e);
         }
 
-        private void txt_management_Leave(object sender, EventArgs e)
-        {
-            if (txt_management.Text == "")
-            {
-                txt_management.Text = "Enter management staff";
-                txt_management.ForeColor = Color.Black;
-            }
-        }
 
-        private void txt_management_Enter(object sender, EventArgs e)
-        {
-            if(txt_management.Text == "Enter management staff")
-            {
-                txt_management.Text = "";
-                txt_management.ForeColor = Color.Gray;
-            }
-        }
 
         
 
@@ -506,35 +536,102 @@ namespace BCMP.Forms.Management
 
         }
 
-        private void txt_IdProject_Leave(object sender, EventArgs e)
-        {
-            if (txt_IdProject.Text == "")
-            {
-                txt_IdProject.Text = "Enter ID mission";
-                txt_IdProject.ForeColor = Color.Black;
-            }
-        }
 
-        private void txt_IdProject_Enter(object sender, EventArgs e)
-        {
-            if (txt_IdProject.Text == "Enter ID mission")
-            {
-                txt_IdProject.Text = "";
-                txt_IdProject.ForeColor = Color.Gray;
-            }
-        }
 
         private void bt_save_Click(object sender, EventArgs e)
         {
-            DateTime plannedStartDate = dateTimePicker1.Value;
-            DateTime plannedEndDate = dateTimePicker2.Value;
-            if (MissionService.Instance.InsertValidateMission(txt_name.Text.ToString(), txt_Description.Text.ToString(), plannedStartDate, plannedEndDate, 0, txt_relateProject.Text.ToString(), txt_management.Text.ToString()))
+            if(currMission== null)
             {
-                MessageBox.Show("Add Mission Successfully");
-                this.Close();
+                DateTime plannedStartDate = dateTimePicker1.Value;
+                DateTime plannedEndDate = dateTimePicker2.Value;
+                if (MissionService.Instance.InsertValidateMission(txt_name.Text.ToString(), txt_Description.Text.ToString(), plannedStartDate, plannedEndDate, 0, f_p.CurrentProject.ProjectId, cb_ListEmp.Text.ToString()))
+                {
+                    DateTime now = DateTime.Now;
+                    MessageBox.Show("Add Mission Successfully");
+                    f_p.LoadDataListMission();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Add Mission Failed");
+                }
             } else
             {
-                MessageBox.Show("Add Mission Failed");
+                if (EditCurrentMission())
+                {
+                    MessageBox.Show("Update Mission Successfully");
+                    f.LoadDataCurrMission();
+                    this.Close();
+                } else
+                {
+                    MessageBox.Show("Update Mission Failed");
+                }
+            }
+            
+        }
+
+        public void LoadDataCurrentMission()
+        {
+            if(currMission != null)
+            {
+                txt_Description.Text = currMission.Description != null ? currMission.Description.ToString() : "";
+                cb_ListEmp.Text = currMission.UserId.ToString();
+                txt_relateProject.Text = currMission.ProjectId.ToString();
+                txt_name.Text = currMission.Title.ToString();
+                dateTimePicker1.Value = currMission.PlannedStartDate.Value;
+                dateTimePicker2.Value = currMission.PlannedEndDate.Value;
+            }
+        }
+
+        public void LoadDataStatus()
+        {
+            cbb_status.Visible = true;
+            cbb_status.Text = currMission.Status.ToString();
+        }
+
+        private bool EditCurrentMission()
+        {
+            string title = txt_name.Text;
+            string description = txt_Description.Text;
+            string project = txt_relateProject.Text;
+            string userId = cb_ListEmp.Text;
+            string status = cbb_status.Text;
+            DateTime plannedStartDate = dateTimePicker1.Value;
+            DateTime plannedEndDate = dateTimePicker2.Value;
+
+            if (MissionService.Instance.UpdateMissionByManager(currMission.MissionId, title, description, plannedStartDate, plannedEndDate, (int)currMission.Progress, status, project, userId))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void LoadListDepartmentInProject(string projectId)
+        {
+            listDepartment = DepartmentDAO.Instance.GetAllDepartmentInProject(projectId);
+            cb_department.DataSource = listDepartment;
+            cb_department.DisplayMember = "Name";
+           
+        }
+
+        public void LoadListEmployeeInProject(string projectId,int departmentId)
+        {
+            listEmployee = EmployeeDAO.Instance.GetAllEmployeeInProject(projectId, departmentId);
+            cb_ListEmp.DataSource = listEmployee;
+            cb_ListEmp.DisplayMember = "UserId";
+        }
+
+       
+
+        private void cb_department_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_department.Focus())
+            {
+                departmentSelected = ((Department)cb_department.SelectedItem).DepartmentId;
+                LoadListEmployeeInProject(CurrProject.ProjectId, departmentSelected);
             }
         }
     }

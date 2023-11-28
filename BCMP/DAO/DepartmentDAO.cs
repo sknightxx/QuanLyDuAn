@@ -66,5 +66,18 @@ namespace BCMP.DAO
             }
             return null;
         }
+
+        public List<Department> GetAllDepartmentInProject(string projectId)
+        {
+            String query = "USP_GetListDepartmentInProject @projectId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query,new object[] {projectId});
+            List<Department> list = new List<Department>();
+            foreach (DataRow row in result.Rows)
+            {
+                Department item = new Department(row);
+                list.Add(item);
+            }
+            return list;
+        }
     }
 }

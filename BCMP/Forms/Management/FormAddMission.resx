@@ -117,1012 +117,1054 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 489</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lb_Management.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lb_newMission.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lb_Management.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 85</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+  <data name="lb_Management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="lb_Management.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lb_Management.Text" xml:space="preserve">
+    <value> Management staff</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.Name" xml:space="preserve">
+    <value>lb_Management</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_Management.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cb_ListEmp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 124</value>
+  </data>
+  <data name="cb_ListEmp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 24</value>
+  </data>
+  <data name="cb_ListEmp.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;cb_ListEmp.Name" xml:space="preserve">
+    <value>cb_ListEmp</value>
+  </data>
+  <data name="&gt;&gt;cb_ListEmp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_ListEmp.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cb_ListEmp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 85</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 22</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cb_department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 124</value>
+  </data>
+  <data name="cb_department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 24</value>
+  </data>
+  <data name="cb_department.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;cb_department.Name" xml:space="preserve">
+    <value>cb_department</value>
+  </data>
+  <data name="&gt;&gt;cb_department.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_department.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cb_department.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_ValidDescription.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ValidDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 586</value>
+  </data>
+  <data name="lb_ValidDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="lb_ValidDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lb_ValidDescription.Text" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidDescription.Name" xml:space="preserve">
+    <value>lb_ValidDescription</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidDescription.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidDescription.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_ValidRelate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ValidRelate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 444</value>
+  </data>
+  <data name="lb_ValidRelate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidRelate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="lb_ValidRelate.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lb_ValidRelate.Text" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="lb_ValidRelate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidRelate.Name" xml:space="preserve">
+    <value>lb_ValidRelate</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidRelate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lb_ValidRelate.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="pn_tittleAddProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;lb_ValidRelate.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="txt_IdProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="lb_ValidDocument.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;txt_Description.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="lb_ValidDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 346</value>
   </data>
-  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="lb_ValidDocument.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="lb_ValidIdMission.Text" xml:space="preserve">
-    <value>label1</value>
+  <data name="lb_ValidDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="lb_ValidDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_IdProject.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="lb_ValidDocument.Text" xml:space="preserve">
+    <value>label6</value>
   </data>
-  <data name="lb_description.Text" xml:space="preserve">
-    <value>Description</value>
+  <data name="lb_ValidDocument.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="txt_IdProject.Text" xml:space="preserve">
-    <value>Enter ID mission</value>
+  <data name="&gt;&gt;lb_ValidDocument.Name" xml:space="preserve">
+    <value>lb_ValidDocument</value>
   </data>
-  <data name="&gt;&gt;lb_ValidTittle.Name" xml:space="preserve">
-    <value>lb_ValidTittle</value>
-  </data>
-  <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 18</value>
-  </data>
-  <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 96</value>
-  </data>
-  <data name="&gt;&gt;lb_member.Name" xml:space="preserve">
-    <value>lb_member</value>
-  </data>
-  <data name="lb_Management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidManagement.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_ValidDocument.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bt_save.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lb_ValidDocument.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="lb_newMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="&gt;&gt;lb_ValidDocument.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;lb_member.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lb_ValidManagement.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 245</value>
+  <data name="lb_ValidManagement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 156</value>
   </data>
-  <data name="&gt;&gt;txt_management.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="lb_ValidManagement.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="pn_tittleAddProject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="lb_ValidManagement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
   </data>
   <data name="lb_ValidManagement.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="lb_member.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="lb_ValidManagement.Text" xml:space="preserve">
+    <value>label5</value>
   </data>
-  <data name="&gt;&gt;cbb_status.ZOrder" xml:space="preserve">
+  <data name="lb_ValidManagement.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidManagement.Name" xml:space="preserve">
+    <value>lb_ValidManagement</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidManagement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidManagement.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidManagement.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="bt_exit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="lb_newMission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
-  </data>
-  <data name="txt_Description.Multiline" type="System.Boolean, mscorlib">
+  <data name="lb_ValidTittle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;bt_save.Name" xml:space="preserve">
-    <value>bt_save</value>
+  <data name="lb_ValidTittle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 246</value>
   </data>
-  <data name="&gt;&gt;lb_newMission.Parent" xml:space="preserve">
-    <value>pn_tittleAddProject</value>
+  <data name="lb_ValidTittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
-    <value>bt_exit</value>
+  <data name="lb_ValidTittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="lb_ValidTittle.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lb_ValidTittle.Text" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidTittle.Name" xml:space="preserve">
+    <value>lb_ValidTittle</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidTittle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidTittle.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidTittle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_ValidIdMission.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_ValidIdMission.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 156</value>
+  </data>
+  <data name="lb_ValidIdMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_ValidIdMission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 16</value>
+  </data>
+  <data name="lb_ValidIdMission.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lb_ValidIdMission.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="lb_ValidIdMission.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;lb_ValidIdMission.Name" xml:space="preserve">
     <value>lb_ValidIdMission</value>
   </data>
-  <data name="txt_management.Multiline" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;lb_ValidIdMission.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidIdMission.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_ValidIdMission.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbb_status.Items" xml:space="preserve">
+    <value>TO DO</value>
+  </data>
+  <data name="cbb_status.Items1" xml:space="preserve">
+    <value>IN PROGRESS</value>
+  </data>
+  <data name="cbb_status.Items2" xml:space="preserve">
+    <value>DONE</value>
+  </data>
+  <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 406</value>
+  </data>
+  <data name="cbb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbb_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 24</value>
+  </data>
+  <data name="cbb_status.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;cbb_status.Name" xml:space="preserve">
+    <value>cbb_status</value>
+  </data>
+  <data name="&gt;&gt;cbb_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbb_status.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cbb_status.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txt_relateProject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txt_relateProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 404</value>
+  </data>
+  <data name="txt_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txt_relateProject.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_relateProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 35</value>
+  </data>
+  <data name="txt_relateProject.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="txt_relateProject.Text" xml:space="preserve">
+    <value>Enter related project</value>
+  </data>
+  <data name="&gt;&gt;txt_relateProject.Name" xml:space="preserve">
+    <value>txt_relateProject</value>
+  </data>
+  <data name="&gt;&gt;txt_relateProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_relateProject.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txt_relateProject.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lb_relateProject.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_relateProject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 366</value>
+  </data>
+  <data name="lb_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
+  </data>
+  <data name="lb_relateProject.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lb_relateProject.Text" xml:space="preserve">
+    <value>Related project</value>
+  </data>
+  <data name="&gt;&gt;lb_relateProject.Name" xml:space="preserve">
+    <value>lb_relateProject</value>
+  </data>
+  <data name="&gt;&gt;lb_relateProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_relateProject.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_relateProject.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lb_status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 366</value>
+  </data>
+  <data name="lb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="lb_status.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lb_status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;lb_status.Name" xml:space="preserve">
+    <value>lb_status</value>
+  </data>
+  <data name="&gt;&gt;lb_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_status.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_status.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_document.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txt_document.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 306</value>
+  </data>
+  <data name="txt_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="txt_document.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_document.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 35</value>
+  </data>
+  <data name="txt_document.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="txt_document.Text" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="&gt;&gt;txt_document.Name" xml:space="preserve">
+    <value>txt_document</value>
+  </data>
+  <data name="&gt;&gt;txt_document.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_document.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txt_document.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 498</value>
+  </data>
+  <data name="txt_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txt_Description.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 85</value>
+  </data>
+  <data name="txt_Description.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="txt_Description.Text" xml:space="preserve">
+    <value>Enter desciption about mission</value>
+  </data>
+  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
+    <value>txt_Description</value>
+  </data>
+  <data name="&gt;&gt;txt_Description.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_Description.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txt_Description.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lb_description.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_description.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 458</value>
+  </data>
+  <data name="lb_description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="lb_description.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lb_description.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;lb_description.Name" xml:space="preserve">
+    <value>lb_description</value>
+  </data>
+  <data name="&gt;&gt;lb_description.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_description.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 688</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Name" xml:space="preserve">
+    <value>lb_newMission</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Parent" xml:space="preserve">
+    <value>pn_tittleAddProject</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
+    <value>bt_exit</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Parent" xml:space="preserve">
+    <value>pn_tittleAddProject</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pn_tittleAddProject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pn_tittleAddProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pn_tittleAddProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pn_tittleAddProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 72</value>
+  </data>
+  <data name="pn_tittleAddProject.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pn_tittleAddProject.Name" xml:space="preserve">
+    <value>pn_tittleAddProject</value>
+  </data>
+  <data name="&gt;&gt;pn_tittleAddProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pn_tittleAddProject.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pn_tittleAddProject.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lb_newMission.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_newMission.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="lb_newMission.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="lb_newMission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_newMission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 29</value>
+  </data>
+  <data name="lb_newMission.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lb_newMission.Text" xml:space="preserve">
+    <value>New mission</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Name" xml:space="preserve">
+    <value>lb_newMission</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.Parent" xml:space="preserve">
+    <value>pn_tittleAddProject</value>
+  </data>
+  <data name="&gt;&gt;lb_newMission.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_exit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 7.8pt</value>
+  </data>
+  <data name="bt_exit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>772, 11</value>
+  </data>
+  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 0, 20, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 30</value>
+  </data>
+  <data name="bt_exit.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bt_exit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="bt_exit.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
+    <value>bt_exit</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.Parent" xml:space="preserve">
+    <value>pn_tittleAddProject</value>
+  </data>
+  <data name="&gt;&gt;bt_exit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_cancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt, style=Bold</value>
+  </data>
+  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 611</value>
+  </data>
+  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 42</value>
+  </data>
+  <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
+    <value>bt_cancel</value>
+  </data>
+  <data name="&gt;&gt;bt_cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bt_cancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bt_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt, style=Bold</value>
+  </data>
+  <data name="bt_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 611</value>
+  </data>
+  <data name="bt_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 42</value>
+  </data>
+  <data name="bt_save.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="bt_save.Text" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="&gt;&gt;bt_save.Name" xml:space="preserve">
+    <value>bt_save</value>
+  </data>
+  <data name="&gt;&gt;bt_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bt_save.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 208</value>
+  </data>
+  <data name="txt_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txt_name.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 35</value>
+  </data>
+  <data name="txt_name.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="txt_name.Text" xml:space="preserve">
+    <value>Enter tittle of mission</value>
+  </data>
+  <data name="&gt;&gt;txt_name.Name" xml:space="preserve">
+    <value>txt_name</value>
+  </data>
+  <data name="&gt;&gt;txt_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_name.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;txt_name.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lb_member.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_member.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_member.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 465</value>
+  </data>
+  <data name="lb_member.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_member.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="lb_member.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;lb_member.Name" xml:space="preserve">
+    <value>lb_member</value>
+  </data>
+  <data name="&gt;&gt;lb_member.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_member.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lb_member.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 269</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 22</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 306</value>
+  </data>
+  <data name="dateTimePicker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>632, 309</value>
+  </data>
+  <data name="dateTimePicker2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Name" xml:space="preserve">
+    <value>dateTimePicker2</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lb_document.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lb_document.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 269</value>
+  </data>
+  <data name="lb_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="lb_document.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lb_document.Text" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="&gt;&gt;lb_document.Name" xml:space="preserve">
+    <value>lb_document</value>
+  </data>
+  <data name="&gt;&gt;lb_document.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_document.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;lb_document.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 269</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lb_Tittle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lb_Tittle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
-  <data name="txt_management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 29</value>
-  </data>
-  <data name="lb_ValidManagement.Text" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="bt_save.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;lb_document.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="&gt;&gt;lb_IdProject.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="lb_member.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 372</value>
-  </data>
-  <data name="&gt;&gt;lb_description.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txt_relateProject.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lb_description.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txt_relateProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 323</value>
-  </data>
-  <data name="&gt;&gt;lb_newMission.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lb_member.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;lb_relateProject.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lb_IdProject.Text" xml:space="preserve">
-    <value>ID mission</value>
-  </data>
-  <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 293</value>
-  </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 24</value>
-  </data>
-  <data name="txt_document.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDescription.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txt_relateProject.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lb_document.Text" xml:space="preserve">
-    <value>Document</value>
-  </data>
-  <data name="txt_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 245</value>
-  </data>
-  <data name="lb_ValidDocument.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txt_relateProject.Name" xml:space="preserve">
-    <value>txt_relateProject</value>
-  </data>
-  <data name="&gt;&gt;pn_tittleAddProject.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="lb_ValidDocument.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;txt_name.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lb_relateProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="&gt;&gt;lb_status.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;txt_document.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>674, 550</value>
-  </data>
-  <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 215</value>
-  </data>
-  <data name="pn_tittleAddProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 58</value>
-  </data>
-  <data name="lb_ValidDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 469</value>
-  </data>
-  <data name="dateTimePicker2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 247</value>
-  </data>
-  <data name="&gt;&gt;lb_IdProject.Name" xml:space="preserve">
-    <value>lb_IdProject</value>
-  </data>
   <data name="lb_Tittle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 138</value>
-  </data>
-  <data name="lb_ValidManagement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 125</value>
-  </data>
-  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 366</value>
-  </data>
-  <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="txt_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txt_Description.Text" xml:space="preserve">
-    <value>Enter desciption about mission</value>
-  </data>
-  <data name="lb_ValidRelate.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lb_ValidDescription.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;cbb_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 9</value>
-  </data>
-  <data name="lb_Tittle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lb_Tittle.Name" xml:space="preserve">
-    <value>lb_Tittle</value>
-  </data>
-  <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="lb_relateProject.Text" xml:space="preserve">
-    <value>Related project</value>
-  </data>
-  <data name="txt_name.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_ValidManagement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="txt_IdProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 96</value>
-  </data>
-  <data name="&gt;&gt;lb_Management.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txt_name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDescription.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dateTimePicker2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 20</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="lb_Tittle.Text" xml:space="preserve">
-    <value>Tittle</value>
-  </data>
-  <data name="lb_ValidIdMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="dateTimePicker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;cbb_status.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lb_status.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;lb_relateProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pn_tittleAddProject.Name" xml:space="preserve">
-    <value>pn_tittleAddProject</value>
-  </data>
-  <data name="txt_name.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="bt_save.Text" xml:space="preserve">
-    <value>SAVE</value>
-  </data>
-  <data name="cbb_status.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidIdMission.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_IdProject.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pn_container.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lb_ValidTittle.Text" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="txt_IdProject.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 550</value>
-  </data>
-  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 34</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="lb_ValidRelate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txt_name.Text" xml:space="preserve">
-    <value>Enter tittle of mission</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="lb_ValidManagement.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 215</value>
-  </data>
-  <data name="lb_status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="txt_document.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidManagement.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;bt_cancel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>618, 69</value>
-  </data>
-  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 18</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidManagement.Name" xml:space="preserve">
-    <value>lb_ValidManagement</value>
-  </data>
-  <data name="&gt;&gt;lb_description.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="lb_relateProject.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 18</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lb_ValidTittle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bt_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 34</value>
-  </data>
-  <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 18</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lb_ValidDescription.Text" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;txt_management.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="&gt;&gt;lb_newMission.Name" xml:space="preserve">
-    <value>lb_newMission</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidIdMission.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDescription.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lb_Tittle.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lb_document.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="&gt;&gt;lb_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 18</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 215</value>
-  </data>
-  <data name="bt_exit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 7.8pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormAddMission</value>
-  </data>
-  <data name="&gt;&gt;lb_IdProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_document.Name" xml:space="preserve">
-    <value>lb_document</value>
-  </data>
-  <data name="txt_relateProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="lb_ValidTittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="&gt;&gt;txt_relateProject.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lb_member.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="txt_document.Text" xml:space="preserve">
-    <value>Attachments</value>
-  </data>
-  <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 68</value>
-  </data>
-  <data name="lb_ValidIdMission.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_Management.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidTittle.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lb_member.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txt_Description.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_Tittle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txt_IdProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_ValidDocument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="&gt;&gt;txt_IdProject.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidRelate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="lb_ValidTittle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 197</value>
-  </data>
-  <data name="&gt;&gt;txt_document.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_description.Name" xml:space="preserve">
-    <value>lb_description</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 550</value>
-  </data>
-  <data name="dateTimePicker2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lb_newMission.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 18</value>
-  </data>
-  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 398</value>
-  </data>
-  <data name="lb_ValidRelate.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="txt_management.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;pn_container.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_ValidRelate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="lb_ValidDocument.Text" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidRelate.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_ValidIdMission.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 18</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_ValidIdMission.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;bt_exit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_member.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidManagement.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDocument.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="txt_relateProject.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_Management.Name" xml:space="preserve">
-    <value>lb_Management</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txt_management.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="lb_description.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="bt_exit.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="txt_IdProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="lb_ValidIdMission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 125</value>
-  </data>
-  <data name="txt_management.Text" xml:space="preserve">
-    <value>Enter management staff</value>
-  </data>
-  <data name="lb_description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="&gt;&gt;pn_container.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidIdMission.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txt_relateProject.Text" xml:space="preserve">
-    <value>Enter related project</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>From</value>
-  </data>
-  <data name="&gt;&gt;lb_member.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;txt_IdProject.Name" xml:space="preserve">
-    <value>txt_IdProject</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDocument.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_ValidManagement.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lb_document.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_ValidTittle.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;lb_description.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Name" xml:space="preserve">
-    <value>dateTimePicker2</value>
-  </data>
-  <data name="&gt;&gt;lb_Tittle.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="&gt;&gt;txt_name.Name" xml:space="preserve">
-    <value>txt_name</value>
-  </data>
-  <data name="lb_ValidDocument.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 277</value>
-  </data>
-  <data name="bt_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="txt_IdProject.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="lb_IdProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 68</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_status.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lb_status.Name" xml:space="preserve">
-    <value>lb_status</value>
-  </data>
-  <data name="lb_newMission.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="pn_tittleAddProject.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lb_document.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lb_Management.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;pn_tittleAddProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_exit.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 166</value>
-  </data>
-  <data name="bt_exit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;txt_document.Name" xml:space="preserve">
-    <value>txt_document</value>
-  </data>
-  <data name="lb_IdProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;lb_IdProject.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txt_document.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="bt_exit.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="txt_management.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="txt_name.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lb_Management.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;txt_management.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 18</value>
-  </data>
-  <data name="lb_ValidRelate.Text" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 293</value>
-  </data>
-  <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 325</value>
-  </data>
-  <data name="&gt;&gt;bt_exit.Parent" xml:space="preserve">
-    <value>pn_tittleAddProject</value>
-  </data>
-  <data name="lb_IdProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidTittle.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;txt_document.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lb_Tittle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txt_Description.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>618, 29</value>
-  </data>
-  <data name="&gt;&gt;bt_save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_cancel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;lb_relateProject.Name" xml:space="preserve">
-    <value>lb_relateProject</value>
-  </data>
-  <data name="lb_ValidRelate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 355</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="txt_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txt_relateProject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_document.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lb_relateProject.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cbb_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 21</value>
-  </data>
-  <data name="&gt;&gt;txt_management.Name" xml:space="preserve">
-    <value>txt_management</value>
-  </data>
-  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
-    <value>bt_cancel</value>
-  </data>
-  <data name="pn_container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lb_document.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
-    <value>dateTimePicker1</value>
-  </data>
-  <data name="lb_ValidDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDocument.Name" xml:space="preserve">
-    <value>lb_ValidDocument</value>
-  </data>
-  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
-    <value>txt_Description</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
-  </data>
-  <data name="&gt;&gt;pn_tittleAddProject.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pn_tittleAddProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="lb_newMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="lb_ValidDocument.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lb_Management.Text" xml:space="preserve">
-    <value> Management staff</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_newMission.Text" xml:space="preserve">
-    <value>New mission</value>
-  </data>
-  <data name="txt_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 29</value>
-  </data>
-  <data name="bt_save.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="lb_status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_relateProject.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lb_newMission.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cbb_status.Name" xml:space="preserve">
-    <value>cbb_status</value>
-  </data>
-  <data name="lb_document.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_ValidDescription.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDescription.Name" xml:space="preserve">
-    <value>lb_ValidDescription</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidDocument.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="bt_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 489</value>
-  </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_relateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="dateTimePicker2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;lb_Management.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lb_Management.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
+    <value>26, 172</value>
   </data>
   <data name="lb_Tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 22</value>
   </data>
-  <data name="&gt;&gt;txt_name.Parent" xml:space="preserve">
-    <value>pn_container</value>
+  <data name="lb_Tittle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="txt_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 29</value>
+  <data name="lb_Tittle.Text" xml:space="preserve">
+    <value>Tittle</value>
   </data>
-  <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 20</value>
+  <data name="&gt;&gt;lb_Tittle.Name" xml:space="preserve">
+    <value>lb_Tittle</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidTittle.Type" xml:space="preserve">
+  <data name="&gt;&gt;lb_Tittle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_member.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 18</value>
-  </data>
-  <data name="&gt;&gt;lb_ValidRelate.Name" xml:space="preserve">
-    <value>lb_ValidRelate</value>
-  </data>
-  <data name="txt_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 29</value>
-  </data>
-  <data name="lb_description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;txt_IdProject.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_Tittle.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="&gt;&gt;txt_Description.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;lb_Tittle.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="bt_cancel.Text" xml:space="preserve">
-    <value>CANCEL</value>
+  <data name="pn_container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 688</value>
+  </data>
+  <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
+    <value>pn_container</value>
+  </data>
+  <data name="&gt;&gt;pn_container.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pn_container.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pn_container.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>120, 120</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>842, 688</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAddMission</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

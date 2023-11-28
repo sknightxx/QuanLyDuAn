@@ -105,5 +105,22 @@ namespace BCMP.Forms.Management
             }
             cbb_role.DataSource = list;
         }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            string name = txt_name.Text;
+            string email = txt_Email.Text;
+            string phone = txt_phone.Text;
+
+            if (EmployeeDAO.Instance.UpdateEmployeeByUserId(email, currEmployee.Password, phone, currEmployee.UserId, currEmployee.DepartmentId, currEmployee.RoleId, currEmployee.IsDeactivated, name, currEmployee.TypeEmployee))
+            {
+                MessageBox.Show("Update your infomation successfully");
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Update your infomation failed");
+
+            }
+        }
     }
 }

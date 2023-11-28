@@ -216,6 +216,12 @@
     <Compile Include="Forms\Management\FormAddMission.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Management\FormAddUserInProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormAddUserInProject.Designer.cs">
+      <DependentUpon>FormAddUserInProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Management\FormDepartmentData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,6 +427,9 @@
     <EmbeddedResource Include="Forms\Management\FormAddUser.vi.resx">
       <DependentUpon>FormAddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUserInProject.resx">
+      <DependentUpon>FormAddUserInProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
       <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </EmbeddedResource>
@@ -510,6 +519,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\RemindForm.vi.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\DetailProjectUser.resx">
+      <DependentUpon>DetailProjectUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
       <DependentUpon>FormHomeUser.cs</DependentUpon>

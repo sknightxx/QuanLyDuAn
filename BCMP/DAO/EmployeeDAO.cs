@@ -136,5 +136,44 @@ namespace BCMP.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { userId, newpassword });
             return result > 0;
         }
+
+        public List<Employee> GetAllEmployeeNotInProject(string fullname, int departmentId)
+        {
+            DataTable data;
+            string query = "USP_GetListEmployeeNotInProject @projectId , @departmentId";
+            if(departmentId != 0)
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname,departmentId });
+            } else
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname,0 });
+            }
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
+        }
+
+        public List<Employee> GetAllEmployeeInProject(string fullname, int departmentId)
+        {
+            DataTable data;
+            string query = "USP_GetListEmployeeInProject @projectId , @departmentId";
+            if (departmentId != 0)
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname, departmentId });
+            }
+            else
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname, 0 });
+            }
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
+        }
     }
 }
