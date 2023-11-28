@@ -124,6 +124,9 @@
   <data name="&gt;&gt;bt_publicData.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;bt_search.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
   <data name="&gt;&gt;pn_containerDocument.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -140,8 +143,11 @@
   <data name="bt_print.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>pn_search</value>
+  <data name="bt_print.Location" type="System.Drawing.Point, System.Drawing">
+    <value>840, 68</value>
+  </data>
+  <data name="bt_download.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 30</value>
   </data>
   <data name="pn_background.Size" type="System.Drawing.Size, System.Drawing">
     <value>906, 357</value>
@@ -159,8 +165,8 @@
   <data name="txt_search.Text" xml:space="preserve">
     <value>Search for document</value>
   </data>
-  <data name="&gt;&gt;bt_download.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="bt_delete.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
@@ -168,11 +174,11 @@
   <data name="bt_publicData.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 31</value>
   </data>
-  <data name="&gt;&gt;bt_print.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>pn_search</value>
   </data>
-  <data name="bt_publicData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 3</value>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>pn_background</value>
   </data>
   <data name="bt_departmentData.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -180,8 +186,8 @@
   <data name="bt_print.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 30</value>
   </data>
-  <data name="&gt;&gt;bt_departmentData.Parent" xml:space="preserve">
-    <value>pn_tittle</value>
+  <data name="bt_publicData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="bt_download.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -192,8 +198,8 @@
   <data name="bt_delete.Location" type="System.Drawing.Point, System.Drawing">
     <value>792, 68</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>pn_background</value>
+  <data name="pn_containerDocument.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;bt_download.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
@@ -234,8 +240,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormDocument</value>
   </data>
-  <data name="&gt;&gt;bt_publicData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bt_publicData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 3</value>
   </data>
   <data name="bt_download.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
@@ -261,8 +267,14 @@
   <data name="&gt;&gt;txt_search.Name" xml:space="preserve">
     <value>txt_search</value>
   </data>
+  <data name="&gt;&gt;bt_print.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;pn_tittle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bt_search.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;lb_file.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -279,9 +291,6 @@
   <data name="bt_upload.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pn_tittle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <data name="bt_download.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -291,8 +300,8 @@
   <data name="bt_publicData.Text" xml:space="preserve">
     <value>Public Data</value>
   </data>
-  <data name="&gt;&gt;bt_search.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  <data name="pn_tittle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="bt_delete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -306,17 +315,14 @@
   <data name="pn_search.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_print.Location" type="System.Drawing.Point, System.Drawing">
-    <value>840, 68</value>
-  </data>
   <data name="&gt;&gt;bt_delete.Parent" xml:space="preserve">
     <value>pn_tittle</value>
   </data>
   <data name="pn_background.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;pn_background.Name" xml:space="preserve">
-    <value>pn_background</value>
+  <data name="bt_download.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormDocument</value>
@@ -327,14 +333,14 @@
   <data name="bt_departmentData.Location" type="System.Drawing.Point, System.Drawing">
     <value>156, 3</value>
   </data>
+  <data name="&gt;&gt;bt_search.Name" xml:space="preserve">
+    <value>bt_search</value>
+  </data>
   <data name="lb_file.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="pn_tittle.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
-  </data>
-  <data name="bt_publicData.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -344,9 +350,6 @@
   </data>
   <data name="&gt;&gt;pn_containerDocument.Name" xml:space="preserve">
     <value>pn_containerDocument</value>
-  </data>
-  <data name="bt_download.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;bt_search.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -369,8 +372,8 @@
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="bt_download.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 30</value>
+  <data name="lb_file.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -381,14 +384,11 @@
   <data name="txt_search.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pn_containerDocument.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="pn_tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 110</value>
   </data>
   <data name="bt_upload.Location" type="System.Drawing.Point, System.Drawing">
     <value>696, 68</value>
-  </data>
-  <data name="&gt;&gt;pn_search.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;bt_delete.Name" xml:space="preserve">
     <value>bt_delete</value>
@@ -401,6 +401,9 @@
   </data>
   <data name="&gt;&gt;pn_search.Parent" xml:space="preserve">
     <value>pn_tittle</value>
+  </data>
+  <data name="lb_file.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 25</value>
   </data>
   <data name="bt_print.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
@@ -426,17 +429,14 @@
   <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt</value>
   </data>
-  <data name="pn_tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 110</value>
-  </data>
   <data name="&gt;&gt;lb_file.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;bt_delete.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="bt_delete.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;bt_print.Name" xml:space="preserve">
     <value>bt_print</value>
@@ -452,6 +452,9 @@
   </data>
   <data name="pn_background.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="bt_delete.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="pn_search.Size" type="System.Drawing.Size, System.Drawing">
     <value>397, 30</value>
@@ -498,8 +501,8 @@
   <data name="pn_containerDocument.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="lb_file.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;bt_download.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="bt_upload.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -507,8 +510,8 @@
   <data name="pn_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 68</value>
   </data>
-  <data name="&gt;&gt;bt_print.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  <data name="&gt;&gt;bt_departmentData.Parent" xml:space="preserve">
+    <value>pn_tittle</value>
   </data>
   <data name="bt_departmentData.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
@@ -516,14 +519,17 @@
   <data name="pn_search.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="&gt;&gt;bt_upload.Parent" xml:space="preserve">
-    <value>pn_tittle</value>
+  <data name="&gt;&gt;bt_departmentData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bt_print.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
   <data name="bt_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;bt_publicData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lb_file.Text" xml:space="preserve">
     <value>File Management</value>
@@ -537,35 +543,32 @@
   <data name="lb_file.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;bt_search.Name" xml:space="preserve">
-    <value>bt_search</value>
+  <data name="&gt;&gt;bt_print.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="&gt;&gt;lb_file.Parent" xml:space="preserve">
     <value>pn_tittle</value>
   </data>
-  <data name="bt_search.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;pn_search.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="bt_delete.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;pn_background.Name" xml:space="preserve">
+    <value>pn_background</value>
   </data>
   <data name="bt_print.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="bt_delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 30</value>
-  </data>
   <data name="&gt;&gt;pn_background.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bt_departmentData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bt_upload.Parent" xml:space="preserve">
+    <value>pn_tittle</value>
   </data>
   <data name="bt_search.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="bt_download.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="bt_download.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;pn_tittle.Name" xml:space="preserve">
     <value>pn_tittle</value>
@@ -573,8 +576,8 @@
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_file.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 25</value>
+  <data name="bt_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 30</value>
   </data>
   <data name="bt_departmentData.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 31</value>
@@ -586,6 +589,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>vi</value>
   </metadata>
 </root>

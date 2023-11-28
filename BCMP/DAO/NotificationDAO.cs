@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 namespace BCMP.DAO
 {
@@ -31,6 +32,13 @@ namespace BCMP.DAO
                 list.Add(new Notification(row));
             }
             return list;
+        }
+
+        public bool InsertNotification(string description, string title, DateTime createdate, int missionId, int userId)
+        {
+            String query = "USP_InsertNotification @description , @title , @createDate , @isRead , @missionId , userId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { description, title, createdate, 0, missionId, userId });
+            return result > 0;
         }
     }
 }

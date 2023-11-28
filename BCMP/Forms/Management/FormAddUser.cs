@@ -43,6 +43,7 @@ namespace BCMP.Forms
             LoadDataRole();
             currEmployee = null;
             F = f;
+            cbType.Text = "Internal";
         }
 
         public FormAddUser(Employee currEmployee)
@@ -64,13 +65,22 @@ namespace BCMP.Forms
             lb_confirmPassword.Visible = false;
             txt_IdStaff.Enabled = false;
             txt_IdStaff.Text = currEmployee.UserId.ToString();
+            txt_name.Text = currEmployee.FullName.ToString();
             txt_password.Text = currEmployee.Password.ToString();
             txt_Email.Text = currEmployee.Email.ToString();
             txt_phone.Text = currEmployee.PhoneNumber.ToString();
             cb_Role.Text = RoleDAO.Instance.GetById(currEmployee.RoleId).Title.ToString();
             cb_Department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
+            if (currEmployee.TypeEmployee)
+            {
+                cbType.Text = "Internal";
+            } else
+            {
+                cbType.Text = "Outsourcing";
+            }
             txt_Email_Leave(this, new EventArgs());
             txt_phone_Leave(this, new EventArgs());
+            txt_name_Leave(this, new EventArgs());
 
         }
 
@@ -349,6 +359,7 @@ namespace BCMP.Forms
                 String email = txt_Email.Text.ToString();
                 String name = txt_name.Text.ToString();
                 String phone = txt_phone.Text.ToString();
+                bool typeEmployee = true;
                 int departmentid = 0;
                 int roleid = 0;
                 foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
@@ -366,7 +377,12 @@ namespace BCMP.Forms
                         roleid = item.RoleId;
                     }
                 }
-                if (EmployeeService.Instance.InsertEmployeeVaildate(email, password, phone, userid, departmentid, roleid))
+
+                if (!cbType.Text.Equals("Internal"))
+                {
+                    typeEmployee = false;
+                }
+                if (EmployeeService.Instance.InsertEmployeeVaildate(email, password, phone, userid, departmentid, roleid,name, typeEmployee))
                 {
                     MessageBox.Show("Add employee successfully");
                     // insertEmployee(this, new EventArgs());
@@ -394,6 +410,7 @@ namespace BCMP.Forms
                 String email = txt_Email.Text.ToString();
                 String name = txt_name.Text.ToString();
                 String phone = txt_phone.Text.ToString();
+                bool typeEmployee = true;
                 int departmentid = 0;
                 int roleid = 0;
                 foreach (Department item in DepartmentService.Instance.GetAllListDepartment())
@@ -411,7 +428,11 @@ namespace BCMP.Forms
                         roleid = item.RoleId;
                     }
                 }
-                if (EmployeeService.Instance.UpdateEmployeeByManager(email, password, phone, userid, departmentid, roleid,currEmployee.IsDeactivated))
+                if(!cbType.Text.Equals("Internal"))
+                {
+                    typeEmployee = false;
+                }
+                if (EmployeeService.Instance.UpdateEmployeeByManager(email, password, phone, userid, departmentid, roleid,currEmployee.IsDeactivated,name,typeEmployee))
                 {
                     MessageBox.Show("Update employee successfully");
                     updateEmployee(this, new EventArgs());

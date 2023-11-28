@@ -49,6 +49,18 @@ namespace BCMP.DAO
             return list;
         }
 
+        public List<Employee> GetAllEmployeeBySearch(string fullname)
+        {
+            string query = "USP_SearchEmployee @fullname";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query,new object[] {fullname});
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
+        }
+
         public Employee GetById(string userid)
         {
             Employee emp = null;
@@ -61,10 +73,15 @@ namespace BCMP.DAO
             return emp;
         }
 
-        public bool InsertEmployee(string email, string password,string phonenumber, string userid, int departmentid, int roleid)
+        public bool InsertEmployee(string email, string password,string phonenumber, string userid, int departmentid, int roleid, string fullname , bool typeEmployee)
         {
-            String query = "USP_InsertEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId ";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, 0, phonenumber, userid, departmentid, roleid });
+            int type = 0;
+            if (typeEmployee)
+            {
+                type = 1;
+            }
+            String query = "USP_InsertEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId , @fullname , @typeEmployee ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, 0, phonenumber, userid, departmentid, roleid , fullname , type });
             bool res = result > 0;
             return result > 0;
         }
@@ -76,7 +93,7 @@ namespace BCMP.DAO
             return result > 0;
         }
 
-        public bool UpdateEmployeeByUserId(string email, string password, string phonenumber, string userid, int departmentid, int roleid, bool isDeativated)
+        public bool UpdateEmployeeByUserId(string email, string password, string phonenumber, string userid, int departmentid, int roleid, bool isDeativated, string fullname , bool typeEmployee)
         {
             int deactivated = 0;
             if (isDeativated == false)
@@ -87,8 +104,13 @@ namespace BCMP.DAO
             {
                 deactivated = 1;
             }
-            String query = "USP_UpdateEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, deactivated, phonenumber, userid, departmentid, roleid });
+            int type = 0;
+            if (typeEmployee)
+            {
+                type = 1;
+            }
+            String query = "USP_UpdateEmployee @email , @password , @isDeactivated , @phoneNumber , @userId , @departmentId , @roleId , @fullname , @typeEmployee";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { email, password, deactivated, phonenumber, userid, departmentid, roleid , fullname , type });
             return result > 0;
         }
         
@@ -113,6 +135,45 @@ namespace BCMP.DAO
             String query = "USP_UpdatePasswordEmployee @userId , @newpassword ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { userId, newpassword });
             return result > 0;
+        }
+
+        public List<Employee> GetAllEmployeeNotInProject(string fullname, int departmentId)
+        {
+            DataTable data;
+            string query = "USP_GetListEmployeeNotInProject @projectId , @departmentId";
+            if(departmentId != 0)
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname,departmentId });
+            } else
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname,0 });
+            }
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
+        }
+
+        public List<Employee> GetAllEmployeeInProject(string fullname, int departmentId)
+        {
+            DataTable data;
+            string query = "USP_GetListEmployeeInProject @projectId , @departmentId";
+            if (departmentId != 0)
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname, departmentId });
+            }
+            else
+            {
+                data = DataProvider.Instance.ExcuteQuery(query, new object[] { fullname, 0 });
+            }
+            List<Employee> list = new List<Employee>();
+            foreach (DataRow row in data.Rows)
+            {
+                list.Add(new Employee(row));
+            }
+            return list;
         }
     }
 }

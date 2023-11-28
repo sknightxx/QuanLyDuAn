@@ -173,6 +173,12 @@
   <data name="bt_cancelAddUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="cbType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 346</value>
+  </data>
+  <data name="cbType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
+  </data>
   <data name="lb_Valid_UserId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -225,9 +231,6 @@
     <value>NoControl</value>
   </data>
   <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
 </root>

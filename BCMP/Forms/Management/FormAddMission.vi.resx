@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 18</value>
+    <value>154, 22</value>
   </data>
   <data name="lb_Management.Text" xml:space="preserve">
     <value>Nhân viên quản lý</value>
@@ -150,7 +150,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
+    <value>58, 22</value>
   </data>
   <data name="lb_relateProject.Text" xml:space="preserve">
     <value>Dự án</value>
@@ -159,7 +159,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
+    <value>92, 22</value>
   </data>
   <data name="lb_status.Text" xml:space="preserve">
     <value>Trạng thái</value>
@@ -168,7 +168,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+    <value>54, 22</value>
   </data>
   <data name="lb_description.Text" xml:space="preserve">
     <value>Mô tả</value>
@@ -177,22 +177,31 @@
     <value>NoControl</value>
   </data>
   <data name="lb_newMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 24</value>
+    <value>172, 29</value>
   </data>
   <data name="lb_newMission.Text" xml:space="preserve">
     <value>Nhiệm vụ mới</value>
   </data>
+  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
   <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="bt_save.Text" xml:space="preserve">
+    <value>Lưu</value>
   </data>
   <data name="lb_IdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 18</value>
+    <value>111, 22</value>
   </data>
   <data name="lb_IdProject.Text" xml:space="preserve">
     <value>Mã nhiệm vụ</value>
@@ -204,7 +213,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 18</value>
+    <value>80, 22</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Tới ngày</value>
@@ -213,7 +222,7 @@
     <value>NoControl</value>
   </data>
   <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 18</value>
+    <value>69, 22</value>
   </data>
   <data name="lb_document.Text" xml:space="preserve">
     <value>Tài liệu</value>
@@ -222,7 +231,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
+    <value>76, 22</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Từ ngày</value>
@@ -231,15 +240,9 @@
     <value>NoControl</value>
   </data>
   <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 18</value>
+    <value>71, 22</value>
   </data>
   <data name="lb_Tittle.Text" xml:space="preserve">
     <value>Tiêu đề</value>
-  </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

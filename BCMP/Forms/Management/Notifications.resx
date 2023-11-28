@@ -342,6 +342,9 @@
   <data name="&gt;&gt;pn_containerInformation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>vi</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -351,9 +354,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>600, 500</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
@@ -362,12 +362,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Notification</value>
-  </data>
-  <data name="&gt;&gt;notificationBindingSource.Name" xml:space="preserve">
-    <value>notificationBindingSource</value>
-  </data>
-  <data name="&gt;&gt;notificationBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;descriptionDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>descriptionDataGridViewTextBoxColumn</value>
@@ -410,6 +404,12 @@
   </data>
   <data name="&gt;&gt;OpenMission.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;notificationBindingSource.Name" xml:space="preserve">
+    <value>notificationBindingSource</value>
+  </data>
+  <data name="&gt;&gt;notificationBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Notifications</value>

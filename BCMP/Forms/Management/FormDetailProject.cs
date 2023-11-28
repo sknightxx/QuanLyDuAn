@@ -19,6 +19,13 @@ namespace BCMP.Forms.Management
     {
         private Project currentProject;
 
+        private int departmentSelectd = 0;
+
+        private Notifications f;
+
+        private List<Employee> listEmp;
+        private List<Department> listDepartment;
+
         private List<Mission> missionsList;
 
         private event EventHandler updateProject;
@@ -31,13 +38,35 @@ namespace BCMP.Forms.Management
 
         public Project CurrentProject { get => currentProject; set => currentProject = value; }
 
+        public FormDetailProject(Project currentProject, Notifications F)
+        {
+            InitializeComponent();
+            CurrentProject = currentProject;
+            LoadCurrentProject();
+            LoadDataListMission();
+            LoadListDepartment();
+
+            this.f = F;
+            if (f.CurrEmp.RoleId == 4)
+            {
+                bt_CreateEmployee.Visible = false;
+                bt_CreateMission.Visible = false;
+                bt_save.Visible = false;
+            }
+            cb_Department.DataSource = listDepartment;
+            LoadDataEmployeeInProject();
+        }
+
         public FormDetailProject(Project currentProject)
         {
             InitializeComponent();
             CurrentProject = currentProject;
             LoadCurrentProject();
             LoadDataListMission();
+            LoadListDepartment();
+            LoadDataEmployeeInProject();
         }
+
 
         private void bt_exit_Click(object sender, EventArgs e)
         {
@@ -126,7 +155,7 @@ namespace BCMP.Forms.Management
 
         }
 
-        private void LoadDataListMission()
+        public void LoadDataListMission()
         {
             if(currentProject != null)
             {
@@ -142,11 +171,85 @@ namespace BCMP.Forms.Management
                 Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMissionList.Rows[e.RowIndex].Cells[1].Value.ToString()));
                 if(mission != null)
                 {
-                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission,this);
                     DetailMissionForm.Show();
                 }
 
             }
+        }
+
+        private void bt_CreateMission_Click(object sender, EventArgs e)
+        {
+            FormAddMission formAddMission = new FormAddMission(this);
+            formAddMission.Show();
+        }
+
+        private void bt_CreateEmployee_Click(object sender, EventArgs e)
+        {
+            FormAddUserInProject formAddUserInProject = new FormAddUserInProject(this);
+            formAddUserInProject.Show();
+        }
+
+        public void LoadDataEmployeeInProject()
+        {
+            if (CurrentProject != null)
+            {
+                listEmp = EmployeeDAO.Instance.GetAllEmployeeInProject(CurrentProject.ProjectId, departmentSelectd);
+                dtgv_listEmp.DataSource = listEmp;
+            }
+        }
+
+        private void dtgv_listEmp_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (dtgv_listEmp.Rows.Count > 0)
+            {
+                // Vòng lặp qua tất cả các dòng
+                foreach (DataGridViewRow row in dtgv_listEmp.Rows)
+                {
+                    // Xác định chỉ mục của cột thứ 3
+                    int columnIndex = 9; // Cột thứ 3 (chỉ số cột bắt đầu từ 0)
+
+                    // Kiểm tra xem ô có tồn tại không
+                    if (row.Cells.Count > columnIndex)
+                    {
+                        // Thực hiện chỉnh sửa giá trị của ô
+                        row.Cells[columnIndex].Value = DepartmentDAO.Instance.GetDepartmentById(int.Parse(row.Cells[8].Value.ToString())).Name;
+                    }
+                    row.Cells[5].Value = RoleDAO.Instance.GetById(int.Parse(row.Cells[4].Value.ToString())).Title;
+                    if ((bool)row.Cells[6].Value)
+                    {
+                        row.Cells[7].Value = "Internal";
+                    }
+                    else
+                    {
+                        row.Cells[7].Value = "Outsourcing";
+                    }
+
+
+                }
+            }
+        }
+
+        private void cb_Department_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_Department.Focus())
+            {
+                departmentSelectd = ((Department)cb_Department.SelectedItem).DepartmentId;
+                LoadDataEmployeeInProject();
+            }
+        }
+
+        private void bt_default_Click(object sender, EventArgs e)
+        {
+            departmentSelectd = 0;
+            LoadDataEmployeeInProject();
+        }
+
+        private void LoadListDepartment()
+        {
+            listDepartment = DepartmentDAO.Instance.GetAllDepartmentInProject(CurrentProject.ProjectId);
+            cb_Department.DataSource = listDepartment;
+            cb_Department.DisplayMember = "Name";
         }
     }
 }

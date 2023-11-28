@@ -202,7 +202,7 @@
     <value>Century Gothic, 10.2pt</value>
   </data>
   <data name="&gt;&gt;lb_Valid_UserId.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="lb_IdStaff.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -381,6 +381,9 @@
   <data name="cb_Department.Location" type="System.Drawing.Point, System.Drawing">
     <value>308, 263</value>
   </data>
+  <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
   <data name="pn_containerFormAddUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -447,6 +450,9 @@
   <data name="lb_phone.Text" xml:space="preserve">
     <value>Phone</value>
   </data>
+  <data name="pn_tittleFormAddUser.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="&gt;&gt;txt_phone.Parent" xml:space="preserve">
     <value>pn_containerFormAddUser</value>
   </data>
@@ -464,6 +470,9 @@
   </data>
   <data name="txt_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
     <value>307, 76</value>
+  </data>
+  <data name="&gt;&gt;cbType.Name" xml:space="preserve">
+    <value>cbType</value>
   </data>
   <data name="&gt;&gt;txt_IdStaff.Parent" xml:space="preserve">
     <value>pn_containerFormAddUser</value>
@@ -537,6 +546,9 @@
   <data name="&gt;&gt;bt_cancelAddUser.Name" xml:space="preserve">
     <value>bt_cancelAddUser</value>
   </data>
+  <data name="cbType.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
   <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
     <value>166, 126</value>
   </data>
@@ -549,6 +561,9 @@
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="cbType.Items" xml:space="preserve">
+    <value>Internal</value>
+  </data>
   <data name="&gt;&gt;lb_password.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -560,6 +575,9 @@
   </data>
   <data name="lb_outsource.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;cbType.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lb_Email.ZOrder" xml:space="preserve">
     <value>28</value>
@@ -654,6 +672,9 @@
   <data name="lb_Valid_UserId.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 85</value>
   </data>
+  <data name="&gt;&gt;cbType.Parent" xml:space="preserve">
+    <value>pn_containerFormAddUser</value>
+  </data>
   <data name="lb_ValidFullname.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 179</value>
   </data>
@@ -705,6 +726,9 @@
   <data name="lb_placeOfBirth.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
+  <data name="cbType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 432</value>
+  </data>
   <data name="&gt;&gt;lb_ValidEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -714,14 +738,14 @@
   <data name="&gt;&gt;lb_ValidFullname.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pn_tittleFormAddUser.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
+    <value>pn_containerFormAddUser</value>
   </data>
   <data name="txt_IdStaff.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txt_IdStaff.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bt_saveAddUser.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="lb_ValidPassword.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -786,11 +810,11 @@
   <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 27</value>
   </data>
-  <data name="&gt;&gt;pn_containerFormAddUser.Name" xml:space="preserve">
-    <value>pn_containerFormAddUser</value>
-  </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txt_name.ZOrder" xml:space="preserve">
     <value>26</value>
@@ -803,9 +827,6 @@
   </data>
   <data name="bt_cancelAddUser.Text" xml:space="preserve">
     <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;bt_saveAddUser.ZOrder" xml:space="preserve">
-    <value>21</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 27</value>
@@ -870,8 +891,8 @@
   <data name="pn_containerFormAddUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>674, 550</value>
   </data>
-  <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="&gt;&gt;pn_containerFormAddUser.Name" xml:space="preserve">
+    <value>pn_containerFormAddUser</value>
   </data>
   <data name="&gt;&gt;lb_Valid_UserId.Name" xml:space="preserve">
     <value>lb_Valid_UserId</value>
@@ -1047,8 +1068,8 @@
   <data name="&gt;&gt;lb_placeOfBirth.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
-    <value>pn_containerFormAddUser</value>
+  <data name="&gt;&gt;txt_IdStaff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pn_containerFormAddUser.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1067,6 +1088,9 @@
   </data>
   <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="cbType.Items1" xml:space="preserve">
+    <value>Outsourcing</value>
   </data>
   <data name="&gt;&gt;lb_confirmPassword.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1106,6 +1130,9 @@
   </data>
   <data name="lb_department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
+  </data>
+  <data name="cbType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
   <data name="cb_Department.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 21</value>

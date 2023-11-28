@@ -20,9 +20,9 @@ namespace BCMP.Service
 
         private EmployeeService() { }
 
-        public bool InsertEmployeeVaildate(string email, string password,string phonenumber, string userid, int departmentid, int roleid)
+        public bool InsertEmployeeVaildate(string email, string password,string phonenumber, string userid, int departmentid, int roleid, string fullname , bool typeEmployee)
         {
-            if(EmployeeDAO.Instance.InsertEmployee(email, password, phonenumber, userid, departmentid, roleid))
+            if(EmployeeDAO.Instance.InsertEmployee(email, password, phonenumber, userid, departmentid, roleid,fullname,typeEmployee))
             {
                 return true;
             }
@@ -39,9 +39,9 @@ namespace BCMP.Service
             return false;
         }
 
-        public bool UpdateEmployeeByManager(string email, string password, string phonenumber, string userid, int departmentid, int roleid, bool isDeativated)
+        public bool UpdateEmployeeByManager(string email, string password, string phonenumber, string userid, int departmentid, int roleid, bool isDeativated,string fullname,bool typeEmployee)
         {
-            if (EmployeeDAO.Instance.UpdateEmployeeByUserId(email, password, phonenumber, userid, departmentid, roleid, isDeativated))
+            if (EmployeeDAO.Instance.UpdateEmployeeByUserId(email, password, phonenumber, userid, departmentid, roleid, isDeativated,fullname,typeEmployee))
             {
                 return true;
             }

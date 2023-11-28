@@ -143,8 +143,8 @@
   <data name="txt_IdProject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lb_IdProject.Text" xml:space="preserve">
-    <value>ID project</value>
+  <data name="bt_save.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;dtpkPlannedEnd.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -180,9 +180,6 @@
   <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
     <value>618, 95</value>
   </data>
-  <data name="lb_department.Text" xml:space="preserve">
-    <value>Department</value>
-  </data>
   <data name="lb_newProject.Text" xml:space="preserve">
     <value>New project</value>
   </data>
@@ -201,14 +198,14 @@
   <data name="&gt;&gt;lb_description.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="dtpkPlannedStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 20</value>
   </data>
   <data name="lb_ValidNameProject.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
+  </data>
+  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 350</value>
   </data>
   <data name="&gt;&gt;cbb_department.Name" xml:space="preserve">
     <value>cbb_department</value>
@@ -243,14 +240,17 @@
   <data name="&gt;&gt;lb_member.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;lb_department.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 489</value>
   </data>
   <data name="lb_ValidDesciption.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 447</value>
   </data>
-  <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;dtpkPlannedStart.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -309,8 +309,8 @@
   <data name="dtpkPlannedStart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="bt_save.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="lb_newProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 24</value>
@@ -345,8 +345,8 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="lb_IdProject.Text" xml:space="preserve">
+    <value>ID project</value>
   </data>
   <data name="lb_NameProject.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
@@ -372,9 +372,6 @@
   <data name="lb_IdProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 489</value>
-  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -383,6 +380,9 @@
   </data>
   <data name="&gt;&gt;lb_member.Name" xml:space="preserve">
     <value>lb_member</value>
+  </data>
+  <data name="bt_save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;bt_cancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -416,9 +416,6 @@
   </data>
   <data name="txt_nameProject.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
   </data>
   <data name="lb_NameProject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -495,9 +492,6 @@
   <data name="lb_description.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>pn_containerAddProject</value>
-  </data>
   <data name="&gt;&gt;lb_ValidNameProject.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -543,8 +537,8 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>674, 550</value>
   </data>
-  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 350</value>
+  <data name="&gt;&gt;cbb_department.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="bt_cancel.Text" xml:space="preserve">
     <value>CANCEL</value>
@@ -639,8 +633,8 @@
   <data name="lb_ValidDesciption.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;lb_NameProject.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_save.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -666,11 +660,11 @@
   <data name="&gt;&gt;lb_ValidIdProject.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 233</value>
+  <data name="lb_NameProject.Text" xml:space="preserve">
+    <value>Name of project</value>
   </data>
-  <data name="&gt;&gt;lb_department.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pn_containerAddProject</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>From</value>
@@ -705,14 +699,17 @@
   <data name="lb_ValidNameProject.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="txt_nameProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="bt_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
     <value>bt_cancel</value>
   </data>
-  <data name="txt_IdProject.Text" xml:space="preserve">
-    <value>Enter ID project</value>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lb_IdProject.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt</value>
@@ -720,8 +717,8 @@
   <data name="txt_IdProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 96</value>
   </data>
-  <data name="&gt;&gt;cbb_department.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="txt_IdProject.Text" xml:space="preserve">
+    <value>Enter ID project</value>
   </data>
   <data name="&gt;&gt;lb_IdProject.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -753,8 +750,8 @@
   <data name="&gt;&gt;bt_save.Name" xml:space="preserve">
     <value>bt_save</value>
   </data>
-  <data name="bt_save.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt, style=Bold</value>
+  <data name="lb_department.Text" xml:space="preserve">
+    <value>Department</value>
   </data>
   <data name="lb_newProject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -777,17 +774,14 @@
   <data name="dtpkPlannedEnd.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="txt_nameProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="&gt;&gt;lb_newProject.Parent" xml:space="preserve">
     <value>pn_tittleAddProject</value>
   </data>
+  <data name="&gt;&gt;lb_NameProject.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;lb_ValidNameProject.Name" xml:space="preserve">
     <value>lb_ValidNameProject</value>
-  </data>
-  <data name="lb_NameProject.Text" xml:space="preserve">
-    <value>Name of project</value>
   </data>
   <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -813,6 +807,9 @@
   <data name="lb_ValidIdProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
   <data name="pn_tittleAddProject.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -836,6 +833,9 @@
   </data>
   <data name="&gt;&gt;lb_ValidNameProject.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 233</value>
   </data>
   <data name="lb_NameProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 150</value>

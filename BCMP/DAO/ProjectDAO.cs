@@ -51,6 +51,18 @@ namespace BCMP.DAO
             return pro;
         }
 
+        public Project GetProjectByMissionId(int missionId)
+        {
+            string query = "USP_GetProjectByMissionId @missionId";
+            Project pro = null;
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { missionId });
+            foreach (DataRow row in data.Rows)
+            {
+                pro = new Project(row);
+            }
+            return pro;
+        }
+
         public bool DeleteProjectByProjectId(string projectId)
         {
             string query = "USP_DeleteProject @projectId";

@@ -118,95 +118,134 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_newProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pn_containerDocument.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_newProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 24</value>
+  <data name="pn_containerDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 440</value>
   </data>
-  <data name="lb_newProject.Text" xml:space="preserve">
-    <value>Dự án mới</value>
+  <data name="bt_download.Location" type="System.Drawing.Point, System.Drawing">
+    <value>992, 84</value>
   </data>
-  <data name="lb_NameProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_download.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="lb_NameProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
+  <data name="bt_download.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 37</value>
   </data>
-  <data name="lb_NameProject.Text" xml:space="preserve">
-    <value>Tên dự án</value>
+  <data name="bt_upload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>928, 84</value>
   </data>
-  <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_upload.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="lb_department.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 18</value>
+  <data name="bt_upload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 37</value>
   </data>
-  <data name="lb_department.Text" xml:space="preserve">
-    <value>Phòng ban phụ trách</value>
+  <data name="bt_delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1056, 84</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_delete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
+  <data name="bt_delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 37</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Từ ngày</value>
+  <data name="bt_print.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1120, 84</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_print.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 18</value>
+  <data name="bt_print.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 37</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Tới ngày</value>
+  <data name="lb_file.Location" type="System.Drawing.Point, System.Drawing">
+    <value>921, 11</value>
   </data>
-  <data name="lb_description.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="lb_file.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 18</value>
+  <data name="lb_file.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 32</value>
   </data>
-  <data name="lb_description.Text" xml:space="preserve">
-    <value>Mô tả</value>
+  <data name="bt_departmentData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 4</value>
   </data>
-  <data name="lb_member.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_departmentData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_departmentData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 38</value>
   </data>
-  <data name="bt_save.Text" xml:space="preserve">
-    <value>Lưu</value>
+  <data name="bt_publicData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 4</value>
   </data>
-  <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_publicData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="bt_cancel.Text" xml:space="preserve">
-    <value>Hủy</value>
+  <data name="bt_publicData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 38</value>
   </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="lb_IdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 37</value>
   </data>
-  <data name="lb_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 18</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 0</value>
   </data>
-  <data name="lb_IdProject.Text" xml:space="preserve">
-    <value>Mã dự án</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="lb_ValidDesciption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 37</value>
   </data>
-  <data name="lb_ValidNameProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="lb_ValidIdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="bt_search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 37</value>
+  </data>
+  <data name="pn_search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 84</value>
+  </data>
+  <data name="pn_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pn_search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>529, 37</value>
+  </data>
+  <data name="pn_tittle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pn_tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 135</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 440</value>
+  </data>
+  <data name="pn_background.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 135</value>
+  </data>
+  <data name="pn_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pn_background.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 440</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 575</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
 </root>

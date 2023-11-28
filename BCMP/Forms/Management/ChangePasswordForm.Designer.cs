@@ -148,9 +148,10 @@
             this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 119;
+            this.iconUser.IconSize = 97;
             this.iconUser.Name = "iconUser";
             this.iconUser.TabStop = false;
+            this.iconUser.Click += new System.EventHandler(this.iconUser_Click);
             // 
             // ChangePasswordForm
             // 

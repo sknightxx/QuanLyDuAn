@@ -118,12 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_maximize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
   <data name="bt_logOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>193, 24</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bt_maximize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;bt_changePassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -132,10 +135,10 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>193, 24</value>
   </data>
   <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="bt_profile.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -144,7 +147,7 @@
     <value>Zoom</value>
   </data>
   <data name="bt_notifications.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 18</value>
+    <value>40, 22</value>
   </data>
   <data name="&gt;&gt;bt_remind.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
@@ -152,11 +155,14 @@
   <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="bt_project.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;bt_mission.Name" xml:space="preserve">
     <value>bt_mission</value>
   </data>
-  <data name="&gt;&gt;bt_profile.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="iconCurrentChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -165,7 +171,7 @@
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="bt_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
+    <value>178, 32</value>
   </data>
   <data name="bt_project.Text" xml:space="preserve">
     <value>   Project</value>
@@ -183,16 +189,22 @@
     <value>Top</value>
   </data>
   <data name="bt_mission.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;bt_profile.Parent" xml:space="preserve">
     <value>pn_leftDashBoard</value>
   </data>
   <data name="bt_mission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 202</value>
+    <value>2, 252</value>
   </data>
   <data name="bt_report.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
+  </data>
+  <data name="bt_notifications.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_mail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bt_document.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -204,6 +216,9 @@
   <data name="bt_mission.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="bt_report.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -211,7 +226,7 @@
     <value>bt_user</value>
   </data>
   <data name="bt_Info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>193, 24</value>
   </data>
   <data name="&gt;&gt;vScrollBar1.Name" xml:space="preserve">
     <value>vScrollBar1</value>
@@ -229,7 +244,7 @@
     <value>Top, Right</value>
   </data>
   <data name="pn_tittleBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 0</value>
+    <value>220, 0</value>
   </data>
   <data name="&gt;&gt;pn_shawdow.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -241,13 +256,13 @@
     <value>bt_document</value>
   </data>
   <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 21</value>
+    <value>905, 26</value>
   </data>
   <data name="&gt;&gt;bt_project.Parent" xml:space="preserve">
     <value>pn_leftDashBoard</value>
   </data>
   <data name="bt_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+    <value>220, 60</value>
   </data>
   <data name="bt_report.Text" xml:space="preserve">
     <value>   Report</value>
@@ -262,13 +277,13 @@
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="bt_profile.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
-  <data name="bt_logOut.Text" xml:space="preserve">
-    <value>Log out</value>
+  <data name="&gt;&gt;bt_notifications.Name" xml:space="preserve">
+    <value>bt_notifications</value>
   </data>
   <data name="bt_minimize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;lb_tittleChildform.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -288,8 +303,8 @@
   <data name="bt_profile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="bt_report.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -301,7 +316,7 @@
     <value>Century Gothic, 10.2pt</value>
   </data>
   <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 530</value>
+    <value>220, 662</value>
   </data>
   <data name="bt_user.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -319,25 +334,28 @@
     <value>iconCurrentChildform</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1082, 530</value>
+    <value>1352, 662</value>
   </data>
   <data name="pn_leftDashBoard.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="bt_maximize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 18</value>
+  <data name="bt_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bt_project.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;bt_logOut.Name" xml:space="preserve">
-    <value>bt_logOut</value>
+  <data name="vScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;bt_home.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="pn_shawdow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="bt_report.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt</value>
   </data>
   <data name="bt_mission.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -357,26 +375,29 @@
   <data name="&gt;&gt;vScrollBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.VScrollBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bt_profile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;bt_logOut.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 94</value>
+    <value>220, 118</value>
   </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>872, 2</value>
+  <data name="bt_logOut.Text" xml:space="preserve">
+    <value>Log out</value>
   </data>
   <data name="bt_document.Text" xml:space="preserve">
     <value>   Document</value>
   </data>
   <data name="bt_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 306</value>
+    <value>2, 382</value>
   </data>
   <data name="bt_home.Text" xml:space="preserve">
     <value>   Home</value>
   </data>
   <data name="bt_mail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 18</value>
+    <value>40, 22</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -391,7 +412,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_home.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;bt_document.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -400,7 +421,7 @@
     <value>Century Gothic, 7.8pt</value>
   </data>
   <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
+    <value>169, 26</value>
   </data>
   <data name="bt_document.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
@@ -411,14 +432,17 @@
   <data name="bt_remind.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="bt_mail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 7.8pt</value>
+  </data>
   <data name="bt_minimize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 15</value>
+    <value>40, 19</value>
   </data>
   <data name="bt_minimize.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="bt_mail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="bt_mission.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -441,11 +465,11 @@
   <data name="&gt;&gt;bt_remind.Name" xml:space="preserve">
     <value>bt_remind</value>
   </data>
-  <data name="bt_project.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 467</value>
+    <value>1132, 583</value>
   </data>
   <data name="bt_minimize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -453,17 +477,20 @@
   <data name="pn_tittleBar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;bt_profile.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="bt_mission.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>dashboard</value>
-  </data>
-  <data name="bt_mail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 7.8pt</value>
+  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 26</value>
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pn_shawdow.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="&gt;&gt;pn_logo.Name" xml:space="preserve">
     <value>pn_logo</value>
@@ -472,22 +499,22 @@
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 8</value>
+    <value>1132, 10</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 119</value>
+    <value>220, 149</value>
   </data>
   <data name="bt_document.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="bt_changePassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>193, 24</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="bt_profile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 150</value>
+    <value>2, 188</value>
   </data>
   <data name="bt_home.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
@@ -496,7 +523,7 @@
     <value>Century Gothic, 7.8pt</value>
   </data>
   <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 92</value>
+    <value>194, 100</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -522,14 +549,17 @@
   <data name="&gt;&gt;bt_home.Parent" xml:space="preserve">
     <value>pn_leftDashBoard</value>
   </data>
+  <data name="&gt;&gt;dropdownMenu1.Name" xml:space="preserve">
+    <value>dropdownMenu1</value>
+  </data>
   <data name="bt_project.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;bt_maximize.Name" xml:space="preserve">
     <value>bt_maximize</value>
   </data>
-  <data name="bt_report.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="bt_vietnamese.Text" xml:space="preserve">
+    <value>Vietnamese</value>
   </data>
   <data name="lb_tittleChildform.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
@@ -553,7 +583,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lb_tittleChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
+    <value>59, 21</value>
   </data>
   <data name="bt_maximize.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -562,7 +592,7 @@
     <value>2</value>
   </data>
   <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 63</value>
+    <value>220, 79</value>
   </data>
   <data name="&gt;&gt;pn_tittleBar.Name" xml:space="preserve">
     <value>pn_tittleBar</value>
@@ -571,10 +601,10 @@
     <value>Zoom</value>
   </data>
   <data name="bt_home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+    <value>220, 60</value>
   </data>
   <data name="bt_report.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="bt_home.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -582,11 +612,11 @@
   <data name="&gt;&gt;bt_minimize.Parent" xml:space="preserve">
     <value>pn_tittleBar</value>
   </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 18</value>
+  <data name="bt_minimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="bt_user.Text" xml:space="preserve">
-    <value>Name User</value>
+  <data name="bt_home.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;bt_mission.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
@@ -595,10 +625,10 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 467</value>
+    <value>10, 583</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 119</value>
+    <value>220, 149</value>
   </data>
   <data name="bt_mail.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -619,7 +649,7 @@
     <value>ImageBeforeText</value>
   </data>
   <data name="iconCurrentChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 31</value>
+    <value>40, 39</value>
   </data>
   <data name="bt_home.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -640,10 +670,13 @@
     <value>ImageBeforeText</value>
   </data>
   <data name="bt_profile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+    <value>220, 60</value>
   </data>
   <data name="bt_report.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 358</value>
+    <value>0, 448</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bt_mission.Text" xml:space="preserve">
     <value>   Mission</value>
@@ -658,7 +691,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 63</value>
+    <value>220, 79</value>
   </data>
   <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -667,16 +700,19 @@
     <value>8</value>
   </data>
   <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 24</value>
+    <value>812, 30</value>
+  </data>
+  <data name="bt_report.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 14</value>
+    <value>25, 18</value>
   </data>
   <data name="&gt;&gt;ptb_logo.Name" xml:space="preserve">
     <value>ptb_logo</value>
   </data>
-  <data name="&gt;&gt;vScrollBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1090, 2</value>
   </data>
   <data name="&gt;&gt;bt_project.Name" xml:space="preserve">
     <value>bt_project</value>
@@ -686,6 +722,12 @@
   </data>
   <data name="vScrollBar1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_mission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bt_mail.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -697,7 +739,7 @@
     <value>pn_tittleBar</value>
   </data>
   <data name="&gt;&gt;pn_logo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="bt_profile.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -711,8 +753,8 @@
   <data name="pn_container.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;bt_project.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;bt_report.Parent" xml:space="preserve">
+    <value>pn_leftDashBoard</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -729,17 +771,14 @@
   <data name="bt_document.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;bt_report.Parent" xml:space="preserve">
-    <value>pn_leftDashBoard</value>
-  </data>
   <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>761, 18</value>
+    <value>951, 22</value>
   </data>
   <data name="bt_maximize.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="bt_remind.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 24</value>
+    <value>40, 30</value>
   </data>
   <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
     <value>bt_exit</value>
@@ -748,13 +787,16 @@
     <value>2</value>
   </data>
   <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>889, 0</value>
+    <value>1115, 0</value>
   </data>
   <data name="&gt;&gt;bt_vietnamese.Name" xml:space="preserve">
     <value>bt_vietnamese</value>
   </data>
   <data name="bt_user.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bt_profile.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -765,32 +807,35 @@
   <data name="&gt;&gt;iconCurrentChildform.Parent" xml:space="preserve">
     <value>pn_tittleBar</value>
   </data>
+  <data name="ptb_logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;bt_mission.Parent" xml:space="preserve">
     <value>pn_leftDashBoard</value>
   </data>
   <data name="bt_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 98</value>
+    <value>2, 122</value>
   </data>
   <data name="bt_minimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>836, 2</value>
+    <value>1045, 2</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 24</value>
+    <value>859, 30</value>
   </data>
   <data name="bt_mission.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
   <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 64</value>
+    <value>169, 80</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="pn_shawdow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 55</value>
+    <value>220, 69</value>
   </data>
   <data name="&gt;&gt;bt_notifications.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -810,32 +855,29 @@
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bt_vietnamese.Text" xml:space="preserve">
-    <value>Vietnamese</value>
-  </data>
   <data name="bt_remind.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="iconCurrentChildform.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 16</value>
+    <value>19, 20</value>
   </data>
   <data name="bt_project.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 254</value>
+    <value>2, 318</value>
   </data>
   <data name="bt_notifications.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;bt_mission.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bt_report.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;bt_remind.Parent" xml:space="preserve">
     <value>pn_tittleBar</value>
   </data>
   <data name="&gt;&gt;bt_exit.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="bt_report.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -861,6 +903,9 @@
   <data name="bt_maximize.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="pn_leftDashBoard.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -868,10 +913,13 @@
     <value>Change Password</value>
   </data>
   <data name="lb_tittleChildform.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 24</value>
+    <value>64, 30</value>
   </data>
   <data name="&gt;&gt;bt_minimize.Name" xml:space="preserve">
     <value>bt_minimize</value>
+  </data>
+  <data name="bt_remind.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -879,17 +927,17 @@
   <data name="bt_notifications.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="bt_maximize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>dashboard</value>
   </data>
   <data name="bt_remind.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 467</value>
+  <data name="bt_maximize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;pn_logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 583</value>
   </data>
   <data name="&gt;&gt;bt_user.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -898,7 +946,7 @@
     <value>pn_tittleBar</value>
   </data>
   <data name="bt_notifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;pn_tittleBar.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -930,8 +978,8 @@
   <data name="&gt;&gt;bt_notifications.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="&gt;&gt;dropdownMenu1.Name" xml:space="preserve">
-    <value>dropdownMenu1</value>
+  <data name="bt_user.Text" xml:space="preserve">
+    <value>Name User</value>
   </data>
   <data name="bt_notifications.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 7.8pt</value>
@@ -952,7 +1000,7 @@
     <value>pn_tittleBar</value>
   </data>
   <data name="bt_document.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="&gt;&gt;bt_Info.Name" xml:space="preserve">
     <value>bt_Info</value>
@@ -961,22 +1009,19 @@
     <value>pn_tittleBar</value>
   </data>
   <data name="bt_maximize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>853, 2</value>
+    <value>1066, 2</value>
   </data>
-  <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 0, 16, 0</value>
+  <data name="&gt;&gt;pn_logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bt_minimize.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 411</value>
+    <value>0, 513</value>
   </data>
   <data name="bt_mail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
-  </data>
-  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
   </data>
   <data name="pn_container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1000,13 +1045,13 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
+    <value>120, 120</value>
   </data>
   <data name="bt_profile.Text" xml:space="preserve">
     <value>   Employee</value>
   </data>
   <data name="bt_mission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+    <value>220, 60</value>
   </data>
   <data name="ptb_logo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1014,11 +1059,11 @@
   <data name="pn_leftDashBoard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="&gt;&gt;bt_notifications.Name" xml:space="preserve">
-    <value>bt_notifications</value>
+  <data name="&gt;&gt;bt_logOut.Name" xml:space="preserve">
+    <value>bt_logOut</value>
   </data>
   <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 55</value>
+    <value>1132, 69</value>
   </data>
   <data name="bt_maximize.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1026,14 +1071,26 @@
   <data name="bt_Info.Text" xml:space="preserve">
     <value>Information</value>
   </data>
-  <data name="bt_project.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+  <data name="&gt;&gt;vScrollBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bt_maximize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_project.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 60</value>
+  </data>
+  <data name="&gt;&gt;bt_project.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 0, 20, 0</value>
   </data>
   <data name="bt_exit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="bt_report.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;bt_language.Name" xml:space="preserve">
     <value>bt_language</value>
@@ -1041,11 +1098,14 @@
   <data name="&gt;&gt;pn_leftDashBoard.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="bt_report.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 48</value>
+  <data name="bt_project.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bt_language.Text" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="lb_tittleChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;bt_document.Parent" xml:space="preserve">
     <value>pn_leftDashBoard</value>
@@ -1092,6 +1152,9 @@
   <data name="bt_remind.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="bt_user.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;ptb_logo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -1114,6 +1177,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>vi</value>
   </metadata>
 </root>

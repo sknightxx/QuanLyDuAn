@@ -30,9 +30,17 @@ namespace BCMP.Forms
 
         public void LoadDataListEmloyee()
         {
-            empList = EmployeeDAO.Instance.GetAllEmployee();
-            dtgv_ListEmp.DataSource = empList;
+            if (txt_search.Text == "Search for employees" || String.IsNullOrEmpty(txt_search.Text.ToString()))
+            {
+                empList = EmployeeDAO.Instance.GetAllEmployee();
+                dtgv_ListEmp.DataSource = empList;
+            } else
+            {
+                empList = EmployeeDAO.Instance.GetAllEmployeeBySearch(txt_search.Text);
+                dtgv_ListEmp.DataSource = empList;
+            }
         }
+
 
 
         private void lb_employees_TextChanged(object sender, EventArgs e)
@@ -106,6 +114,40 @@ namespace BCMP.Forms
                 {
                     empList = EmployeeDAO.Instance.GetAllEmployee();
                 }
+            }
+        }
+
+        private void dtgv_ListEmp_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (dtgv_ListEmp.Rows.Count > 0)
+            {
+                // Vòng lặp qua tất cả các dòng
+                foreach (DataGridViewRow row in dtgv_ListEmp.Rows)
+                {
+                    // Xác định chỉ mục của cột thứ 3
+                    int columnIndex = 3; // Cột thứ 3 (chỉ số cột bắt đầu từ 0)
+
+                    // Kiểm tra xem ô có tồn tại không
+                    if (row.Cells.Count > columnIndex)
+                    {
+                        // Thực hiện chỉnh sửa giá trị của ô
+                        row.Cells[columnIndex].Value = DepartmentDAO.Instance.GetDepartmentById(int.Parse(row.Cells[2].Value.ToString())).Name;
+                    }
+                    row.Cells[5].Value = RoleDAO.Instance.GetById(int.Parse(row.Cells[4].Value.ToString())).Title;
+                }
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_search.Text == "Search for employees" || String.IsNullOrEmpty(txt_search.Text.ToString()))
+            {
+                
+                LoadDataListEmloyee();
+            } else
+            {
+                empList = EmployeeDAO.Instance.GetAllEmployeeBySearch(txt_search.Text);
+                dtgv_ListEmp.DataSource = empList;
             }
         }
     }

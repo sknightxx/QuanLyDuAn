@@ -118,37 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_Valid_UserId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+  <data name="cbType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 343</value>
   </data>
-  <data name="lb_ValidConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="lb_ValidPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="lb_ValidPhone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="lb_ValidEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="lb_ValidFullname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="txt_confirmPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="txt_password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="cb_Role.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 24</value>
-  </data>
-  <data name="cb_Department.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 24</value>
+  <data name="cbType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 21</value>
   </data>
 </root>
