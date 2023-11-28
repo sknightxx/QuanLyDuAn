@@ -72,7 +72,6 @@ namespace BCMP.Forms.Management
         {
             int count = 0;
             int target = dtgv_listEmp.SelectedRows.Count;
-            MessageBox.Show(target.ToString());
             if (dtgv_listEmp.SelectedRows.Count > 0)
             {
                 foreach (DataGridViewRow row in dtgv_listEmp.SelectedRows)

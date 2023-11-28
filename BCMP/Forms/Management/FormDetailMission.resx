@@ -282,9 +282,6 @@
   <data name="&gt;&gt;lb_document.Name" xml:space="preserve">
     <value>lb_document</value>
   </data>
-  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
-    <value>pn_container</value>
-  </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
@@ -621,6 +618,9 @@
   <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
+    <value>txt_Description</value>
+  </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
@@ -897,8 +897,8 @@
   <data name="&gt;&gt;txt_IdMission.Parent" xml:space="preserve">
     <value>pn_container</value>
   </data>
-  <data name="&gt;&gt;txt_Description.Name" xml:space="preserve">
-    <value>txt_Description</value>
+  <data name="&gt;&gt;pn_container.Name" xml:space="preserve">
+    <value>pn_container</value>
   </data>
   <data name="txt_IdMission.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -919,6 +919,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
+    <value>en</value>
   </metadata>
 </root>

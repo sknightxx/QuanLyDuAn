@@ -436,6 +436,9 @@
     <EmbeddedResource Include="Forms\Management\FormAddUserInProject.resx">
       <DependentUpon>FormAddUserInProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUserInProject.vi.resx">
+      <DependentUpon>FormAddUserInProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
       <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </EmbeddedResource>
@@ -531,9 +534,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\DetailProjectUser.resx">
       <DependentUpon>DetailProjectUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\User\FormHomeUser.resx">
-      <DependentUpon>FormHomeUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\FormMissionUser.resx">
       <DependentUpon>FormMissionUser.cs</DependentUpon>

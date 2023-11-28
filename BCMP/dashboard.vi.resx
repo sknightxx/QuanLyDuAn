@@ -123,7 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bt_report.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 394</value>
+    <value>0, 315</value>
+  </data>
+  <data name="bt_report.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_report.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_report.Text" xml:space="preserve">
     <value>   Báo cáo</value>
@@ -132,7 +138,13 @@
     <value>Top</value>
   </data>
   <data name="bt_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 334</value>
+    <value>0, 267</value>
+  </data>
+  <data name="bt_document.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_document.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_document.Text" xml:space="preserve">
     <value>   Tài liệu</value>
@@ -141,7 +153,13 @@
     <value>Top</value>
   </data>
   <data name="bt_project.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 274</value>
+    <value>0, 219</value>
+  </data>
+  <data name="bt_project.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_project.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_project.Text" xml:space="preserve">
     <value>   Dự án</value>
@@ -150,13 +168,25 @@
     <value>Top</value>
   </data>
   <data name="bt_mission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 214</value>
+    <value>0, 171</value>
+  </data>
+  <data name="bt_mission.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_mission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_profile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="bt_profile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 154</value>
+    <value>0, 123</value>
+  </data>
+  <data name="bt_profile.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_profile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_profile.Text" xml:space="preserve">
     <value>   Nhân viên</value>
@@ -165,54 +195,171 @@
     <value>Top</value>
   </data>
   <data name="bt_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 94</value>
+    <value>0, 75</value>
+  </data>
+  <data name="bt_home.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 48</value>
   </data>
   <data name="bt_home.Text" xml:space="preserve">
     <value>   Trang chủ</value>
   </data>
   <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 11</value>
+    <value>20, 9</value>
+  </data>
+  <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 64</value>
   </data>
   <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 94</value>
+    <value>176, 75</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 119</value>
+    <value>176, 95</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 543</value>
+    <value>0, 435</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 119</value>
+    <value>176, 95</value>
+  </data>
+  <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 530</value>
   </data>
   <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>928, 24</value>
+    <value>706, 12</value>
+  </data>
+  <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_user.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 40</value>
   </data>
   <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>891, 27</value>
+    <value>678, 23</value>
+  </data>
+  <data name="bt_remind.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_remind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
   </data>
   <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>854, 30</value>
+    <value>648, 25</value>
+  </data>
+  <data name="bt_mail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_mail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 18</value>
   </data>
   <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>817, 30</value>
+    <value>619, 25</value>
+  </data>
+  <data name="bt_notifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_notifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 18</value>
+  </data>
+  <data name="lb_tittleChildform.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 24</value>
   </data>
   <data name="lb_tittleChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 21</value>
+    <value>76, 19</value>
   </data>
   <data name="lb_tittleChildform.Text" xml:space="preserve">
     <value>Trang chủ</value>
   </data>
+  <data name="iconCurrentChildform.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="iconCurrentChildform.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 31</value>
+  </data>
   <data name="bt_minimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1022, 2</value>
+    <value>818, 2</value>
+  </data>
+  <data name="bt_minimize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_minimize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
   </data>
   <data name="bt_maximize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1052, 2</value>
+    <value>842, 2</value>
+  </data>
+  <data name="bt_maximize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_maximize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 18</value>
   </data>
   <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1081, 2</value>
+    <value>865, 2</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 18</value>
+  </data>
+  <data name="pn_tittleBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 0</value>
+  </data>
+  <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 55</value>
+  </data>
+  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 0</value>
+  </data>
+  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 467</value>
+  </data>
+  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 63</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 467</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 63</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 467</value>
+  </data>
+  <data name="pn_shawdow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 55</value>
+  </data>
+  <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 8</value>
+  </data>
+  <data name="bt_Info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_changePassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_logOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 92</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1082, 530</value>
   </data>
 </root>

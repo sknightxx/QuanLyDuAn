@@ -41,12 +41,11 @@
             this.pn_background = new System.Windows.Forms.Panel();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_Project = new System.Windows.Forms.DataGridView();
-            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.projectBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
@@ -59,12 +58,12 @@
             // 
             // pn_tittle
             // 
-            resources.ApplyResources(this.pn_tittle, "pn_tittle");
             this.pn_tittle.BackColor = System.Drawing.Color.White;
             this.pn_tittle.Controls.Add(this.pn_search);
             this.pn_tittle.Controls.Add(this.bt_others);
             this.pn_tittle.Controls.Add(this.bt_CreateProject);
             this.pn_tittle.Controls.Add(this.lb_MyWork);
+            resources.ApplyResources(this.pn_tittle, "pn_tittle");
             this.pn_tittle.Name = "pn_tittle";
             this.pn_tittle.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_tittle_Paint);
             // 
@@ -77,8 +76,8 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.txt_search);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // txt_search
@@ -92,9 +91,9 @@
             // 
             // bt_search
             // 
-            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.BackColor = System.Drawing.Color.White;
             this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.bt_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -140,21 +139,19 @@
             // 
             // pn_background
             // 
-            resources.ApplyResources(this.pn_background, "pn_background");
             this.pn_background.BackColor = System.Drawing.Color.White;
             this.pn_background.Controls.Add(this.pn_container);
+            resources.ApplyResources(this.pn_background, "pn_background");
             this.pn_background.Name = "pn_background";
             // 
             // pn_container
             // 
             resources.ApplyResources(this.pn_container, "pn_container");
-            this.pn_container.Controls.Add(this.button1);
             this.pn_container.Controls.Add(this.dtgv_Project);
             this.pn_container.Name = "pn_container";
             // 
             // dtgv_Project
             // 
-            resources.ApplyResources(this.dtgv_Project, "dtgv_Project");
             this.dtgv_Project.AutoGenerateColumns = false;
             this.dtgv_Project.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_Project.BackgroundColor = System.Drawing.Color.White;
@@ -166,23 +163,10 @@
             this.plannedEndDateDataGridViewTextBoxColumn,
             this.Detail});
             this.dtgv_Project.DataSource = this.projectBindingSource;
+            resources.ApplyResources(this.dtgv_Project, "dtgv_Project");
             this.dtgv_Project.Name = "dtgv_Project";
             this.dtgv_Project.RowTemplate.Height = 24;
             this.dtgv_Project.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Project_CellContentClick);
-            // 
-            // Detail
-            // 
-            resources.ApplyResources(this.Detail, "Detail");
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
-            this.Detail.UseColumnTextForButtonValue = true;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // projectIdDataGridViewTextBoxColumn
             // 
@@ -207,6 +191,13 @@
             this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
             resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
             this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
+            // 
+            // Detail
+            // 
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            this.Detail.UseColumnTextForButtonValue = true;
             // 
             // projectBindingSource
             // 
@@ -245,7 +236,6 @@
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton bt_search;
         private System.Windows.Forms.TextBox txt_search;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pn_container;
         private System.Windows.Forms.DataGridView dtgv_Project;
         private System.Windows.Forms.BindingSource projectBindingSource;

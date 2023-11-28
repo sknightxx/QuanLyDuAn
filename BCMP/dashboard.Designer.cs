@@ -308,7 +308,7 @@
             this.iconCurrentChildform.IconChar = FontAwesome.Sharp.IconChar.House;
             this.iconCurrentChildform.IconColor = System.Drawing.Color.Snow;
             this.iconCurrentChildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildform.IconSize = 39;
+            this.iconCurrentChildform.IconSize = 31;
             this.iconCurrentChildform.Name = "iconCurrentChildform";
             this.iconCurrentChildform.TabStop = false;
             // 

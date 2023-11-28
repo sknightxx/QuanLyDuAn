@@ -42,6 +42,7 @@
             this.bt_saveAddUser = new System.Windows.Forms.Button();
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.lb_Valid_UserId = new System.Windows.Forms.Label();
             this.lb_outsource = new System.Windows.Forms.Label();
             this.lb_ValidConfirm = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_phone = new System.Windows.Forms.TextBox();
-            this.cbType = new System.Windows.Forms.ComboBox();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -210,6 +210,15 @@
             this.pn_containerFormAddUser.Name = "pn_containerFormAddUser";
             this.pn_containerFormAddUser.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerFormAddUser_Paint);
             // 
+            // cbType
+            // 
+            resources.ApplyResources(this.cbType, "cbType");
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
+            resources.GetString("cbType.Items"),
+            resources.GetString("cbType.Items1")});
+            this.cbType.Name = "cbType";
+            // 
             // lb_Valid_UserId
             // 
             resources.ApplyResources(this.lb_Valid_UserId, "lb_Valid_UserId");
@@ -332,15 +341,6 @@
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
             this.txt_phone.Leave += new System.EventHandler(this.txt_phone_Leave);
-            // 
-            // cbType
-            // 
-            resources.ApplyResources(this.cbType, "cbType");
-            this.cbType.FormattingEnabled = true;
-            this.cbType.Items.AddRange(new object[] {
-            resources.GetString("cbType.Items"),
-            resources.GetString("cbType.Items1")});
-            this.cbType.Name = "cbType";
             // 
             // FormAddUser
             // 

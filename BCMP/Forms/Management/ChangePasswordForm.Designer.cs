@@ -60,6 +60,7 @@
             // 
             // pn_containerChangePass
             // 
+            resources.ApplyResources(this.pn_containerChangePass, "pn_containerChangePass");
             this.pn_containerChangePass.Controls.Add(this.lb_ChangePass);
             this.pn_containerChangePass.Controls.Add(this.bt_cancel);
             this.pn_containerChangePass.Controls.Add(this.bt_save);
@@ -69,7 +70,6 @@
             this.pn_containerChangePass.Controls.Add(this.lb_Email);
             this.pn_containerChangePass.Controls.Add(this.bt_exit);
             this.pn_containerChangePass.Controls.Add(this.pn_user);
-            resources.ApplyResources(this.pn_containerChangePass, "pn_containerChangePass");
             this.pn_containerChangePass.Name = "pn_containerChangePass";
             this.pn_containerChangePass.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerChangePass_Paint);
             this.pn_containerChangePass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_containerChangePass_MouseDown);
@@ -83,11 +83,11 @@
             // 
             // bt_cancel
             // 
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -95,8 +95,8 @@
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.bt_save, "bt_save");
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -136,19 +136,19 @@
             // 
             // pn_user
             // 
-            this.pn_user.Controls.Add(this.iconUser);
             resources.ApplyResources(this.pn_user, "pn_user");
+            this.pn_user.Controls.Add(this.iconUser);
             this.pn_user.Name = "pn_user";
             // 
             // iconUser
             // 
-            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.iconUser, "iconUser");
+            this.iconUser.BackColor = System.Drawing.SystemColors.Control;
             this.iconUser.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.iconUser.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconUser.IconSize = 119;
+            this.iconUser.IconSize = 97;
             this.iconUser.Name = "iconUser";
             this.iconUser.TabStop = false;
             this.iconUser.Click += new System.EventHandler(this.iconUser_Click);

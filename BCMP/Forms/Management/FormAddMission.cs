@@ -103,6 +103,9 @@ namespace BCMP.Forms.Management
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddMission));
             this.lb_Management = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_ListEmp = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cb_department = new System.Windows.Forms.ComboBox();
             this.lb_ValidDescription = new System.Windows.Forms.Label();
             this.lb_ValidRelate = new System.Windows.Forms.Label();
             this.lb_ValidDocument = new System.Windows.Forms.Label();
@@ -130,9 +133,6 @@ namespace BCMP.Forms.Management
             this.lb_document = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_Tittle = new System.Windows.Forms.Label();
-            this.cb_department = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cb_ListEmp = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_container.SuspendLayout();
@@ -166,6 +166,26 @@ namespace BCMP.Forms.Management
             this.panel1.Controls.Add(this.lb_description);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // cb_ListEmp
+            // 
+            this.cb_ListEmp.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_ListEmp, "cb_ListEmp");
+            this.cb_ListEmp.Name = "cb_ListEmp";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label4.Name = "label4";
+            // 
+            // cb_department
+            // 
+            this.cb_department.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_department, "cb_department");
+            this.cb_department.Name = "cb_department";
+            this.cb_department.SelectedIndexChanged += new System.EventHandler(this.cb_department_SelectedIndexChanged);
             // 
             // lb_ValidDescription
             // 
@@ -377,26 +397,6 @@ namespace BCMP.Forms.Management
             this.lb_Tittle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_Tittle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_Tittle.Name = "lb_Tittle";
-            // 
-            // cb_department
-            // 
-            this.cb_department.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_department, "cb_department");
-            this.cb_department.Name = "cb_department";
-            this.cb_department.SelectedIndexChanged += new System.EventHandler(this.cb_department_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label4.Name = "label4";
-            // 
-            // cb_ListEmp
-            // 
-            this.cb_ListEmp.FormattingEnabled = true;
-            resources.ApplyResources(this.cb_ListEmp, "cb_ListEmp");
-            this.cb_ListEmp.Name = "cb_ListEmp";
             // 
             // FormAddMission
             // 
