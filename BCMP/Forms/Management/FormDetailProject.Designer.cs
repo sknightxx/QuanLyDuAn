@@ -33,40 +33,28 @@
             this.lb_member = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_NameProject = new System.Windows.Forms.Label();
-            this.lb_IdProject = new System.Windows.Forms.Label();
-            this.txt_nameProject = new System.Windows.Forms.TextBox();
-            this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_save = new System.Windows.Forms.Button();
-            this.bt_CreateMission = new System.Windows.Forms.Button();
-            this.txt_Description = new System.Windows.Forms.TextBox();
-            this.cbb_department = new System.Windows.Forms.ComboBox();
-            this.bt_CreateEmployee = new System.Windows.Forms.Button();
-            this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
-            this.lb_department = new System.Windows.Forms.Label();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_description = new System.Windows.Forms.Label();
+            this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
+            this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dtgv_listEmp = new System.Windows.Forms.DataGridView();
-            this.cb_Department = new System.Windows.Forms.ComboBox();
-            this.bt_default = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dtgvMissionList = new System.Windows.Forms.DataGridView();
-            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_IdProject = new System.Windows.Forms.TextBox();
-            this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
-            this.lb_description = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bt_default = new System.Windows.Forms.Button();
+            this.cb_Department = new System.Windows.Forms.ComboBox();
+            this.dtgv_listEmp = new System.Windows.Forms.DataGridView();
             this.userIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,13 +65,25 @@
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lb_department = new System.Windows.Forms.Label();
+            this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
+            this.bt_CreateEmployee = new System.Windows.Forms.Button();
+            this.cbb_department = new System.Windows.Forms.ComboBox();
+            this.txt_Description = new System.Windows.Forms.TextBox();
+            this.bt_CreateMission = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
+            this.bt_cancel = new System.Windows.Forms.Button();
+            this.txt_nameProject = new System.Windows.Forms.TextBox();
+            this.lb_IdProject = new System.Windows.Forms.Label();
+            this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,93 +124,57 @@
             this.panel2.Name = "panel2";
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // lb_NameProject
+            // bt_exit
             // 
-            resources.ApplyResources(this.lb_NameProject, "lb_NameProject");
-            this.lb_NameProject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_NameProject.Name = "lb_NameProject";
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
-            // lb_IdProject
+            // label3
             // 
-            resources.ApplyResources(this.lb_IdProject, "lb_IdProject");
-            this.lb_IdProject.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_IdProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_IdProject.Name = "lb_IdProject";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label3.Name = "label3";
             // 
-            // txt_nameProject
+            // label2
             // 
-            resources.ApplyResources(this.txt_nameProject, "txt_nameProject");
-            this.txt_nameProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_nameProject.Name = "txt_nameProject";
-            this.txt_nameProject.ReadOnly = true;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.label2.Name = "label2";
             // 
-            // bt_cancel
+            // lb_description
             // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
-            this.bt_cancel.BackColor = System.Drawing.Color.White;
-            this.bt_cancel.FlatAppearance.BorderSize = 0;
-            this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
-            this.bt_cancel.Name = "bt_cancel";
-            this.bt_cancel.UseVisualStyleBackColor = false;
-            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
-            this.bt_cancel.MouseEnter += new System.EventHandler(this.bt_cancel_MouseEnter);
-            this.bt_cancel.MouseLeave += new System.EventHandler(this.bt_cancel_MouseLeave);
+            resources.ApplyResources(this.lb_description, "lb_description");
+            this.lb_description.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_description.Name = "lb_description";
             // 
-            // bt_save
+            // dtpkPlannedEnd
             // 
-            resources.ApplyResources(this.bt_save, "bt_save");
-            this.bt_save.BackColor = System.Drawing.Color.Black;
-            this.bt_save.ForeColor = System.Drawing.Color.White;
-            this.bt_save.Name = "bt_save";
-            this.bt_save.UseVisualStyleBackColor = false;
-            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
+            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
+            this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
             // 
-            // bt_CreateMission
+            // txt_IdProject
             // 
-            resources.ApplyResources(this.bt_CreateMission, "bt_CreateMission");
-            this.bt_CreateMission.BackColor = System.Drawing.Color.Black;
-            this.bt_CreateMission.ForeColor = System.Drawing.Color.White;
-            this.bt_CreateMission.Name = "bt_CreateMission";
-            this.bt_CreateMission.UseVisualStyleBackColor = false;
-            this.bt_CreateMission.Click += new System.EventHandler(this.bt_CreateMission_Click);
-            // 
-            // txt_Description
-            // 
-            resources.ApplyResources(this.txt_Description, "txt_Description");
-            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_Description.Name = "txt_Description";
-            this.txt_Description.ReadOnly = true;
-            // 
-            // cbb_department
-            // 
-            resources.ApplyResources(this.cbb_department, "cbb_department");
-            this.cbb_department.FormattingEnabled = true;
-            this.cbb_department.Name = "cbb_department";
-            // 
-            // bt_CreateEmployee
-            // 
-            resources.ApplyResources(this.bt_CreateEmployee, "bt_CreateEmployee");
-            this.bt_CreateEmployee.BackColor = System.Drawing.Color.Black;
-            this.bt_CreateEmployee.ForeColor = System.Drawing.Color.White;
-            this.bt_CreateEmployee.Name = "bt_CreateEmployee";
-            this.bt_CreateEmployee.UseVisualStyleBackColor = false;
-            this.bt_CreateEmployee.Click += new System.EventHandler(this.bt_CreateEmployee_Click);
-            // 
-            // dtpkPlannedStart
-            // 
-            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
-            this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkPlannedStart.Name = "dtpkPlannedStart";
-            // 
-            // lb_department
-            // 
-            resources.ApplyResources(this.lb_department, "lb_department");
-            this.lb_department.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_department.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_department.Name = "lb_department";
+            resources.ApplyResources(this.txt_IdProject, "txt_IdProject");
+            this.txt_IdProject.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_IdProject.Name = "txt_IdProject";
+            this.txt_IdProject.ReadOnly = true;
             // 
             // tabControl1
             // 
@@ -219,50 +183,6 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            // 
-            // tabPage2
-            // 
-            resources.ApplyResources(this.tabPage2, "tabPage2");
-            this.tabPage2.Controls.Add(this.bt_default);
-            this.tabPage2.Controls.Add(this.cb_Department);
-            this.tabPage2.Controls.Add(this.dtgv_listEmp);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dtgv_listEmp
-            // 
-            resources.ApplyResources(this.dtgv_listEmp, "dtgv_listEmp");
-            this.dtgv_listEmp.AutoGenerateColumns = false;
-            this.dtgv_listEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_listEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userIdDataGridViewTextBoxColumn1,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.phoneNumberDataGridViewTextBoxColumn,
-            this.roleIdDataGridViewTextBoxColumn,
-            this.Role,
-            this.typeEmployeeDataGridViewCheckBoxColumn,
-            this.Type,
-            this.departmentIdDataGridViewTextBoxColumn,
-            this.Department});
-            this.dtgv_listEmp.DataSource = this.employeeBindingSource;
-            this.dtgv_listEmp.Name = "dtgv_listEmp";
-            this.dtgv_listEmp.RowTemplate.Height = 24;
-            this.dtgv_listEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_listEmp_DataBindingComplete);
-            // 
-            // cb_Department
-            // 
-            resources.ApplyResources(this.cb_Department, "cb_Department");
-            this.cb_Department.FormattingEnabled = true;
-            this.cb_Department.Name = "cb_Department";
-            this.cb_Department.SelectedIndexChanged += new System.EventHandler(this.cb_Department_SelectedIndexChanged);
-            // 
-            // bt_default
-            // 
-            resources.ApplyResources(this.bt_default, "bt_default");
-            this.bt_default.Name = "bt_default";
-            this.bt_default.UseVisualStyleBackColor = true;
-            this.bt_default.Click += new System.EventHandler(this.bt_default_Click);
             // 
             // tabPage1
             // 
@@ -291,76 +211,17 @@
             this.dtgvMissionList.RowTemplate.Height = 24;
             this.dtgvMissionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMissionList_CellContentClick);
             // 
-            // Detail
+            // titleDataGridViewTextBoxColumn
             // 
-            this.Detail.DataPropertyName = "Detail";
-            resources.ApplyResources(this.Detail, "Detail");
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
             // 
             // MissionId
             // 
             this.MissionId.DataPropertyName = "MissionId";
             resources.ApplyResources(this.MissionId, "MissionId");
             this.MissionId.Name = "MissionId";
-            // 
-            // txt_IdProject
-            // 
-            resources.ApplyResources(this.txt_IdProject, "txt_IdProject");
-            this.txt_IdProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_IdProject.Name = "txt_IdProject";
-            this.txt_IdProject.ReadOnly = true;
-            // 
-            // dtpkPlannedEnd
-            // 
-            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
-            this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
-            // 
-            // lb_description
-            // 
-            resources.ApplyResources(this.lb_description, "lb_description");
-            this.lb_description.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.lb_description.Name = "lb_description";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.label3.Name = "label3";
-            // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
             // 
             // progressDataGridViewTextBoxColumn
             // 
@@ -398,13 +259,60 @@
             resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
             this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
             // 
+            // Detail
+            // 
+            this.Detail.DataPropertyName = "Detail";
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            // 
             // missionBindingSource
             // 
             this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
-            // employeeBindingSource
+            // tabPage2
             // 
-            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.bt_default);
+            this.tabPage2.Controls.Add(this.cb_Department);
+            this.tabPage2.Controls.Add(this.dtgv_listEmp);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // bt_default
+            // 
+            resources.ApplyResources(this.bt_default, "bt_default");
+            this.bt_default.Name = "bt_default";
+            this.bt_default.UseVisualStyleBackColor = true;
+            this.bt_default.Click += new System.EventHandler(this.bt_default_Click);
+            // 
+            // cb_Department
+            // 
+            resources.ApplyResources(this.cb_Department, "cb_Department");
+            this.cb_Department.FormattingEnabled = true;
+            this.cb_Department.Name = "cb_Department";
+            this.cb_Department.SelectedIndexChanged += new System.EventHandler(this.cb_Department_SelectedIndexChanged);
+            // 
+            // dtgv_listEmp
+            // 
+            resources.ApplyResources(this.dtgv_listEmp, "dtgv_listEmp");
+            this.dtgv_listEmp.AutoGenerateColumns = false;
+            this.dtgv_listEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_listEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userIdDataGridViewTextBoxColumn1,
+            this.fullNameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.phoneNumberDataGridViewTextBoxColumn,
+            this.roleIdDataGridViewTextBoxColumn,
+            this.Role,
+            this.typeEmployeeDataGridViewCheckBoxColumn,
+            this.Type,
+            this.departmentIdDataGridViewTextBoxColumn,
+            this.Department});
+            this.dtgv_listEmp.DataSource = this.employeeBindingSource;
+            this.dtgv_listEmp.Name = "dtgv_listEmp";
+            this.dtgv_listEmp.RowTemplate.Height = 24;
+            this.dtgv_listEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_listEmp_DataBindingComplete);
             // 
             // userIdDataGridViewTextBoxColumn1
             // 
@@ -465,6 +373,98 @@
             this.Department.Name = "Department";
             this.Department.ReadOnly = true;
             // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
+            // 
+            // lb_department
+            // 
+            resources.ApplyResources(this.lb_department, "lb_department");
+            this.lb_department.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_department.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_department.Name = "lb_department";
+            // 
+            // dtpkPlannedStart
+            // 
+            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
+            this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkPlannedStart.Name = "dtpkPlannedStart";
+            // 
+            // bt_CreateEmployee
+            // 
+            resources.ApplyResources(this.bt_CreateEmployee, "bt_CreateEmployee");
+            this.bt_CreateEmployee.BackColor = System.Drawing.Color.Black;
+            this.bt_CreateEmployee.ForeColor = System.Drawing.Color.White;
+            this.bt_CreateEmployee.Name = "bt_CreateEmployee";
+            this.bt_CreateEmployee.UseVisualStyleBackColor = false;
+            this.bt_CreateEmployee.Click += new System.EventHandler(this.bt_CreateEmployee_Click);
+            // 
+            // cbb_department
+            // 
+            resources.ApplyResources(this.cbb_department, "cbb_department");
+            this.cbb_department.FormattingEnabled = true;
+            this.cbb_department.Name = "cbb_department";
+            // 
+            // txt_Description
+            // 
+            resources.ApplyResources(this.txt_Description, "txt_Description");
+            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.ReadOnly = true;
+            // 
+            // bt_CreateMission
+            // 
+            resources.ApplyResources(this.bt_CreateMission, "bt_CreateMission");
+            this.bt_CreateMission.BackColor = System.Drawing.Color.Black;
+            this.bt_CreateMission.ForeColor = System.Drawing.Color.White;
+            this.bt_CreateMission.Name = "bt_CreateMission";
+            this.bt_CreateMission.UseVisualStyleBackColor = false;
+            this.bt_CreateMission.Click += new System.EventHandler(this.bt_CreateMission_Click);
+            // 
+            // bt_save
+            // 
+            resources.ApplyResources(this.bt_save, "bt_save");
+            this.bt_save.BackColor = System.Drawing.Color.Black;
+            this.bt_save.ForeColor = System.Drawing.Color.White;
+            this.bt_save.Name = "bt_save";
+            this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
+            // 
+            // bt_cancel
+            // 
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
+            this.bt_cancel.BackColor = System.Drawing.Color.White;
+            this.bt_cancel.FlatAppearance.BorderSize = 0;
+            this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_cancel.ForeColor = System.Drawing.Color.Black;
+            this.bt_cancel.Name = "bt_cancel";
+            this.bt_cancel.UseVisualStyleBackColor = false;
+            this.bt_cancel.Click += new System.EventHandler(this.bt_cancel_Click);
+            this.bt_cancel.MouseEnter += new System.EventHandler(this.bt_cancel_MouseEnter);
+            this.bt_cancel.MouseLeave += new System.EventHandler(this.bt_cancel_MouseLeave);
+            // 
+            // txt_nameProject
+            // 
+            resources.ApplyResources(this.txt_nameProject, "txt_nameProject");
+            this.txt_nameProject.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_nameProject.Name = "txt_nameProject";
+            this.txt_nameProject.ReadOnly = true;
+            // 
+            // lb_IdProject
+            // 
+            resources.ApplyResources(this.lb_IdProject, "lb_IdProject");
+            this.lb_IdProject.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_IdProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_IdProject.Name = "lb_IdProject";
+            // 
+            // lb_NameProject
+            // 
+            resources.ApplyResources(this.lb_NameProject, "lb_NameProject");
+            this.lb_NameProject.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.lb_NameProject.Name = "lb_NameProject";
+            // 
             // FormDetailProject
             // 
             resources.ApplyResources(this, "$this");
@@ -476,11 +476,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
