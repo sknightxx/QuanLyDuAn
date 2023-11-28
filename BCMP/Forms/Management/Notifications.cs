@@ -20,10 +20,13 @@ namespace BCMP.Forms.Management
         
         private bool isDragging = false;
         private Point lastLocation;
+
+        public Employee CurrEmp { get => currEmp; set => currEmp = value; }
+
         public Notifications(Employee currEmp)
         {
             InitializeComponent();
-            this.currEmp = currEmp;
+            this.CurrEmp = currEmp;
             LoadDataNotification();
         }
 
@@ -77,9 +80,9 @@ namespace BCMP.Forms.Management
 
         private void LoadDataNotification()
         {
-            if(currEmp != null)
+            if(CurrEmp != null)
             {
-                myNotifyList = NotificationDAO.Instance.GetNotificationByUserId(currEmp.UserId.ToString());
+                myNotifyList = NotificationDAO.Instance.GetNotificationByUserId(CurrEmp.UserId.ToString());
                 dtgv_MyNotification.DataSource = myNotifyList;
             }
         }
@@ -88,9 +91,14 @@ namespace BCMP.Forms.Management
         {
             if (dtgv_MyNotification.Columns[e.ColumnIndex].Name == "OpenMission")
             {
+                int missionId = -1;
                 Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgv_MyNotification.Rows[e.RowIndex].Cells[1].Value.ToString()));
-                MessageBox.Show(mission.MissionId.ToString());
-                if (mission != null)
+                missionId = int.Parse(dtgv_MyNotification.Rows[e.RowIndex].Cells[1].Value.ToString());
+                if(mission == null && missionId > 0)
+                {
+                    FormDetailProject DetailProjectForm = new FormDetailProject(ProjectDAO.Instance.GetProjectByMissionId(missionId),this);
+                    DetailProjectForm.Show();
+                } else
                 {
                     FormDetailMission DetailMissionForm = new FormDetailMission(mission);
                     DetailMissionForm.Show();

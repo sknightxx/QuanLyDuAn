@@ -29,6 +29,14 @@ namespace BCMP.DAO
             return result > 0;
         }
 
+        public bool InsertEmployeeIntoProjectByMission(string title, string description, DateTime plannedStartDate, DateTime plannedEndDate, int isPublic, string projectId, string userId)
+        {
+            string query = "USP_InsertMission @title , @description , @progress , @plannedStartDate , @plannedEndDate , @isPublic , @status , @projectId , @userId";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { title, description, 0.0, plannedStartDate, plannedEndDate, isPublic, "Added", projectId, userId });
+            return result > 0;
+        }
+
+
         public Mission GetMissionById(int missionId)
         {
             string query = "USP_GetMissionById @missionId";
@@ -74,7 +82,7 @@ namespace BCMP.DAO
 
         public bool UpdateMissionByMissionId(int missionId,string title, string description, DateTime plannedStartDate, DateTime plannedEndDate, int isPublic,string status, string projectId, string userId)
         {
-            string query = "USP_UpdateMission @missionId ,  @title = , @description = ,@progress = , @plannedStartDate = , @plannedEndDate , @isPublic , @status , @projectId , @userId";
+            string query = "USP_UpdateMission @missionId ,  @title , @description , @progress , @plannedStartDate , @plannedEndDate , @isPublic , @status , @projectId , @userId";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {missionId, title, description, 0.0, plannedStartDate, plannedEndDate, isPublic, status, projectId, userId });
             return result > 0;
         }

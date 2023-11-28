@@ -41,12 +41,15 @@
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_ListEmp = new System.Windows.Forms.DataGridView();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,8 +84,8 @@
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.txt_search);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // txt_search
@@ -90,14 +93,15 @@
             resources.ApplyResources(this.txt_search, "txt_search");
             this.txt_search.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_search.Name = "txt_search";
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
             this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
             // 
             // bt_search
             // 
-            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.BackColor = System.Drawing.Color.White;
             this.bt_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.bt_search, "bt_search");
             this.bt_search.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             this.bt_search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -143,37 +147,36 @@
             // 
             // pn_container
             // 
-            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.BackColor = System.Drawing.Color.White;
             this.pn_container.Controls.Add(this.dtgv_ListEmp);
             this.pn_container.Controls.Add(this.pn_tittleForm);
             this.pn_container.Controls.Add(this.lb_Name);
+            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.Name = "pn_container";
             // 
             // dtgv_ListEmp
             // 
-            resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.AutoGenerateColumns = false;
-            this.dtgv_ListEmp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgv_ListEmp.BackgroundColor = System.Drawing.Color.White;
-            this.dtgv_ListEmp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_ListEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_ListEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userIdDataGridViewTextBoxColumn,
+            this.FullName,
             this.departmentIdDataGridViewTextBoxColumn,
+            this.Department,
             this.roleIdDataGridViewTextBoxColumn,
+            this.Role,
             this.IsDeactivated,
             this.Edit});
             this.dtgv_ListEmp.DataSource = this.employeeBindingSource;
+            resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.Name = "dtgv_ListEmp";
             this.dtgv_ListEmp.RowTemplate.Height = 24;
             this.dtgv_ListEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListEmp_CellContentClick);
+            this.dtgv_ListEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_ListEmp_DataBindingComplete);
             // 
-            // Edit
+            // employeeBindingSource
             // 
-            resources.ApplyResources(this.Edit, "Edit");
-            this.Edit.Name = "Edit";
-            this.Edit.Text = "Edit";
+            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
             // 
             // userIdDataGridViewTextBoxColumn
             // 
@@ -181,11 +184,22 @@
             resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
             this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
             // 
+            // FullName
+            // 
+            this.FullName.DataPropertyName = "FullName";
+            resources.ApplyResources(this.FullName, "FullName");
+            this.FullName.Name = "FullName";
+            // 
             // departmentIdDataGridViewTextBoxColumn
             // 
             this.departmentIdDataGridViewTextBoxColumn.DataPropertyName = "DepartmentId";
             resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
             this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
+            // 
+            // Department
+            // 
+            resources.ApplyResources(this.Department, "Department");
+            this.Department.Name = "Department";
             // 
             // roleIdDataGridViewTextBoxColumn
             // 
@@ -193,15 +207,22 @@
             resources.ApplyResources(this.roleIdDataGridViewTextBoxColumn, "roleIdDataGridViewTextBoxColumn");
             this.roleIdDataGridViewTextBoxColumn.Name = "roleIdDataGridViewTextBoxColumn";
             // 
+            // Role
+            // 
+            resources.ApplyResources(this.Role, "Role");
+            this.Role.Name = "Role";
+            // 
             // IsDeactivated
             // 
             this.IsDeactivated.DataPropertyName = "IsDeactivated";
             resources.ApplyResources(this.IsDeactivated, "IsDeactivated");
             this.IsDeactivated.Name = "IsDeactivated";
             // 
-            // employeeBindingSource
+            // Edit
             // 
-            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
+            resources.ApplyResources(this.Edit, "Edit");
+            this.Edit.Name = "Edit";
+            this.Edit.Text = "Edit";
             // 
             // FormEmployee
             // 
@@ -239,8 +260,11 @@
         private System.Windows.Forms.DataGridView dtgv_ListEmp;
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Department;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.DataGridViewCheckBoxColumn IsDeactivated;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
     }

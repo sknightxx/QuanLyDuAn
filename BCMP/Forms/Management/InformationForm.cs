@@ -83,7 +83,7 @@ namespace BCMP.Forms.Management
             txt_phone.Text = currEmployee.PhoneNumber.ToString();
             cbb_role.Text = RoleDAO.Instance.GetById(currEmployee.RoleId).Title.ToString();
             cbb_department.Text = DepartmentDAO.Instance.GetDepartmentById(currEmployee.DepartmentId).Name.ToString();
-
+            txt_name.Text = currEmployee.FullName.ToString();
         }
 
         public void LoadDataDepartment()
@@ -104,6 +104,23 @@ namespace BCMP.Forms.Management
                 list.Add(item.Title);
             }
             cbb_role.DataSource = list;
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            string name = txt_name.Text;
+            string email = txt_Email.Text;
+            string phone = txt_phone.Text;
+
+            if (EmployeeDAO.Instance.UpdateEmployeeByUserId(email, currEmployee.Password, phone, currEmployee.UserId, currEmployee.DepartmentId, currEmployee.RoleId, currEmployee.IsDeactivated, name, currEmployee.TypeEmployee))
+            {
+                MessageBox.Show("Update your infomation successfully");
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Update your infomation failed");
+
+            }
         }
     }
 }

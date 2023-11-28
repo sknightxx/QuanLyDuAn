@@ -47,8 +47,8 @@ namespace BCMP.Forms
 
         private void bt_CreateProject_Click(object sender, EventArgs e)
         {
-            FormAddMission AddMissionForm = new FormAddMission();
-            AddMissionForm.Show();
+            /*FormAddMission AddMissionForm = new FormAddMission();
+            AddMissionForm.Show();*/
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace BCMP.Forms
             
         }
 
-        private void LoadDataMyMission()
+        public void LoadDataMyMission()
         {
             if (currEmployee != null)
             {
@@ -73,7 +73,7 @@ namespace BCMP.Forms
                 Mission mission = MissionDAO.Instance.GetMissionById(int.Parse(dtgvMyMission.Rows[e.RowIndex].Cells[1].Value.ToString()));
                 if (mission != null)
                 {
-                    FormDetailMission DetailMissionForm = new FormDetailMission(mission);
+                    FormDetailMission DetailMissionForm = new FormDetailMission(mission,this);
                     DetailMissionForm.Show();
                 }
 

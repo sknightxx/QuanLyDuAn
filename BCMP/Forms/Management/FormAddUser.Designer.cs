@@ -43,7 +43,6 @@
             this.bt_cancelAddUser = new System.Windows.Forms.Button();
             this.pn_containerFormAddUser = new System.Windows.Forms.Panel();
             this.lb_Valid_UserId = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lb_outsource = new System.Windows.Forms.Label();
             this.lb_ValidConfirm = new System.Windows.Forms.Label();
             this.lb_ValidPassword = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.txt_phone = new System.Windows.Forms.TextBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.pn_tittleFormAddUser.SuspendLayout();
             this.pn_containerFormAddUser.SuspendLayout();
             this.SuspendLayout();
@@ -178,8 +178,8 @@
             // 
             resources.ApplyResources(this.pn_containerFormAddUser, "pn_containerFormAddUser");
             this.pn_containerFormAddUser.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_containerFormAddUser.Controls.Add(this.cbType);
             this.pn_containerFormAddUser.Controls.Add(this.lb_Valid_UserId);
-            this.pn_containerFormAddUser.Controls.Add(this.textBox1);
             this.pn_containerFormAddUser.Controls.Add(this.lb_outsource);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidConfirm);
             this.pn_containerFormAddUser.Controls.Add(this.lb_ValidPassword);
@@ -214,11 +214,6 @@
             // 
             resources.ApplyResources(this.lb_Valid_UserId, "lb_Valid_UserId");
             this.lb_Valid_UserId.Name = "lb_Valid_UserId";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
             // 
             // lb_outsource
             // 
@@ -338,6 +333,15 @@
             this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
             this.txt_phone.Leave += new System.EventHandler(this.txt_phone_Leave);
             // 
+            // cbType
+            // 
+            resources.ApplyResources(this.cbType, "cbType");
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
+            resources.GetString("cbType.Items"),
+            resources.GetString("cbType.Items1")});
+            this.cbType.Name = "cbType";
+            // 
             // FormAddUser
             // 
             resources.ApplyResources(this, "$this");
@@ -386,7 +390,7 @@
         private System.Windows.Forms.Label lb_ValidEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lb_Valid_UserId;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lb_outsource;
+        private System.Windows.Forms.ComboBox cbType;
     }
 }

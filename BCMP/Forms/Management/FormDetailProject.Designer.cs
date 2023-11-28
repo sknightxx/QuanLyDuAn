@@ -32,12 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetailProject));
             this.lb_member = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_Description = new System.Windows.Forms.TextBox();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.lb_description = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lb_department = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.cbb_department = new System.Windows.Forms.ComboBox();
             this.dtpkPlannedEnd = new System.Windows.Forms.DateTimePicker();
             this.lb_IdProject = new System.Windows.Forms.Label();
@@ -45,12 +45,24 @@
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
             this.lb_NameProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dtgvMissionList = new System.Windows.Forms.DataGridView();
             this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bt_default = new System.Windows.Forms.Button();
+            this.cb_Department = new System.Windows.Forms.ComboBox();
+            this.dtgv_listEmp = new System.Windows.Forms.DataGridView();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bt_CreateEmployee = new System.Windows.Forms.Button();
+            this.txt_Description = new System.Windows.Forms.TextBox();
+            this.bt_CreateMission = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.bt_cancel = new System.Windows.Forms.Button();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,10 +70,23 @@
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeEmployeeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_member
@@ -75,7 +100,6 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.txt_Description);
             this.panel1.Controls.Add(this.txt_IdProject);
             this.panel1.Controls.Add(this.lb_description);
             this.panel1.Controls.Add(this.label2);
@@ -91,13 +115,6 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // txt_Description
-            // 
-            resources.ApplyResources(this.txt_Description, "txt_Description");
-            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_Description.Name = "txt_Description";
-            this.txt_Description.ReadOnly = true;
             // 
             // txt_IdProject
             // 
@@ -134,16 +151,34 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.label3.Name = "label3";
             // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            // 
             // cbb_department
             // 
-            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.FormattingEnabled = true;
+            resources.ApplyResources(this.cbb_department, "cbb_department");
             this.cbb_department.Name = "cbb_department";
             // 
             // dtpkPlannedEnd
             // 
-            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedEnd, "dtpkPlannedEnd");
             this.dtpkPlannedEnd.Name = "dtpkPlannedEnd";
             // 
             // lb_IdProject
@@ -162,8 +197,8 @@
             // 
             // dtpkPlannedStart
             // 
-            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Name = "dtpkPlannedStart";
             // 
             // lb_NameProject
@@ -176,18 +211,34 @@
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Controls.Add(this.dtgvMissionList);
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Controls.Add(this.bt_CreateEmployee);
+            this.panel2.Controls.Add(this.txt_Description);
+            this.panel2.Controls.Add(this.bt_CreateMission);
             this.panel2.Controls.Add(this.bt_save);
             this.panel2.Controls.Add(this.bt_cancel);
             this.panel2.Name = "panel2";
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dtgvMissionList);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // dtgvMissionList
             // 
-            resources.ApplyResources(this.dtgvMissionList, "dtgvMissionList");
             this.dtgvMissionList.AllowDrop = true;
             this.dtgvMissionList.AutoGenerateColumns = false;
-            this.dtgvMissionList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvMissionList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvMissionList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.titleDataGridViewTextBoxColumn,
@@ -199,6 +250,7 @@
             this.userIdDataGridViewTextBoxColumn,
             this.Detail});
             this.dtgvMissionList.DataSource = this.missionBindingSource;
+            resources.ApplyResources(this.dtgvMissionList, "dtgvMissionList");
             this.dtgvMissionList.Name = "dtgvMissionList";
             this.dtgvMissionList.RowTemplate.Height = 24;
             this.dtgvMissionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMissionList_CellContentClick);
@@ -216,10 +268,96 @@
             this.Detail.Name = "Detail";
             this.Detail.Text = "Detail";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.bt_default);
+            this.tabPage2.Controls.Add(this.cb_Department);
+            this.tabPage2.Controls.Add(this.dtgv_listEmp);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // bt_default
+            // 
+            resources.ApplyResources(this.bt_default, "bt_default");
+            this.bt_default.Name = "bt_default";
+            this.bt_default.UseVisualStyleBackColor = true;
+            this.bt_default.Click += new System.EventHandler(this.bt_default_Click);
+            // 
+            // cb_Department
+            // 
+            this.cb_Department.FormattingEnabled = true;
+            resources.ApplyResources(this.cb_Department, "cb_Department");
+            this.cb_Department.Name = "cb_Department";
+            this.cb_Department.SelectedIndexChanged += new System.EventHandler(this.cb_Department_SelectedIndexChanged);
+            // 
+            // dtgv_listEmp
+            // 
+            this.dtgv_listEmp.AutoGenerateColumns = false;
+            this.dtgv_listEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_listEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userIdDataGridViewTextBoxColumn1,
+            this.fullNameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.phoneNumberDataGridViewTextBoxColumn,
+            this.roleIdDataGridViewTextBoxColumn,
+            this.Role,
+            this.typeEmployeeDataGridViewCheckBoxColumn,
+            this.Type,
+            this.departmentIdDataGridViewTextBoxColumn,
+            this.Department});
+            this.dtgv_listEmp.DataSource = this.employeeBindingSource;
+            resources.ApplyResources(this.dtgv_listEmp, "dtgv_listEmp");
+            this.dtgv_listEmp.Name = "dtgv_listEmp";
+            this.dtgv_listEmp.RowTemplate.Height = 24;
+            this.dtgv_listEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_listEmp_DataBindingComplete);
+            // 
+            // Role
+            // 
+            resources.ApplyResources(this.Role, "Role");
+            this.Role.Name = "Role";
+            // 
+            // Type
+            // 
+            resources.ApplyResources(this.Type, "Type");
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // Department
+            // 
+            resources.ApplyResources(this.Department, "Department");
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
+            // 
+            // bt_CreateEmployee
+            // 
+            this.bt_CreateEmployee.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_CreateEmployee, "bt_CreateEmployee");
+            this.bt_CreateEmployee.ForeColor = System.Drawing.Color.White;
+            this.bt_CreateEmployee.Name = "bt_CreateEmployee";
+            this.bt_CreateEmployee.UseVisualStyleBackColor = false;
+            this.bt_CreateEmployee.Click += new System.EventHandler(this.bt_CreateEmployee_Click);
+            // 
+            // txt_Description
+            // 
+            resources.ApplyResources(this.txt_Description, "txt_Description");
+            this.txt_Description.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.ReadOnly = true;
+            // 
+            // bt_CreateMission
+            // 
+            this.bt_CreateMission.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_CreateMission, "bt_CreateMission");
+            this.bt_CreateMission.ForeColor = System.Drawing.Color.White;
+            this.bt_CreateMission.Name = "bt_CreateMission";
+            this.bt_CreateMission.UseVisualStyleBackColor = false;
+            this.bt_CreateMission.Click += new System.EventHandler(this.bt_CreateMission_Click);
+            // 
             // bt_save
             // 
-            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.bt_save, "bt_save");
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -227,11 +365,11 @@
             // 
             // bt_cancel
             // 
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -239,23 +377,11 @@
             this.bt_cancel.MouseEnter += new System.EventHandler(this.bt_cancel_MouseEnter);
             this.bt_cancel.MouseLeave += new System.EventHandler(this.bt_cancel_MouseLeave);
             // 
-            // bt_exit
+            // contextMenuStrip1
             // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // titleDataGridViewTextBoxColumn
             // 
@@ -303,6 +429,52 @@
             // 
             this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
+            // userIdDataGridViewTextBoxColumn1
+            // 
+            this.userIdDataGridViewTextBoxColumn1.DataPropertyName = "UserId";
+            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn1, "userIdDataGridViewTextBoxColumn1");
+            this.userIdDataGridViewTextBoxColumn1.Name = "userIdDataGridViewTextBoxColumn1";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            resources.ApplyResources(this.fullNameDataGridViewTextBoxColumn, "fullNameDataGridViewTextBoxColumn");
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            resources.ApplyResources(this.emailDataGridViewTextBoxColumn, "emailDataGridViewTextBoxColumn");
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            resources.ApplyResources(this.phoneNumberDataGridViewTextBoxColumn, "phoneNumberDataGridViewTextBoxColumn");
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            // 
+            // roleIdDataGridViewTextBoxColumn
+            // 
+            this.roleIdDataGridViewTextBoxColumn.DataPropertyName = "RoleId";
+            resources.ApplyResources(this.roleIdDataGridViewTextBoxColumn, "roleIdDataGridViewTextBoxColumn");
+            this.roleIdDataGridViewTextBoxColumn.Name = "roleIdDataGridViewTextBoxColumn";
+            // 
+            // typeEmployeeDataGridViewCheckBoxColumn
+            // 
+            this.typeEmployeeDataGridViewCheckBoxColumn.DataPropertyName = "TypeEmployee";
+            resources.ApplyResources(this.typeEmployeeDataGridViewCheckBoxColumn, "typeEmployeeDataGridViewCheckBoxColumn");
+            this.typeEmployeeDataGridViewCheckBoxColumn.Name = "typeEmployeeDataGridViewCheckBoxColumn";
+            // 
+            // departmentIdDataGridViewTextBoxColumn
+            // 
+            this.departmentIdDataGridViewTextBoxColumn.DataPropertyName = "DepartmentId";
+            resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
+            this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
+            // 
             // FormDetailProject
             // 
             resources.ApplyResources(this, "$this");
@@ -314,8 +486,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,5 +528,25 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn statusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Detail;
+        private System.Windows.Forms.Button bt_CreateMission;
+        private System.Windows.Forms.Button bt_CreateEmployee;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridView dtgv_listEmp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roleIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn typeEmployeeDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Department;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
+        private System.Windows.Forms.Button bt_default;
+        private System.Windows.Forms.ComboBox cb_Department;
     }
 }
