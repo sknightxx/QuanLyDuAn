@@ -69,6 +69,7 @@
             this.bt_download.IconSize = 32;
             this.bt_download.Name = "bt_download";
             this.bt_download.UseVisualStyleBackColor = false;
+            this.bt_download.Click += new System.EventHandler(this.bt_download_Click);
             // 
             // bt_upload
             // 
@@ -82,6 +83,7 @@
             this.bt_upload.IconSize = 32;
             this.bt_upload.Name = "bt_upload";
             this.bt_upload.UseVisualStyleBackColor = false;
+            this.bt_upload.Click += new System.EventHandler(this.bt_upload_Click);
             // 
             // pn_tittle
             // 
@@ -109,6 +111,7 @@
             this.bt_delete.IconSize = 32;
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.UseVisualStyleBackColor = false;
+            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
             // 
             // bt_print
             // 
@@ -122,6 +125,7 @@
             this.bt_print.IconSize = 32;
             this.bt_print.Name = "bt_print";
             this.bt_print.UseVisualStyleBackColor = false;
+            this.bt_print.Click += new System.EventHandler(this.bt_print_Click);
             // 
             // lb_file
             // 

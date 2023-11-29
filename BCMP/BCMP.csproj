@@ -201,6 +201,7 @@
   <ItemGroup>
     <Compile Include="DAO\MissionDAO.cs" />
     <Compile Include="DAO\NotificationDAO.cs" />
+    <Compile Include="DTO\Document.cs" />
     <Compile Include="DTO\Mission.cs" />
     <Compile Include="DTO\Notification.cs" />
     <Compile Include="EventsHandler\UpdateProjectEventArgs.cs" />

@@ -327,6 +327,9 @@
   <data name="$this.Text" xml:space="preserve">
     <value>FormDocument</value>
   </data>
+  <data name="pn_background.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="pn_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -435,9 +438,6 @@
   <data name="&gt;&gt;bt_delete.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="&gt;&gt;bt_print.Name" xml:space="preserve">
     <value>bt_print</value>
   </data>
@@ -450,8 +450,8 @@
   <data name="&gt;&gt;bt_departmentData.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="pn_background.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="bt_delete.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -589,6 +589,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
+    <value>en</value>
   </metadata>
 </root>
