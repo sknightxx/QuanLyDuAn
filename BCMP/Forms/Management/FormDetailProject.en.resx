@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>806, 9</value>
+    <value>1718, 9</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>768, 163</value>
@@ -140,20 +140,65 @@
   <data name="txt_IdProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>176, 51</value>
   </data>
+  <data name="dtgvMissionList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
   <data name="dtgvMissionList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 247</value>
+    <value>776, 121</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>792, 147</value>
+    <value>792, 144</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>List Mission</value>
   </data>
+  <data name="dtgv_listEmp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 15</value>
+  </data>
+  <data name="dtgv_listEmp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>592, 116</value>
+  </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>792, 147</value>
+    <value>792, 144</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>List Employee</value>
+  </data>
+  <data name="Path.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SerialNumber.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Status.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DepartmentId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PartnerCode.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Delete.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Delete.ToolTipText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="dtgv_ListDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 125</value>
+  </data>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 144</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>List Documents</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 357</value>

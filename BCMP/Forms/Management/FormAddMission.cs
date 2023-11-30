@@ -147,6 +147,7 @@ namespace BCMP.Forms.Management
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.cb_ListEmp);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cb_department);
@@ -164,13 +165,12 @@ namespace BCMP.Forms.Management
             this.panel1.Controls.Add(this.lb_Management);
             this.panel1.Controls.Add(this.txt_Description);
             this.panel1.Controls.Add(this.lb_description);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // cb_ListEmp
             // 
-            this.cb_ListEmp.FormattingEnabled = true;
             resources.ApplyResources(this.cb_ListEmp, "cb_ListEmp");
+            this.cb_ListEmp.FormattingEnabled = true;
             this.cb_ListEmp.Name = "cb_ListEmp";
             // 
             // label4
@@ -182,8 +182,8 @@ namespace BCMP.Forms.Management
             // 
             // cb_department
             // 
-            this.cb_department.FormattingEnabled = true;
             resources.ApplyResources(this.cb_department, "cb_department");
+            this.cb_department.FormattingEnabled = true;
             this.cb_department.Name = "cb_department";
             this.cb_department.SelectedIndexChanged += new System.EventHandler(this.cb_department_SelectedIndexChanged);
             // 
@@ -219,12 +219,12 @@ namespace BCMP.Forms.Management
             // 
             // cbb_status
             // 
+            resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.FormattingEnabled = true;
             this.cbb_status.Items.AddRange(new object[] {
             resources.GetString("cbb_status.Items"),
             resources.GetString("cbb_status.Items1"),
             resources.GetString("cbb_status.Items2")});
-            resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.Name = "cbb_status";
             // 
             // txt_relateProject
@@ -275,10 +275,10 @@ namespace BCMP.Forms.Management
             // 
             // pn_tittleAddProject
             // 
+            resources.ApplyResources(this.pn_tittleAddProject, "pn_tittleAddProject");
             this.pn_tittleAddProject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pn_tittleAddProject.Controls.Add(this.lb_newMission);
             this.pn_tittleAddProject.Controls.Add(this.bt_exit);
-            resources.ApplyResources(this.pn_tittleAddProject, "pn_tittleAddProject");
             this.pn_tittleAddProject.Name = "pn_tittleAddProject";
             // 
             // lb_newMission
@@ -307,11 +307,11 @@ namespace BCMP.Forms.Management
             // 
             // bt_cancel
             // 
+            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.BackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.BorderSize = 0;
             this.bt_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.bt_cancel, "bt_cancel");
             this.bt_cancel.ForeColor = System.Drawing.Color.Black;
             this.bt_cancel.Name = "bt_cancel";
             this.bt_cancel.UseVisualStyleBackColor = false;
@@ -321,8 +321,8 @@ namespace BCMP.Forms.Management
             // 
             // bt_save
             // 
-            this.bt_save.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.bt_save, "bt_save");
+            this.bt_save.BackColor = System.Drawing.Color.Black;
             this.bt_save.ForeColor = System.Drawing.Color.White;
             this.bt_save.Name = "bt_save";
             this.bt_save.UseVisualStyleBackColor = false;
@@ -352,18 +352,19 @@ namespace BCMP.Forms.Management
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             resources.ApplyResources(this.dateTimePicker2, "dateTimePicker2");
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Name = "dateTimePicker2";
             // 
             // pn_container
             // 
+            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pn_container.Controls.Add(this.lb_document);
             this.pn_container.Controls.Add(this.label2);
@@ -373,7 +374,6 @@ namespace BCMP.Forms.Management
             this.pn_container.Controls.Add(this.dateTimePicker1);
             this.pn_container.Controls.Add(this.dateTimePicker2);
             this.pn_container.Controls.Add(this.panel1);
-            resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.Name = "pn_container";
             this.pn_container.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_container_Paint);
             // 

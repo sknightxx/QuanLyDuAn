@@ -199,11 +199,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DocumentDAO.cs" />
     <Compile Include="DAO\MissionDAO.cs" />
     <Compile Include="DAO\NotificationDAO.cs" />
+    <Compile Include="DAO\PartnerCodeDAO.cs" />
+    <Compile Include="DAO\TypeOfDocumentDAO.cs" />
     <Compile Include="DTO\Document.cs" />
     <Compile Include="DTO\Mission.cs" />
     <Compile Include="DTO\Notification.cs" />
+    <Compile Include="DTO\PartnerCode.cs" />
+    <Compile Include="DTO\TypeOfDocument.cs" />
     <Compile Include="EventsHandler\UpdateProjectEventArgs.cs" />
     <Compile Include="Forms\Management\ChangePasswordForm.cs">
       <SubType>Form</SubType>
@@ -213,6 +218,12 @@
     </Compile>
     <Compile Include="Forms\Management\DropdownMenu.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormAddDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormAddDocument.Designer.cs">
+      <DependentUpon>FormAddDocument.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Management\FormAddMission.cs">
       <SubType>Form</SubType>
@@ -413,6 +424,9 @@
     <EmbeddedResource Include="Forms\Management\ChangePasswordForm.vi.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddDocument.resx">
+      <DependentUpon>FormAddDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.en.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -595,6 +609,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BCMP.DTO.Document.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Employee.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Mission.datasource" />
     <None Include="Properties\DataSources\BCMP.DTO.Notification.datasource" />

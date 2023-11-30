@@ -8,7 +8,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,6 +30,8 @@ namespace BCMP.Forms.Management
 
         private List<Mission> missionsList;
 
+        private List<Document> documentList;
+
         private event EventHandler updateProject;
 
         public event EventHandler UpdateProject
@@ -45,6 +49,7 @@ namespace BCMP.Forms.Management
             LoadCurrentProject();
             LoadDataListMission();
             LoadListDepartment();
+            LoadDataListDocument();
 
             this.f = F;
             if (f.CurrEmp.RoleId == 4)
@@ -65,6 +70,8 @@ namespace BCMP.Forms.Management
             LoadDataListMission();
             LoadListDepartment();
             LoadDataEmployeeInProject();
+            LoadDataListDocument();
+
         }
 
 
@@ -153,6 +160,15 @@ namespace BCMP.Forms.Management
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public void LoadDataListDocument()
+        {
+            documentList = DocumentDAO.Instance.GetAllDocumentInProject(currentProject.ProjectId);
+            if(documentList.Count > 0)
+            {
+                dtgv_ListDocument.DataSource = documentList;
+            }
         }
 
         public void LoadDataListMission()
@@ -250,6 +266,31 @@ namespace BCMP.Forms.Management
             listDepartment = DepartmentDAO.Instance.GetAllDepartmentInProject(CurrentProject.ProjectId);
             cb_Department.DataSource = listDepartment;
             cb_Department.DisplayMember = "Name";
+        }
+
+        private void dtgv_ListDocument_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_ListDocument.Columns[e.ColumnIndex].Name == "Download")
+            {
+                string url = dtgv_ListDocument.Rows[e.RowIndex].Cells[1].Value.ToString();
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.FileName = dtgv_ListDocument.Rows[e.RowIndex].Cells[0].Value.ToString();
+                saveFileDialog.Filter = "All files (*.*)|*.*";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    var fileName = saveFileDialog.FileName;
+                    using (var client = new HttpClient())
+                    {
+                        using (var s = client.GetStreamAsync(url))
+                        {
+                            using (var fs = new FileStream(fileName, FileMode.OpenOrCreate))
+                            {
+                                s.Result.CopyTo(fs);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

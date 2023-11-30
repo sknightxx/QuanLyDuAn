@@ -66,6 +66,9 @@
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dtgv_ListDocument = new System.Windows.Forms.DataGridView();
+            this.documentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.lb_department = new System.Windows.Forms.Label();
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
             this.bt_CreateEmployee = new System.Windows.Forms.Button();
@@ -77,6 +80,22 @@
             this.txt_nameProject = new System.Windows.Forms.TextBox();
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.lb_NameProject = new System.Windows.Forms.Label();
+            this.documentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.documentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReleaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TypeFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProjectId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartmentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PartnerCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,6 +104,11 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_member
@@ -181,6 +205,7 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
@@ -377,6 +402,42 @@
             // 
             this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
             // 
+            // tabPage3
+            // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Controls.Add(this.dtgv_ListDocument);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dtgv_ListDocument
+            // 
+            resources.ApplyResources(this.dtgv_ListDocument, "dtgv_ListDocument");
+            this.dtgv_ListDocument.AutoGenerateColumns = false;
+            this.dtgv_ListDocument.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_ListDocument.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
+            this.Path,
+            this.ReleaseDate,
+            this.TypeFile,
+            this.SerialNumber,
+            this.Status,
+            this.UserId,
+            this.dataGridViewTextBoxColumn1,
+            this.ProjectId,
+            this.dataGridViewTextBoxColumn2,
+            this.DepartmentId,
+            this.PartnerCode,
+            this.Download,
+            this.Delete});
+            this.dtgv_ListDocument.DataSource = this.documentBindingSource2;
+            this.dtgv_ListDocument.Name = "dtgv_ListDocument";
+            this.dtgv_ListDocument.RowTemplate.Height = 24;
+            this.dtgv_ListDocument.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListDocument_CellContentClick);
+            // 
+            // documentBindingSource2
+            // 
+            this.documentBindingSource2.DataSource = typeof(BCMP.DTO.Document);
+            // 
             // lb_department
             // 
             resources.ApplyResources(this.lb_department, "lb_department");
@@ -465,6 +526,100 @@
             this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_NameProject.Name = "lb_NameProject";
             // 
+            // documentBindingSource
+            // 
+            this.documentBindingSource.DataSource = typeof(BCMP.DTO.Document);
+            // 
+            // documentBindingSource1
+            // 
+            this.documentBindingSource1.DataSource = typeof(BCMP.DTO.Document);
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Name";
+            resources.ApplyResources(this.Name, "Name");
+            this.Name.Name = "Name";
+            // 
+            // Path
+            // 
+            this.Path.DataPropertyName = "Path";
+            resources.ApplyResources(this.Path, "Path");
+            this.Path.Name = "Path";
+            // 
+            // ReleaseDate
+            // 
+            this.ReleaseDate.DataPropertyName = "ReleaseDate";
+            resources.ApplyResources(this.ReleaseDate, "ReleaseDate");
+            this.ReleaseDate.Name = "ReleaseDate";
+            // 
+            // TypeFile
+            // 
+            this.TypeFile.DataPropertyName = "TypeFile";
+            resources.ApplyResources(this.TypeFile, "TypeFile");
+            this.TypeFile.Name = "TypeFile";
+            // 
+            // SerialNumber
+            // 
+            this.SerialNumber.DataPropertyName = "SerialNumber";
+            resources.ApplyResources(this.SerialNumber, "SerialNumber");
+            this.SerialNumber.Name = "SerialNumber";
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            resources.ApplyResources(this.Status, "Status");
+            this.Status.Name = "Status";
+            // 
+            // UserId
+            // 
+            this.UserId.DataPropertyName = "UserId";
+            resources.ApplyResources(this.UserId, "UserId");
+            this.UserId.Name = "UserId";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // ProjectId
+            // 
+            this.ProjectId.DataPropertyName = "ProjectId";
+            resources.ApplyResources(this.ProjectId, "ProjectId");
+            this.ProjectId.Name = "ProjectId";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Type";
+            resources.ApplyResources(this.dataGridViewTextBoxColumn2, "dataGridViewTextBoxColumn2");
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // DepartmentId
+            // 
+            this.DepartmentId.DataPropertyName = "DepartmentId";
+            resources.ApplyResources(this.DepartmentId, "DepartmentId");
+            this.DepartmentId.Name = "DepartmentId";
+            // 
+            // PartnerCode
+            // 
+            this.PartnerCode.DataPropertyName = "PartnerCode";
+            resources.ApplyResources(this.PartnerCode, "PartnerCode");
+            this.PartnerCode.Name = "PartnerCode";
+            // 
+            // Download
+            // 
+            this.Download.DataPropertyName = "Download";
+            resources.ApplyResources(this.Download, "Download");
+            this.Download.Name = "Download";
+            this.Download.Text = "Download";
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            resources.ApplyResources(this.Delete, "Delete");
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            // 
             // FormDetailProject
             // 
             resources.ApplyResources(this, "$this");
@@ -472,7 +627,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lb_member);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDetailProject";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -482,6 +636,11 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -535,5 +694,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView dtgv_ListDocument;
+        private System.Windows.Forms.BindingSource documentBindingSource2;
+        private System.Windows.Forms.BindingSource documentBindingSource;
+        private System.Windows.Forms.BindingSource documentBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Path;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReleaseDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TypeFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SerialNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PartnerCode;
+        private System.Windows.Forms.DataGridViewButtonColumn Download;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

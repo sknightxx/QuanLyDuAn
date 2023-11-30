@@ -131,20 +131,11 @@
   <data name="bt_EditMission.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 37</value>
   </data>
-  <data name="txt_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 425</value>
+  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="txt_comment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="txt_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>905, 72</value>
-  </data>
-  <data name="lb_comment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 425</value>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 576</value>
   </data>
   <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -177,17 +168,26 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>703, 161</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>925, 161</value>
   </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 22</value>
+  </data>
   <data name="lb_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_document.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 192</value>
+  </data>
+  <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
   </data>
   <data name="dtp_To.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -231,6 +231,9 @@
   <data name="lb_Tittle.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 108</value>
   </data>
+  <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 22</value>
+  </data>
   <data name="cbb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 274</value>
   </data>
@@ -255,11 +258,17 @@
   <data name="lb_relateProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 347</value>
   </data>
+  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 22</value>
+  </data>
   <data name="lb_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 274</value>
+  </data>
+  <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
   </data>
   <data name="txt_document.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 190</value>
@@ -285,11 +294,23 @@
   <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
     <value>637, 250</value>
   </data>
+  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1203, 576</value>
+  </data>
   <data name="lb_Management.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 23</value>
+  </data>
+  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
   </data>
   <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 21</value>
@@ -300,17 +321,26 @@
   <data name="txt_management.Size" type="System.Drawing.Size, System.Drawing">
     <value>385, 35</value>
   </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="btn_Open.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1203, 576</value>
+  <data name="btn_Open.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="btn_Open.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1203, 576</value>
+  <data name="btn_Open.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Open.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btn_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 37</value>
+  </data>
+  <data name="btn_Open.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>

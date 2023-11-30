@@ -7,7 +7,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +22,8 @@ namespace BCMP.Forms.Management
         private FormDetailProject f;
         private FormMission f_mission;
 
+        private List<Document> documentList;
+
 
 
 
@@ -31,6 +35,7 @@ namespace BCMP.Forms.Management
             CurrMission = mission;
             LoadDataCurrMission();
             this.f = F;
+            LoadListDocument();
         }
 
         public FormDetailMission(Mission mission)
@@ -39,6 +44,7 @@ namespace BCMP.Forms.Management
             CurrMission = mission;
             LoadDataCurrMission();
             this.bt_EditMission.Visible = false;
+            LoadListDocument();
         }
 
         public FormDetailMission(Mission mission, FormMission f)
@@ -48,6 +54,7 @@ namespace BCMP.Forms.Management
             LoadDataCurrMission();
             f_mission = f;
             this.bt_EditMission.Visible = false;
+            LoadListDocument();
         }
 
         private void bt_exit_Click(object sender, EventArgs e)
@@ -122,6 +129,19 @@ namespace BCMP.Forms.Management
        
         }
 
+        public void LoadListDocument()
+        {
+            documentList = DocumentDAO.Instance.GetAllDocumentInMission(currMission.MissionId);
+            if(documentList.Count > 0)
+            {
+                dtgv_ListDocument.DataSource = documentList;
+                if(f != null)
+                {
+                    f.LoadDataListDocument();
+                }
+            }
+        }
+
         private void cbb_status_SelectedIndexChanged(object sender, EventArgs e)
         {
             string status = cbb_status.SelectedItem.ToString();
@@ -135,6 +155,37 @@ namespace BCMP.Forms.Management
                     f_mission.LoadDataMyMission();
                 }
 
+            }
+        }
+
+        private void btn_Open_Click(object sender, EventArgs e)
+        {
+            FormAddDocument formAddDocument = new FormAddDocument(this);
+            formAddDocument.Show();
+        }
+
+        private void dtgv_ListDocument_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dtgv_ListDocument.Columns[e.ColumnIndex].Name == "Download")
+            {
+                string url = dtgv_ListDocument.Rows[e.RowIndex].Cells[1].Value.ToString();
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.FileName = dtgv_ListDocument.Rows[e.RowIndex].Cells[0].Value.ToString();
+                saveFileDialog.Filter = "All files (*.*)|*.*";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    var fileName = saveFileDialog.FileName;
+                    using (var client = new HttpClient())
+                    {
+                        using (var s = client.GetStreamAsync(url))
+                        {
+                            using (var fs = new FileStream(fileName, FileMode.OpenOrCreate))
+                            {
+                                s.Result.CopyTo(fs);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
