@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cb_Department = new System.Windows.Forms.ComboBox();
+            this.lb_department = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cb_TypeDocument
@@ -127,11 +129,33 @@
             this.label4.TabIndex = 30;
             this.label4.Text = "WBS";
             // 
+            // cb_Department
+            // 
+            this.cb_Department.FormattingEnabled = true;
+            this.cb_Department.Items.AddRange(new object[] {
+            "Public",
+            "Your Department"});
+            this.cb_Department.Location = new System.Drawing.Point(26, 216);
+            this.cb_Department.Name = "cb_Department";
+            this.cb_Department.Size = new System.Drawing.Size(121, 24);
+            this.cb_Department.TabIndex = 31;
+            // 
+            // lb_department
+            // 
+            this.lb_department.AutoSize = true;
+            this.lb_department.Location = new System.Drawing.Point(26, 180);
+            this.lb_department.Name = "lb_department";
+            this.lb_department.Size = new System.Drawing.Size(77, 16);
+            this.lb_department.TabIndex = 32;
+            this.lb_department.Text = "Department";
+            // 
             // FormAddDocument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lb_department);
+            this.Controls.Add(this.cb_Department);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -159,5 +183,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cb_Department;
+        private System.Windows.Forms.Label lb_department;
     }
 }

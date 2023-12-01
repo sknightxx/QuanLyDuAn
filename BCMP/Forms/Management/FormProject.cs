@@ -18,8 +18,7 @@ namespace BCMP.Forms
     public partial class FormProject : Form
     {
         private static List<Project> proList = ProjectDAO.Instance.GetAllProject();
-
-
+        private Employee currEmployee = AuthService.Instance.GetCurrentEmployee();
         public FormProject()
         {
             InitializeComponent();

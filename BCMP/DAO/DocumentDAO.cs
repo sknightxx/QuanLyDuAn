@@ -23,9 +23,17 @@ namespace BCMP.DAO
 
         public bool InsertDocument(string name, string path, DateTime releaseDatem, string typeFile, string serialNumber, string status, string projectId,int missionId, string userId, string partnerCodeId, string type, int departmentId)
         {
-            string query = "USP_InsertDocument @name , @path , @releaseDate , @typeFile , @serialNumber , @status , @projectId , @missionId , @userId , @partnerCodeId , @type , @departmentId";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] {name,path,releaseDatem,typeFile,serialNumber,status,projectId,missionId,userId,partnerCodeId,type,departmentId});
-            return result > 0;
+            if(missionId == -1)
+            {
+                string query = "USP_InsertDocumentInProject @name , @path , @releaseDate , @typeFile , @serialNumber , @status , @projectId , @userId , @partnerCodeId , @type , @departmentId";
+                int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { name, path, releaseDatem, typeFile, serialNumber, status, projectId, userId, partnerCodeId, type, departmentId });
+                return result > 0;
+            } else
+            {
+                string query = "USP_InsertDocument @name , @path , @releaseDate , @typeFile , @serialNumber , @status , @projectId , @missionId , @userId , @partnerCodeId , @type , @departmentId";
+                int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { name, path, releaseDatem, typeFile, serialNumber, status, projectId, missionId, userId, partnerCodeId, type, departmentId });
+                return result > 0;
+            }
         }
 
         public List<Document> GetAllDocumentInPublic()
@@ -63,6 +71,21 @@ namespace BCMP.DAO
             List<Document> list = new List<Document>();
             string query = "USP_GetAllDocumentInMission @missionId";
             DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { missionId });
+            int a = result.Rows.Count;
+            foreach (DataRow row in result.Rows)
+            {
+                Document item = new Document(row);
+                string b = item.Name;
+                list.Add(item);
+            }
+            return list;
+        }
+
+        public List<Document> USP_GetAllDocumentInDepartment(int departmentId)
+        {
+            List<Document> list = new List<Document>();
+            string query = "USP_GetAllDocumentInDepartment @departmentId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { departmentId });
             int a = result.Rows.Count;
             foreach (DataRow row in result.Rows)
             {

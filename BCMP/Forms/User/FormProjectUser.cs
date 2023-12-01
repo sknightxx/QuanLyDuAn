@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BCMP.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace BCMP.Forms.User
 {
     public partial class FormProjectUser : Form
     {
-        public FormProjectUser()
+        private Employee empLogin;
+        public FormProjectUser(Employee emp)
         {
             InitializeComponent();
+            this.empLogin = emp;
         }
 
         private void txt_search_Leave(object sender, EventArgs e)

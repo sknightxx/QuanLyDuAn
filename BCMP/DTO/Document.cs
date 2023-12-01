@@ -54,7 +54,15 @@ namespace BCMP.DTO
             this.SerialNumber = row["SerialNumber"].ToString();
             this.Status = row["Status"].ToString();
             this.ProjectId = row["ProjectId"].ToString();
-            this.MissionId = (int)row["MissionId"];
+            var missint = row["MissionId"];
+            if (!DBNull.Value.Equals(missint))
+            {
+                this.MissionId = (int)row["MissionId"];
+            }
+            else
+            {
+                this.MissionId = -1;
+            }
             this.UserId = row["UserId"].ToString();
             this.PartnerCode = row["PartnerCodeId"].ToString();
             this.Type = row["Type"].ToString();

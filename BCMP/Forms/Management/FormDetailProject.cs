@@ -292,5 +292,11 @@ namespace BCMP.Forms.Management
                 }
             }
         }
+
+        private void btn_Open_Click(object sender, EventArgs e)
+        {
+            FormAddDocument formAddDocument = new FormAddDocument(this);
+            formAddDocument.Show();
+        }
     }
 }

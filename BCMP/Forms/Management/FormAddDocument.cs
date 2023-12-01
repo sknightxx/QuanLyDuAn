@@ -22,6 +22,8 @@ namespace BCMP.Forms.Management
 
         private List<TypeOfDocument> listType;
         private List<PartnerCode> listPartner;
+
+        private FormDetailProject f_project;
         public FormAddDocument(FormDetailMission F)
         {
             InitializeComponent();
@@ -29,6 +31,18 @@ namespace BCMP.Forms.Management
             f_mission = F;
             LoadListPartnerCode();
             LoadListTypeOfDocument();
+            cb_Department.Visible = false;
+            lb_department.Visible = false;
+        }
+
+        public FormAddDocument(FormDetailProject F)
+        {
+            InitializeComponent();
+            firebaseService = new FirebaseService();
+            f_project = F;
+            LoadListPartnerCode();
+            LoadListTypeOfDocument();
+            cb_Department.Text = "Public";
         }
 
         public void LoadListPartnerCode()
@@ -47,7 +61,18 @@ namespace BCMP.Forms.Management
 
 
 
-        private async void bt_upload_Click(object sender, EventArgs e)
+        private void bt_upload_Click(object sender, EventArgs e)
+        {
+            if(f_mission != null)
+            {
+                AddDocumentInMission();
+            } else if (f_project != null)
+            {
+                AddDocumentInProject();
+            }
+        }
+
+        public async void AddDocumentInMission()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.CheckFileExists = true;
@@ -58,18 +83,53 @@ namespace BCMP.Forms.Management
             string name = f_mission.CurrMission.ProjectId + "_" + cb_PartnerCode.Text + "_" + cb_TypeDocument.Text + "_" + txt_WBS.Text + "_" + txt_SerialNumber.Text;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
- 
-                var filename = openFileDialog.FileName; 
+
+                var filename = openFileDialog.FileName;
                 FileStream fileStream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.None);
                 var extenstion = Path.GetExtension(filename);
                 var newfilename = name + extenstion;
                 var path = await firebaseService.UploadFileToStorage(fileStream, newfilename);
 
-                if (DocumentDAO.Instance.InsertDocument(newfilename, (string)path,DateTime.Now, (string)extenstion, txt_SerialNumber.Text, "Upload Succesffuly", f_mission.CurrMission.ProjectId, f_mission.CurrMission.MissionId, f_mission.CurrMission.UserId, cb_PartnerCode.Text, cb_TypeDocument.Text,0))
+                if (DocumentDAO.Instance.InsertDocument(newfilename, (string)path, DateTime.Now, (string)extenstion, txt_SerialNumber.Text, "Upload Succesffuly", f_mission.CurrMission.ProjectId, f_mission.CurrMission.MissionId, f_mission.CurrMission.UserId, cb_PartnerCode.Text, cb_TypeDocument.Text, 0))
                 {
                     MessageBox.Show("Upload File Successfully");
                     f_mission.LoadListDocument();
-                } else
+                }
+                else
+                {
+                    MessageBox.Show("Upload File Failed");
+                }
+            }
+        }
+
+        public async void AddDocumentInProject()
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.CheckFileExists = true;
+            openFileDialog.AddExtension = true;
+            openFileDialog.Multiselect = false;
+            openFileDialog.Filter = "All files (*.*)|*.*|PDF files (*.pdf)|*.pdf|Office Files|*.doc;*.xls;*.ppt|Text files (*.txt)|*.txt";
+
+            string name = f_project.CurrentProject.ProjectId + "_" + cb_PartnerCode.Text + "_" + cb_TypeDocument.Text + "_" + txt_WBS.Text + "_" + txt_SerialNumber.Text;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                int departmentid = 0;
+                if (!cb_Department.Text.Equals("Public"))
+                {
+                    departmentid = AuthService.Instance.GetCurrentEmployee().DepartmentId;
+                }
+                var filename = openFileDialog.FileName;
+                FileStream fileStream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.None);
+                var extenstion = Path.GetExtension(filename);
+                var newfilename = name + extenstion;
+                var path = await firebaseService.UploadFileToStorage(fileStream, newfilename);
+
+                if (DocumentDAO.Instance.InsertDocument(newfilename, (string)path, DateTime.Now, (string)extenstion, txt_SerialNumber.Text, "Upload Succesffuly", f_project.CurrentProject.ProjectId, -1, AuthService.Instance.GetCurrentEmployee().UserId, cb_PartnerCode.Text, cb_TypeDocument.Text, departmentid))
+                {
+                    MessageBox.Show("Upload File Successfully");
+                    f_project.LoadDataListMission();
+                }
+                else
                 {
                     MessageBox.Show("Upload File Failed");
                 }

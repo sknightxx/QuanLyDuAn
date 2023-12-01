@@ -33,6 +33,7 @@
             this.lb_member = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Open = new System.Windows.Forms.Button();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,8 +81,6 @@
             this.txt_nameProject = new System.Windows.Forms.TextBox();
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.lb_NameProject = new System.Windows.Forms.Label();
-            this.documentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.documentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReleaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,8 +106,6 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_member
@@ -127,6 +124,7 @@
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.btn_Open);
             this.panel2.Controls.Add(this.bt_exit);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -147,6 +145,20 @@
             this.panel2.Controls.Add(this.lb_NameProject);
             this.panel2.Name = "panel2";
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btn_Open
+            // 
+            resources.ApplyResources(this.btn_Open, "btn_Open");
+            this.btn_Open.BackColor = System.Drawing.Color.Black;
+            this.btn_Open.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Open.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(88)))), ((int)(((byte)(155)))));
+            this.btn_Open.FlatAppearance.BorderSize = 0;
+            this.btn_Open.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_Open.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_Open.ForeColor = System.Drawing.Color.White;
+            this.btn_Open.Name = "btn_Open";
+            this.btn_Open.UseVisualStyleBackColor = false;
+            this.btn_Open.Click += new System.EventHandler(this.btn_Open_Click);
             // 
             // bt_exit
             // 
@@ -526,14 +538,6 @@
             this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_NameProject.Name = "lb_NameProject";
             // 
-            // documentBindingSource
-            // 
-            this.documentBindingSource.DataSource = typeof(BCMP.DTO.Document);
-            // 
-            // documentBindingSource1
-            // 
-            this.documentBindingSource1.DataSource = typeof(BCMP.DTO.Document);
-            // 
             // Name
             // 
             this.Name.DataPropertyName = "Name";
@@ -639,8 +643,6 @@
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -697,8 +699,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dtgv_ListDocument;
         private System.Windows.Forms.BindingSource documentBindingSource2;
-        private System.Windows.Forms.BindingSource documentBindingSource;
-        private System.Windows.Forms.BindingSource documentBindingSource1;
+        private System.Windows.Forms.Button btn_Open;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Path;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReleaseDate;

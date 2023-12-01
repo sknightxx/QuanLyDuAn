@@ -65,5 +65,10 @@ namespace BCMP.Service
             }
             return true;
         }
+
+        public Employee GetCurrentEmployee()
+        {
+            return empCur;
+        }
     }
 }
