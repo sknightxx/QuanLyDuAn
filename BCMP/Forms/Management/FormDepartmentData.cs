@@ -30,7 +30,7 @@ namespace BCMP.Forms.Management
         {
           
             
-            listDocument = DocumentDAO.Instance.USP_GetAllDocumentInDepartment(curremployee.DepartmentId);
+            listDocument = DocumentDAO.Instance.GetAllDocumentInDepartment(curremployee.DepartmentId);
             if(listDocument.Count > 0)
             {
                 dgv_DepartmentData.DataSource = listDocument;

@@ -90,5 +90,18 @@ namespace BCMP.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { projectId, actualEndDate });
             return result > 0;
         }
+
+        public List<Project> GetProjectByUserId(string userId)
+        {
+            string query = "USP_GetAllProjectByUserId @userId";
+            List<Project> pro = new List<Project>();
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { userId });
+            foreach (DataRow row in data.Rows)
+            {
+                Project item = new Project(row);
+                pro.Add(item);
+            }
+            return pro;
+        }
     }
 }

@@ -175,5 +175,19 @@ namespace BCMP.DAO
             }
             return list;
         }
+
+        public List<Employee> GetAllEmployeeInDepartment(int departmentId)
+        {
+            List<Employee> list = new List<Employee>();
+            string query = "USP_GetAllEmployeeByDepartment @departmentId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { departmentId });
+            foreach(DataRow item in result.Rows)
+            {
+                list.Add(new Employee(item));
+            }
+            return list;
+        }
+
+
     }
 }

@@ -91,11 +91,14 @@ namespace BCMP.Forms.Management
                     MessageBox.Show("All Employe joined Successfully");
                     LoadDataEmployeeNotInProject();
                     f.LoadDataEmployeeInProject();
+                    f.LoadDepartmentData();
                 } else if (count < target && count > 0)
                 {
                     MessageBox.Show("Some Employe didn't join Successfully");
                     LoadDataEmployeeNotInProject();
                     f.LoadDataEmployeeInProject();
+                    f.LoadDepartmentData();
+
 
                 }
                 else

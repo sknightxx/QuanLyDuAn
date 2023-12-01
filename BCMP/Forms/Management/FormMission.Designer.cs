@@ -40,24 +40,24 @@
             this.lb_MyWork = new System.Windows.Forms.Label();
             this.bt_CreateProject = new System.Windows.Forms.Button();
             this.pn_container = new System.Windows.Forms.Panel();
-            this.dtgvMyMission = new System.Windows.Forms.DataGridView();
-            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtgvMyMission = new System.Windows.Forms.DataGridView();
+            this.missionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.missionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pn_container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMyMission)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMyMission)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -155,6 +155,12 @@
             resources.ApplyResources(this.pn_container, "pn_container");
             this.pn_container.Name = "pn_container";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dtgvMyMission);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // dtgvMyMission
             // 
             this.dtgvMyMission.AutoGenerateColumns = false;
@@ -180,30 +186,25 @@
             this.dtgvMyMission.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellContentClick);
             this.dtgvMyMission.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMyMission_CellEndEdit);
             // 
-            // MissionId
+            // missionBindingSource1
             // 
-            this.MissionId.DataPropertyName = "MissionId";
-            resources.ApplyResources(this.MissionId, "MissionId");
-            this.MissionId.Name = "MissionId";
+            this.missionBindingSource1.DataSource = typeof(BCMP.DTO.Mission);
             // 
-            // Detail
+            // missionBindingSource
             // 
-            this.Detail.DataPropertyName = "Detail";
-            resources.ApplyResources(this.Detail, "Detail");
-            this.Detail.Name = "Detail";
-            this.Detail.Text = "Detail";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dtgvMyMission);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
             // titleDataGridViewTextBoxColumn
             // 
             this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
             resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
             this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            // 
+            // MissionId
+            // 
+            this.MissionId.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.MissionId, "MissionId");
+            this.MissionId.Name = "MissionId";
             // 
             // progressDataGridViewTextBoxColumn
             // 
@@ -241,13 +242,13 @@
             resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
             this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
             // 
-            // missionBindingSource1
+            // Detail
             // 
-            this.missionBindingSource1.DataSource = typeof(BCMP.DTO.Mission);
-            // 
-            // missionBindingSource
-            // 
-            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
+            this.Detail.DataPropertyName = "Detail";
+            resources.ApplyResources(this.Detail, "Detail");
+            this.Detail.Name = "Detail";
+            this.Detail.Text = "Detail";
+            this.Detail.UseColumnTextForButtonValue = true;
             // 
             // FormMission
             // 
@@ -263,8 +264,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pn_container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMyMission)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMyMission)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -286,6 +287,7 @@
         private System.Windows.Forms.BindingSource missionBindingSource;
         private System.Windows.Forms.DataGridView dtgvMyMission;
         private System.Windows.Forms.BindingSource missionBindingSource1;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn MissionId;
         private System.Windows.Forms.DataGridViewTextBoxColumn progressDataGridViewTextBoxColumn;
@@ -294,6 +296,5 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn projectIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Detail;
-        private System.Windows.Forms.Panel panel1;
     }
 }

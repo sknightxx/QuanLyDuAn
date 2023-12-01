@@ -128,12 +128,15 @@
   <data name="txt_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="txt_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_search.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txt_search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 30</value>
+    <value>451, 38</value>
   </data>
   <data name="txt_search.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -160,10 +163,13 @@
     <value>Century Gothic, 12pt</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 0</value>
+    <value>45, 0</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 30</value>
+    <value>451, 38</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -186,6 +192,9 @@
   <data name="bt_search.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="bt_search.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bt_search.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -193,7 +202,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 30</value>
+    <value>45, 38</value>
   </data>
   <data name="bt_search.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -211,10 +220,13 @@
     <value>1</value>
   </data>
   <data name="pn_search.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 20</value>
+    <value>279, 25</value>
+  </data>
+  <data name="pn_search.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pn_search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>397, 30</value>
+    <value>496, 38</value>
   </data>
   <data name="pn_search.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -240,14 +252,17 @@
   <data name="bt_others.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
+  <data name="bt_others.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bt_others.Location" type="System.Drawing.Point, System.Drawing">
-    <value>805, 20</value>
+    <value>1006, 25</value>
   </data>
   <data name="bt_others.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_others.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 30</value>
+    <value>55, 38</value>
   </data>
   <data name="bt_others.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -276,14 +291,17 @@
   <data name="bt_CreateProject.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
+  <data name="bt_CreateProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bt_CreateProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>693, 20</value>
+    <value>866, 25</value>
   </data>
   <data name="bt_CreateProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="bt_CreateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 30</value>
+    <value>115, 38</value>
   </data>
   <data name="bt_CreateProject.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -309,14 +327,17 @@
   <data name="lb_MyWork.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 13.8pt, style=Bold</value>
   </data>
+  <data name="lb_MyWork.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lb_MyWork.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 20</value>
+    <value>29, 25</value>
   </data>
   <data name="lb_MyWork.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="lb_MyWork.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 23</value>
+    <value>105, 27</value>
   </data>
   <data name="lb_MyWork.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -346,7 +367,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="pn_tittle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 58</value>
+    <value>1128, 72</value>
   </data>
   <data name="pn_tittle.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -403,7 +424,7 @@
     <value>17, 17</value>
   </metadata>
   <data name="dtgv_Project.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 4</value>
+    <value>12, 5</value>
   </data>
   <data name="dtgv_Project.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -412,7 +433,7 @@
     <value>51</value>
   </data>
   <data name="dtgv_Project.Size" type="System.Drawing.Size, System.Drawing">
-    <value>881, 385</value>
+    <value>1101, 481</value>
   </data>
   <data name="dtgv_Project.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -435,8 +456,11 @@
   <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="pn_container.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 410</value>
+    <value>1128, 513</value>
   </data>
   <data name="pn_container.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -457,13 +481,13 @@
     <value>Fill</value>
   </data>
   <data name="pn_background.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 58</value>
+    <value>0, 72</value>
   </data>
   <data name="pn_background.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="pn_background.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 410</value>
+    <value>1128, 513</value>
   </data>
   <data name="pn_background.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -487,16 +511,22 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
+    <value>120, 120</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>902, 468</value>
+    <value>1128, 585</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormProject</value>
+  </data>
+  <data name="&gt;&gt;projectBindingSource.Name" xml:space="preserve">
+    <value>projectBindingSource</value>
+  </data>
+  <data name="&gt;&gt;projectBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>projectIdDataGridViewTextBoxColumn</value>
@@ -527,12 +557,6 @@
   </data>
   <data name="&gt;&gt;Detail.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;projectBindingSource.Name" xml:space="preserve">
-    <value>projectBindingSource</value>
-  </data>
-  <data name="&gt;&gt;projectBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormProject</value>

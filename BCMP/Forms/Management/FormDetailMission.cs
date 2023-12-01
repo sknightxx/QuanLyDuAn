@@ -21,7 +21,7 @@ namespace BCMP.Forms.Management
         private Mission currMission;
         private FormDetailProject f;
         private FormMission f_mission;
-
+        private Employee currEmp = AuthService.Instance.GetCurrentEmployee();
         private List<Document> documentList;
 
 
@@ -36,6 +36,10 @@ namespace BCMP.Forms.Management
             LoadDataCurrMission();
             this.f = F;
             LoadListDocument();
+            if(currEmp.RoleId == 4)
+            {
+                bt_EditMission.Visible = false;
+            }
         }
 
         public FormDetailMission(Mission mission)
@@ -45,6 +49,10 @@ namespace BCMP.Forms.Management
             LoadDataCurrMission();
             this.bt_EditMission.Visible = false;
             LoadListDocument();
+            if (currEmp.RoleId == 4)
+            {
+                bt_EditMission.Visible = false;
+            }
         }
 
         public FormDetailMission(Mission mission, FormMission f)
@@ -55,6 +63,10 @@ namespace BCMP.Forms.Management
             f_mission = f;
             this.bt_EditMission.Visible = false;
             LoadListDocument();
+            if (currEmp.RoleId == 4)
+            {
+                bt_EditMission.Visible = false;
+            }
         }
 
         private void bt_exit_Click(object sender, EventArgs e)

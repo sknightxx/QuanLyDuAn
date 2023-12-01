@@ -127,7 +127,7 @@ namespace BCMP.Forms.Management
                 if (DocumentDAO.Instance.InsertDocument(newfilename, (string)path, DateTime.Now, (string)extenstion, txt_SerialNumber.Text, "Upload Succesffuly", f_project.CurrentProject.ProjectId, -1, AuthService.Instance.GetCurrentEmployee().UserId, cb_PartnerCode.Text, cb_TypeDocument.Text, departmentid))
                 {
                     MessageBox.Show("Upload File Successfully");
-                    f_project.LoadDataListMission();
+                    f_project.LoadDataListDocument();
                 }
                 else
                 {

@@ -17,11 +17,19 @@ namespace BCMP.Forms
 {
     public partial class FormProject : Form
     {
-        private static List<Project> proList = ProjectDAO.Instance.GetAllProject();
+        private static List<Project> proList;
         private Employee currEmployee = AuthService.Instance.GetCurrentEmployee();
         public FormProject()
         {
             InitializeComponent();
+            if(currEmployee.RoleId != 1 && currEmployee.RoleId != 2)
+            {
+                proList = ProjectDAO.Instance.GetProjectByUserId(currEmployee.UserId);
+                bt_CreateProject.Visible = false;
+            } else
+            {
+                proList = ProjectDAO.Instance.GetAllProject();
+            }
             LoadProjectList();
         }
 

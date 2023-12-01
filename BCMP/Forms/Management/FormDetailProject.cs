@@ -25,6 +25,8 @@ namespace BCMP.Forms.Management
 
         private Notifications f;
 
+        private Employee currEmployee = AuthService.Instance.GetCurrentEmployee();
+
         private List<Employee> listEmp;
         private List<Department> listDepartment;
 
@@ -52,10 +54,13 @@ namespace BCMP.Forms.Management
             LoadDataListDocument();
 
             this.f = F;
-            if (f.CurrEmp.RoleId == 4)
+            if (currEmployee.RoleId == 4)
             {
                 bt_CreateEmployee.Visible = false;
                 bt_CreateMission.Visible = false;
+                bt_save.Visible = false;
+            } else if(currEmployee.RoleId == 3)
+            {
                 bt_save.Visible = false;
             }
             cb_Department.DataSource = listDepartment;
@@ -66,6 +71,15 @@ namespace BCMP.Forms.Management
         {
             InitializeComponent();
             CurrentProject = currentProject;
+            if (currEmployee.RoleId == 4)
+            {
+                bt_CreateEmployee.Visible = false;
+                bt_CreateMission.Visible = false;
+                bt_save.Visible = false;
+            } else if(currEmployee.RoleId == 3)
+            {
+                bt_save.Visible = false;
+            }
             LoadCurrentProject();
             LoadDataListMission();
             LoadListDepartment();

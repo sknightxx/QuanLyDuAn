@@ -81,7 +81,7 @@ namespace BCMP.DAO
             return list;
         }
 
-        public List<Document> USP_GetAllDocumentInDepartment(int departmentId)
+        public List<Document> GetAllDocumentInDepartment(int departmentId)
         {
             List<Document> list = new List<Document>();
             string query = "USP_GetAllDocumentInDepartment @departmentId";
@@ -95,6 +95,30 @@ namespace BCMP.DAO
             }
             return list;
         }
+
+        public List<Document> GetAllDocumentInPublicUser(string userId)
+        {
+            List<Document> list = new List<Document>();
+            string query = "USP_GetAllDocumentInPublicUser @userId";
+            DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { userId });
+            int a = result.Rows.Count;
+            foreach (DataRow row in result.Rows)
+            {
+                Document item = new Document(row);
+                string b = item.Name;
+                list.Add(item);
+            }
+            return list;
+        }
+
+        public bool DeletDocumentByCEO(string serial)
+        {
+            string query = "USP_DeleteDocumentBySerial @serialNumber";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { serial });
+            return result > 0;
+        }
+
+
 
 
 

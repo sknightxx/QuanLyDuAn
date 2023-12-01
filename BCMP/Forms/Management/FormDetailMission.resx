@@ -987,11 +987,11 @@
   <data name="$this.Text" xml:space="preserve">
     <value>FormDetailMission</value>
   </data>
-  <data name="&gt;&gt;Download.Name" xml:space="preserve">
-    <value>Download</value>
+  <data name="&gt;&gt;documentBindingSource.Name" xml:space="preserve">
+    <value>documentBindingSource</value>
   </data>
-  <data name="&gt;&gt;Download.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;documentBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>nameDataGridViewTextBoxColumn</value>
@@ -1065,11 +1065,11 @@
   <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;documentBindingSource.Name" xml:space="preserve">
-    <value>documentBindingSource</value>
+  <data name="&gt;&gt;Download.Name" xml:space="preserve">
+    <value>Download</value>
   </data>
-  <data name="&gt;&gt;documentBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Download.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormDetailMission</value>

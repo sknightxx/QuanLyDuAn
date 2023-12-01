@@ -48,8 +48,10 @@
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.TypeEmployee = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -157,6 +159,8 @@
             // dtgv_ListEmp
             // 
             this.dtgv_ListEmp.AutoGenerateColumns = false;
+            this.dtgv_ListEmp.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtgv_ListEmp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_ListEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_ListEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userIdDataGridViewTextBoxColumn,
@@ -165,8 +169,10 @@
             this.Department,
             this.roleIdDataGridViewTextBoxColumn,
             this.Role,
+            this.Type,
             this.IsDeactivated,
-            this.Edit});
+            this.Edit,
+            this.TypeEmployee});
             this.dtgv_ListEmp.DataSource = this.employeeBindingSource;
             resources.ApplyResources(this.dtgv_ListEmp, "dtgv_ListEmp");
             this.dtgv_ListEmp.Name = "dtgv_ListEmp";
@@ -183,34 +189,46 @@
             this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
             resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
             this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            this.userIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FullName
             // 
             this.FullName.DataPropertyName = "FullName";
             resources.ApplyResources(this.FullName, "FullName");
             this.FullName.Name = "FullName";
+            this.FullName.ReadOnly = true;
             // 
             // departmentIdDataGridViewTextBoxColumn
             // 
             this.departmentIdDataGridViewTextBoxColumn.DataPropertyName = "DepartmentId";
             resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
             this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
+            this.departmentIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Department
             // 
             resources.ApplyResources(this.Department, "Department");
             this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
             // 
             // roleIdDataGridViewTextBoxColumn
             // 
             this.roleIdDataGridViewTextBoxColumn.DataPropertyName = "RoleId";
             resources.ApplyResources(this.roleIdDataGridViewTextBoxColumn, "roleIdDataGridViewTextBoxColumn");
             this.roleIdDataGridViewTextBoxColumn.Name = "roleIdDataGridViewTextBoxColumn";
+            this.roleIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Role
             // 
             resources.ApplyResources(this.Role, "Role");
             this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            // 
+            // Type
+            // 
+            resources.ApplyResources(this.Type, "Type");
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
             // 
             // IsDeactivated
             // 
@@ -223,6 +241,14 @@
             resources.ApplyResources(this.Edit, "Edit");
             this.Edit.Name = "Edit";
             this.Edit.Text = "Edit";
+            this.Edit.UseColumnTextForButtonValue = true;
+            // 
+            // TypeEmployee
+            // 
+            this.TypeEmployee.DataPropertyName = "TypeEmployee";
+            resources.ApplyResources(this.TypeEmployee, "TypeEmployee");
+            this.TypeEmployee.Name = "TypeEmployee";
+            this.TypeEmployee.ReadOnly = true;
             // 
             // FormEmployee
             // 
@@ -265,7 +291,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewCheckBoxColumn IsDeactivated;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn TypeEmployee;
     }
 }

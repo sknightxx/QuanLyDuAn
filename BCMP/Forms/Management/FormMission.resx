@@ -561,22 +561,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>FormMission</value>
   </data>
-  <data name="&gt;&gt;MissionId.Name" xml:space="preserve">
-    <value>MissionId</value>
+  <data name="&gt;&gt;missionBindingSource1.Name" xml:space="preserve">
+    <value>missionBindingSource1</value>
   </data>
-  <data name="&gt;&gt;MissionId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;missionBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Detail.Name" xml:space="preserve">
-    <value>Detail</value>
+  <data name="&gt;&gt;missionBindingSource.Name" xml:space="preserve">
+    <value>missionBindingSource</value>
   </data>
-  <data name="&gt;&gt;Detail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;missionBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>titleDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;titleDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MissionId.Name" xml:space="preserve">
+    <value>MissionId</value>
+  </data>
+  <data name="&gt;&gt;MissionId.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progressDataGridViewTextBoxColumn.Name" xml:space="preserve">
@@ -609,17 +615,11 @@
   <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;missionBindingSource1.Name" xml:space="preserve">
-    <value>missionBindingSource1</value>
+  <data name="&gt;&gt;Detail.Name" xml:space="preserve">
+    <value>Detail</value>
   </data>
-  <data name="&gt;&gt;missionBindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;missionBindingSource.Name" xml:space="preserve">
-    <value>missionBindingSource</value>
-  </data>
-  <data name="&gt;&gt;missionBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Detail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMission</value>

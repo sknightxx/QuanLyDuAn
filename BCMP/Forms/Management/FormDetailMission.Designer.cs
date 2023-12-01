@@ -42,7 +42,6 @@
             this.txt_tittle = new System.Windows.Forms.TextBox();
             this.lb_Tittle = new System.Windows.Forms.Label();
             this.cbb_status = new System.Windows.Forms.ComboBox();
-            this.txt_relateProject = new System.Windows.Forms.TextBox();
             this.lb_relateProject = new System.Windows.Forms.Label();
             this.lb_status = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,7 +51,8 @@
             this.txt_management = new System.Windows.Forms.TextBox();
             this.txt_Description = new System.Windows.Forms.TextBox();
             this.lb_description = new System.Windows.Forms.Label();
-            this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txt_relateProject = new System.Windows.Forms.TextBox();
+            this.documentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.releaseDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partnerCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pn_container.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).BeginInit();
@@ -197,13 +197,6 @@
             resources.ApplyResources(this.cbb_status, "cbb_status");
             this.cbb_status.Name = "cbb_status";
             // 
-            // txt_relateProject
-            // 
-            resources.ApplyResources(this.txt_relateProject, "txt_relateProject");
-            this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txt_relateProject.Name = "txt_relateProject";
-            this.txt_relateProject.ReadOnly = true;
-            // 
             // lb_relateProject
             // 
             resources.ApplyResources(this.lb_relateProject, "lb_relateProject");
@@ -295,18 +288,23 @@
             this.lb_description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_description.Name = "lb_description";
             // 
-            // Download
+            // txt_relateProject
             // 
-            this.Download.DataPropertyName = "Download";
-            resources.ApplyResources(this.Download, "Download");
-            this.Download.Name = "Download";
-            this.Download.Text = "Download";
+            resources.ApplyResources(this.txt_relateProject, "txt_relateProject");
+            this.txt_relateProject.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.txt_relateProject.Name = "txt_relateProject";
+            this.txt_relateProject.ReadOnly = true;
+            // 
+            // documentBindingSource
+            // 
+            this.documentBindingSource.DataSource = typeof(BCMP.DTO.Document);
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pathDataGridViewTextBoxColumn
             // 
@@ -319,12 +317,14 @@
             this.releaseDateDataGridViewTextBoxColumn.DataPropertyName = "ReleaseDate";
             resources.ApplyResources(this.releaseDateDataGridViewTextBoxColumn, "releaseDateDataGridViewTextBoxColumn");
             this.releaseDateDataGridViewTextBoxColumn.Name = "releaseDateDataGridViewTextBoxColumn";
+            this.releaseDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // typeFileDataGridViewTextBoxColumn
             // 
             this.typeFileDataGridViewTextBoxColumn.DataPropertyName = "TypeFile";
             resources.ApplyResources(this.typeFileDataGridViewTextBoxColumn, "typeFileDataGridViewTextBoxColumn");
             this.typeFileDataGridViewTextBoxColumn.Name = "typeFileDataGridViewTextBoxColumn";
+            this.typeFileDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // serialNumberDataGridViewTextBoxColumn
             // 
@@ -349,12 +349,14 @@
             this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
             resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
             this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            this.userIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // projectIdDataGridViewTextBoxColumn
             // 
             this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
             resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
             this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
+            this.projectIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // typeDataGridViewTextBoxColumn
             // 
@@ -374,9 +376,13 @@
             resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
             this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
             // 
-            // documentBindingSource
+            // Download
             // 
-            this.documentBindingSource.DataSource = typeof(BCMP.DTO.Document);
+            this.Download.DataPropertyName = "Download";
+            resources.ApplyResources(this.Download, "Download");
+            this.Download.Name = "Download";
+            this.Download.Text = "Download";
+            this.Download.UseColumnTextForButtonValue = true;
             // 
             // FormDetailMission
             // 
@@ -418,6 +424,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Open;
         private System.Windows.Forms.DataGridView dtgv_ListDocument;
+        private System.Windows.Forms.BindingSource documentBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn releaseDateDataGridViewTextBoxColumn;
@@ -431,6 +438,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn partnerCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Download;
-        private System.Windows.Forms.BindingSource documentBindingSource;
     }
 }

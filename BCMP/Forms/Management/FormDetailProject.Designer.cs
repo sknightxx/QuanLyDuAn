@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetailProject));
             this.lb_member = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Open = new System.Windows.Forms.Button();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
@@ -43,33 +42,18 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dtgvMissionList = new System.Windows.Forms.DataGridView();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MissionId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bt_default = new System.Windows.Forms.Button();
             this.cb_Department = new System.Windows.Forms.ComboBox();
             this.dtgv_listEmp = new System.Windows.Forms.DataGridView();
-            this.userIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeEmployeeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dtgv_ListDocument = new System.Windows.Forms.DataGridView();
-            this.documentBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lb_department = new System.Windows.Forms.Label();
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
             this.bt_CreateEmployee = new System.Windows.Forms.Button();
@@ -81,31 +65,45 @@
             this.txt_nameProject = new System.Windows.Forms.TextBox();
             this.lb_IdProject = new System.Windows.Forms.Label();
             this.lb_NameProject = new System.Windows.Forms.Label();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReleaseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TypeFile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SerialNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProjectId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DepartmentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PartnerCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.progressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.missionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeEmployeeDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.releaseDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeFileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.missionIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userIdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partnerCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.documentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_member
@@ -114,12 +112,6 @@
             this.lb_member.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lb_member.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_member.Name = "lb_member";
-            // 
-            // contextMenuStrip1
-            // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
             // 
             // panel2
             // 
@@ -248,53 +240,11 @@
             this.dtgvMissionList.RowTemplate.Height = 24;
             this.dtgvMissionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMissionList_CellContentClick);
             // 
-            // titleDataGridViewTextBoxColumn
-            // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
-            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
-            // 
             // MissionId
             // 
             this.MissionId.DataPropertyName = "MissionId";
             resources.ApplyResources(this.MissionId, "MissionId");
             this.MissionId.Name = "MissionId";
-            // 
-            // progressDataGridViewTextBoxColumn
-            // 
-            this.progressDataGridViewTextBoxColumn.DataPropertyName = "Progress";
-            resources.ApplyResources(this.progressDataGridViewTextBoxColumn, "progressDataGridViewTextBoxColumn");
-            this.progressDataGridViewTextBoxColumn.Name = "progressDataGridViewTextBoxColumn";
-            // 
-            // plannedStartDateDataGridViewTextBoxColumn
-            // 
-            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
-            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
-            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
-            // 
-            // plannedEndDateDataGridViewTextBoxColumn
-            // 
-            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
-            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
-            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            resources.ApplyResources(this.statusDataGridViewTextBoxColumn, "statusDataGridViewTextBoxColumn");
-            this.statusDataGridViewTextBoxColumn.Items.AddRange(new object[] {
-            "TO DO",
-            "IN PROGRESS",
-            "DONE"});
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.statusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // userIdDataGridViewTextBoxColumn
-            // 
-            this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
-            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
-            this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
             // 
             // Detail
             // 
@@ -302,10 +252,7 @@
             resources.ApplyResources(this.Detail, "Detail");
             this.Detail.Name = "Detail";
             this.Detail.Text = "Detail";
-            // 
-            // missionBindingSource
-            // 
-            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
+            this.Detail.UseColumnTextForButtonValue = true;
             // 
             // tabPage2
             // 
@@ -351,46 +298,11 @@
             this.dtgv_listEmp.RowTemplate.Height = 24;
             this.dtgv_listEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_listEmp_DataBindingComplete);
             // 
-            // userIdDataGridViewTextBoxColumn1
-            // 
-            this.userIdDataGridViewTextBoxColumn1.DataPropertyName = "UserId";
-            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn1, "userIdDataGridViewTextBoxColumn1");
-            this.userIdDataGridViewTextBoxColumn1.Name = "userIdDataGridViewTextBoxColumn1";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            resources.ApplyResources(this.fullNameDataGridViewTextBoxColumn, "fullNameDataGridViewTextBoxColumn");
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            resources.ApplyResources(this.emailDataGridViewTextBoxColumn, "emailDataGridViewTextBoxColumn");
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // phoneNumberDataGridViewTextBoxColumn
-            // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
-            resources.ApplyResources(this.phoneNumberDataGridViewTextBoxColumn, "phoneNumberDataGridViewTextBoxColumn");
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
-            // 
-            // roleIdDataGridViewTextBoxColumn
-            // 
-            this.roleIdDataGridViewTextBoxColumn.DataPropertyName = "RoleId";
-            resources.ApplyResources(this.roleIdDataGridViewTextBoxColumn, "roleIdDataGridViewTextBoxColumn");
-            this.roleIdDataGridViewTextBoxColumn.Name = "roleIdDataGridViewTextBoxColumn";
-            // 
             // Role
             // 
             resources.ApplyResources(this.Role, "Role");
             this.Role.Name = "Role";
-            // 
-            // typeEmployeeDataGridViewCheckBoxColumn
-            // 
-            this.typeEmployeeDataGridViewCheckBoxColumn.DataPropertyName = "TypeEmployee";
-            resources.ApplyResources(this.typeEmployeeDataGridViewCheckBoxColumn, "typeEmployeeDataGridViewCheckBoxColumn");
-            this.typeEmployeeDataGridViewCheckBoxColumn.Name = "typeEmployeeDataGridViewCheckBoxColumn";
+            this.Role.ReadOnly = true;
             // 
             // Type
             // 
@@ -398,21 +310,11 @@
             this.Type.Name = "Type";
             this.Type.ReadOnly = true;
             // 
-            // departmentIdDataGridViewTextBoxColumn
-            // 
-            this.departmentIdDataGridViewTextBoxColumn.DataPropertyName = "DepartmentId";
-            resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
-            this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
-            // 
             // Department
             // 
             resources.ApplyResources(this.Department, "Department");
             this.Department.Name = "Department";
             this.Department.ReadOnly = true;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
             // 
             // tabPage3
             // 
@@ -427,28 +329,31 @@
             this.dtgv_ListDocument.AutoGenerateColumns = false;
             this.dtgv_ListDocument.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_ListDocument.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.Path,
-            this.ReleaseDate,
-            this.TypeFile,
-            this.SerialNumber,
-            this.Status,
-            this.UserId,
-            this.dataGridViewTextBoxColumn1,
-            this.ProjectId,
-            this.dataGridViewTextBoxColumn2,
-            this.DepartmentId,
-            this.PartnerCode,
-            this.Download,
-            this.Delete});
-            this.dtgv_ListDocument.DataSource = this.documentBindingSource2;
+            this.nameDataGridViewTextBoxColumn,
+            this.pathDataGridViewTextBoxColumn,
+            this.releaseDateDataGridViewTextBoxColumn,
+            this.typeFileDataGridViewTextBoxColumn,
+            this.serialNumberDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn1,
+            this.missionIdDataGridViewTextBoxColumn,
+            this.userIdDataGridViewTextBoxColumn2,
+            this.projectIdDataGridViewTextBoxColumn,
+            this.typeDataGridViewTextBoxColumn,
+            this.departmentIdDataGridViewTextBoxColumn1,
+            this.partnerCodeDataGridViewTextBoxColumn,
+            this.Download});
+            this.dtgv_ListDocument.DataSource = this.documentBindingSource;
             this.dtgv_ListDocument.Name = "dtgv_ListDocument";
             this.dtgv_ListDocument.RowTemplate.Height = 24;
             this.dtgv_ListDocument.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListDocument_CellContentClick);
             // 
-            // documentBindingSource2
+            // Download
             // 
-            this.documentBindingSource2.DataSource = typeof(BCMP.DTO.Document);
+            this.Download.DataPropertyName = "Download";
+            resources.ApplyResources(this.Download, "Download");
+            this.Download.Name = "Download";
+            this.Download.Text = "Download";
+            this.Download.UseColumnTextForButtonValue = true;
             // 
             // lb_department
             // 
@@ -538,91 +443,185 @@
             this.lb_NameProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.lb_NameProject.Name = "lb_NameProject";
             // 
-            // Name
+            // titleDataGridViewTextBoxColumn
             // 
-            this.Name.DataPropertyName = "Name";
-            resources.ApplyResources(this.Name, "Name");
-            this.Name.Name = "Name";
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "Title";
+            resources.ApplyResources(this.titleDataGridViewTextBoxColumn, "titleDataGridViewTextBoxColumn");
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.titleDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Path
+            // progressDataGridViewTextBoxColumn
             // 
-            this.Path.DataPropertyName = "Path";
-            resources.ApplyResources(this.Path, "Path");
-            this.Path.Name = "Path";
+            this.progressDataGridViewTextBoxColumn.DataPropertyName = "Progress";
+            resources.ApplyResources(this.progressDataGridViewTextBoxColumn, "progressDataGridViewTextBoxColumn");
+            this.progressDataGridViewTextBoxColumn.Name = "progressDataGridViewTextBoxColumn";
+            this.progressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ReleaseDate
+            // plannedStartDateDataGridViewTextBoxColumn
             // 
-            this.ReleaseDate.DataPropertyName = "ReleaseDate";
-            resources.ApplyResources(this.ReleaseDate, "ReleaseDate");
-            this.ReleaseDate.Name = "ReleaseDate";
+            this.plannedStartDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedStartDate";
+            resources.ApplyResources(this.plannedStartDateDataGridViewTextBoxColumn, "plannedStartDateDataGridViewTextBoxColumn");
+            this.plannedStartDateDataGridViewTextBoxColumn.Name = "plannedStartDateDataGridViewTextBoxColumn";
+            this.plannedStartDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // TypeFile
+            // plannedEndDateDataGridViewTextBoxColumn
             // 
-            this.TypeFile.DataPropertyName = "TypeFile";
-            resources.ApplyResources(this.TypeFile, "TypeFile");
-            this.TypeFile.Name = "TypeFile";
+            this.plannedEndDateDataGridViewTextBoxColumn.DataPropertyName = "PlannedEndDate";
+            resources.ApplyResources(this.plannedEndDateDataGridViewTextBoxColumn, "plannedEndDateDataGridViewTextBoxColumn");
+            this.plannedEndDateDataGridViewTextBoxColumn.Name = "plannedEndDateDataGridViewTextBoxColumn";
+            this.plannedEndDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // SerialNumber
+            // statusDataGridViewTextBoxColumn
             // 
-            this.SerialNumber.DataPropertyName = "SerialNumber";
-            resources.ApplyResources(this.SerialNumber, "SerialNumber");
-            this.SerialNumber.Name = "SerialNumber";
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            resources.ApplyResources(this.statusDataGridViewTextBoxColumn, "statusDataGridViewTextBoxColumn");
+            this.statusDataGridViewTextBoxColumn.Items.AddRange(new object[] {
+            "TO DO",
+            "IN PROGRESS",
+            "DONE"});
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.statusDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Status
+            // userIdDataGridViewTextBoxColumn
             // 
-            this.Status.DataPropertyName = "Status";
-            resources.ApplyResources(this.Status, "Status");
-            this.Status.Name = "Status";
+            this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
+            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn, "userIdDataGridViewTextBoxColumn");
+            this.userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            this.userIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // UserId
+            // missionBindingSource
             // 
-            this.UserId.DataPropertyName = "UserId";
-            resources.ApplyResources(this.UserId, "UserId");
-            this.UserId.Name = "UserId";
+            this.missionBindingSource.DataSource = typeof(BCMP.DTO.Mission);
             // 
-            // dataGridViewTextBoxColumn1
+            // userIdDataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MissionId";
-            resources.ApplyResources(this.dataGridViewTextBoxColumn1, "dataGridViewTextBoxColumn1");
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.userIdDataGridViewTextBoxColumn1.DataPropertyName = "UserId";
+            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn1, "userIdDataGridViewTextBoxColumn1");
+            this.userIdDataGridViewTextBoxColumn1.Name = "userIdDataGridViewTextBoxColumn1";
             // 
-            // ProjectId
+            // fullNameDataGridViewTextBoxColumn
             // 
-            this.ProjectId.DataPropertyName = "ProjectId";
-            resources.ApplyResources(this.ProjectId, "ProjectId");
-            this.ProjectId.Name = "ProjectId";
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            resources.ApplyResources(this.fullNameDataGridViewTextBoxColumn, "fullNameDataGridViewTextBoxColumn");
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // emailDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Type";
-            resources.ApplyResources(this.dataGridViewTextBoxColumn2, "dataGridViewTextBoxColumn2");
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            resources.ApplyResources(this.emailDataGridViewTextBoxColumn, "emailDataGridViewTextBoxColumn");
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // DepartmentId
+            // phoneNumberDataGridViewTextBoxColumn
             // 
-            this.DepartmentId.DataPropertyName = "DepartmentId";
-            resources.ApplyResources(this.DepartmentId, "DepartmentId");
-            this.DepartmentId.Name = "DepartmentId";
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "PhoneNumber";
+            resources.ApplyResources(this.phoneNumberDataGridViewTextBoxColumn, "phoneNumberDataGridViewTextBoxColumn");
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // PartnerCode
+            // roleIdDataGridViewTextBoxColumn
             // 
-            this.PartnerCode.DataPropertyName = "PartnerCode";
-            resources.ApplyResources(this.PartnerCode, "PartnerCode");
-            this.PartnerCode.Name = "PartnerCode";
+            this.roleIdDataGridViewTextBoxColumn.DataPropertyName = "RoleId";
+            resources.ApplyResources(this.roleIdDataGridViewTextBoxColumn, "roleIdDataGridViewTextBoxColumn");
+            this.roleIdDataGridViewTextBoxColumn.Name = "roleIdDataGridViewTextBoxColumn";
             // 
-            // Download
+            // typeEmployeeDataGridViewCheckBoxColumn
             // 
-            this.Download.DataPropertyName = "Download";
-            resources.ApplyResources(this.Download, "Download");
-            this.Download.Name = "Download";
-            this.Download.Text = "Download";
+            this.typeEmployeeDataGridViewCheckBoxColumn.DataPropertyName = "TypeEmployee";
+            resources.ApplyResources(this.typeEmployeeDataGridViewCheckBoxColumn, "typeEmployeeDataGridViewCheckBoxColumn");
+            this.typeEmployeeDataGridViewCheckBoxColumn.Name = "typeEmployeeDataGridViewCheckBoxColumn";
             // 
-            // Delete
+            // departmentIdDataGridViewTextBoxColumn
             // 
-            this.Delete.DataPropertyName = "Delete";
-            resources.ApplyResources(this.Delete, "Delete");
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
+            this.departmentIdDataGridViewTextBoxColumn.DataPropertyName = "DepartmentId";
+            resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn, "departmentIdDataGridViewTextBoxColumn");
+            this.departmentIdDataGridViewTextBoxColumn.Name = "departmentIdDataGridViewTextBoxColumn";
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pathDataGridViewTextBoxColumn
+            // 
+            this.pathDataGridViewTextBoxColumn.DataPropertyName = "Path";
+            resources.ApplyResources(this.pathDataGridViewTextBoxColumn, "pathDataGridViewTextBoxColumn");
+            this.pathDataGridViewTextBoxColumn.Name = "pathDataGridViewTextBoxColumn";
+            // 
+            // releaseDateDataGridViewTextBoxColumn
+            // 
+            this.releaseDateDataGridViewTextBoxColumn.DataPropertyName = "ReleaseDate";
+            resources.ApplyResources(this.releaseDateDataGridViewTextBoxColumn, "releaseDateDataGridViewTextBoxColumn");
+            this.releaseDateDataGridViewTextBoxColumn.Name = "releaseDateDataGridViewTextBoxColumn";
+            // 
+            // typeFileDataGridViewTextBoxColumn
+            // 
+            this.typeFileDataGridViewTextBoxColumn.DataPropertyName = "TypeFile";
+            resources.ApplyResources(this.typeFileDataGridViewTextBoxColumn, "typeFileDataGridViewTextBoxColumn");
+            this.typeFileDataGridViewTextBoxColumn.Name = "typeFileDataGridViewTextBoxColumn";
+            this.typeFileDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // serialNumberDataGridViewTextBoxColumn
+            // 
+            this.serialNumberDataGridViewTextBoxColumn.DataPropertyName = "SerialNumber";
+            resources.ApplyResources(this.serialNumberDataGridViewTextBoxColumn, "serialNumberDataGridViewTextBoxColumn");
+            this.serialNumberDataGridViewTextBoxColumn.Name = "serialNumberDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn1
+            // 
+            this.statusDataGridViewTextBoxColumn1.DataPropertyName = "Status";
+            resources.ApplyResources(this.statusDataGridViewTextBoxColumn1, "statusDataGridViewTextBoxColumn1");
+            this.statusDataGridViewTextBoxColumn1.Name = "statusDataGridViewTextBoxColumn1";
+            // 
+            // missionIdDataGridViewTextBoxColumn
+            // 
+            this.missionIdDataGridViewTextBoxColumn.DataPropertyName = "MissionId";
+            resources.ApplyResources(this.missionIdDataGridViewTextBoxColumn, "missionIdDataGridViewTextBoxColumn");
+            this.missionIdDataGridViewTextBoxColumn.Name = "missionIdDataGridViewTextBoxColumn";
+            // 
+            // userIdDataGridViewTextBoxColumn2
+            // 
+            this.userIdDataGridViewTextBoxColumn2.DataPropertyName = "UserId";
+            resources.ApplyResources(this.userIdDataGridViewTextBoxColumn2, "userIdDataGridViewTextBoxColumn2");
+            this.userIdDataGridViewTextBoxColumn2.Name = "userIdDataGridViewTextBoxColumn2";
+            this.userIdDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // projectIdDataGridViewTextBoxColumn
+            // 
+            this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
+            resources.ApplyResources(this.projectIdDataGridViewTextBoxColumn, "projectIdDataGridViewTextBoxColumn");
+            this.projectIdDataGridViewTextBoxColumn.Name = "projectIdDataGridViewTextBoxColumn";
+            this.projectIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            resources.ApplyResources(this.typeDataGridViewTextBoxColumn, "typeDataGridViewTextBoxColumn");
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            // 
+            // departmentIdDataGridViewTextBoxColumn1
+            // 
+            this.departmentIdDataGridViewTextBoxColumn1.DataPropertyName = "DepartmentId";
+            resources.ApplyResources(this.departmentIdDataGridViewTextBoxColumn1, "departmentIdDataGridViewTextBoxColumn1");
+            this.departmentIdDataGridViewTextBoxColumn1.Name = "departmentIdDataGridViewTextBoxColumn1";
+            // 
+            // partnerCodeDataGridViewTextBoxColumn
+            // 
+            this.partnerCodeDataGridViewTextBoxColumn.DataPropertyName = "PartnerCode";
+            resources.ApplyResources(this.partnerCodeDataGridViewTextBoxColumn, "partnerCodeDataGridViewTextBoxColumn");
+            this.partnerCodeDataGridViewTextBoxColumn.Name = "partnerCodeDataGridViewTextBoxColumn";
+            // 
+            // documentBindingSource
+            // 
+            this.documentBindingSource.DataSource = typeof(BCMP.DTO.Document);
             // 
             // FormDetailProject
             // 
@@ -631,18 +630,19 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lb_member);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormDetailProject";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMissionList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_listEmp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListDocument)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.missionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -651,7 +651,6 @@
         #endregion
         private System.Windows.Forms.Label lb_member;
         private System.Windows.Forms.BindingSource missionBindingSource;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton bt_exit;
@@ -663,14 +662,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dtgvMissionList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MissionId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn progressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plannedStartDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn plannedEndDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn Detail;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button bt_default;
         private System.Windows.Forms.ComboBox cb_Department;
@@ -686,6 +677,8 @@
         private System.Windows.Forms.TextBox txt_nameProject;
         private System.Windows.Forms.Label lb_IdProject;
         private System.Windows.Forms.Label lb_NameProject;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button btn_Open;
         private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
@@ -696,23 +689,28 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MissionId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn progressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedStartDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plannedEndDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Detail;
         private System.Windows.Forms.DataGridView dtgv_ListDocument;
-        private System.Windows.Forms.BindingSource documentBindingSource2;
-        private System.Windows.Forms.Button btn_Open;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Path;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReleaseDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TypeFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SerialNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProjectId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PartnerCode;
+        private System.Windows.Forms.BindingSource documentBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn releaseDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeFileDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serialNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn missionIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn projectIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departmentIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partnerCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn Download;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BCMP.DAO;
 using BCMP.DTO;
+using BCMP.Service;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace BCMP.Forms.Management
     {
 
         private List<Document> listDocumentPublic;
+        private Employee curEmp = AuthService.Instance.GetCurrentEmployee();
         public FormPublicData()
         {
             InitializeComponent();
@@ -26,7 +28,13 @@ namespace BCMP.Forms.Management
 
         public void LoadListDocumentPublic()
         {
-            listDocumentPublic = DocumentDAO.Instance.GetAllDocumentInPublic();
+            if(curEmp.RoleId != 1 && curEmp.RoleId !=2)
+            {
+                listDocumentPublic = DocumentDAO.Instance.GetAllDocumentInPublicUser(curEmp.UserId);
+            } else
+            {
+                listDocumentPublic = DocumentDAO.Instance.GetAllDocumentInPublic();
+            }
             if (listDocumentPublic.Count > 0)
             {
                 dtgv_PublicData.DataSource = listDocumentPublic;
@@ -57,6 +65,29 @@ namespace BCMP.Forms.Management
                     }
                 }
 
+            } else if (dtgv_PublicData.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                string serialNumber = dtgv_PublicData.Rows[e.RowIndex].Cells[4].Value.ToString();
+                if (DocumentDAO.Instance.DeletDocumentByCEO(serialNumber))
+                {
+                    LoadListDocumentPublic();
+                }
+            }
+        }
+
+        private void dtgv_PublicData_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            if (dtgv_PublicData.Rows.Count > 0)
+            {
+                // Vòng lặp qua tất cả các dòng
+                foreach (DataGridViewRow row in dtgv_PublicData.Rows)
+                {
+                    if (curEmp.RoleId > 2)
+                    {
+                        dtgv_PublicData.Columns[12].Visible = false;
+                    }
+                   
+                }
             }
         }
     }

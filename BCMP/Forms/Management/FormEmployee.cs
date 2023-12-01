@@ -15,6 +15,7 @@ using BCMP.Service;
 
 using FontAwesome.Sharp;
 using BCMP.Forms.Management;
+using System.Web.Configuration;
 
 namespace BCMP.Forms
 {
@@ -22,10 +23,18 @@ namespace BCMP.Forms
     {
 
         private List<Employee> empList = EmployeeDAO.Instance.GetAllEmployee();
+        private Employee currEmp = AuthService.Instance.GetCurrentEmployee();
+        private List<Department> departmentList = DepartmentDAO.Instance.GetAllDepartment();
+        private int departmentSelected = 0;
         public FormEmployee()
         {
             InitializeComponent();
+            if(currEmp.RoleId != 1 && currEmp.RoleId != 2)
+            {
+                bt_Create.Visible = false;
+            }
             LoadDataListEmloyee();
+
         }
 
         public void LoadDataListEmloyee()
@@ -124,6 +133,11 @@ namespace BCMP.Forms
                 // Vòng lặp qua tất cả các dòng
                 foreach (DataGridViewRow row in dtgv_ListEmp.Rows)
                 {
+                    if(currEmp.RoleId == 4)
+                    {
+                        dtgv_ListEmp.Columns[7].Visible = false;
+                        dtgv_ListEmp.Columns[8].Visible = false;
+                    }
                     // Xác định chỉ mục của cột thứ 3
                     int columnIndex = 3; // Cột thứ 3 (chỉ số cột bắt đầu từ 0)
 
@@ -134,8 +148,17 @@ namespace BCMP.Forms
                         row.Cells[columnIndex].Value = DepartmentDAO.Instance.GetDepartmentById(int.Parse(row.Cells[2].Value.ToString())).Name;
                     }
                     row.Cells[5].Value = RoleDAO.Instance.GetById(int.Parse(row.Cells[4].Value.ToString())).Title;
+                    if ((bool)row.Cells[9].Value)
+                    {
+                        row.Cells[6].Value = "Internal";
+                    }
+                    else
+                    {
+                        row.Cells[6].Value = "Outsourcing";
+                    }
                 }
             }
+
         }
 
         private void txt_search_TextChanged(object sender, EventArgs e)
@@ -150,5 +173,8 @@ namespace BCMP.Forms
                 dtgv_ListEmp.DataSource = empList;
             }
         }
-    }
+
+
+}
+    
 }

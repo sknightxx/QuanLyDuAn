@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -21,6 +22,7 @@ namespace BCMP.Forms
 
         private FormEmployee F;
         private Employee currEmployee;
+        private Employee empLogin = AuthService.Instance.GetCurrentEmployee();
 
         private event EventHandler insertEmployee;
         public event EventHandler InsertEmployee
@@ -329,7 +331,22 @@ namespace BCMP.Forms
             List<String> list = new List<String>();
             foreach (Role item in RoleService.Instance.GetAllListRole())
             {
-                list.Add(item.Title);
+                if(empLogin.RoleId == 3)
+                {
+                    if(item.RoleId != 1 && item.RoleId != 2)
+                    {
+                        list.Add(item.Title);
+                    }
+                } else if(empLogin.RoleId == 2) 
+                {
+                    if (item.RoleId != 1)
+                    {
+                        list.Add(item.Title);
+                    }
+                } else
+                {
+                    list.Add(item.Title);
+                }
             }
             cb_Role.DataSource = list;
         }

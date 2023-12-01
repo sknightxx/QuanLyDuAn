@@ -423,9 +423,6 @@
   <data name="userIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="userIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="userIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
@@ -489,6 +486,18 @@
   <data name="Role.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
+  <metadata name="Type.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Type.HeaderText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Type.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Type.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
   <data name="IsDeactivated.HeaderText" xml:space="preserve">
     <value>IsDeactivated</value>
   </data>
@@ -510,6 +519,21 @@
   <data name="Edit.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
+  <metadata name="TypeEmployee.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="TypeEmployee.HeaderText" xml:space="preserve">
+    <value>TypeEmployee</value>
+  </data>
+  <data name="TypeEmployee.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TypeEmployee.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TypeEmployee.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
   <metadata name="employeeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -520,7 +544,7 @@
     <value>51</value>
   </data>
   <data name="dtgv_ListEmp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>694, 468</value>
+    <value>942, 468</value>
   </data>
   <data name="dtgv_ListEmp.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -573,6 +597,9 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1128, 585</value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -621,6 +648,12 @@
   <data name="&gt;&gt;Role.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Type.Name" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;Type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;IsDeactivated.Name" xml:space="preserve">
     <value>IsDeactivated</value>
   </data>
@@ -632,6 +665,12 @@
   </data>
   <data name="&gt;&gt;Edit.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TypeEmployee.Name" xml:space="preserve">
+    <value>TypeEmployee</value>
+  </data>
+  <data name="&gt;&gt;TypeEmployee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormEmployee</value>
