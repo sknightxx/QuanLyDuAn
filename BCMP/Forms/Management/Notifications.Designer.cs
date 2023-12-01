@@ -49,10 +49,10 @@
             // 
             // pn_containerInformation
             // 
+            resources.ApplyResources(this.pn_containerInformation, "pn_containerInformation");
             this.pn_containerInformation.Controls.Add(this.lb_Notification);
             this.pn_containerInformation.Controls.Add(this.dtgv_MyNotification);
             this.pn_containerInformation.Controls.Add(this.bt_exit);
-            resources.ApplyResources(this.pn_containerInformation, "pn_containerInformation");
             this.pn_containerInformation.Name = "pn_containerInformation";
             this.pn_containerInformation.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_containerInformation_Paint);
             // 
@@ -63,7 +63,9 @@
             // 
             // dtgv_MyNotification
             // 
+            resources.ApplyResources(this.dtgv_MyNotification, "dtgv_MyNotification");
             this.dtgv_MyNotification.AutoGenerateColumns = false;
+            this.dtgv_MyNotification.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtgv_MyNotification.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_MyNotification.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtgv_MyNotification.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -76,7 +78,6 @@
             this.notificationIdDataGridViewTextBoxColumn,
             this.OpenMission});
             this.dtgv_MyNotification.DataSource = this.notificationBindingSource;
-            resources.ApplyResources(this.dtgv_MyNotification, "dtgv_MyNotification");
             this.dtgv_MyNotification.Name = "dtgv_MyNotification";
             this.dtgv_MyNotification.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_MyNotification_CellContentClick);
             // 

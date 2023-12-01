@@ -130,15 +130,13 @@
   <data name="userIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>UserId</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>To</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pathDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>12, 0, 21, 0</value>
-  </data>
-  <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;bt_CreateEmployee.Name" xml:space="preserve">
     <value>bt_CreateEmployee</value>
@@ -164,7 +162,6 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Type.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
@@ -173,9 +170,6 @@
   </data>
   <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
     <value>contextMenuStrip1</value>
-  </data>
-  <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
   </data>
   <data name="lb_IdProject.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -195,8 +189,8 @@
   <data name="lb_description.Text" xml:space="preserve">
     <value>Description</value>
   </data>
-  <data name="&gt;&gt;dtpkPlannedEnd.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="lb_NameProject.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="txt_nameProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -217,6 +211,9 @@
     <value>4, 25</value>
   </data>
   <data name="&gt;&gt;missionIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bt_save.Parent" xml:space="preserve">
@@ -252,8 +249,8 @@
   <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>pathDataGridViewTextBoxColumn</value>
+  <data name="typeFileDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="lb_IdProject.Text" xml:space="preserve">
     <value>ID project</value>
@@ -270,14 +267,20 @@
   <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bt_exit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="partnerCodeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>PartnerCode</value>
+  </data>
   <data name="txt_Description.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="userIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>UserId</value>
+  <data name="typeEmployeeDataGridViewCheckBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="bt_default.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 23</value>
@@ -315,8 +318,11 @@
   <data name="bt_save.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt, style=Bold</value>
   </data>
-  <data name="pathDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;dtpkPlannedEnd.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lb_IdProject.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <data name="lb_member.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 425</value>
@@ -342,9 +348,6 @@
   <data name="txt_nameProject.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="typeEmployeeDataGridViewCheckBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;lb_member.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -353,6 +356,9 @@
   </data>
   <data name="lb_NameProject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;iconButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;dtgv_ListDocument.Name" xml:space="preserve">
     <value>dtgv_ListDocument</value>
@@ -383,6 +389,9 @@
   </data>
   <data name="&gt;&gt;bt_exit.Name" xml:space="preserve">
     <value>bt_exit</value>
+  </data>
+  <data name="&gt;&gt;iconButton1.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
   </data>
   <data name="missionIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -417,17 +426,20 @@
   <data name="&gt;&gt;cbb_department.Name" xml:space="preserve">
     <value>cbb_department</value>
   </data>
+  <data name="cbb_department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="iconButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>833, 7</value>
+  </data>
   <data name="&gt;&gt;typeFileDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>typeFileDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="txt_nameProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>887, 35</value>
   </data>
   <data name="&gt;&gt;cb_Department.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="typeFileDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="bt_CreateEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="lb_NameProject.Text" xml:space="preserve">
     <value>Name of project</value>
@@ -438,8 +450,8 @@
   <data name="bt_CreateMission.Text" xml:space="preserve">
     <value>Add Mission</value>
   </data>
-  <data name="&gt;&gt;progressDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;dtpkPlannedEnd.Name" xml:space="preserve">
+    <value>dtpkPlannedEnd</value>
   </data>
   <data name="&gt;&gt;dtpkPlannedStart.Name" xml:space="preserve">
     <value>dtpkPlannedStart</value>
@@ -459,6 +471,9 @@
   <data name="bt_default.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>userIdDataGridViewTextBoxColumn</value>
+  </data>
   <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 293</value>
   </data>
@@ -473,9 +488,6 @@
   </data>
   <data name="partnerCodeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="&gt;&gt;MissionId.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -494,9 +506,6 @@
   </data>
   <data name="&gt;&gt;bt_save.ZOrder" xml:space="preserve">
     <value>14</value>
-  </data>
-  <data name="lb_IdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;userIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -525,9 +534,6 @@
   <data name="txt_IdProject.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 26</value>
   </data>
-  <data name="lb_department.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
-  </data>
   <data name="dtgv_listEmp.Size" type="System.Drawing.Size, System.Drawing">
     <value>807, 279</value>
   </data>
@@ -536,9 +542,6 @@
   </data>
   <data name="&gt;&gt;plannedStartDateDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Role.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="&gt;&gt;typeEmployeeDataGridViewCheckBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -557,6 +560,9 @@
   </data>
   <data name="&gt;&gt;dtgvMissionList.Name" xml:space="preserve">
     <value>dtgvMissionList</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>emailDataGridViewTextBoxColumn</value>
@@ -582,14 +588,11 @@
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="bt_exit.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="txt_Description.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="&gt;&gt;cbb_department.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_exit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="dtgv_ListDocument.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -627,9 +630,6 @@
   <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 42</value>
   </data>
-  <data name="cbb_department.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="&gt;&gt;bt_CreateMission.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
@@ -666,6 +666,9 @@
   <data name="cbb_department.Size" type="System.Drawing.Size, System.Drawing">
     <value>393, 24</value>
   </data>
+  <data name="userIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>UserId</value>
+  </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
@@ -680,9 +683,6 @@
   </data>
   <data name="bt_exit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 7.8pt</value>
-  </data>
-  <data name="&gt;&gt;lb_IdProject.Parent" xml:space="preserve">
-    <value>panel2</value>
   </data>
   <data name="txt_IdProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -710,6 +710,9 @@
   </data>
   <data name="&gt;&gt;dtpkPlannedEnd.Parent" xml:space="preserve">
     <value>panel2</value>
+  </data>
+  <data name="Download.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -756,9 +759,6 @@
   <data name="statusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Status</value>
   </data>
-  <data name="roleIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <data name="typeFileDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
@@ -777,6 +777,9 @@
   <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
+  <data name="plannedEndDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
   <data name="departmentIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>DepartmentId</value>
   </data>
@@ -786,20 +789,14 @@
   <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
+  <data name="bt_exit.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
   <data name="phoneNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>PhoneNumber</value>
   </data>
-  <data name="&gt;&gt;dtgv_ListDocument.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;lb_IdProject.ZOrder" xml:space="preserve">
     <value>17</value>
-  </data>
-  <data name="lb_NameProject.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="titleDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -807,8 +804,8 @@
   <data name="&gt;&gt;Detail.Name" xml:space="preserve">
     <value>Detail</value>
   </data>
-  <data name="lb_member.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;txt_Description.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -846,8 +843,8 @@
   <data name="&gt;&gt;lb_description.Name" xml:space="preserve">
     <value>lb_description</value>
   </data>
-  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>partnerCodeDataGridViewTextBoxColumn</value>
+  <data name="iconButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="&gt;&gt;lb_description.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -855,8 +852,8 @@
   <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>nameDataGridViewTextBoxColumn</value>
   </data>
-  <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 214</value>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>pathDataGridViewTextBoxColumn</value>
   </data>
   <data name="bt_default.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -891,14 +888,8 @@
   <data name="&gt;&gt;missionBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bt_CreateMission.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 10.2pt, style=Bold</value>
-  </data>
-  <data name="MissionId.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lb_IdProject.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
+  <data name="emailDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;Type.Name" xml:space="preserve">
     <value>Type</value>
@@ -914,6 +905,9 @@
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txt_nameProject.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -933,14 +927,20 @@
   <data name="dtgvMissionList.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="bt_CreateMission.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;iconButton1.Name" xml:space="preserve">
+    <value>iconButton1</value>
   </data>
   <data name="&gt;&gt;lb_member.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;dtpkPlannedEnd.Name" xml:space="preserve">
-    <value>dtpkPlannedEnd</value>
+  <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="dtgv_ListDocument.Size" type="System.Drawing.Size, System.Drawing">
     <value>834, 244</value>
@@ -953,6 +953,9 @@
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="serialNumberDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>statusDataGridViewTextBoxColumn</value>
@@ -990,6 +993,9 @@
   <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>departmentIdDataGridViewTextBoxColumn</value>
   </data>
+  <data name="fullNameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1059, 309</value>
   </data>
@@ -999,11 +1005,14 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormDetailProject</value>
   </data>
-  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;txt_nameProject.Name" xml:space="preserve">
+    <value>txt_nameProject</value>
   </data>
   <data name="departmentIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
+  </data>
+  <data name="lb_NameProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 116</value>
   </data>
   <data name="&gt;&gt;btn_Open.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1013,9 +1022,6 @@
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>From</value>
-  </data>
-  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
-    <value>bt_cancel</value>
   </data>
   <data name="&gt;&gt;lb_member.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1044,26 +1050,23 @@
   <data name="&gt;&gt;dtgvMissionList.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;bt_default.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="dtpkPlannedEnd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
+  <data name="bt_CreateEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>917, 18</value>
+  </data>
   <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 318</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel2</value>
+  <data name="lb_member.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lb_description.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>PartnerCode</value>
+  <data name="roleIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="&gt;&gt;txt_IdProject.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1077,8 +1080,8 @@
   <data name="&gt;&gt;roleIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="fullNameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>To</value>
   </data>
   <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1100,9 +1103,6 @@
   </data>
   <data name="phoneNumberDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -1161,14 +1161,14 @@
   <data name="projectIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;txt_Description.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;progressDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="bt_CreateEmployee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>917, 18</value>
+  <data name="&gt;&gt;dtgv_ListDocument.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_NameProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 116</value>
+  <data name="departmentIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DepartmentId</value>
   </data>
   <data name="lb_department.Text" xml:space="preserve">
     <value>Department</value>
@@ -1179,17 +1179,20 @@
   <data name="missionIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>MissionId</value>
   </data>
-  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bt_default.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="bt_CreateMission.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="bt_exit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="emailDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="MissionId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="titleDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Title</value>
+  </data>
+  <data name="partnerCodeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="typeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Type</value>
@@ -1215,8 +1218,8 @@
   <data name="dtpkPlannedStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 22</value>
   </data>
-  <data name="Download.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lb_NameProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1251,8 +1254,8 @@
   <data name="&gt;&gt;bt_exit.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="lb_IdProject.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="releaseDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>ReleaseDate</value>
@@ -1266,8 +1269,11 @@
   <data name="statusDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>userIdDataGridViewTextBoxColumn</value>
+  <data name="txt_nameProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>887, 35</value>
+  </data>
+  <data name="bt_CreateEmployee.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="Download.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1284,8 +1290,8 @@
   <data name="txt_IdProject.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="cbb_department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="lb_department.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="&gt;&gt;bt_save.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1311,14 +1317,14 @@
   <data name="departmentIdDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="bt_exit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;MissionId.Name" xml:space="preserve">
     <value>MissionId</value>
   </data>
-  <data name="bt_CreateEmployee.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>partnerCodeDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;bt_default.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -1328,6 +1334,9 @@
   </data>
   <data name="&gt;&gt;bt_cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_description.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="plannedStartDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
@@ -1350,11 +1359,14 @@
   <data name="roleIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>RoleId</value>
   </data>
-  <data name="departmentIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>DepartmentId</value>
+  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
+    <value>bt_cancel</value>
   </data>
   <data name="dtgvMissionList.Size" type="System.Drawing.Size, System.Drawing">
     <value>940, 304</value>
+  </data>
+  <data name="plannedStartDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>PlannedStartDate</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1415,6 +1427,9 @@
   </data>
   <data name="txt_IdProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>279, 35</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 450</value>
   </data>
   <data name="partnerCodeDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1494,11 +1509,11 @@
   <data name="txt_nameProject.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 450</value>
+  <data name="bt_exit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="plannedEndDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <data name="cbb_department.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="MissionId.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1509,17 +1524,20 @@
   <data name="bt_save.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
+  <data name="&gt;&gt;iconButton1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
   <data name="&gt;&gt;lb_department.Name" xml:space="preserve">
     <value>lb_department</value>
   </data>
-  <data name="serialNumberDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 214</value>
   </data>
   <data name="typeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="plannedStartDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>PlannedStartDate</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
   </data>
   <data name="&gt;&gt;bt_CreateMission.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1527,11 +1545,11 @@
   <data name="&gt;&gt;employeeBindingSource.Name" xml:space="preserve">
     <value>employeeBindingSource</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bt_CreateMission.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 10.2pt, style=Bold</value>
   </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+  <data name="lb_IdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -1539,11 +1557,11 @@
   <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txt_nameProject.Name" xml:space="preserve">
-    <value>txt_nameProject</value>
+  <data name="Role.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="bt_CreateEmployee.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;txt_Description.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;txt_IdProject.Name" xml:space="preserve">
     <value>txt_IdProject</value>
@@ -1579,7 +1597,7 @@
     <value>410, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
+    <value>en</value>
   </metadata>
   <metadata name="missionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

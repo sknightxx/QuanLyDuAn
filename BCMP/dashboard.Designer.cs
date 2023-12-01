@@ -52,7 +52,9 @@
             this.bt_maximize = new FontAwesome.Sharp.IconButton();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_container = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pn_shawdow = new System.Windows.Forms.Panel();
             this.dropdownMenu1 = new BCMP.Forms.Management.DropdownMenu(this.components);
@@ -70,6 +72,8 @@
             this.pn_tittleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildform)).BeginInit();
             this.pn_container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.dropdownMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -369,14 +373,30 @@
             // pn_container
             // 
             resources.ApplyResources(this.pn_container, "pn_container");
+            this.pn_container.Controls.Add(this.pictureBox2);
             this.pn_container.Controls.Add(this.vScrollBar1);
+            this.pn_container.Controls.Add(this.pictureBox3);
             this.pn_container.Name = "pn_container";
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::BCMP.Properties.Resources.logo_color;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // vScrollBar1
             // 
             resources.ApplyResources(this.vScrollBar1, "vScrollBar1");
             this.vScrollBar1.Name = "vScrollBar1";
             this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::BCMP.Properties.Resources._629235f0ad752419f8ecfe84;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
             // 
             // panel1
             // 
@@ -465,6 +485,8 @@
             this.pn_tittleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildform)).EndInit();
             this.pn_container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.dropdownMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -504,5 +526,7 @@
         private System.Windows.Forms.ToolStripMenuItem bt_language;
         private System.Windows.Forms.ToolStripMenuItem bt_vietnamese;
         private System.Windows.Forms.ToolStripMenuItem bt_english;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

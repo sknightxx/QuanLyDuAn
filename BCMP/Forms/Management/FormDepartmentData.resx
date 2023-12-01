@@ -117,129 +117,221 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Name</value>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>pathDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;typeFileDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>typeFileDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dgv_DepartmentData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="userIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>UserId</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="Download.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="pathDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Path</value>
+  <data name="partnerCodeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>PartnerCode</value>
   </data>
-  <data name="pathDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;Department.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pathDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pathDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="userIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
-  </data>
-  <data name="releaseDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>ReleaseDate</value>
-  </data>
-  <data name="releaseDateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="releaseDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="typeFileDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>TypeFile</value>
-  </data>
-  <data name="typeFileDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="typeFileDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="serialNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>SerialNumber</value>
-  </data>
-  <data name="serialNumberDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="serialNumberDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>statusDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="typeFileDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
   <data name="serialNumberDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="statusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Status</value>
+  <data name="&gt;&gt;releaseDateDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="statusDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+  <data name="dgv_DepartmentData.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>departmentIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;Download.Name" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="typeFileDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>TypeFile</value>
+  </data>
+  <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Department.Name" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="typeFileDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="Download.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="statusDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="statusDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="serialNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SerialNumber</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="missionIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>MissionId</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="missionIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="partnerCodeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;dgv_DepartmentData.Name" xml:space="preserve">
+    <value>dgv_DepartmentData</value>
   </data>
   <data name="missionIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="missionIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="releaseDateDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="projectIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>ProjectId</value>
-  </data>
-  <data name="projectIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="projectIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="pathDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
-  </data>
-  <data name="userIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>UserId</value>
-  </data>
-  <data name="userIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="userIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="typeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Type</value>
   </data>
   <data name="typeDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="typeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+  <data name="Download.ToolTipText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Department.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="pathDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="&gt;&gt;dgv_DepartmentData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;serialNumberDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="departmentIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DepartmentId</value>
+  </data>
+  <data name="missionIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>MissionId</value>
+  </data>
+  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>typeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="partnerCodeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="typeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <data name="departmentIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>DepartmentId</value>
-  </data>
-  <data name="departmentIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;typeFileDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="departmentIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="pathDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="typeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dgv_DepartmentData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;serialNumberDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>serialNumberDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>partnerCodeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="projectIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="releaseDateDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Department.HeaderText" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;releaseDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>releaseDateDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;documentBindingSource.Name" xml:space="preserve">
+    <value>documentBindingSource</value>
+  </data>
+  <data name="&gt;&gt;missionIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>missionIdDataGridViewTextBoxColumn</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1208, 437</value>
+  </data>
+  <data name="userIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>projectIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
   <data name="departmentIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
-  <metadata name="Department.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Department.HeaderText" xml:space="preserve">
-    <value>Department</value>
+  <data name="serialNumberDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="departmentIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="partnerCodeDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="releaseDateDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ReleaseDate</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="Department.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -247,183 +339,91 @@
   <data name="Department.ToolTipText" xml:space="preserve">
     <value>Department</value>
   </data>
-  <data name="Department.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Department.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>PartnerCode</value>
-  </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="partnerCodeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="Download.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Download.HeaderText" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="Download.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Download.ToolTipText" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="Download.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="documentBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="dgv_DepartmentData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 26</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dgv_DepartmentData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="dgv_DepartmentData.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dgv_DepartmentData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 330</value>
-  </data>
-  <data name="dgv_DepartmentData.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dgv_DepartmentData.Name" xml:space="preserve">
-    <value>dgv_DepartmentData</value>
-  </data>
-  <data name="&gt;&gt;dgv_DepartmentData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgv_DepartmentData.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgv_DepartmentData.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1208, 437</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FormDepartmentData</value>
-  </data>
-  <data name="&gt;&gt;Department.Name" xml:space="preserve">
-    <value>Department</value>
-  </data>
-  <data name="&gt;&gt;Department.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Download.Name" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="&gt;&gt;Download.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>pathDataGridViewTextBoxColumn</value>
-  </data>
   <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;releaseDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>releaseDateDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;releaseDateDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;typeFileDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>typeFileDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;typeFileDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serialNumberDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>serialNumberDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;serialNumberDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>statusDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;missionIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>missionIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;missionIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>projectIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;projectIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>userIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>typeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>departmentIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>partnerCodeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;documentBindingSource.Name" xml:space="preserve">
-    <value>documentBindingSource</value>
-  </data>
-  <data name="&gt;&gt;documentBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormDepartmentData</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="projectIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ProjectId</value>
   </data>
+  <data name="&gt;&gt;dgv_DepartmentData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Download.HeaderText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="&gt;&gt;documentBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;partnerCodeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="projectIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="typeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;typeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;missionIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missionIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="dgv_DepartmentData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 26</value>
+  </data>
+  <data name="pathDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="missionIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormDepartmentData</value>
+  </data>
+  <data name="&gt;&gt;Download.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="dgv_DepartmentData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dgv_DepartmentData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>821, 330</value>
+  </data>
+  <data name="Department.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>userIdDataGridViewTextBoxColumn</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
+  <metadata name="documentBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="Download.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Department.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

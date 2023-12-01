@@ -206,17 +206,8 @@
   <data name="bt_home.Text" xml:space="preserve">
     <value>   Trang chủ</value>
   </data>
-  <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 9</value>
-  </data>
-  <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 64</value>
-  </data>
   <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 75</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 95</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 435</value>
@@ -227,17 +218,26 @@
   <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 530</value>
   </data>
+  <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 9</value>
+  </data>
+  <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 64</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 95</value>
+  </data>
   <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 12</value>
+    <value>653, 16</value>
   </data>
   <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 40</value>
+    <value>149, 31</value>
   </data>
   <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>678, 23</value>
+    <value>617, 24</value>
   </data>
   <data name="bt_remind.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>9, 0, 16, 0</value>
@@ -246,7 +246,7 @@
     <value>32, 24</value>
   </data>
   <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>648, 25</value>
+    <value>587, 26</value>
   </data>
   <data name="bt_mail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>9, 0, 16, 0</value>
@@ -255,7 +255,7 @@
     <value>32, 18</value>
   </data>
   <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 25</value>
+    <value>558, 26</value>
   </data>
   <data name="bt_notifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>9, 0, 16, 0</value>
@@ -311,17 +311,35 @@
   <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>906, 55</value>
   </data>
+  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 63</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 467</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 204</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 177</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>889, 0</value>
   </data>
   <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 467</value>
   </data>
-  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 63</value>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 36</value>
   </data>
-  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>906, 467</value>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 172</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>176, 63</value>
@@ -335,10 +353,16 @@
   <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
     <value>906, 8</value>
   </data>
+  <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 92</value>
+  </data>
   <data name="bt_Info.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
   <data name="bt_changePassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
   <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
@@ -347,19 +371,19 @@
   <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
-  <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
-  </data>
   <data name="bt_logOut.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
-  </data>
-  <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 92</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1082, 530</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
 </root>

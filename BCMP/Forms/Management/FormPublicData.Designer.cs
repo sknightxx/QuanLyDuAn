@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPublicData));
             this.dtgv_PublicData = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Download = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +51,9 @@
             // 
             // dtgv_PublicData
             // 
+            resources.ApplyResources(this.dtgv_PublicData, "dtgv_PublicData");
             this.dtgv_PublicData.AutoGenerateColumns = false;
+            this.dtgv_PublicData.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtgv_PublicData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_PublicData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
@@ -69,16 +70,9 @@
             this.Download,
             this.Delete});
             this.dtgv_PublicData.DataSource = this.documentBindingSource;
-            resources.ApplyResources(this.dtgv_PublicData, "dtgv_PublicData");
             this.dtgv_PublicData.Name = "dtgv_PublicData";
             this.dtgv_PublicData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_PublicData_CellContentClick);
             this.dtgv_PublicData.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_PublicData_DataBindingComplete);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Download
             // 
@@ -170,7 +164,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtgv_PublicData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPublicData";
@@ -183,7 +176,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dtgv_PublicData;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource documentBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;

@@ -312,5 +312,10 @@ namespace BCMP.Forms.Management
             FormAddDocument formAddDocument = new FormAddDocument(this);
             formAddDocument.Show();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

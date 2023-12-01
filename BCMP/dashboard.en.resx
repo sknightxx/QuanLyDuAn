@@ -121,290 +121,251 @@
   <data name="bt_report.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_report.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bt_report.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 418</value>
+    <value>0, 334</value>
   </data>
   <data name="bt_report.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_report.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>176, 48</value>
   </data>
   <data name="bt_document.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_document.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bt_document.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 358</value>
+    <value>0, 286</value>
   </data>
   <data name="bt_document.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_document.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>176, 48</value>
   </data>
   <data name="bt_project.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_project.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bt_project.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 298</value>
+    <value>0, 238</value>
   </data>
   <data name="bt_project.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_project.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>176, 48</value>
   </data>
   <data name="bt_mission.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_mission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bt_mission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 238</value>
+    <value>0, 190</value>
   </data>
   <data name="bt_mission.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_mission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>176, 48</value>
   </data>
   <data name="bt_profile.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_profile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bt_profile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 178</value>
+    <value>0, 142</value>
   </data>
   <data name="bt_profile.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_profile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
+    <value>176, 48</value>
   </data>
   <data name="bt_home.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="bt_home.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bt_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 118</value>
+    <value>0, 94</value>
   </data>
   <data name="bt_home.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+    <value>9, 0, 16, 0</value>
   </data>
   <data name="bt_home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 60</value>
-  </data>
-  <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 118</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 513</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 149</value>
-  </data>
-  <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 662</value>
-  </data>
-  <data name="bt_user.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
-    <value>887, 24</value>
-  </data>
-  <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_user.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 32</value>
-  </data>
-  <data name="bt_remind.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>857, 27</value>
-  </data>
-  <data name="bt_remind.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_remind.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 30</value>
-  </data>
-  <data name="bt_mail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>813, 31</value>
-  </data>
-  <data name="bt_mail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_mail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 22</value>
-  </data>
-  <data name="bt_notifications.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>771, 25</value>
-  </data>
-  <data name="bt_notifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_notifications.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 34</value>
-  </data>
-  <data name="lb_tittleChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lb_tittleChildform.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 30</value>
-  </data>
-  <data name="lb_tittleChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 21</value>
-  </data>
-  <data name="iconCurrentChildform.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="iconCurrentChildform.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 20</value>
-  </data>
-  <data name="iconCurrentChildform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 39</value>
-  </data>
-  <data name="bt_minimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_minimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1024, 2</value>
-  </data>
-  <data name="bt_minimize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_minimize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
-  </data>
-  <data name="bt_maximize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_maximize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1056, 2</value>
-  </data>
-  <data name="bt_maximize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_maximize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 22</value>
-  </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1090, 3</value>
-  </data>
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
-  </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 22</value>
-  </data>
-  <data name="pn_tittleBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 0</value>
-  </data>
-  <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1132, 69</value>
-  </data>
-  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 79</value>
-  </data>
-  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1132, 583</value>
-  </data>
-  <data name="vScrollBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1115, 0</value>
-  </data>
-  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 583</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 79</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 583</value>
-  </data>
-  <data name="pn_shawdow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 69</value>
-  </data>
-  <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1132, 10</value>
-  </data>
-  <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 100</value>
-  </data>
-  <data name="bt_Info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 24</value>
-  </data>
-  <data name="bt_changePassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 24</value>
-  </data>
-  <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 24</value>
-  </data>
-  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 26</value>
-  </data>
-  <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 26</value>
-  </data>
-  <data name="bt_logOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 24</value>
-  </data>
-  <data name="ptb_logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>176, 48</value>
   </data>
   <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 18</value>
+    <value>20, 14</value>
   </data>
   <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 80</value>
+    <value>135, 64</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="pn_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 94</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 149</value>
+    <value>176, 119</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 411</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 119</value>
+  </data>
+  <data name="pn_leftDashBoard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 530</value>
+  </data>
+  <data name="bt_user.Location" type="System.Drawing.Point, System.Drawing">
+    <value>667, 15</value>
+  </data>
+  <data name="bt_user.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_user.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 33</value>
+  </data>
+  <data name="bt_remind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 22</value>
+  </data>
+  <data name="bt_remind.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_remind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <data name="bt_mail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 25</value>
+  </data>
+  <data name="bt_mail.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_mail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 18</value>
+  </data>
+  <data name="bt_notifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 20</value>
+  </data>
+  <data name="bt_notifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_notifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 27</value>
+  </data>
+  <data name="lb_tittleChildform.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 24</value>
+  </data>
+  <data name="lb_tittleChildform.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="iconCurrentChildform.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 16</value>
+  </data>
+  <data name="iconCurrentChildform.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 31</value>
+  </data>
+  <data name="bt_minimize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 2</value>
+  </data>
+  <data name="bt_minimize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_minimize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
+  </data>
+  <data name="bt_maximize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>845, 2</value>
+  </data>
+  <data name="bt_maximize.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_maximize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 18</value>
+  </data>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>872, 2</value>
+  </data>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 18</value>
+  </data>
+  <data name="pn_tittleBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 0</value>
+  </data>
+  <data name="pn_tittleBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 55</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 173</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 0</value>
+  </data>
+  <data name="vScrollBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 467</value>
+  </data>
+  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 173</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pn_container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 63</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 467</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 63</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 467</value>
+  </data>
+  <data name="pn_shawdow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 55</value>
+  </data>
+  <data name="pn_shawdow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>906, 8</value>
+  </data>
+  <data name="bt_Info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_changePassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_vietnamese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="bt_english.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="bt_language.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="bt_logOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="dropdownMenu1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 92</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>120, 120</value>
+    <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1352, 662</value>
+    <value>1082, 530</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>Inherit</value>
   </data>
 </root>

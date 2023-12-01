@@ -118,525 +118,525 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>666, 498</value>
-  </data>
-  <data name="&gt;&gt;lb_login.Name" xml:space="preserve">
-    <value>lb_login</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_logo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_password.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;lb_id.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="llb_forgotpassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.749999pt</value>
-  </data>
-  <data name="txt_userID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 26</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pn_left.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="bt_IconUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="&gt;&gt;lb_id.Name" xml:space="preserve">
-    <value>lb_id</value>
-  </data>
-  <data name="lb_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lb_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang2.Name" xml:space="preserve">
-    <value>lb_gachngang2</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 150</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 119</value>
   </data>
-  <data name="&gt;&gt;llb_forgotpassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;lb_password.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lb_gachngang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 1</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
-    <value>txt_Password</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
-  </data>
-  <data name="lb_gachngang2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="bt_iconPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;bt_iconExit.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="bt_iconPass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 231</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_IconUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 26</value>
-  </data>
-  <data name="&gt;&gt;ptb_logo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lb_gachngang2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 259</value>
-  </data>
-  <data name="&gt;&gt;bt_IconUser.Name" xml:space="preserve">
-    <value>bt_IconUser</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
   </data>
-  <data name="pn_right.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="pn_left.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="bt_login.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lb_login.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 19.8pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lb_logo.Parent" xml:space="preserve">
-    <value>pn_left</value>
-  </data>
-  <data name="txt_userID.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pn_right.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="txt_Password.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="llb_forgotpassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 474</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang.Name" xml:space="preserve">
-    <value>lb_gachngang</value>
-  </data>
-  <data name="llb_forgotpassword.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bt_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="lb_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 50</value>
-  </data>
-  <data name="ptb_logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="pn_right.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 498</value>
-  </data>
-  <data name="&gt;&gt;ptb_logo.Type" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="llb_forgotpassword.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pn_left</value>
   </data>
-  <data name="txt_userID.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormLogin</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="&gt;&gt;txt_Password.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_logo.Text" xml:space="preserve">
-    <value>BCMP</value>
-  </data>
-  <data name="ptb_logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_id.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="bt_iconExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 5</value>
-  </data>
-  <data name="lb_password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 20</value>
-  </data>
-  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 230</value>
-  </data>
-  <data name="&gt;&gt;bt_IconUser.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;bt_iconPass.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;txt_userID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 347</value>
-  </data>
-  <data name="&gt;&gt;bt_iconExit.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lb_logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_iconPass.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;bt_iconExit.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;bt_iconExit.Name" xml:space="preserve">
-    <value>bt_iconExit</value>
-  </data>
-  <data name="txt_userID.Text" xml:space="preserve">
-    <value>Enter your ID</value>
-  </data>
-  <data name="txt_Password.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 12pt</value>
-  </data>
-  <data name="ptb_logo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="txt_userID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century, 9.75pt</value>
-  </data>
-  <data name="pn_left.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="lb_logo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lb_logo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
   </data>
-  <data name="lb_password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 191</value>
+  <data name="lb_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 269</value>
   </data>
-  <data name="&gt;&gt;bt_IconUser.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  <data name="lb_logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
-  <data name="&gt;&gt;pn_left.Name" xml:space="preserve">
+  <data name="lb_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 26</value>
+  </data>
+  <data name="lb_logo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lb_logo.Text" xml:space="preserve">
+    <value>BCMP</value>
+  </data>
+  <data name="&gt;&gt;lb_logo.Name" xml:space="preserve">
+    <value>lb_logo</value>
+  </data>
+  <data name="&gt;&gt;lb_logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_logo.Parent" xml:space="preserve">
     <value>pn_left</value>
+  </data>
+  <data name="&gt;&gt;lb_logo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 134</value>
+  </data>
+  <data name="ptb_logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="ptb_logo.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 119</value>
   </data>
+  <data name="ptb_logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ptb_logo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ptb_logo.Name" xml:space="preserve">
+    <value>ptb_logo</value>
+  </data>
+  <data name="&gt;&gt;ptb_logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ptb_logo.Parent" xml:space="preserve">
+    <value>pn_left</value>
+  </data>
+  <data name="&gt;&gt;ptb_logo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pn_left.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="pn_left.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pn_left.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pn_left.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 498</value>
+  </data>
+  <data name="pn_left.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pn_left.Name" xml:space="preserve">
+    <value>pn_left</value>
+  </data>
+  <data name="&gt;&gt;pn_left.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pn_left.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pn_left.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bt_iconExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_iconExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 5</value>
+  </data>
+  <data name="bt_iconExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_iconExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="bt_iconExit.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;bt_iconExit.Name" xml:space="preserve">
+    <value>bt_iconExit</value>
+  </data>
+  <data name="&gt;&gt;bt_iconExit.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;bt_iconExit.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;bt_iconExit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_userID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 9.75pt</value>
+  </data>
+  <data name="txt_userID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 137</value>
+  </data>
+  <data name="txt_userID.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_userID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 26</value>
+  </data>
+  <data name="txt_userID.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txt_userID.Text" xml:space="preserve">
+    <value>Enter your ID</value>
+  </data>
+  <data name="&gt;&gt;txt_userID.Name" xml:space="preserve">
+    <value>txt_userID</value>
+  </data>
+  <data name="&gt;&gt;txt_userID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;txt_userID.Parent" xml:space="preserve">
     <value>pn_right</value>
   </data>
+  <data name="&gt;&gt;txt_userID.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_Password.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century, 12pt</value>
+  </data>
+  <data name="txt_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 230</value>
+  </data>
+  <data name="txt_Password.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="txt_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 26</value>
+  </data>
+  <data name="txt_Password.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txt_Password.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Name" xml:space="preserve">
+    <value>txt_Password</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;txt_Password.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bt_IconUser.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_IconUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 134</value>
+  </data>
+  <data name="bt_IconUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_IconUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="bt_IconUser.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;bt_IconUser.Name" xml:space="preserve">
+    <value>bt_IconUser</value>
+  </data>
+  <data name="&gt;&gt;bt_IconUser.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
   <data name="&gt;&gt;bt_IconUser.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;bt_IconUser.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lb_gachngang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 163</value>
+  </data>
+  <data name="lb_gachngang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_gachngang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 1</value>
+  </data>
+  <data name="lb_gachngang.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang.Name" xml:space="preserve">
+    <value>lb_gachngang</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bt_iconPass.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_iconPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 231</value>
+  </data>
+  <data name="bt_iconPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_iconPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="bt_iconPass.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;bt_iconPass.Name" xml:space="preserve">
+    <value>bt_iconPass</value>
+  </data>
+  <data name="&gt;&gt;bt_iconPass.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;bt_iconPass.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;bt_iconPass.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bt_login.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bt_login.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="bt_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 347</value>
+  </data>
+  <data name="bt_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 37</value>
+  </data>
+  <data name="bt_login.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="bt_login.Text" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="&gt;&gt;bt_login.Name" xml:space="preserve">
+    <value>bt_login</value>
+  </data>
+  <data name="&gt;&gt;bt_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_login.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="llb_forgotpassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="llb_forgotpassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.749999pt</value>
+  </data>
+  <data name="llb_forgotpassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 474</value>
+  </data>
+  <data name="llb_forgotpassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="llb_forgotpassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 16</value>
+  </data>
+  <data name="llb_forgotpassword.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="llb_forgotpassword.Text" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="&gt;&gt;llb_forgotpassword.Name" xml:space="preserve">
+    <value>llb_forgotpassword</value>
+  </data>
+  <data name="&gt;&gt;llb_forgotpassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;llb_forgotpassword.Parent" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;llb_forgotpassword.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lb_gachngang2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 259</value>
+  </data>
+  <data name="lb_gachngang2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_gachngang2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 1</value>
+  </data>
+  <data name="lb_gachngang2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang2.Name" xml:space="preserve">
+    <value>lb_gachngang2</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_gachngang2.Parent" xml:space="preserve">
     <value>pn_right</value>
   </data>
   <data name="&gt;&gt;lb_gachngang2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lb_password.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="lb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 269</value>
+  <data name="lb_password.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;llb_forgotpassword.Parent" xml:space="preserve">
-    <value>pn_right</value>
+  <data name="lb_password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 191</value>
   </data>
-  <data name="&gt;&gt;lb_logo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lb_gachngang2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pn_left.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lb_gachngang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 163</value>
-  </data>
-  <data name="&gt;&gt;lb_password.Name" xml:space="preserve">
-    <value>lb_password</value>
-  </data>
-  <data name="bt_IconUser.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="bt_iconExit.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pn_right.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 0</value>
-  </data>
-  <data name="lb_id.Text" xml:space="preserve">
-    <value>USER ID</value>
-  </data>
-  <data name="lb_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 26</value>
-  </data>
-  <data name="txt_userID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 137</value>
-  </data>
-  <data name="lb_login.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lb_password.Text" xml:space="preserve">
-    <value>PASSWORD</value>
-  </data>
-  <data name="llb_forgotpassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="lb_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="&gt;&gt;bt_iconPass.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pn_right.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lb_password.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="pn_left.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_userID.Name" xml:space="preserve">
-    <value>txt_userID</value>
-  </data>
-  <data name="&gt;&gt;lb_login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="llb_forgotpassword.Text" xml:space="preserve">
-    <value>Forgot Password?</value>
-  </data>
-  <data name="bt_iconPass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
-  </data>
-  <data name="&gt;&gt;lb_login.Parent" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="&gt;&gt;ptb_logo.Name" xml:space="preserve">
-    <value>ptb_logo</value>
-  </data>
-  <data name="&gt;&gt;llb_forgotpassword.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="lb_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
   </data>
   <data name="lb_password.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="llb_forgotpassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 16</value>
+  <data name="lb_password.Text" xml:space="preserve">
+    <value>PASSWORD</value>
   </data>
-  <data name="lb_password.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_id.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bt_login.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="txt_Password.Text" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="&gt;&gt;lb_id.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="txt_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="bt_login.Text" xml:space="preserve">
-    <value>LOGIN</value>
-  </data>
-  <data name="txt_Password.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_login.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lb_logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lb_id.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>pn_left</value>
-  </data>
-  <data name="lb_logo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lb_gachngang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lb_gachngang.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lb_gachngang2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bt_iconExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="lb_id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 99</value>
-  </data>
-  <data name="&gt;&gt;lb_logo.Name" xml:space="preserve">
-    <value>lb_logo</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>96, 96</value>
-  </data>
-  <data name="bt_IconUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 134</value>
-  </data>
-  <data name="&gt;&gt;pn_right.Name" xml:space="preserve">
-    <value>pn_right</value>
-  </data>
-  <data name="bt_iconExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 150</value>
-  </data>
-  <data name="&gt;&gt;txt_userID.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;bt_login.Name" xml:space="preserve">
-    <value>bt_login</value>
-  </data>
-  <data name="lb_id.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="lb_id.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pn_left.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pn_left.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lb_password.Name" xml:space="preserve">
+    <value>lb_password</value>
   </data>
   <data name="&gt;&gt;lb_password.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lb_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 31</value>
+  <data name="&gt;&gt;lb_password.Parent" xml:space="preserve">
+    <value>pn_right</value>
   </data>
-  <data name="bt_iconExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
+  <data name="&gt;&gt;lb_password.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="pn_right.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lb_id.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;pn_right.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="lb_id.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;pn_right.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lb_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 99</value>
   </data>
-  <data name="&gt;&gt;lb_login.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="bt_login.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="&gt;&gt;llb_forgotpassword.Name" xml:space="preserve">
-    <value>llb_forgotpassword</value>
-  </data>
-  <data name="&gt;&gt;bt_login.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="lb_id.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lb_id.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 20</value>
   </data>
-  <data name="bt_iconPass.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="lb_id.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;lb_gachngang2.Parent" xml:space="preserve">
+  <data name="lb_id.Text" xml:space="preserve">
+    <value>USER ID</value>
+  </data>
+  <data name="&gt;&gt;lb_id.Name" xml:space="preserve">
+    <value>lb_id</value>
+  </data>
+  <data name="&gt;&gt;lb_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_id.Parent" xml:space="preserve">
     <value>pn_right</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="&gt;&gt;lb_id.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="bt_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 37</value>
+  <data name="lb_login.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="ptb_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 134</value>
+  <data name="lb_login.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 19.8pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;ptb_logo.Parent" xml:space="preserve">
-    <value>pn_left</value>
+  <data name="lb_login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 50</value>
+  </data>
+  <data name="lb_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="lb_login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 31</value>
+  </data>
+  <data name="lb_login.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lb_login.Text" xml:space="preserve">
     <value>LOGIN</value>
   </data>
-  <data name="bt_IconUser.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;lb_login.Name" xml:space="preserve">
+    <value>lb_login</value>
   </data>
-  <data name="&gt;&gt;bt_iconPass.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lb_login.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lb_login.Parent" xml:space="preserve">
     <value>pn_right</value>
   </data>
-  <data name="pn_left.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;lb_login.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pn_right.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pn_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 0</value>
+  </data>
+  <data name="pn_right.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="pn_right.Size" type="System.Drawing.Size, System.Drawing">
     <value>333, 498</value>
   </data>
-  <data name="lb_gachngang2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 1</value>
+  <data name="pn_right.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;bt_iconPass.Name" xml:space="preserve">
-    <value>bt_iconPass</value>
+  <data name="&gt;&gt;pn_right.Name" xml:space="preserve">
+    <value>pn_right</value>
+  </data>
+  <data name="&gt;&gt;pn_right.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pn_right.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pn_right.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>666, 498</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>BCMP</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormLogin</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

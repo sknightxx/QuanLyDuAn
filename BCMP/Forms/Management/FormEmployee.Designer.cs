@@ -41,7 +41,6 @@
             this.lb_employee = new System.Windows.Forms.Label();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_ListEmp = new System.Windows.Forms.DataGridView();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +51,7 @@
             this.IsDeactivated = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TypeEmployee = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittleForm.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -180,10 +180,6 @@
             this.dtgv_ListEmp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListEmp_CellContentClick);
             this.dtgv_ListEmp.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dtgv_ListEmp_DataBindingComplete);
             // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
-            // 
             // userIdDataGridViewTextBoxColumn
             // 
             this.userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
@@ -249,6 +245,10 @@
             resources.ApplyResources(this.TypeEmployee, "TypeEmployee");
             this.TypeEmployee.Name = "TypeEmployee";
             this.TypeEmployee.ReadOnly = true;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(BCMP.DTO.Employee);
             // 
             // FormEmployee
             // 

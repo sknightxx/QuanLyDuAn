@@ -117,21 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lb_Notification.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lb_Notification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
   <data name="lb_Notification.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
   <data name="lb_Notification.Text" xml:space="preserve">
     <value>Thông báo</value>
   </data>
-  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="dtgv_MyNotification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="dtgv_MyNotification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 326</value>
+  </data>
+  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bt_exit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 0, 16, 0</value>
+  </data>
+  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 27</value>
+  </data>
+  <data name="pn_containerInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>694, 406</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>694, 406</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
 </root>

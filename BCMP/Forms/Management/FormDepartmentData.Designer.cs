@@ -52,7 +52,9 @@
             // 
             // dgv_DepartmentData
             // 
+            resources.ApplyResources(this.dgv_DepartmentData, "dgv_DepartmentData");
             this.dgv_DepartmentData.AutoGenerateColumns = false;
+            this.dgv_DepartmentData.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_DepartmentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DepartmentData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
@@ -70,7 +72,6 @@
             this.partnerCodeDataGridViewTextBoxColumn,
             this.Download});
             this.dgv_DepartmentData.DataSource = this.documentBindingSource;
-            resources.ApplyResources(this.dgv_DepartmentData, "dgv_DepartmentData");
             this.dgv_DepartmentData.Name = "dgv_DepartmentData";
             this.dgv_DepartmentData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DepartmentData_CellContentClick);
             // 

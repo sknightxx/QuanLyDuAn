@@ -43,7 +43,6 @@
             this.bt_save = new System.Windows.Forms.Button();
             this.bt_cancel = new System.Windows.Forms.Button();
             this.pn_tittleAddProject = new System.Windows.Forms.Panel();
-            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_containerAddProject = new System.Windows.Forms.Panel();
             this.txt_IdProject = new System.Windows.Forms.TextBox();
             this.lb_IdProject = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.lb_ValidNameProject = new System.Windows.Forms.Label();
             this.lb_ValidIdProject = new System.Windows.Forms.Label();
             this.dtpkPlannedStart = new System.Windows.Forms.DateTimePicker();
+            this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_tittleAddProject.SuspendLayout();
             this.pn_containerAddProject.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -165,24 +165,6 @@
             this.pn_tittleAddProject.Controls.Add(this.bt_exit);
             this.pn_tittleAddProject.Name = "pn_tittleAddProject";
             // 
-            // bt_exit
-            // 
-            resources.ApplyResources(this.bt_exit, "bt_exit");
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bt_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
-            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.bt_exit.IconColor = System.Drawing.Color.Black;
-            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_exit.IconSize = 30;
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
             // pn_containerAddProject
             // 
             resources.ApplyResources(this.pn_containerAddProject, "pn_containerAddProject");
@@ -247,6 +229,24 @@
             resources.ApplyResources(this.dtpkPlannedStart, "dtpkPlannedStart");
             this.dtpkPlannedStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkPlannedStart.Name = "dtpkPlannedStart";
+            // 
+            // bt_exit
+            // 
+            resources.ApplyResources(this.bt_exit, "bt_exit");
+            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_exit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.BorderSize = 0;
+            this.bt_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bt_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bt_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(144)))));
+            this.bt_exit.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.bt_exit.IconColor = System.Drawing.Color.Black;
+            this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_exit.IconSize = 30;
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.UseVisualStyleBackColor = false;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // FormAddProject
             // 

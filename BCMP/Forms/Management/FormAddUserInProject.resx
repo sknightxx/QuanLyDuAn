@@ -117,15 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_Default.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 19</value>
+  </data>
   <data name="&gt;&gt;bt_Default.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;bt_addInProject.Name" xml:space="preserve">
-    <value>bt_addInProject</value>
   </data>
   <data name="&gt;&gt;Department.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -146,30 +147,20 @@
   <data name="&gt;&gt;bt_Default.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="emailDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="roleIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>RoleId</value>
+  <data name="&gt;&gt;dtgv_listEmp.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="bt_addInProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Role.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cb_Department.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 11</value>
+  <data name="bt_Default.Text" xml:space="preserve">
+    <value>Show All</value>
   </data>
   <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>departmentIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="departmentIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
   </data>
   <data name="typeEmployeeDataGridViewCheckBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -216,11 +207,11 @@
   <data name="Type.HeaderText" xml:space="preserve">
     <value>Type</value>
   </data>
-  <data name="userIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>CANCEL</value>
   </data>
-  <data name="fullNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>FullName</value>
+  <data name="&gt;&gt;cb_Department.Name" xml:space="preserve">
+    <value>cb_Department</value>
   </data>
   <data name="bt_Default.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -233,6 +224,9 @@
   </data>
   <data name="bt_addInProject.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="&gt;&gt;roleIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>roleIdDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -251,9 +245,6 @@
   </data>
   <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Department.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="dtgv_listEmp.Size" type="System.Drawing.Size, System.Drawing">
     <value>516, 388</value>
@@ -288,8 +279,8 @@
   <data name="bt_cancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="typeEmployeeDataGridViewCheckBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAddUserInProject</value>
   </data>
   <data name="&gt;&gt;dtgv_listEmp.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -300,9 +291,6 @@
   <data name="Department.HeaderText" xml:space="preserve">
     <value>Department</value>
   </data>
-  <data name="Type.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <data name="&gt;&gt;departmentIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -312,8 +300,8 @@
   <data name="bt_cancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="bt_cancel.Text" xml:space="preserve">
-    <value>CANCEL</value>
+  <data name="fullNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>FullName</value>
   </data>
   <data name="bt_addInProject.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -333,8 +321,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormAddUserInProject</value>
+  <data name="departmentIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="&gt;&gt;bt_cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -342,17 +330,20 @@
   <data name="departmentIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="bt_Default.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
   <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bt_cancel.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
-    <value>bt_cancel</value>
+  <data name="&gt;&gt;bt_addInProject.Name" xml:space="preserve">
+    <value>bt_addInProject</value>
   </data>
-  <data name="&gt;&gt;roleIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>roleIdDataGridViewTextBoxColumn</value>
+  <data name="Department.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;typeEmployeeDataGridViewCheckBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -360,8 +351,8 @@
   <data name="bt_addInProject.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 34</value>
   </data>
-  <data name="&gt;&gt;cb_Department.Name" xml:space="preserve">
-    <value>cb_Department</value>
+  <data name="cb_Department.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 11</value>
   </data>
   <data name="roleIdDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -369,17 +360,20 @@
   <data name="&gt;&gt;Role.Name" xml:space="preserve">
     <value>Role</value>
   </data>
-  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>userIdDataGridViewTextBoxColumn</value>
-  </data>
   <data name="&gt;&gt;cb_Department.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="bt_Default.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
+  <data name="&gt;&gt;employeeBindingSource.Name" xml:space="preserve">
+    <value>employeeBindingSource</value>
+  </data>
+  <data name="emailDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
   <data name="cb_Department.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
+  </data>
+  <data name="roleIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>RoleId</value>
   </data>
   <data name="Role.HeaderText" xml:space="preserve">
     <value>Role</value>
@@ -390,14 +384,20 @@
   <data name="dtgv_listEmp.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 10</value>
   </data>
+  <data name="&gt;&gt;bt_cancel.Name" xml:space="preserve">
+    <value>bt_cancel</value>
+  </data>
   <data name="&gt;&gt;Type.Name" xml:space="preserve">
     <value>Type</value>
   </data>
-  <data name="bt_Default.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="Type.Width" type="System.Int32, mscorlib">
+    <value>125</value>
   </data>
-  <data name="&gt;&gt;dtgv_listEmp.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="typeEmployeeDataGridViewCheckBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fullNameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="dtgv_listEmp.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -411,7 +411,7 @@
   <data name="&gt;&gt;cb_Department.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="fullNameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+  <data name="Role.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="&gt;&gt;Role.Type" xml:space="preserve">
@@ -423,8 +423,8 @@
   <data name="emailDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="bt_Default.Text" xml:space="preserve">
-    <value>Show All</value>
+  <data name="userIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="roleIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -438,11 +438,11 @@
   <data name="&gt;&gt;employeeBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;employeeBindingSource.Name" xml:space="preserve">
-    <value>employeeBindingSource</value>
+  <data name="&gt;&gt;userIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>userIdDataGridViewTextBoxColumn</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
+    <value>en</value>
   </metadata>
   <metadata name="Department.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -117,30 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bt_EditMission.Location" type="System.Drawing.Point, System.Drawing">
+    <value>751, 556</value>
+  </data>
   <data name="bt_EditMission.Text" xml:space="preserve">
     <value>Sửa</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 18</value>
-  </data>
-  <data name="lb_comment.Text" xml:space="preserve">
-    <value>Bình luận</value>
-  </data>
-  <data name="bt_cancel.Text" xml:space="preserve">
-    <value>Hủy</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Từ ngày</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 18</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Kết thúc</value>
   </data>
   <data name="lb_document.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 18</value>
@@ -148,17 +130,14 @@
   <data name="lb_document.Text" xml:space="preserve">
     <value>Tài liệu</value>
   </data>
+  <data name="txt_tittle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 29</value>
+  </data>
   <data name="lb_Tittle.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 18</value>
   </data>
   <data name="lb_Tittle.Text" xml:space="preserve">
     <value>Tiêu đề</value>
-  </data>
-  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
-  </data>
-  <data name="lb_relateProject.Text" xml:space="preserve">
-    <value>Dự án</value>
   </data>
   <data name="lb_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 18</value>
@@ -166,19 +145,77 @@
   <data name="lb_status.Text" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
+  <data name="dtp_From.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 163</value>
+  </data>
+  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 555</value>
+  </data>
+  <data name="bt_cancel.Text" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>581, 131</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="dtgv_ListDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 333</value>
+  </data>
+  <data name="dtgv_ListDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 202</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>748, 131</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Kết thúc</value>
+  </data>
+  <data name="dtp_To.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 163</value>
+  </data>
+  <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 29</value>
+  </data>
+  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 36</value>
+  </data>
+  <data name="lb_Management.Text" xml:space="preserve">
+    <value> Nhân viên 
+đảm nhiệm</value>
+  </data>
+  <data name="txt_management.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 29</value>
+  </data>
+  <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 86</value>
+  </data>
   <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 18</value>
   </data>
   <data name="lb_description.Text" xml:space="preserve">
     <value>Mô tả</value>
   </data>
-  <data name="lb_Management.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 19</value>
+  <data name="lb_relateProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
   </data>
-  <data name="lb_Management.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 18</value>
+  <data name="lb_relateProject.Text" xml:space="preserve">
+    <value>Dự án</value>
   </data>
-  <data name="lb_Management.Text" xml:space="preserve">
-    <value> Nhân viên đảm nhiệm</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 600</value>
+  </data>
+  <data name="pn_container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 600</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>902, 600</value>
   </data>
 </root>

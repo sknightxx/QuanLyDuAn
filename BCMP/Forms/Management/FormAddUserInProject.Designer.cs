@@ -61,6 +61,7 @@
             // 
             resources.ApplyResources(this.dtgv_listEmp, "dtgv_listEmp");
             this.dtgv_listEmp.AutoGenerateColumns = false;
+            this.dtgv_listEmp.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtgv_listEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_listEmp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.userIdDataGridViewTextBoxColumn,

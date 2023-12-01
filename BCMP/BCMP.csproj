@@ -427,6 +427,9 @@
     <EmbeddedResource Include="Forms\Management\FormAddDocument.resx">
       <DependentUpon>FormAddDocument.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddDocument.vi.resx">
+      <DependentUpon>FormAddDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddMission.en.resx">
       <DependentUpon>FormAddMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -448,11 +451,17 @@
     <EmbeddedResource Include="Forms\Management\FormAddUser.vi.resx">
       <DependentUpon>FormAddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormAddUserInProject.en.resx">
+      <DependentUpon>FormAddUserInProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddUserInProject.resx">
       <DependentUpon>FormAddUserInProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormAddUserInProject.vi.resx">
       <DependentUpon>FormAddUserInProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormDepartmentData.en.resx">
+      <DependentUpon>FormDepartmentData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormDepartmentData.resx">
       <DependentUpon>FormDepartmentData.cs</DependentUpon>
@@ -493,6 +502,12 @@
     <EmbeddedResource Include="Forms\Management\FormEmployee.vi.resx">
       <DependentUpon>FormEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormHome.en.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormHome.vi.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormMission.en.resx">
       <DependentUpon>FormMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -504,6 +519,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormProject.vi.resx">
       <DependentUpon>FormProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormPublicData.en.resx">
+      <DependentUpon>FormPublicData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormPublicData.resx">
       <DependentUpon>FormPublicData.cs</DependentUpon>

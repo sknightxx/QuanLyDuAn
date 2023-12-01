@@ -28,132 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddDocument));
             this.cb_TypeDocument = new System.Windows.Forms.ComboBox();
             this.cb_PartnerCode = new System.Windows.Forms.ComboBox();
             this.txt_SerialNumber = new System.Windows.Forms.TextBox();
             this.txt_WBS = new System.Windows.Forms.TextBox();
-            this.bt_upload = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_Department = new System.Windows.Forms.ComboBox();
             this.lb_department = new System.Windows.Forms.Label();
+            this.bt_upload = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // cb_TypeDocument
             // 
+            resources.ApplyResources(this.cb_TypeDocument, "cb_TypeDocument");
             this.cb_TypeDocument.FormattingEnabled = true;
-            this.cb_TypeDocument.Location = new System.Drawing.Point(181, 136);
             this.cb_TypeDocument.Name = "cb_TypeDocument";
-            this.cb_TypeDocument.Size = new System.Drawing.Size(121, 24);
-            this.cb_TypeDocument.TabIndex = 0;
             // 
             // cb_PartnerCode
             // 
+            resources.ApplyResources(this.cb_PartnerCode, "cb_PartnerCode");
             this.cb_PartnerCode.FormattingEnabled = true;
-            this.cb_PartnerCode.Location = new System.Drawing.Point(26, 138);
             this.cb_PartnerCode.Name = "cb_PartnerCode";
-            this.cb_PartnerCode.Size = new System.Drawing.Size(121, 24);
-            this.cb_PartnerCode.TabIndex = 1;
             // 
             // txt_SerialNumber
             // 
-            this.txt_SerialNumber.Location = new System.Drawing.Point(354, 138);
+            resources.ApplyResources(this.txt_SerialNumber, "txt_SerialNumber");
             this.txt_SerialNumber.Name = "txt_SerialNumber";
-            this.txt_SerialNumber.Size = new System.Drawing.Size(100, 22);
-            this.txt_SerialNumber.TabIndex = 2;
             // 
             // txt_WBS
             // 
-            this.txt_WBS.Location = new System.Drawing.Point(519, 140);
+            resources.ApplyResources(this.txt_WBS, "txt_WBS");
             this.txt_WBS.Name = "txt_WBS";
-            this.txt_WBS.Size = new System.Drawing.Size(100, 22);
-            this.txt_WBS.TabIndex = 3;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // cb_Department
+            // 
+            resources.ApplyResources(this.cb_Department, "cb_Department");
+            this.cb_Department.FormattingEnabled = true;
+            this.cb_Department.Items.AddRange(new object[] {
+            resources.GetString("cb_Department.Items"),
+            resources.GetString("cb_Department.Items1")});
+            this.cb_Department.Name = "cb_Department";
+            // 
+            // lb_department
+            // 
+            resources.ApplyResources(this.lb_department, "lb_department");
+            this.lb_department.Name = "lb_department";
             // 
             // bt_upload
             // 
-            this.bt_upload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.bt_upload, "bt_upload");
             this.bt_upload.BackColor = System.Drawing.Color.White;
             this.bt_upload.FlatAppearance.BorderSize = 0;
-            this.bt_upload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_upload.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.bt_upload.ForeColor = System.Drawing.Color.White;
             this.bt_upload.IconChar = FontAwesome.Sharp.IconChar.Upload;
             this.bt_upload.IconColor = System.Drawing.Color.Black;
             this.bt_upload.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_upload.IconSize = 32;
-            this.bt_upload.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_upload.Location = new System.Drawing.Point(653, 130);
-            this.bt_upload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_upload.Name = "bt_upload";
-            this.bt_upload.Size = new System.Drawing.Size(59, 37);
-            this.bt_upload.TabIndex = 26;
-            this.bt_upload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_upload.UseVisualStyleBackColor = false;
             this.bt_upload.Click += new System.EventHandler(this.bt_upload_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 16);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "PartnerCode";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 16);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "TypeOfDocument";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(351, 106);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 16);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "SerialNumber";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(516, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 16);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "WBS";
-            // 
-            // cb_Department
-            // 
-            this.cb_Department.FormattingEnabled = true;
-            this.cb_Department.Items.AddRange(new object[] {
-            "Public",
-            "Your Department"});
-            this.cb_Department.Location = new System.Drawing.Point(26, 216);
-            this.cb_Department.Name = "cb_Department";
-            this.cb_Department.Size = new System.Drawing.Size(121, 24);
-            this.cb_Department.TabIndex = 31;
-            // 
-            // lb_department
-            // 
-            this.lb_department.AutoSize = true;
-            this.lb_department.Location = new System.Drawing.Point(26, 180);
-            this.lb_department.Name = "lb_department";
-            this.lb_department.Size = new System.Drawing.Size(77, 16);
-            this.lb_department.TabIndex = 32;
-            this.lb_department.Text = "Department";
-            // 
             // FormAddDocument
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lb_department);
             this.Controls.Add(this.cb_Department);
             this.Controls.Add(this.label4);
@@ -166,7 +128,6 @@
             this.Controls.Add(this.cb_PartnerCode);
             this.Controls.Add(this.cb_TypeDocument);
             this.Name = "FormAddDocument";
-            this.Text = "FormAddDocument";
             this.ResumeLayout(false);
             this.PerformLayout();
 

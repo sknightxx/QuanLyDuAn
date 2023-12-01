@@ -117,33 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pn_tittle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>870, 43</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Chi tiết</value>
-  </data>
   <data name="lb_MyWork.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 27</value>
+    <value>104, 23</value>
   </data>
   <data name="lb_MyWork.Text" xml:space="preserve">
     <value>Công việc</value>
   </data>
-  <data name="pn_tittle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
   <data name="bt_CreateProject.Text" xml:space="preserve">
     <value>Tạo</value>
-  </data>
-  <data name="dtgvMyMission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 139</value>
-  </data>
-  <data name="dtgvMyMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>805, 443</value>
   </data>
 </root>

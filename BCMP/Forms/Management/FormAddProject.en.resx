@@ -117,156 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lb_newProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 11</value>
-  </data>
-  <data name="lb_newProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 29</value>
-  </data>
-  <data name="lb_NameProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 188</value>
-  </data>
-  <data name="lb_NameProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 291</value>
-  </data>
-  <data name="lb_department.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 22</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 291</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 22</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 291</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 22</value>
-  </data>
-  <data name="cbb_department.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 329</value>
-  </data>
-  <data name="cbb_department.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 24</value>
-  </data>
-  <data name="dtpkPlannedEnd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>632, 331</value>
-  </data>
-  <data name="dtpkPlannedEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="lb_description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 394</value>
-  </data>
-  <data name="lb_description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 22</value>
-  </data>
-  <data name="txt_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 438</value>
-  </data>
-  <data name="txt_Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 118</value>
-  </data>
-  <data name="lb_member.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 465</value>
-  </data>
-  <data name="lb_member.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 22</value>
-  </data>
-  <data name="txt_nameProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 222</value>
-  </data>
-  <data name="txt_nameProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 35</value>
-  </data>
-  <data name="bt_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>691, 611</value>
-  </data>
-  <data name="bt_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 42</value>
-  </data>
-  <data name="bt_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 611</value>
-  </data>
-  <data name="bt_cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 42</value>
-  </data>
-  <data name="bt_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 11</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bt_exit.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>11, 0, 20, 0</value>
+  <data name="lb_newProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="bt_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 30</value>
+  <data name="lb_NameProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="pn_tittleAddProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 72</value>
+  <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="txt_IdProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 120</value>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="txt_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 35</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_IdProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 85</value>
+  <data name="lb_description.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_IdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 22</value>
+  <data name="lb_member.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidDesciption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 559</value>
+  <data name="bt_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidDesciption.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="bt_cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidDesciption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+  <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidNameProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 261</value>
+  <data name="lb_IdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidNameProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="lb_ValidDesciption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidNameProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
+  <data name="lb_ValidNameProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidIdProject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 126</value>
+  <data name="lb_ValidIdProject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lb_ValidIdProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lb_ValidIdProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 16</value>
-  </data>
-  <data name="dtpkPlannedStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 331</value>
-  </data>
-  <data name="dtpkPlannedStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 688</value>
-  </data>
-  <data name="pn_containerAddProject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 688</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>120, 120</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>842, 688</value>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>

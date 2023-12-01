@@ -41,12 +41,12 @@
             this.pn_background = new System.Windows.Forms.Panel();
             this.pn_container = new System.Windows.Forms.Panel();
             this.dtgv_Project = new System.Windows.Forms.DataGridView();
-            this.projectBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projectIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedStartDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plannedEndDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detail = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.projectBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -168,10 +168,6 @@
             this.dtgv_Project.RowTemplate.Height = 24;
             this.dtgv_Project.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Project_CellContentClick);
             // 
-            // projectBindingSource
-            // 
-            this.projectBindingSource.DataSource = typeof(BCMP.DTO.Project);
-            // 
             // projectIdDataGridViewTextBoxColumn
             // 
             this.projectIdDataGridViewTextBoxColumn.DataPropertyName = "ProjectId";
@@ -206,6 +202,10 @@
             this.Detail.Name = "Detail";
             this.Detail.Text = "Detail";
             this.Detail.UseColumnTextForButtonValue = true;
+            // 
+            // projectBindingSource
+            // 
+            this.projectBindingSource.DataSource = typeof(BCMP.DTO.Project);
             // 
             // FormProject
             // 
