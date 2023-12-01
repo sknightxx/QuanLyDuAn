@@ -42,6 +42,7 @@
             this.lb_Name = new System.Windows.Forms.Label();
             this.lb_Email = new System.Windows.Forms.Label();
             this.pn_containerInformation = new System.Windows.Forms.Panel();
+            this.bt_save = new System.Windows.Forms.Button();
             this.lb_information = new System.Windows.Forms.Label();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
             this.pn_user = new System.Windows.Forms.Panel();
@@ -67,6 +68,7 @@
             // 
             resources.ApplyResources(this.txt_IdStaff, "txt_IdStaff");
             this.txt_IdStaff.Name = "txt_IdStaff";
+            this.txt_IdStaff.ReadOnly = true;
             // 
             // lb_IdStaff
             // 
@@ -128,6 +130,7 @@
             // pn_containerInformation
             // 
             resources.ApplyResources(this.pn_containerInformation, "pn_containerInformation");
+            this.pn_containerInformation.Controls.Add(this.bt_save);
             this.pn_containerInformation.Controls.Add(this.lb_information);
             this.pn_containerInformation.Controls.Add(this.bt_exit);
             this.pn_containerInformation.Controls.Add(this.pn_user);
@@ -137,6 +140,15 @@
             this.pn_containerInformation.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseDown);
             this.pn_containerInformation.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseMove);
             this.pn_containerInformation.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pn_containerInformation_MouseUp);
+            // 
+            // bt_save
+            // 
+            resources.ApplyResources(this.bt_save, "bt_save");
+            this.bt_save.BackColor = System.Drawing.Color.Black;
+            this.bt_save.ForeColor = System.Drawing.Color.White;
+            this.bt_save.Name = "bt_save";
+            this.bt_save.UseVisualStyleBackColor = false;
+            this.bt_save.Click += new System.EventHandler(this.btSave_Click);
             // 
             // lb_information
             // 
@@ -225,5 +237,6 @@
         private FontAwesome.Sharp.IconPictureBox iconUser;
         private FontAwesome.Sharp.IconButton bt_exit;
         private System.Windows.Forms.Label lb_information;
+        private System.Windows.Forms.Button bt_save;
     }
 }

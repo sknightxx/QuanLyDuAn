@@ -44,7 +44,7 @@ namespace BCMP.Forms.Management
             {
                 string url = dgv_DepartmentData.Rows[e.RowIndex].Cells[1].Value.ToString();
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
-                saveFileDialog.FileName = dgv_DepartmentData.Rows[e.RowIndex].Cells[0].Value.ToString();
+                saveFileDialog.FileName = dgv_DepartmentData.Rows[e.RowIndex].Cells[0].Value.ToString().Replace("*","Star");
                 saveFileDialog.Filter = "All files (*.*)|*.*";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {

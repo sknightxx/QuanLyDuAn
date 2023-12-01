@@ -152,6 +152,9 @@
   <data name="lb_IdStaff.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 208</value>
   </data>
+  <data name="lb_IdStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
   <data name="txt_phone.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 400</value>
   </data>
@@ -167,17 +170,26 @@
   <data name="lb_role.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 517</value>
   </data>
+  <data name="lb_role.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 21</value>
+  </data>
   <data name="lb_department.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_department.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 457</value>
   </data>
+  <data name="lb_department.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 21</value>
+  </data>
   <data name="lb_phone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_phone.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 410</value>
+  </data>
+  <data name="lb_phone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
   </data>
   <data name="txt_Email.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 334</value>
@@ -203,11 +215,23 @@
   <data name="lb_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 274</value>
   </data>
+  <data name="lb_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 21</value>
+  </data>
   <data name="lb_Email.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lb_Email.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 343</value>
+  </data>
+  <data name="lb_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 21</value>
+  </data>
+  <data name="bt_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="bt_save.Text" xml:space="preserve">
+    <value>SAVE</value>
   </data>
   <data name="lb_information.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -217,6 +241,9 @@
   </data>
   <data name="lb_information.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lb_information.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 32</value>
   </data>
   <data name="bt_exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

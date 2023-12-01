@@ -22,7 +22,7 @@ namespace BCMP.Forms.Management
         public InformationForm(Employee currEmployee)
         {
             InitializeComponent();
-            this.currEmployee = currEmployee;
+            this.currEmployee = EmployeeDAO.Instance.GetById(currEmployee.UserId);
             LoadDataCurrentEmployee();
         }
 
