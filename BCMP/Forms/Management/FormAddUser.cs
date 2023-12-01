@@ -465,5 +465,10 @@ namespace BCMP.Forms
                 MessageBox.Show("Inputs are missed");
             }
         }
+
+        private void bt_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

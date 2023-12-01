@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDocument));
             this.pn_containerDocument = new System.Windows.Forms.Panel();
-            this.bt_download = new FontAwesome.Sharp.IconButton();
-            this.bt_upload = new FontAwesome.Sharp.IconButton();
             this.pn_tittle = new System.Windows.Forms.Panel();
-            this.bt_delete = new FontAwesome.Sharp.IconButton();
-            this.bt_print = new FontAwesome.Sharp.IconButton();
             this.lb_file = new System.Windows.Forms.Label();
             this.bt_departmentData = new System.Windows.Forms.Button();
             this.bt_publicData = new System.Windows.Forms.Button();
             this.pn_search = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
             this.pn_background = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_delete = new FontAwesome.Sharp.IconButton();
+            this.bt_download = new FontAwesome.Sharp.IconButton();
+            this.bt_print = new FontAwesome.Sharp.IconButton();
+            this.bt_upload = new FontAwesome.Sharp.IconButton();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
             this.pn_tittle.SuspendLayout();
             this.pn_search.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,34 +56,6 @@
             resources.ApplyResources(this.pn_containerDocument, "pn_containerDocument");
             this.pn_containerDocument.BackColor = System.Drawing.Color.Transparent;
             this.pn_containerDocument.Name = "pn_containerDocument";
-            // 
-            // bt_download
-            // 
-            resources.ApplyResources(this.bt_download, "bt_download");
-            this.bt_download.BackColor = System.Drawing.Color.White;
-            this.bt_download.FlatAppearance.BorderSize = 0;
-            this.bt_download.ForeColor = System.Drawing.Color.White;
-            this.bt_download.IconChar = FontAwesome.Sharp.IconChar.Download;
-            this.bt_download.IconColor = System.Drawing.Color.Black;
-            this.bt_download.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_download.IconSize = 32;
-            this.bt_download.Name = "bt_download";
-            this.bt_download.UseVisualStyleBackColor = false;
-            this.bt_download.Click += new System.EventHandler(this.bt_download_Click);
-            // 
-            // bt_upload
-            // 
-            resources.ApplyResources(this.bt_upload, "bt_upload");
-            this.bt_upload.BackColor = System.Drawing.Color.White;
-            this.bt_upload.FlatAppearance.BorderSize = 0;
-            this.bt_upload.ForeColor = System.Drawing.Color.White;
-            this.bt_upload.IconChar = FontAwesome.Sharp.IconChar.Upload;
-            this.bt_upload.IconColor = System.Drawing.Color.Black;
-            this.bt_upload.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_upload.IconSize = 32;
-            this.bt_upload.Name = "bt_upload";
-            this.bt_upload.UseVisualStyleBackColor = false;
-            this.bt_upload.Click += new System.EventHandler(this.bt_upload_Click);
             // 
             // pn_tittle
             // 
@@ -98,34 +70,6 @@
             this.pn_tittle.Controls.Add(this.bt_publicData);
             this.pn_tittle.Controls.Add(this.pn_search);
             this.pn_tittle.Name = "pn_tittle";
-            // 
-            // bt_delete
-            // 
-            resources.ApplyResources(this.bt_delete, "bt_delete");
-            this.bt_delete.BackColor = System.Drawing.Color.White;
-            this.bt_delete.FlatAppearance.BorderSize = 0;
-            this.bt_delete.ForeColor = System.Drawing.Color.White;
-            this.bt_delete.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.bt_delete.IconColor = System.Drawing.Color.Black;
-            this.bt_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_delete.IconSize = 32;
-            this.bt_delete.Name = "bt_delete";
-            this.bt_delete.UseVisualStyleBackColor = false;
-            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
-            // 
-            // bt_print
-            // 
-            resources.ApplyResources(this.bt_print, "bt_print");
-            this.bt_print.BackColor = System.Drawing.Color.White;
-            this.bt_print.FlatAppearance.BorderSize = 0;
-            this.bt_print.ForeColor = System.Drawing.Color.White;
-            this.bt_print.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.bt_print.IconColor = System.Drawing.Color.Black;
-            this.bt_print.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_print.IconSize = 32;
-            this.bt_print.Name = "bt_print";
-            this.bt_print.UseVisualStyleBackColor = false;
-            this.bt_print.Click += new System.EventHandler(this.bt_print_Click);
             // 
             // lb_file
             // 
@@ -168,6 +112,75 @@
             this.txt_search.Enter += new System.EventHandler(this.txt_search_Enter);
             this.txt_search.Leave += new System.EventHandler(this.txt_search_Leave);
             // 
+            // pn_background
+            // 
+            resources.ApplyResources(this.pn_background, "pn_background");
+            this.pn_background.BackColor = System.Drawing.Color.White;
+            this.pn_background.Controls.Add(this.panel1);
+            this.pn_background.Name = "pn_background";
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.pn_containerDocument);
+            this.panel1.Name = "panel1";
+            // 
+            // bt_delete
+            // 
+            resources.ApplyResources(this.bt_delete, "bt_delete");
+            this.bt_delete.BackColor = System.Drawing.Color.White;
+            this.bt_delete.FlatAppearance.BorderSize = 0;
+            this.bt_delete.ForeColor = System.Drawing.Color.White;
+            this.bt_delete.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.bt_delete.IconColor = System.Drawing.Color.Black;
+            this.bt_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_delete.IconSize = 32;
+            this.bt_delete.Name = "bt_delete";
+            this.bt_delete.UseVisualStyleBackColor = false;
+            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
+            // 
+            // bt_download
+            // 
+            resources.ApplyResources(this.bt_download, "bt_download");
+            this.bt_download.BackColor = System.Drawing.Color.White;
+            this.bt_download.FlatAppearance.BorderSize = 0;
+            this.bt_download.ForeColor = System.Drawing.Color.White;
+            this.bt_download.IconChar = FontAwesome.Sharp.IconChar.Download;
+            this.bt_download.IconColor = System.Drawing.Color.Black;
+            this.bt_download.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_download.IconSize = 32;
+            this.bt_download.Name = "bt_download";
+            this.bt_download.UseVisualStyleBackColor = false;
+            this.bt_download.Click += new System.EventHandler(this.bt_download_Click);
+            // 
+            // bt_print
+            // 
+            resources.ApplyResources(this.bt_print, "bt_print");
+            this.bt_print.BackColor = System.Drawing.Color.White;
+            this.bt_print.FlatAppearance.BorderSize = 0;
+            this.bt_print.ForeColor = System.Drawing.Color.White;
+            this.bt_print.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.bt_print.IconColor = System.Drawing.Color.Black;
+            this.bt_print.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_print.IconSize = 32;
+            this.bt_print.Name = "bt_print";
+            this.bt_print.UseVisualStyleBackColor = false;
+            this.bt_print.Click += new System.EventHandler(this.bt_print_Click);
+            // 
+            // bt_upload
+            // 
+            resources.ApplyResources(this.bt_upload, "bt_upload");
+            this.bt_upload.BackColor = System.Drawing.Color.White;
+            this.bt_upload.FlatAppearance.BorderSize = 0;
+            this.bt_upload.ForeColor = System.Drawing.Color.White;
+            this.bt_upload.IconChar = FontAwesome.Sharp.IconChar.Upload;
+            this.bt_upload.IconColor = System.Drawing.Color.Black;
+            this.bt_upload.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_upload.IconSize = 32;
+            this.bt_upload.Name = "bt_upload";
+            this.bt_upload.UseVisualStyleBackColor = false;
+            this.bt_upload.Click += new System.EventHandler(this.bt_upload_Click);
+            // 
             // bt_search
             // 
             resources.ApplyResources(this.bt_search, "bt_search");
@@ -182,19 +195,6 @@
             this.bt_search.IconSize = 30;
             this.bt_search.Name = "bt_search";
             this.bt_search.UseVisualStyleBackColor = false;
-            // 
-            // pn_background
-            // 
-            resources.ApplyResources(this.pn_background, "pn_background");
-            this.pn_background.BackColor = System.Drawing.Color.White;
-            this.pn_background.Controls.Add(this.panel1);
-            this.pn_background.Name = "pn_background";
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.pn_containerDocument);
-            this.panel1.Name = "panel1";
             // 
             // FormDocument
             // 
