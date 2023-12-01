@@ -1,4 +1,4 @@
-﻿use master
+use master
 go
 create database BCMP
 go
@@ -66,9 +66,6 @@ CREATE TABLE PartnerCode
 (
   PartnerCodeId VARCHAR(10) NOT NULL,
   FunctionalPartner VARCHAR(50) NOT NULL,
-  PartnerAddress VARCHAR(255) NOT NULL,
-  Representative VARCHAR(2555) NOT NULL,
-  TaxCode VARCHAR(100) NOT NULL,
   PRIMARY KEY (PartnerCodeId)
 );
 go
@@ -194,12 +191,14 @@ CREATE TABLE Document
   UserId VARCHAR(50) NOT NULL,
   PartnerCodeId VARCHAR(10) NOT NULL,
   Type VARCHAR(5) NOT NULL,
+  DepartmentId int default 0,
   PRIMARY KEY (SerialNumber),
   FOREIGN KEY (ProjectId) REFERENCES Project(ProjectId),
   FOREIGN KEY (MissionId) REFERENCES Misson(MissionId),
   FOREIGN KEY (UserId) REFERENCES Employee(UserId),
   FOREIGN KEY (PartnerCodeId) REFERENCES PartnerCode(PartnerCodeId),
-  FOREIGN KEY (Type) REFERENCES TypeOfDocument(Type)
+  FOREIGN KEY (Type) REFERENCES TypeOfDocument(Type),
+  FOREIGN KEY (DepartmentId) REFERENCES Department(DepartmentId)
 );
 go
 
@@ -563,7 +562,7 @@ end
 go
 
 --Document--
-create procedure USP_InsertDocument
+create  procedure USP_InsertDocument
   @name VARCHAR(50),
   @path VARCHAR(255),
   @releaseDate DATE,
@@ -574,12 +573,17 @@ create procedure USP_InsertDocument
   @missionId INT,
   @userId VARCHAR(50),
   @partnerCodeId VARCHAR(10),
-  @type VARCHAR(5)
+  @type VARCHAR(5),
+  @departmentId int
 as
 begin
-	insert into Document values(@name,@path,@releaseDate,@typeFile,@serialNumber,@status,@projectId,@missionId,@userId,@partnerCodeId,@type)
+	if(@departmentId = 0)
+		insert into Document values(@name,@path,@releaseDate,@typeFile,@serialNumber,@status,@projectId,@missionId,@userId,@partnerCodeId,@type,null)
+	else 
+		insert into Document values(@name,@path,@releaseDate,@typeFile,@serialNumber,@status,@projectId,@missionId,@userId,@partnerCodeId,@type,@departmentId)
 end
 go
+
 
 create procedure USP_GetDocument
 as
@@ -695,13 +699,10 @@ go
 --PartnerCode
 create procedure USP_InsertPartnerCode
 	@partnerCodeId VARCHAR(10),
-	@functionalPartner VARCHAR(50),
-	@partnerAddress VARCHAR(255),
-	@representative VARCHAR(2555),
-	@taxCode VARCHAR(100)
+	@functionalPartner VARCHAR(50)
 as
 begin
-	insert into PartnerCode values (@partnerCodeId,@functionalPartner,@partnerAddress,@representative,@taxCode)
+	insert into PartnerCode values (@partnerCodeId,@functionalPartner)
 end
 go
 
@@ -714,13 +715,10 @@ go
 
 create procedure USP_UpdatePartnerCode
 	@partnerCodeId VARCHAR(10),
-	@functionalPartner VARCHAR(50),
-	@partnerAddress VARCHAR(255),
-	@representative VARCHAR(255),
-	@taxCode VARCHAR(100)
+	@functionalPartner VARCHAR(50)
 as
 begin
-	update PartnerCode set FunctionalPartner = @functionalPartner, PartnerAddress = @partnerAddress, Representative = @representative, TaxCode = @taxCode where PartnerCodeId = @partnerCodeId
+	update PartnerCode set FunctionalPartner = @functionalPartner where PartnerCodeId = @partnerCodeId
 end
 go
 
@@ -1153,6 +1151,94 @@ begin
 end
 go
 
+create procedure USP_GetAllDocumentInPublic
+as
+begin
+	select * from Document where DepartmentId is null
+end
+go
+
+create procedure USP_GetAllDocumentInProject
+@projectId varchar(50)
+as
+begin
+	select * from Document where DepartmentId is null and ProjectId = @projectId
+end
+go
+
+create procedure USP_GetAllDocumentInPublicUser
+@userId varchar(50)
+as
+begin
+	select * from Document where DepartmentId is null and ProjectId in (select ProjectId from Misson where UserId = @userId and Status = 'Added')
+end
+go
+
+
+create procedure USP_GetAllDocumentInMission
+@missionId int
+as
+begin
+	select * from Document where DepartmentId is null and MissionId = @missionId
+end
+go
+
+create procedure USP_GetAllDocumentInDepartment
+@departmentId int
+as
+begin
+	select * from Document where DepartmentId = @departmentId
+end
+go
+
+create procedure USP_DeleteDocumentBySerial
+@serialNumber varchar(50)
+as
+begin
+	delete Document where SerialNumber = @serialNumber
+end
+go
+
+
+
+create  procedure USP_InsertDocumentInProject
+  @name VARCHAR(50),
+  @path VARCHAR(255),
+  @releaseDate DATE,
+  @typeFile VARCHAR(20),
+  @serialNumber VARCHAR(50),
+  @status VARCHAR(50),
+  @projectId varchar(50),
+  @userId VARCHAR(50),
+  @partnerCodeId VARCHAR(10),
+  @type VARCHAR(5),
+  @departmentId int
+as
+begin
+	if(@departmentId = 0)
+		insert into Document values(@name,@path,@releaseDate,@typeFile,@serialNumber,@status,@projectId,null,@userId,@partnerCodeId,@type,null)
+	else 
+		insert into Document values(@name,@path,@releaseDate,@typeFile,@serialNumber,@status,@projectId,null,@userId,@partnerCodeId,@type,@departmentId)
+end
+go
+
+create procedure USP_GetAllProjectByUserId
+@userId varchar(50)
+as
+begin
+	select * from Project where ProjectId in (select ProjectId from Misson where UserId = @userId and Status = 'Added')
+end
+go
+
+create procedure USP_GetAllEmployeeByDepartment
+@departmentId int
+as
+begin
+	select * from Employee where DepartmentId = @departmentId
+end
+go
+
+
 --insert sample values
 INSERT INTO Department VALUES ('Human Resources'),
 ('Accounting'),
@@ -1170,12 +1256,14 @@ INSERT INTO Department VALUES ('Human Resources'),
 ('Organizational and Personnel Management'),
 ('Risk Management')
 
-Insert into Role values ('Ceo', 'The most powerful person in the company'),
+Insert into Role values ('Admin','Admin'),
+('Ceo', 'The most powerful person in the company'),
 ('Manager', 'The person who assigns work to employees'),
 ('Employee', 'Departmental staff')
 
 select * from Permission
-Insert into Permission values ('C', 'Ceo'),
+Insert into Permission values
+('C', 'Ceo'),
 ('M', 'Manager'),
 ('E', 'Employee')
 
@@ -1206,4 +1294,16 @@ Insert into Notification values ('Warning about delay', 'Warning', '2023-11-1',1
 ('Warning about delay', 'Warning', '2023-11-1',0,7,'MTQ'),
 ('Warning about delay', 'Warning', '2023-11-1',1,5,'Tona'),
 ('Warning about delay', 'Warning', '2023-11-1',0,6,'Tona')
+
+insert into PartnerCode values ('T*','Technical Consultant / Technical Advisor')
+
+insert into TypeOfDocument values ('S','Specifications'),
+('D','Drawing, Shecdules'),
+('C','Calculation Sheet'),
+('R','Requisitions'),
+('Q','Reports,Records')
+
+select * from Role
+
+
 
