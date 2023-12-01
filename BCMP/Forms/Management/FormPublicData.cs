@@ -31,9 +31,11 @@ namespace BCMP.Forms.Management
             if(curEmp.RoleId != 1 && curEmp.RoleId !=2)
             {
                 listDocumentPublic = DocumentDAO.Instance.GetAllDocumentInPublicUser(curEmp.UserId);
+                dtgv_PublicData.DataSource = listDocumentPublic;
             } else
             {
                 listDocumentPublic = DocumentDAO.Instance.GetAllDocumentInPublic();
+                dtgv_PublicData.DataSource = listDocumentPublic;
             }
             if (listDocumentPublic.Count > 0)
             {
